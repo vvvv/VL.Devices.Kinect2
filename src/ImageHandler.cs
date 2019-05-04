@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.Kinect;
-using VL.Lib.Basics.Imaging;
+﻿using Microsoft.Kinect;
+using System;
 using System.Drawing;
-using System.IO;
 using System.Drawing.Imaging;
 using System.Runtime.InteropServices;
+using VL.Lib.Basics.Imaging;
 
 namespace VL.Devices.Kinect2
 {
@@ -23,26 +18,63 @@ namespace VL.Devices.Kinect2
             {
                 using (frame)
                 {
-                    result = ImageExtensions.ToImage(ImageToBitmap(frame), false);
+                    byte[] pixelData = new byte[1920 * 1080 * 4];
+                    frame.CopyConvertedFrameDataToArray(pixelData, ColorImageFormat.Bgra);
+                    Bitmap bitmap = new Bitmap(frame.FrameDescription.Width, frame.FrameDescription.Height, System.Drawing.Imaging.PixelFormat.Format32bppRgb);
+                    BitmapData bmapdata = bitmap.LockBits(
+                        new Rectangle(0, 0, frame.FrameDescription.Width, frame.FrameDescription.Height),
+                        ImageLockMode.WriteOnly,
+                        bitmap.PixelFormat);
+                    IntPtr ptr = bmapdata.Scan0;
+                    Marshal.Copy(pixelData, 0, ptr, 1920 * 1080 * 4);
+                    bitmap.UnlockBits(bmapdata);
+                    result = ImageExtensions.ToImage(bitmap, false);
                 }
             }
             return result;
         }
 
-        private static Bitmap ImageToBitmap(ColorFrame img)
+        public static BitmapImage GetInfraredImage(InfraredFrame frame)
         {
-            FrameDescription description = img.CreateFrameDescription(ColorImageFormat.Bgra);
-            byte[] pixeldata = new byte[1920*1080*4];
-            img.CopyConvertedFrameDataToArray(pixeldata , ColorImageFormat.Bgra);
-            Bitmap bmap = new Bitmap(description.Width, description.Height, System.Drawing.Imaging.PixelFormat.Format32bppRgb);
-            BitmapData bmapdata = bmap.LockBits(
-                new Rectangle(0, 0, description.Width, description.Height),
-                ImageLockMode.WriteOnly,
-                bmap.PixelFormat);
-            IntPtr ptr = bmapdata.Scan0;
-            Marshal.Copy(pixeldata, 0, ptr, 1920 * 1080 * 4);
-            bmap.UnlockBits(bmapdata);
-            return bmap;
+            BitmapImage result = null;
+            if (frame != null)
+            {
+                using (frame)
+                {
+                    int width = frame.FrameDescription.Width;
+                    int height = frame.FrameDescription.Height;
+                    System.Drawing.Imaging.PixelFormat format = System.Drawing.Imaging.PixelFormat.Format32bppRgb;
+
+                    ushort[] infraredData = new ushort[frame.FrameDescription.LengthInPixels];
+                    byte[] pixelData = new byte[frame.FrameDescription.LengthInPixels * 4];
+
+                    frame.CopyFrameDataToArray(infraredData);
+
+                    for (int infraredIndex = 0; infraredIndex < infraredData.Length; infraredIndex++)
+                    {
+                        ushort ir = infraredData[infraredIndex];
+                        byte intensity = (byte)(ir >> 8);
+
+                        pixelData[infraredIndex * 4] = intensity; // Blue
+                        pixelData[infraredIndex * 4 + 1] = intensity; // Green   
+                        pixelData[infraredIndex * 4 + 2] = intensity; // Red
+                        pixelData[infraredIndex * 4 + 3] = 255;
+                    }
+
+                    var bitmap = new Bitmap(width, height, format);
+                    var bitmapdata = bitmap.LockBits(
+                        new Rectangle(0, 0, width, height),
+                        ImageLockMode.WriteOnly,
+                        bitmap.PixelFormat
+                    );
+                    IntPtr ptr = bitmapdata.Scan0;
+
+                    Marshal.Copy(pixelData, 0, ptr, pixelData.Length);
+                    bitmap.UnlockBits(bitmapdata);
+                    result = ImageExtensions.ToImage(bitmap, false);
+                }
+            }
+            return result;
         }
     }
 }
