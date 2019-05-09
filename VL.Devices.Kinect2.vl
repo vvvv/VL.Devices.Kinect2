@@ -2936,7 +2936,11 @@
                             <Choice Kind="ApplicationStatefulRegion" Name="If" />
                             <CategoryReference Kind="Category" Name="Primitive" />
                           </p:NodeReference>
-                          <Pin Id="DUdjq7NyzKvMtpfvgbNqma" Name="Condition" Kind="InputPin" />
+                          <Pin Id="DUdjq7NyzKvMtpfvgbNqma" Name="Condition" Kind="InputPin" DefaultValue="True">
+                            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                              <Choice Kind="TypeFlag" Name="Boolean" />
+                            </p:TypeAnnotation>
+                          </Pin>
                           <Patch Id="B3jhP1rZHK7M6rbVZ92Vxm" ManuallySortedPins="true">
                             <Patch Id="TryNBFoTzWlMuUDQPxq7X8" Name="Create" ManuallySortedPins="true" />
                             <Patch Id="CinLaLj9WxoLYU7GbbZ01s" Name="Then" ManuallySortedPins="true" />
