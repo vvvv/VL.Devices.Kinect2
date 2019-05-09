@@ -1,10 +1,5 @@
 ﻿using Microsoft.Kinect;
 using System;
-using System.Buffers;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using VL.Lib.Basics.Imaging;
 
 namespace VL.Devices.Kinect2
@@ -17,6 +12,10 @@ namespace VL.Devices.Kinect2
         public static IImage ToConvertedColorImage(this ColorFrame frame, ColorImageFormat colorImageFormat) => new ConvertedColorImage(frame, colorImageFormat);
 
         public static IImage ToDepthImage(this DepthFrame frame) => new DepthImage(frame);
+
+        public static IImage ToInfraredImage(this InfraredFrame frame) => new InfraredImage(frame);
+
+        public static IImage ToPlayerImage(this BodyIndexFrame frame) => new PlayerImage(frame);
 
         public static ImageInfo ToImageInfo(this FrameDescription frameDescription, ColorImageFormat colorImageFormat)
         {
