@@ -429,7 +429,7 @@
             <Pin Id="TkGCnB8olTAMuN9wRWvId0" Name="Apply" Kind="InputPin" />
             <Pin Id="FEk1mvY6Xx2LePkVzGYmcG" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="K6cn4J96bKRLVycZ1urktF" Comment="Brightness" Bounds="334,610,41,15" ShowValueBox="true" isIOBox="true" Value="600">
+          <Pad Id="K6cn4J96bKRLVycZ1urktF" Comment="Brightness" Bounds="334,610,41,15" ShowValueBox="true" isIOBox="true" Value="500">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
