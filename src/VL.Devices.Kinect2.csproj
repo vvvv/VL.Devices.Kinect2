@@ -86,7 +86,14 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ImageHandler.cs" />
+    <Compile Include="ConvertedColorImage.cs" />
+    <Compile Include="PlayerImage.cs" />
+    <Compile Include="InfraredImage.cs" />
+    <Compile Include="DepthImage.cs" />
+    <Compile Include="ColorImage.cs" />
+    <Compile Include="ReaderExtensions.cs" />
+    <Compile Include="FrameExtensions.cs" />
+    <Compile Include="KinectBufferImageData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
