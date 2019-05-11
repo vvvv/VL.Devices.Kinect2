@@ -29,7 +29,7 @@ In the vl document where you want to have access to the Kinect2 nodeset, add a d
 The available Kinect2 nodes should appear in the nodebrowser under Devices->Kinect2.
 
 ### Get Nuget Dependency
-This wrapper is depending on one thirdparty nuget: [Microsoft.Kinect](https://www.nuget.org/packages/Microsoft.Kinect/). If you need to install this dependency manually go to your vvvvs
+This wrapper is depending on one thirdparty nuget: [Microsoft.Kinect](https://www.nuget.org/packages/Microsoft.Kinect/). If you need to install this dependency manually go to your vvvv's
 
     \lib\packs (now in Documents\vvvv\gamma-preview)
     
