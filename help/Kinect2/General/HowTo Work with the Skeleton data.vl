@@ -28,7 +28,7 @@
             <Pin Id="TqIEwxVfQ02QWQ5inzxbd9" Name="Enabled" Kind="InputPin" />
             <Pin Id="Fbm9x16p1c3MSQaupgOeg6" Name="Output" Kind="OutputPin" />
             <Pin Id="IUGje6qdBDKMdLx55fnUKU" Name="Status" Kind="OutputPin" />
-            <Pin Id="SLFy6MtpmROOqpRuhcDDxd" Name="IsStarted" Kind="OutputPin" />
+            <Pin Id="SLFy6MtpmROOqpRuhcDDxd" Name="Is Started" Kind="OutputPin" />
             <Pin Id="HEor8gHbEI0LbT2uYUALAj" Name="Depth Camera Intrinsics" Kind="OutputPin" />
           </Node>
           <Pad Id="I8Ru8pruLpNL8DmnhIkMLp" Comment="Enabled" Bounds="305,314,35,35" ShowValueBox="true" isIOBox="true" Value="True">
