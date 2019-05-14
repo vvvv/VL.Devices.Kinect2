@@ -2,9 +2,13 @@
 Set of nodes to use Kinect2 in vl.
 
 ## Using the library
-At the moment in order to use the library you need to build the project first and then reference VL.Devices.Kinect2.vl from your vl document. See the section titled "Build the C# Project" for information on building.
+In order to use this library with vl you have to install the nuget that is available via nuget.org. For information on how to use nugets with vl, see [Managing Nugets](https://vvvv.gitbooks.io/the-gray-book/content/en/reference/libraries/dependencies.html#_manage_nugets) in the vl documentation. As described there you go to the commandline and then type:
 
-VL patches can be found here:
+    nuget install VL.Devices.Kinect2 -prerelease
+
+Once the VL.Devices.Kinect2 nuget is installed and referenced in your vl document you'll see the category "Kinect2" under "Devices" in the nodebrowser.
+
+VL help patches can be found here:
 
     "VL.Devices.Kinect2\help\"
 
