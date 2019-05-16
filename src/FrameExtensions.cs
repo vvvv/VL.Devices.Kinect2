@@ -17,6 +17,10 @@ namespace VL.Devices.Kinect2
 
         public static IImage ToPlayerImage(this BodyIndexFrame frame) => new PlayerImage(frame);
 
+        public static IImage ToDepthColorImage(this DepthFrame frame) => new DepthColorImage(frame);
+
+        public static IImage ToColorDepthImage(this DepthFrame frame, bool isRaw, bool relativeLookup) => new ColorDepthImage(frame, isRaw, relativeLookup);
+
         public static ImageInfo ToImageInfo(this FrameDescription frameDescription, ColorImageFormat colorImageFormat)
         {
             return new ImageInfo(

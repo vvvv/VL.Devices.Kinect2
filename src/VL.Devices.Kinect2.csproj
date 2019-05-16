@@ -86,7 +86,9 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ColorDepthImage.cs" />
     <Compile Include="ConvertedColorImage.cs" />
+    <Compile Include="DepthColorImage.cs" />
     <Compile Include="PlayerImage.cs" />
     <Compile Include="InfraredImage.cs" />
     <Compile Include="DepthImage.cs" />
