@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="UOWYOygckqsODlkddXkKiP" LanguageVersion="2019.1.0-0323-g0b17333f5f" Version="0.128">
+<Document xmlns:p="property" Id="UOWYOygckqsODlkddXkKiP" LanguageVersion="2019.1.0-0344-gd5eabf23a7" Version="0.128">
   <NugetDependency Id="NkxBtTr8hOoNigSpbcTFdR" Location="VL.CoreLib" Version="2019.1.0-281" />
   <Patch Id="APFBYc3ryadNMXCUycaQDK">
     <Canvas Id="VZxxHWhqYjuLlXlvDdCXIG" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
@@ -27,17 +27,17 @@
             <Pin Id="O39kkDz2C2IM9xNz8faZ2A" Name="Enable Skeleton" Kind="InputPin" />
             <Pin Id="TWTTxNIhOzeP7x2jHGnshG" Name="Enabled" Kind="InputPin" />
             <Pin Id="Fbm9x16p1c3MSQaupgOeg6" Name="Output" Kind="OutputPin" />
+            <Pin Id="HEor8gHbEI0LbT2uYUALAj" Name="Depth Camera Intrinsics" Kind="OutputPin" />
             <Pin Id="IUGje6qdBDKMdLx55fnUKU" Name="Status" Kind="OutputPin" />
             <Pin Id="SLFy6MtpmROOqpRuhcDDxd" Name="Is Started" Kind="OutputPin" />
-            <Pin Id="HEor8gHbEI0LbT2uYUALAj" Name="Depth Camera Intrinsics" Kind="OutputPin" />
           </Node>
           <Pad Id="I8Ru8pruLpNL8DmnhIkMLp" Comment="Enabled" Bounds="170,299,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="CvV5sAD0eDJNX6POTrlTwR" Comment="Status" Bounds="103,443,77,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="G4yXH3BLB2ZMdiXCnyHPEZ" Comment="Is Started" Bounds="137,385,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="CvV5sAD0eDJNX6POTrlTwR" Comment="Status" Bounds="137,443,77,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="G4yXH3BLB2ZMdiXCnyHPEZ" Comment="Is Started" Bounds="170,385,35,35" ShowValueBox="true" isIOBox="true" />
           <Node Bounds="68,509,35,19" Id="B5aC5PlZFFXNVdqrLmQXIu">
             <p:NodeReference LastCategoryFullName="Devices.Kinect2" LastSymbolSource="VL.Devices.Kinect2.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -249,7 +249,7 @@
               <CategoryReference Kind="Category" Name="Sink" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="Bhb2TOFFsBsO2Wciqu8J3H" Name="Bounds" Kind="InputPin" DefaultValue="1091, 621, 241, 225">
+            <Pin Id="Bhb2TOFFsBsO2Wciqu8J3H" Name="Bounds" Kind="InputPin" DefaultValue="1091, 621, 241, 264">
               <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>
