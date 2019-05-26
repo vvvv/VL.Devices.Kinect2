@@ -43,7 +43,7 @@ namespace VL.Devices.Kinect2
         public DepthColorImage(DepthFrame frame)
         {
             this.frame = frame;
-            Info = new ImageInfo(1920, 1080, PixelFormat.R32F);//Format needs to be R32G32F, awaiting support in VL.Lib.Basics.Imaging
+            Info = new ImageInfo(1920, 1080, PixelFormat.R32G32F);//Format needs to be R32G32F, awaiting support in VL.Lib.Basics.Imaging
         }
 
         public ImageInfo Info { get; }
