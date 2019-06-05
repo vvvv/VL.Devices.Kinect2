@@ -15,7 +15,7 @@
       </p:NodeReference>
       <Patch Id="PFfDaLRccY9PbWwk3Oc9Yz">
         <Canvas Id="NrbeJxw6AQVLIXfi6tseMO" CanvasType="Group">
-          <Node Bounds="179,220,67,19" Id="GpLmucv3pm4OL139MyI4gT">
+          <Node Bounds="178,272,67,19" Id="GpLmucv3pm4OL139MyI4gT">
             <p:NodeReference LastCategoryFullName="OpenCV.Conversion" LastSymbolSource="VL.OpenCV.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="FromImage" />
@@ -26,7 +26,7 @@
             <Pin Id="TT1hCSxQ8hDP9Fh9QTsEdR" Name="Input" Kind="InputPin" />
             <Pin Id="FWbwJLTxfJcP5QlJ8lPqd4" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="179,257,85,19" Id="DBAxHxXL0NdP1KNZaqpTKz">
+          <Node Bounds="178,309,85,19" Id="DBAxHxXL0NdP1KNZaqpTKz">
             <p:NodeReference LastCategoryFullName="OpenCV.Filter" LastSymbolSource="VL.OpenCV.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="ConvertColor" />
@@ -51,7 +51,7 @@
             </Pin>
             <Pin Id="TConSUmWxutN6GGbrdKy2z" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="681,474,185,26" Id="P7BI5rv8bYfOCQCwEeaMlE">
+          <Node Bounds="680,526,185,26" Id="P7BI5rv8bYfOCQCwEeaMlE">
             <p:NodeReference LastCategoryFullName="Devices.Kinect2.Skeleton" LastSymbolSource="VL.Devices.Kinect2.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="ClassType" Name="Skeleton" />
@@ -69,7 +69,7 @@
             <Pin Id="UqdViLZPVFHOmRsQUurcQa" Name="Joint Orientation" Kind="OutputPin" />
             <Pin Id="VDn5OZTmvHANtEEyu0qbPI" Name="Joint State" Kind="OutputPin" />
           </Node>
-          <Node Bounds="681,430,52,26" Id="AMxafJE5te0PoPUDxXeD9c">
+          <Node Bounds="680,482,52,26" Id="AMxafJE5te0PoPUDxXeD9c">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="GetSlice" />
@@ -84,11 +84,11 @@
             </Pin>
             <Pin Id="Ooe3SFf6cN1LxdwnhUJ2zQ" Name="Result" Kind="OutputPin" />
           </Node>
-          <Pad Id="TyqqzbnZ2J4OTjxs3m7ppL" Comment="User Index" Bounds="723,730,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="D5j8HfrFPfoOuJszQlmNIo" Comment="Position" Bounds="744,668,35,43" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="K27fq8RXAvUMdXvGLNmA9b" Comment="Clipping" Bounds="764,601,35,57" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="LZofDM3YC1ANNEcJrHAum4" Comment="Tracking ID" Bounds="703,765,110,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="GroJherrJcBPTpZUP3bhvg" Comment="Switch between user indexes to get to your detected player" Bounds="730,393,35,21" ShowValueBox="true" isIOBox="true" Value="0">
+          <Pad Id="TyqqzbnZ2J4OTjxs3m7ppL" Comment="User Index" Bounds="722,782,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="D5j8HfrFPfoOuJszQlmNIo" Comment="Position" Bounds="743,720,35,43" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="K27fq8RXAvUMdXvGLNmA9b" Comment="Clipping" Bounds="763,653,35,57" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="LZofDM3YC1ANNEcJrHAum4" Comment="Tracking ID" Bounds="702,817,110,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="GroJherrJcBPTpZUP3bhvg" Comment="Switch between user indexes to get to your detected player" Bounds="729,445,35,21" ShowValueBox="true" isIOBox="true" Value="0">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
@@ -98,28 +98,28 @@
               <p:minimum p:Type="Int32">0</p:minimum>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="TeDTZPWNx0PMkn7X3E6H3u" Comment="Joint ID" Bounds="875,573,108,402" ShowValueBox="true" isIOBox="true">
+          <Pad Id="TeDTZPWNx0PMkn7X3E6H3u" Comment="Joint ID" Bounds="874,625,108,402" ShowValueBox="true" isIOBox="true">
             <p:ValueBoxSettings>
               <p:maxvisibleentries p:Type="Int32">25</p:maxvisibleentries>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="HuCyUcJpik4PjUuy2V1Qkb" Comment="Joint Position" Bounds="1049,573,117,402" ShowValueBox="true" isIOBox="true">
+          <Pad Id="HuCyUcJpik4PjUuy2V1Qkb" Comment="Joint Position" Bounds="1048,625,117,402" ShowValueBox="true" isIOBox="true">
             <p:ValueBoxSettings>
               <p:maxvisibleentries p:Type="Int32">25</p:maxvisibleentries>
               <p:showentryindex p:Type="Boolean">false</p:showentryindex>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="UJ5wIfJwxiXLEWGyrGsbEN" Comment="Joint Position RGB" Bounds="1255,573,120,402" ShowValueBox="true" isIOBox="true">
+          <Pad Id="UJ5wIfJwxiXLEWGyrGsbEN" Comment="Joint Position RGB" Bounds="1254,625,120,402" ShowValueBox="true" isIOBox="true">
             <p:ValueBoxSettings>
               <p:maxvisibleentries p:Type="Int32">25</p:maxvisibleentries>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="ILJQoaqnrBxLBVYfbfCVNL" Comment="Joint State" Bounds="1488,573,69,402" ShowValueBox="true" isIOBox="true">
+          <Pad Id="ILJQoaqnrBxLBVYfbfCVNL" Comment="Joint State" Bounds="1487,625,69,402" ShowValueBox="true" isIOBox="true">
             <p:ValueBoxSettings>
               <p:maxvisibleentries p:Type="Int32">25</p:maxvisibleentries>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="178,613,309,19" Id="TlqZ91Ts1WuNbzxS3Hr4hG">
+          <Node Bounds="177,665,309,19" Id="TlqZ91Ts1WuNbzxS3Hr4hG">
             <p:NodeReference LastCategoryFullName="OpenCV.Drawing" LastSymbolSource="VL.OpenCV.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Category" Name="OpenCV" />
@@ -139,7 +139,7 @@
             <Pin Id="TLPVIk0n13YOcIqCvOAH4x" Name="Enabled" Kind="InputPin" />
             <Pin Id="VGdTpN00y87Miaz7mQjnet" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="158,662,105,19" Id="E9Ig0BWWj2VN2lX56MaT0E">
+          <Node Bounds="157,714,105,19" Id="E9Ig0BWWj2VN2lX56MaT0E">
             <p:NodeReference LastCategoryFullName="OpenCV.Sink" LastSymbolSource="VL.OpenCV.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
@@ -160,7 +160,7 @@
             <Pin Id="U8olyZixSrhMT2z8OTFiMg" Name="Show Info" Kind="InputPin" />
             <Pin Id="Bz3OiCAWoU4LgFmXQkjE0n" Name="Enabled" Kind="InputPin" />
           </Node>
-          <Pad Id="PkNLxIEHeEMMs3examvbwP" Bounds="397,543,136,34" ShowValueBox="true" isIOBox="true">
+          <Pad Id="PkNLxIEHeEMMs3examvbwP" Bounds="396,595,136,34" ShowValueBox="true" isIOBox="true">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="Spread" />
               <p:TypeArguments>
@@ -174,7 +174,7 @@
               <Item>1, 0.03000009, 0.03000009, 1</Item>
             </p:Value>
           </Pad>
-          <Node Bounds="77,384,209,116" Id="Dy3Lto0YyqOMLkFIk4cyqo">
+          <Node Bounds="76,434,209,118" Id="Dy3Lto0YyqOMLkFIk4cyqo">
             <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
@@ -185,7 +185,7 @@
               <Patch Id="MwFK5fsaZOvN1uuQvxS82l" Name="Create" ManuallySortedPins="true" />
               <Patch Id="J9sLurEfujwObBS09EQMr3" Name="Update" ManuallySortedPins="true" />
               <Patch Id="AkzgUd2c9m9OqD132JWq2F" Name="Dispose" ManuallySortedPins="true" />
-              <Node Bounds="89,428,185,26" Id="Tb72rncB6HXL8cKsZhRFRf">
+              <Node Bounds="88,480,185,26" Id="Tb72rncB6HXL8cKsZhRFRf">
                 <p:NodeReference LastCategoryFullName="Devices.Kinect2.Skeleton" LastSymbolSource="VL.Devices.Kinect2.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="ClassType" Name="Skeleton" />
@@ -204,10 +204,10 @@
                 <Pin Id="TstbqltgCEeLTuZ5TVgr2r" Name="Joint State" Kind="OutputPin" />
               </Node>
             </Patch>
-            <ControlPoint Id="C1ei0PSsWQtMLBSMuD67fk" Bounds="91,391" Alignment="Top" />
-            <ControlPoint Id="GAKIuv4XsVYMOCjRw7pqlK" Bounds="231,494" Alignment="Bottom" />
+            <ControlPoint Id="C1ei0PSsWQtMLBSMuD67fk" Bounds="90,441" Alignment="Top" />
+            <ControlPoint Id="GAKIuv4XsVYMOCjRw7pqlK" Bounds="230,548" Alignment="Bottom" />
           </Node>
-          <Node Bounds="229,527,47,19" Id="JQYw4chha7IPsZQANq4NpU">
+          <Node Bounds="228,579,47,19" Id="JQYw4chha7IPsZQANq4NpU">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Flatten" />
@@ -215,7 +215,7 @@
             <Pin Id="FCtkHQlanBzMJHDT7WemHi" Name="Input" Kind="StateInputPin" />
             <Pin Id="VkJeEmX6p88L0dFtH9iH0y" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Pad Id="SjXZRzMEDRkQDJH6c4bAjz" Bounds="317,543,20,34" ShowValueBox="true" isIOBox="true" Value="19">
+          <Pad Id="SjXZRzMEDRkQDJH6c4bAjz" Bounds="316,595,20,34" ShowValueBox="true" isIOBox="true" Value="19">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="Spread" />
               <p:TypeArguments>
@@ -226,7 +226,7 @@
             </p:TypeAnnotation>
             <p:ValueBoxSettings />
           </Pad>
-          <Pad Id="TPyhtTyhG4kM5R7WZSkvnE" Bounds="285,440,312,19" ShowValueBox="true" isIOBox="true" Value="All Skeleton data can be retrieve through this node">
+          <Pad Id="TPyhtTyhG4kM5R7WZSkvnE" Bounds="284,492,312,19" ShowValueBox="true" isIOBox="true" Value="All Skeleton data can be retrieve through this node">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -235,10 +235,10 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Overlay Id="RHzXSbZ8hvPMjv6Jvcpy6e" Name="Draws circles in Joint Positions" Bounds="24,346,604,361">
+          <Overlay Id="RHzXSbZ8hvPMjv6Jvcpy6e" Name="Draws circles in Joint Positions" Bounds="23,398,604,361">
             <p:ColorIndex p:Type="Int32">1</p:ColorIndex>
           </Overlay>
-          <Pad Id="LT3YCSarCTdPxvjDlcpPTJ" Bounds="190,321,258,25" ShowValueBox="true" isIOBox="true" Value="Draws circles in Joint Positions">
+          <Pad Id="LT3YCSarCTdPxvjDlcpPTJ" Bounds="189,373,258,25" ShowValueBox="true" isIOBox="true" Value="Draws circles in Joint Positions">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -247,10 +247,10 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Overlay Id="D4LmDu5EazVPj6ufVO7Int" Name="Individual Skeleton Data" Bounds="647,345,1000,640">
+          <Overlay Id="D4LmDu5EazVPj6ufVO7Int" Name="Individual Skeleton Data" Bounds="646,397,1000,640">
             <p:ColorIndex p:Type="Int32">0</p:ColorIndex>
           </Overlay>
-          <Pad Id="VwQkHZOpFYsOzzsJmQ8sNn" Bounds="973,321,306,25" ShowValueBox="true" isIOBox="true" Value="Viewing Individual Skeleton Data">
+          <Pad Id="VwQkHZOpFYsOzzsJmQ8sNn" Bounds="972,373,306,25" ShowValueBox="true" isIOBox="true" Value="Viewing Individual Skeleton Data">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -259,7 +259,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="Ny1K7YZBuV0MyuEIezvZFS" Bounds="870,483,312,19" ShowValueBox="true" isIOBox="true" Value="All Skeleton data can be retrieve through this node">
+          <Pad Id="Ny1K7YZBuV0MyuEIezvZFS" Bounds="869,535,312,19" ShowValueBox="true" isIOBox="true" Value="All Skeleton data can be retrieve through this node">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -268,7 +268,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="178,76,50,19" Id="GGwrluhEy4HLWCup9lTtAJ">
+          <Node Bounds="177,128,152,19" Id="GGwrluhEy4HLWCup9lTtAJ">
             <p:NodeReference LastCategoryFullName="Devices.Kinect2" LastSymbolSource="VL.Devices.Kinect2.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Kinect2" />
@@ -281,7 +281,7 @@
             <Pin Id="BnGMOdHqWH8M20FnmyD1EJ" Name="Output" Kind="StateOutputPin" />
             <Pin Id="SYbpd8Hn6gpNUzZaFBezQx" Name="Is Open" Kind="OutputPin" />
           </Node>
-          <Node Bounds="179,185,35,19" Id="IQrbp5bEiKgMVYwddvqoPJ">
+          <Node Bounds="178,237,35,19" Id="IQrbp5bEiKgMVYwddvqoPJ">
             <p:NodeReference LastCategoryFullName="Devices.Kinect2" LastSymbolSource="VL.Devices.Kinect2.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="RGB" />
@@ -289,7 +289,7 @@
             <Pin Id="PPjx5Eft2wHMoaoWEZDFVu" Name="Input" Kind="InputPin" />
             <Pin Id="E6OIMrUFo1XPZWeU1fwj8m" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="681,185,55,19" Id="Jcvf43sJxq5PRrjxeNDkZQ">
+          <Node Bounds="680,237,55,19" Id="Jcvf43sJxq5PRrjxeNDkZQ">
             <p:NodeReference LastCategoryFullName="Devices.Kinect2" LastSymbolSource="VL.Devices.Kinect2.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Skeleton" />
@@ -297,14 +297,14 @@
             <Pin Id="N4CYZvcYuJJNfneEkrmfCe" Name="Input" Kind="InputPin" />
             <Pin Id="UmdkXaF3EVLN3qEsQnC83I" Name="Output" Kind="OutputPin" />
           </Node>
-          <ControlPoint Id="AjzZ1cBvUEgP3ntEbEyyCd" Bounds="343,298" />
-          <Pad Id="KbJLCEOB3Q5LOwfPrLAffB" Comment="Is Open" Bounds="260,123,35,35" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="FeZXBuwFlgdMLddm6a77zo" Comment="RGB Enabled" Bounds="179,-3,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+          <ControlPoint Id="AjzZ1cBvUEgP3ntEbEyyCd" Bounds="342,350" />
+          <Pad Id="KbJLCEOB3Q5LOwfPrLAffB" Comment="Is Open" Bounds="326,175,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="FeZXBuwFlgdMLddm6a77zo" Comment="RGB Enabled" Bounds="179,79,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="Gim5gKQEpjGLCJ6uN0CS82" Comment="Skeleton Enabled" Bounds="260,34,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+          <Pad Id="Gim5gKQEpjGLCJ6uN0CS82" Comment="Skeleton Enabled" Bounds="326,79,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>

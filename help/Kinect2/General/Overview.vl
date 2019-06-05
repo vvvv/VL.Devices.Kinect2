@@ -114,7 +114,7 @@
             <Pin Id="ENpuwcQS7egOSDvpJFKsd2" Name="Show Info" Kind="InputPin" />
             <Pin Id="IAQVBRQCXJmM1XR5LjDnE6" Name="Enabled" Kind="InputPin" />
           </Node>
-          <Node Bounds="38,648,85,19" Id="DBAxHxXL0NdP1KNZaqpTKz">
+          <Node Bounds="38,584,85,19" Id="DBAxHxXL0NdP1KNZaqpTKz">
             <p:NodeReference LastCategoryFullName="OpenCV.Filter" LastSymbolSource="VL.OpenCV.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="ConvertColor" />
@@ -228,7 +228,7 @@
               <Item>0.415398, 0, 0.67, 1</Item>
             </p:Value>
           </Pad>
-          <Node Bounds="173,582,105,19" Id="FLL26z3H0lpMtDhcjZqg2y">
+          <Node Bounds="173,648,105,19" Id="FLL26z3H0lpMtDhcjZqg2y">
             <p:NodeReference LastCategoryFullName="OpenCV.Filter" LastSymbolSource="VL.OpenCV.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Normalize" />
@@ -250,27 +250,7 @@
             </Pin>
             <Pin Id="TakYMkAzmoWNc6Z0aeI6zN" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="173,648,85,19" Id="Mu583VdUYW8PcCpnEmJPvT">
-            <p:NodeReference LastCategoryFullName="OpenCV.Filter" LastSymbolSource="VL.OpenCV.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="ConvertColor" />
-            </p:NodeReference>
-            <Pin Id="A5SHrItQu1qPBkBojR9BWB" Name="Input" Kind="InputPin" />
-            <Pin Id="SFgAeNJIVkJLO8eQtshnw3" Name="Source Format" Kind="InputPin" DefaultValue="GRAY">
-              <p:TypeAnnotation LastCategoryFullName="VL.OpenCV" LastSymbolSource="VL.OpenCV.dll">
-                <Choice Kind="TypeFlag" Name="ColorConversionSourceCodes" />
-              </p:TypeAnnotation>
-            </Pin>
-            <Pin Id="QB8oNfNdAIWPgjV3xZPpru" Name="Target Format" Kind="InputPin" />
-            <Pin Id="BHmhFclgHvzMYG3Tb1pPIf" Name="Destination Channels" Kind="InputPin" />
-            <Pin Id="HEs4Od1voQUP73S1N3kepX" Name="Apply" Kind="InputPin">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                <Choice Kind="TypeFlag" Name="Boolean" />
-              </p:TypeAnnotation>
-            </Pin>
-            <Pin Id="TsIJGO17ZM9MQ8QpibVNtq" Name="Output" Kind="OutputPin" />
-          </Node>
-          <Node Bounds="332,582,105,19" Id="AW1XYV2V9j9P8QIVIsZznQ">
+          <Node Bounds="332,648,105,19" Id="AW1XYV2V9j9P8QIVIsZznQ">
             <p:NodeReference LastCategoryFullName="OpenCV.Filter" LastSymbolSource="VL.OpenCV.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Normalize" />
@@ -296,27 +276,7 @@
             </Pin>
             <Pin Id="J3Dt6l6iQx4LIEpSOf2Cyl" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="333,648,85,19" Id="PwbFy5oN5m9PsVRocHzNEK">
-            <p:NodeReference LastCategoryFullName="OpenCV.Filter" LastSymbolSource="VL.OpenCV.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="ConvertColor" />
-            </p:NodeReference>
-            <Pin Id="IfLUpWSGTGUNsecdIe1lpB" Name="Input" Kind="InputPin" />
-            <Pin Id="VhYEiL73xvQPhU4wLXGJen" Name="Source Format" Kind="InputPin" DefaultValue="GRAY">
-              <p:TypeAnnotation LastCategoryFullName="VL.OpenCV" LastSymbolSource="VL.OpenCV.dll">
-                <Choice Kind="TypeFlag" Name="ColorConversionSourceCodes" />
-              </p:TypeAnnotation>
-            </Pin>
-            <Pin Id="Dz7V9YAF31AN3DgblWSgaD" Name="Target Format" Kind="InputPin" />
-            <Pin Id="N5nKOYJhUH4O7jHHu8wWtO" Name="Destination Channels" Kind="InputPin" />
-            <Pin Id="TkGCnB8olTAMuN9wRWvId0" Name="Apply" Kind="InputPin">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                <Choice Kind="TypeFlag" Name="Boolean" />
-              </p:TypeAnnotation>
-            </Pin>
-            <Pin Id="FEk1mvY6Xx2LePkVzGYmcG" Name="Output" Kind="OutputPin" />
-          </Node>
-          <Pad Id="K6cn4J96bKRLVycZ1urktF" Comment="Brightness" Bounds="215,548,41,15" ShowValueBox="true" isIOBox="true" Value="400">
+          <Pad Id="K6cn4J96bKRLVycZ1urktF" Comment="Brightness" Bounds="215,614,41,15" ShowValueBox="true" isIOBox="true" Value="400">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
@@ -327,7 +287,7 @@
               <p:stepsize p:Type="Single">1</p:stepsize>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="Akv5W5gXAuALJ8iqNnMhOS" Comment="Brightness" Bounds="374,547,41,15" ShowValueBox="true" isIOBox="true" Value="700">
+          <Pad Id="Akv5W5gXAuALJ8iqNnMhOS" Comment="Brightness" Bounds="374,613,41,15" ShowValueBox="true" isIOBox="true" Value="700">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
@@ -442,16 +402,11 @@
         <Link Id="AkLpsuyN7tCNyhKPgNiZJT" Ids="FWbwJLTxfJcP5QlJ8lPqd4,NrYhaufP1HNNq0dTvASMQE" />
         <Link Id="OH1YYKa5X3IPweVSNzFgZH" Ids="TConSUmWxutN6GGbrdKy2z,Gzi8nDQ3aqHOkfKEw0CY8H" />
         <Link Id="F8MSP2BqD3sLHMgk1dBtCY" Ids="BYYOA3jhraBL361Q7QITTm,VxsClHveTjaPG8x3xCtmXE" />
-        <Link Id="KI2dPldK2uqQUgzuMmJYil" Ids="DhIhZV1ujwfMI9rIxYABoM,FbjCRW4pg15NDgO6dalMYp" />
         <Link Id="Er6g05Bhu8lNbkCz8lcqkZ" Ids="MUqWYhH5hReQUprvfVmI8p,VgaIHd6JE4sPQrdobEumW5" />
-        <Link Id="Kq4cvrJ9aogLG4euy8alYD" Ids="TakYMkAzmoWNc6Z0aeI6zN,A5SHrItQu1qPBkBojR9BWB" />
-        <Link Id="CExGdMtyFd1NJfI1EC94MU" Ids="J3Dt6l6iQx4LIEpSOf2Cyl,IfLUpWSGTGUNsecdIe1lpB" />
         <Link Id="LfmrgBNduNaNrYh1ZHyA5g" Ids="Povt9wzmQZ2NJrKW0Hk6hA,OyGKBVXBGhrMGsuiw3oKVk" />
-        <Link Id="QP6YKmRDGzeN7yglTeUKm3" Ids="FEk1mvY6Xx2LePkVzGYmcG,GiDAwCJFMH8N8FP1k1kHFl" />
         <Link Id="LI7fWFMvcAwN5r4w91F69Q" Ids="K6cn4J96bKRLVycZ1urktF,RWq9Hp47XltMtDHLj9hqXW" />
         <Link Id="NqBCVvbpxoOMxW4L0hSGdj" Ids="Akv5W5gXAuALJ8iqNnMhOS,Lr3Plroj7vwN7uRuozNLBF" />
         <Link Id="LNe82CV4JmlOrtVqSNo32j" Ids="AmOZvKMHdugMmrpxIkEiMt,MQ9cirhfeCfLLMsZf8o3gb" />
-        <Link Id="NSDLRgwnnVMN8yrJA7AaWy" Ids="TsIJGO17ZM9MQ8QpibVNtq,MFmC9Iu5AchP30FddgGckC" />
         <Link Id="AdqYneDBO1WNZQPugpxz27" Ids="KC8mKWKM4rEMMsMuV0epVw,HhLaF7AUsSBQZfGnEqBuG2" />
         <Link Id="SacXBp0QcScNf6KAvplgf4" Ids="GH9fwFuteKTPcJFXPPBPVy,AjdNRsG314BMxy0Sr9hpFz" />
         <Link Id="Im3NDuTiJjGQFBdFYP9GAG" Ids="EW6ZYIKkfLhPE0RYqMvvFA,VKIBKLGqxHdPrzq87R8vQI" />
@@ -471,6 +426,10 @@
         <Link Id="QoTUNXprj6TMzvd9JW2dO6" Ids="EXPCRC209XFLZczi2MJX7n,BO5j7vwWcJAQBCQFZO3ngQ" />
         <Link Id="Iec5snpD17XQGdZXCKsiOn" Ids="CklbYNG4cu3MnXKizfBs89,OwTJqSKgZOlPn4tfFU5Ajd" />
         <Link Id="AFzadRUdUzeOQEYGtqVyic" Ids="K1Grrr2CgCdOjKwDlkBW7x,PkKvAgNABpGOAfNyy2C17J" />
+        <Link Id="KriEIviCjvnNJuET1IdCwl" Ids="TXEQQsOEKcfMewnwDu04vU,IzWD7N3zZF7Mte3ZjVSpyp" />
+        <Link Id="VhunapcAeZeLzfKOoSzxDb" Ids="TakYMkAzmoWNc6Z0aeI6zN,MFmC9Iu5AchP30FddgGckC" />
+        <Link Id="RcoNwqR2t5tLCfe0rYLNnc" Ids="J3Dt6l6iQx4LIEpSOf2Cyl,GiDAwCJFMH8N8FP1k1kHFl" />
+        <Link Id="FcNXcArUhJLORGwKPVjrFD" Ids="DhIhZV1ujwfMI9rIxYABoM,FbjCRW4pg15NDgO6dalMYp" />
       </Patch>
     </Node>
   </Patch>
