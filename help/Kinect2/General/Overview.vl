@@ -315,7 +315,7 @@
           <Pad Id="Ldk04DGEs0aMswkt6aUlBQ" Comment="Radial Distortion Fourth Order" Bounds="759,531,35,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="JxvNl2YffRoM9OfsyjXms6" Comment="Principal Point" Bounds="737,553,35,28" ShowValueBox="true" isIOBox="true" />
           <Pad Id="Hb8pkNM2RdJMTxXEGa2z2g" Comment="Focal Length" Bounds="715,595,56,28" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="38,302,85,19" Id="SUCg21NZ9mzM9jjNovNYDe">
+          <Node Bounds="38,302,764,19" Id="SUCg21NZ9mzM9jjNovNYDe">
             <p:NodeReference>
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Category" Name="Devices" />
@@ -333,6 +333,7 @@
             <Pin Id="BO5j7vwWcJAQBCQFZO3ngQ" Name="Depth Enabled" Kind="InputPin" />
             <Pin Id="OwTJqSKgZOlPn4tfFU5Ajd" Name="BodyIndex Enabled" Kind="InputPin" />
             <Pin Id="NzPgik56K3OLvWkOWx6XGh" Name="Skeleton Enabled" Kind="InputPin" />
+            <Pin Id="QyYKt7q0eYcPUvTty4k1L2" Name="Enabled" Kind="InputPin" />
             <Pin Id="K1Grrr2CgCdOjKwDlkBW7x" Name="Output" Kind="OutputPin" />
             <Pin Id="Nu0o9MKXflvQK33JbgQWwW" Name="Is Open" Kind="OutputPin" />
           </Node>
@@ -344,7 +345,7 @@
             <Pin Id="PkKvAgNABpGOAfNyy2C17J" Name="Input" Kind="InputPin" />
             <Pin Id="Grydrv0UWUcLjj5yHyfjQy" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="HAOJshg4106QOT5tD8jxqr" Comment="Is Open" Bounds="120,343,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="HAOJshg4106QOT5tD8jxqr" Comment="Is Open" Bounds="799,365,35,35" ShowValueBox="true" isIOBox="true" />
           <Node Bounds="332,432,44,19" Id="Cik2nfDP7gKMfQX08EloKl">
             <p:NodeReference LastCategoryFullName="Devices.Kinect2" LastSymbolSource="VL.Devices.Kinect2.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -372,22 +373,32 @@
             <Pin Id="FZnbLInL758NFPUqu2AU5K" Name="Input" Kind="InputPin" />
             <Pin Id="MQSSbugrwLuOcj0zYkS63A" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="JhOFRaeVReEQTnf0JLKGG5" Comment="RGB Enabled" Bounds="40,108,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+          <Pad Id="JhOFRaeVReEQTnf0JLKGG5" Comment="RGB Enabled" Bounds="40,200,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="TXEQQsOEKcfMewnwDu04vU" Comment="Infrared Enabled" Bounds="60,159,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+          <Pad Id="TXEQQsOEKcfMewnwDu04vU" Comment="Infrared Enabled" Bounds="192,200,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="EXPCRC209XFLZczi2MJX7n" Comment="Depth Enabled" Bounds="80,210,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+          <Pad Id="EXPCRC209XFLZczi2MJX7n" Comment="Depth Enabled" Bounds="344,200,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="CklbYNG4cu3MnXKizfBs89" Comment="BodyIndex Enabled" Bounds="100,260,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+          <Pad Id="CklbYNG4cu3MnXKizfBs89" Comment="BodyIndex Enabled" Bounds="495,200,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="ABZsoe3F8cNPU990zyo3EQ" Comment="Enabled" Bounds="799,200,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="Oo6qj0lH1M4OgR4RGnjfJE" Comment="Skeleton Enabled" Bounds="647,200,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -430,6 +441,8 @@
         <Link Id="VhunapcAeZeLzfKOoSzxDb" Ids="TakYMkAzmoWNc6Z0aeI6zN,MFmC9Iu5AchP30FddgGckC" />
         <Link Id="RcoNwqR2t5tLCfe0rYLNnc" Ids="J3Dt6l6iQx4LIEpSOf2Cyl,GiDAwCJFMH8N8FP1k1kHFl" />
         <Link Id="FcNXcArUhJLORGwKPVjrFD" Ids="DhIhZV1ujwfMI9rIxYABoM,FbjCRW4pg15NDgO6dalMYp" />
+        <Link Id="Fc7D1hx81sCNp41aa9Xsu1" Ids="ABZsoe3F8cNPU990zyo3EQ,QyYKt7q0eYcPUvTty4k1L2" />
+        <Link Id="EFmngScTzpkNbosvbAUi9E" Ids="Oo6qj0lH1M4OgR4RGnjfJE,NzPgik56K3OLvWkOWx6XGh" />
       </Patch>
     </Node>
   </Patch>
