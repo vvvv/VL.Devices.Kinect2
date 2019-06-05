@@ -29,6 +29,7 @@ assembly_info:
 
 install:
   appveyor DownloadFile https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
+  nuget sources add -Name vvvv -Source http://teamcity.vvvv.org/guestAuth/app/nuget/feed/_Root/default/v3/index.json
 
 #---------------------------------#
 #       build configuration       #
