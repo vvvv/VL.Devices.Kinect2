@@ -3898,39 +3898,57 @@
               </p:NodeReference>
               <Pin Id="O5gx1JdeKK4LrOnukfKEyN" Name="Output" Kind="StateOutputPin" />
             </Node>
-            <Node Bounds="467,512,105,26" Id="ImKGW0HF0uPORG21G24QUf">
-              <p:NodeReference LastCategoryFullName="Devices.Kinect2.Kinect2" LastSymbolSource="VL.Devices.Kinect2.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="Category" Name="Kinect2" />
-                <Choice Kind="OperationCallFlag" Name="Update" />
-              </p:NodeReference>
-              <Pin Id="SaShZTDXp0sOQQb7NiSajd" Name="Input" Kind="StateInputPin" />
-              <Pin Id="RV4yjEZsiNkNjtik5CYW9j" Name="RGB Enabled" Kind="InputPin" />
-              <Pin Id="Rjn6Hnv6gsZPRONU6oXMDQ" Name="Infrared Enabled" Kind="InputPin" />
-              <Pin Id="N1eYNwYxjjLMC309mfvrdH" Name="Depth Enabled" Kind="InputPin" />
-              <Pin Id="TBozI9Ay5twOt7XNVqZOCd" Name="BodyIndex Enabled" Kind="InputPin" />
-              <Pin Id="LRcP3u3vKnzMhM1T1D7rTf" Name="Skeleton Enabled" Kind="InputPin" />
-              <Pin Id="A04ta1kP560PNrTrC5cHZ6" Name="Output" Kind="StateOutputPin" />
-              <Pin Id="MXCgx0FqMFoMbWc2MVMhGY" Name="Is Open" Kind="OutputPin" />
-            </Node>
-            <ControlPoint Id="S7uoNJqfEi5QDzMRazVYnp" Bounds="488,481" />
-            <ControlPoint Id="RjwmEJ6oZfdPGzh58vFcOo" Bounds="577,481" />
-            <ControlPoint Id="LtvRRXkQhVVPi0f5cOGADH" Bounds="684,481" />
-            <ControlPoint Id="VdbcRul99nBO0mCaRsc0Jy" Bounds="782,481" />
-            <ControlPoint Id="O1IDiuI9zTFLhSk86mQSDi" Bounds="900,481" />
-            <ControlPoint Id="Jp48nVdTpV8Oar12aiFsXT" Bounds="469,567" />
-            <ControlPoint Id="STHYZmOtWYpMaE8b6ofTKU" Bounds="569,567" />
+            <ControlPoint Id="S7uoNJqfEi5QDzMRazVYnp" Bounds="489,445" />
+            <ControlPoint Id="RjwmEJ6oZfdPGzh58vFcOo" Bounds="578,445" />
+            <ControlPoint Id="LtvRRXkQhVVPi0f5cOGADH" Bounds="685,445" />
+            <ControlPoint Id="VdbcRul99nBO0mCaRsc0Jy" Bounds="783,445" />
+            <ControlPoint Id="O1IDiuI9zTFLhSk86mQSDi" Bounds="901,445" />
+            <ControlPoint Id="Jp48nVdTpV8Oar12aiFsXT" Bounds="469,596" />
+            <ControlPoint Id="STHYZmOtWYpMaE8b6ofTKU" Bounds="569,596" />
             <Pad Id="KMdPRKvkDYYOWa9Fmkmx7B" SlotId="OWnDWAcLzlhQbWC6x2lHaO" Bounds="469,422">
               <p:ValueBoxSettings />
             </Pad>
+            <Node Bounds="455,484,133,80" Id="OcanBRcXnxeN2YCYac46hC">
+              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <Choice Kind="ApplicationStatefulRegion" Name="If" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <Pin Id="HALdZTqObRzLPl8O3oyTpa" Name="Condition" Kind="InputPin" />
+              <Patch Id="RYVrYzgEXxGOS2Q0o7LZK2" ManuallySortedPins="true">
+                <Patch Id="M6XAIBo5llrO5ma3r71KoP" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="RYYxAMuD2sDMiaVAL6W7Ot" Name="Then" ManuallySortedPins="true" />
+                <Node Bounds="467,512,105,26" Id="ImKGW0HF0uPORG21G24QUf">
+                  <p:NodeReference LastCategoryFullName="Devices.Kinect2.Kinect2" LastSymbolSource="VL.Devices.Kinect2.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="Category" Name="Kinect2" />
+                    <Choice Kind="OperationCallFlag" Name="Update" />
+                  </p:NodeReference>
+                  <Pin Id="SaShZTDXp0sOQQb7NiSajd" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="RV4yjEZsiNkNjtik5CYW9j" Name="RGB Enabled" Kind="InputPin" />
+                  <Pin Id="Rjn6Hnv6gsZPRONU6oXMDQ" Name="Infrared Enabled" Kind="InputPin" />
+                  <Pin Id="N1eYNwYxjjLMC309mfvrdH" Name="Depth Enabled" Kind="InputPin" />
+                  <Pin Id="TBozI9Ay5twOt7XNVqZOCd" Name="BodyIndex Enabled" Kind="InputPin" />
+                  <Pin Id="LRcP3u3vKnzMhM1T1D7rTf" Name="Skeleton Enabled" Kind="InputPin" />
+                  <Pin Id="A04ta1kP560PNrTrC5cHZ6" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="MXCgx0FqMFoMbWc2MVMhGY" Name="Is Open" Kind="OutputPin" />
+                </Node>
+              </Patch>
+              <ControlPoint Id="IPWWot9Fu8DONTsIypMIVO" Bounds="469,558" Alignment="Bottom" />
+              <ControlPoint Id="L2NylGXc23KMrwAv0MMaw2" Bounds="470,490" Alignment="Top" />
+              <ControlPoint Id="AtxQYCFkBFcNzUFzMIOJ6u" Bounds="569,558" Alignment="Bottom" />
+              <ControlPoint Id="FEmamvtTLJPQSben5zDe0I" Bounds="571,490" Alignment="Top" />
+            </Node>
+            <ControlPoint Id="RwIGtrILQlDQE05grn3WKl" Bounds="344,445" />
           </Canvas>
           <Patch Id="GcOMiLAoIFSLv2LDsJbeVL" Name="Create" ParticipatingElements="OvjOyvAEZODLgu7E1H2yl3" />
-          <Patch Id="R4uDqMnCSZSQYv6vGgcHH3" Name="Update">
+          <Patch Id="R4uDqMnCSZSQYv6vGgcHH3" Name="Update" ManuallySortedPins="true">
             <Pin Id="OkAkfv38tEwODsQ5AIuxTw" Name="RGB Enabled" Kind="InputPin" />
             <Pin Id="LaN1m8ldO2RQdMKBEzYEok" Name="Infrared Enabled" Kind="InputPin" />
             <Pin Id="QsAi4KvsgWkMA6ZjXwzLBH" Name="Depth Enabled" Kind="InputPin" />
             <Pin Id="L4RbVi773txPKxsFEx8nmU" Name="BodyIndex Enabled" Kind="InputPin" />
             <Pin Id="HSmXlivrbkLMFd6XHNvJwi" Name="Skeleton Enabled" Kind="InputPin" />
+            <Pin Id="Fn7CHhZGvCULjLxiCMVAIi" Name="Enabled" Kind="InputPin" Bounds="344,447" />
             <Pin Id="TMBWZrYd0ADPsE5HPFZJ5M" Name="Output" Kind="OutputPin" />
             <Pin Id="ODA9j9csMyAPxF157gD0P5" Name="Is Open" Kind="OutputPin" />
           </Patch>
@@ -3950,11 +3968,17 @@
           <Link Id="AsF8FEZLV92LxbYbhfjTpE" Ids="HSmXlivrbkLMFd6XHNvJwi,O1IDiuI9zTFLhSk86mQSDi" IsHidden="true" />
           <Link Id="JuSlb3XjQJeQLnAYBTFpCR" Ids="O1IDiuI9zTFLhSk86mQSDi,LRcP3u3vKnzMhM1T1D7rTf" />
           <Link Id="BrRyF4aR9tdNRVVhOz72Tt" Ids="Jp48nVdTpV8Oar12aiFsXT,TMBWZrYd0ADPsE5HPFZJ5M" IsHidden="true" />
-          <Link Id="Cmod9jwMdcRQTQY695haap" Ids="A04ta1kP560PNrTrC5cHZ6,Jp48nVdTpV8Oar12aiFsXT" />
           <Link Id="Jz3uOGmdUXqPf7ooHNvyay" Ids="STHYZmOtWYpMaE8b6ofTKU,ODA9j9csMyAPxF157gD0P5" IsHidden="true" />
-          <Link Id="N5pqUFkV83LMUIjiG6LruZ" Ids="MXCgx0FqMFoMbWc2MVMhGY,STHYZmOtWYpMaE8b6ofTKU" />
           <Link Id="EbALOP1DI0zLKtkVMlMAxW" Ids="KMdPRKvkDYYOWa9Fmkmx7B,SaShZTDXp0sOQQb7NiSajd" />
           <Slot Id="OWnDWAcLzlhQbWC6x2lHaO" Name="Kinect2" />
+          <Link Id="KrdW4x7SjoEOIoDLpnM3T5" Ids="RwIGtrILQlDQE05grn3WKl,HALdZTqObRzLPl8O3oyTpa" />
+          <Link Id="JwKgkBE8ia3Ls1X224KbxG" Ids="Fn7CHhZGvCULjLxiCMVAIi,RwIGtrILQlDQE05grn3WKl" IsHidden="true" />
+          <Link Id="OidxBBWEYUzMtTLUC6LRpC" Ids="L2NylGXc23KMrwAv0MMaw2,IPWWot9Fu8DONTsIypMIVO" IsFeedback="true" />
+          <Link Id="POSdpF2G1M5Lk5X2t66MMt" Ids="A04ta1kP560PNrTrC5cHZ6,IPWWot9Fu8DONTsIypMIVO" />
+          <Link Id="OY8rmoTYlqTPoq55yst2l9" Ids="IPWWot9Fu8DONTsIypMIVO,Jp48nVdTpV8Oar12aiFsXT" />
+          <Link Id="Dj9TmTd4FOZPMPZ4nooTZy" Ids="FEmamvtTLJPQSben5zDe0I,AtxQYCFkBFcNzUFzMIOJ6u" IsFeedback="true" />
+          <Link Id="GaJoLUQfPsfLDW5IjtjaFR" Ids="MXCgx0FqMFoMbWc2MVMhGY,AtxQYCFkBFcNzUFzMIOJ6u" />
+          <Link Id="Kh3zG2BNkYFQVoFNuroXMe" Ids="AtxQYCFkBFcNzUFzMIOJ6u,STHYZmOtWYpMaE8b6ofTKU" />
         </Patch>
       </Node>
     </Canvas>
