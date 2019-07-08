@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="AUeZcyP0BPZMj1LWSAvY9H" LanguageVersion="2019.1.0-0417-g808f072318" Version="0.128">
+<Document xmlns:p="property" Id="AUeZcyP0BPZMj1LWSAvY9H" LanguageVersion="2019.1.0-0425-gef454d89b2" Version="0.128">
   <Patch Id="JBtPzl71qIKNFbTrwnyTGp">
     <Canvas Id="SFmkqv266JHLuOC9PkL2Tn" DefaultCategory="Main" CanvasType="FullCategory">
       <!--
@@ -701,7 +701,7 @@
           <Node Bounds="292,173,44,19" Id="JiNZC1LiLppOztKnp8Ti4W">
             <p:NodeReference LastCategoryFullName="Devices.Kinect2" LastSymbolSource="VL.Devices.Kinect2.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="Depth" />
+              <Choice Kind="ProcessAppFlag" Name="Depth (Raw)" />
             </p:NodeReference>
             <Pin Id="IbaUvhPiGXgNdJ7EJlRJix" Name="Input" Kind="InputPin" />
             <Pin Id="AEUlXAtX7xeNboEMhXesPO" Name="Output" Kind="OutputPin" />
