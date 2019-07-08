@@ -679,7 +679,6 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="G2kzi551iQUQQbHer7OwcV" Comment="Is Open" Bounds="529,146,35,35" ShowValueBox="true" isIOBox="true" />
           <Node Bounds="292,102,240,19" Id="IqhBnTFiE2IONMjwsncAGO">
             <p:NodeReference LastCategoryFullName="Devices.Kinect2" LastSymbolSource="VL.Devices.Kinect2.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -817,15 +816,6 @@
               <Choice Kind="TypeFlag" Name="Vector3" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="QvySvrBDqiSN71xDs4uXb6" Bounds="177,1327,381,87" ShowValueBox="true" isIOBox="true" Value="NOTE: for significantly increased performance close this tab and leave only the Renderer window">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">13</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
         </Canvas>
         <Patch Id="OBf4uhw6944MCYyTxqhgHw" Name="Create" />
         <Patch Id="NxXLTAkwOx1ORJkHfOqfie" Name="Update" />
@@ -865,7 +855,6 @@
         <Link Id="PnXko1OVnhPNBHTZwX0ppy" Ids="FygYxmJSpdZNSbcOgZnnh7,UZYCnMECfFgOZCaS6A16OJ" />
         <Link Id="IbfwFCNXboONyUEsT35kUR" Ids="U2QdrUG4vJFPTkyN6acyNY,A2lmSJ8tct0LKZDgTcYeOJ" />
         <Link Id="Bik5iMyMCg5PIxlTUH5X9e" Ids="JZb2jbPbtEoMHGjlQHefsG,E3wrt7t8UwKPpYVOsJEkkY" />
-        <Link Id="TrUChH027OEL7u64N2hK2W" Ids="CVMFBcPYCPtNmyU9ETzDV0,G2kzi551iQUQQbHer7OwcV" />
         <Link Id="CrC5Y0jlmTGMbHhXQYpxmE" Ids="CoMYJ6FDCMePXnEX5n0CxZ,IbaUvhPiGXgNdJ7EJlRJix" />
         <Link Id="VcjhdkOOwLxNB5tcLY1o4P" Ids="AEUlXAtX7xeNboEMhXesPO,HIJvgcR8HpKPnBb9Rk3P8l" />
         <Link Id="UcZC9KMCGvkOqqmYWR2I0j" Ids="N96mPxmljtCP34dk4Y3wqT,SCUNggNjRTrMYQmeFtyLk6" />
