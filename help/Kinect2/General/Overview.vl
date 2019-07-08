@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="UOWYOygckqsODlkddXkKiP" LanguageVersion="2019.1.0-0398-ga0836f98df" Version="0.128">
+<Document xmlns:p="property" Id="UOWYOygckqsODlkddXkKiP" LanguageVersion="2019.1.0-0425-gef454d89b2" Version="0.128">
   <NugetDependency Id="NkxBtTr8hOoNigSpbcTFdR" Location="VL.CoreLib" Version="2019.1.0-281" />
   <Patch Id="APFBYc3ryadNMXCUycaQDK">
     <Canvas Id="VZxxHWhqYjuLlXlvDdCXIG" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
@@ -72,7 +72,7 @@
               </p:TypeAnnotation>
             </Pin>
             <Pin Id="GiDAwCJFMH8N8FP1k1kHFl" Name="Input" Kind="InputPin" />
-            <Pin Id="NuOYHuamTngMGX6E1jIBhD" Name="Title" Kind="InputPin" DefaultValue="Infrared">
+            <Pin Id="NuOYHuamTngMGX6E1jIBhD" Name="Title" Kind="InputPin" DefaultValue="Depth">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
@@ -105,7 +105,7 @@
               </p:TypeAnnotation>
             </Pin>
             <Pin Id="MFmC9Iu5AchP30FddgGckC" Name="Input" Kind="InputPin" />
-            <Pin Id="KMGT8esqSoZO7oKtSyyV4C" Name="Title" Kind="InputPin" DefaultValue="Depth">
+            <Pin Id="KMGT8esqSoZO7oKtSyyV4C" Name="Title" Kind="InputPin" DefaultValue="Infrared">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
@@ -349,10 +349,10 @@
           <Node Bounds="332,432,44,19" Id="Cik2nfDP7gKMfQX08EloKl">
             <p:NodeReference LastCategoryFullName="Devices.Kinect2" LastSymbolSource="VL.Devices.Kinect2.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="Depth" />
               <CategoryReference Kind="Category" Name="Kinect2" NeedsToBeDirectParent="true">
                 <p:OuterCategoryReference Kind="Category" Name="Devices" NeedsToBeDirectParent="true" />
               </CategoryReference>
+              <Choice Kind="ProcessNode" Name="Depth (Raw)" />
             </p:NodeReference>
             <Pin Id="FhBTyqHfRDYOHg9MpJ8D85" Name="Input" Kind="InputPin" />
             <Pin Id="CFH2CdodJLBOIXGlmUr7nQ" Name="Output" Kind="OutputPin" />
