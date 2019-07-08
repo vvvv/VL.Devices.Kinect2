@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="LIEtYdrRy3kPqelydP6a1l" LanguageVersion="2019.1.0-0417-g808f072318" Version="0.128">
+<Document xmlns:p="property" Id="LIEtYdrRy3kPqelydP6a1l" LanguageVersion="2019.1.0-0425-gef454d89b2" Version="0.128">
   <NugetDependency Id="EEYSk9rCs8TLQ1HUJFqHly" Location="VL.CoreLib" Version="2019.1.0-249" />
   <Patch Id="OF6M52TF0g1MIvRz41ucGu">
     <Canvas Id="Ue7xuqlBZHlLeRL5dLjZsS" DefaultCategory="Devices.Kinect2" CanvasType="FullCategory">
@@ -3351,10 +3351,10 @@
       </Node>
       <!--
 
-    ************************ Depth (Reactive) ************************
+    ************************ Depth (Raw Reactive) ************************
 
 -->
-      <Node Name="Depth (Reactive)" Bounds="639,694" Id="LKvKlXQkwiNQH3uf74hTNg" Summary="Returns an Observable of Kinect2 Depth image frames." Remarks="Returned image is single channel 16-bit Unsigned Integer.">
+      <Node Name="Depth (Raw Reactive)" Bounds="639,694" Id="LKvKlXQkwiNQH3uf74hTNg" Summary="Returns an Observable of Kinect2 Depth image frames." Remarks="Returned image is single channel 16-bit Unsigned Integer.">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -3389,10 +3389,10 @@
       </Node>
       <!--
 
-    ************************ Depth ************************
+    ************************ Depth (Raw) ************************
 
 -->
-      <Node Name="Depth" Bounds="487,694" Id="Vt9oyl2B3AsO2PE5KHPPfT" Summary="Returns Kinect2 Depth image frames." Remarks="Returned image is single channel 16-bit Unsigned Integer.">
+      <Node Name="Depth (Raw)" Bounds="487,694" Id="Vt9oyl2B3AsO2PE5KHPPfT" Summary="Returns Kinect2 Depth image frames." Remarks="Returned image is single channel 16-bit Unsigned Integer.">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -3415,7 +3415,7 @@
             <Node Bounds="431,326,35,19" Id="ObbdhpRYKmBMiyhORPvPnB">
               <p:NodeReference LastCategoryFullName="Devices.Kinect2" LastSymbolSource="VL.Devices.Kinect2.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="ProcessAppFlag" Name="Depth (Reactive)" />
+                <Choice Kind="ProcessNode" Name="Depth (Raw Reactive)" />
               </p:NodeReference>
               <Pin Id="OH18b3ZT0GpMnA7E9ml0iB" Name="Input" Kind="InputPin" />
               <Pin Id="ArQtu84HjIHQX0rYbuiEgI" Name="Output" Kind="OutputPin" />
