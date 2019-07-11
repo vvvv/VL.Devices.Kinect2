@@ -7,7 +7,7 @@ namespace VL.Devices.Kinect2
 {
     public static class PointCloud
     {
-        public static unsafe Spread<Vector3>GetPoints(DepthImage image, float scale, float zScale)
+        public static unsafe Spread<Vector3>GetPoints(DepthImage image, float scale, float zScale, int minZ, int maxZ)
         {
             DepthFrame frame = image.frame;
             var width = image.Info.Width;
@@ -22,7 +22,8 @@ namespace VL.Devices.Kinect2
                     for (int col = 0; col < image.Info.Width; col += step)
                     {
                         ushort z = *ptr;
-                        sb.Add(new Vector3(col * scale, row * scale, z * zScale));
+                        if(z > minZ && z< maxZ)
+                            sb.Add(new Vector3(col * scale, row * scale, z * zScale));
                         ptr += step;
                     }
                 }
