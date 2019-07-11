@@ -57,6 +57,7 @@
     <Compile Include="InfraredImage.cs" />
     <Compile Include="DepthImage.cs" />
     <Compile Include="ColorImage.cs" />
+    <Compile Include="PointCloud.cs" />
     <Compile Include="ReaderExtensions.cs" />
     <Compile Include="FrameExtensions.cs" />
     <Compile Include="KinectBufferImageData.cs" />
