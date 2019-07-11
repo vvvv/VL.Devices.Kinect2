@@ -4,14 +4,13 @@ using VL.Lib.Basics.Imaging;
 namespace VL.Devices.Kinect2
 {
     // Exposes the kinect frame buffer directly
-    class DepthImage : IImage
+    public class DepthImage : IImage
     {
-        readonly DepthFrame frame;
+        public readonly DepthFrame frame;
 
         public DepthImage(DepthFrame frame)
         {
             this.frame = frame;
-            // TODO: Not sure what the format is exactly
             Info = frame.FrameDescription.ToImageInfo(PixelFormat.R16);
         }
 

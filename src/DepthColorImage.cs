@@ -7,7 +7,7 @@ namespace VL.Devices.Kinect2
 {
     // Converts the frame to target format when consumer reads the data
     // Uses system provided memory pool
-    class DepthColorImage : IImage
+    public class DepthColorImage : IImage
     {
         class ImageData : IImageData
         {
@@ -38,7 +38,7 @@ namespace VL.Devices.Kinect2
             }
         }
 
-        readonly DepthFrame frame;
+        public readonly DepthFrame frame;
 
         public DepthColorImage(DepthFrame frame)
         {

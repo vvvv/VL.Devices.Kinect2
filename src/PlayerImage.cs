@@ -4,9 +4,9 @@ using VL.Lib.Basics.Imaging;
 namespace VL.Devices.Kinect2
 {
     // Exposes the kinect frame buffer directly
-    class PlayerImage : IImage
+    public class PlayerImage : IImage
     {
-        readonly BodyIndexFrame frame;
+        public readonly BodyIndexFrame frame;
 
         public PlayerImage(BodyIndexFrame frame)
         {

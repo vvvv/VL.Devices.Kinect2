@@ -7,7 +7,7 @@ namespace VL.Devices.Kinect2
 {
     // Converts the frame to target format when consumer reads the data
     // Uses system provided memory pool
-    class ConvertedColorImage : IImage
+    public class ConvertedColorImage : IImage
     {
         class ImageData : IImageData
         {
@@ -32,7 +32,7 @@ namespace VL.Devices.Kinect2
             }
         }
 
-        readonly ColorFrame frame;
+        public readonly ColorFrame frame;
         readonly ColorImageFormat colorImageFormat;
 
         public ConvertedColorImage(ColorFrame frame, ColorImageFormat colorImageFormat)

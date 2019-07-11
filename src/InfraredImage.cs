@@ -4,9 +4,9 @@ using VL.Lib.Basics.Imaging;
 namespace VL.Devices.Kinect2
 {
     // Exposes the kinect frame buffer directly
-    class InfraredImage : IImage
+    public class InfraredImage : IImage
     {
-        readonly InfraredFrame frame;
+        public readonly InfraredFrame frame;
 
         public InfraredImage(InfraredFrame frame)
         {

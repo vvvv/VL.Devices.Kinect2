@@ -8,7 +8,7 @@ namespace VL.Devices.Kinect2
 {
     // Converts the frame to target format when consumer reads the data
     // Uses system provided memory pool
-    class ColorDepthImage : IImage
+    public class ColorDepthImage : IImage
     {
         class ImageData : IImageData
         {
@@ -73,11 +73,10 @@ namespace VL.Devices.Kinect2
                 Marshal.FreeHGlobal(depthPointer);
                 Marshal.FreeHGlobal(colorPointer);
                 Marshal.FreeHGlobal(convertedColorPointer);
-                //Marshal.FreeHGlobal(Pointer);
             }
         }
 
-        readonly DepthFrame frame;
+        public readonly DepthFrame frame;
         readonly bool isRaw, relativeLookup;
 
         public ColorDepthImage(DepthFrame frame, bool isRaw, bool relativeLookup)
@@ -85,7 +84,7 @@ namespace VL.Devices.Kinect2
             this.frame = frame;
             this.isRaw = isRaw;
             this.relativeLookup = relativeLookup;
-            Info = new ImageInfo(512, 424, PixelFormat.R32G32F);//Format needs to be R32G32F, awaiting support in VL.Lib.Basics.Imaging
+            Info = new ImageInfo(512, 424, PixelFormat.R32G32F);
         }
 
         public ImageInfo Info { get; }

@@ -4,9 +4,9 @@ using VL.Lib.Basics.Imaging;
 namespace VL.Devices.Kinect2
 {
     // Exposes the frame buffer directly
-    class ColorImage : IImage
+    public class ColorImage : IImage
     {
-        readonly ColorFrame frame;
+        public readonly ColorFrame frame;
 
         public ColorImage(ColorFrame frame)
         {
