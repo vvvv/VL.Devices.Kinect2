@@ -1,25 +1,27 @@
 ﻿using Microsoft.Kinect;
+using SharpDX;
 using System;
 using VL.Lib.Basics.Imaging;
+using VL.Lib.Collections;
 
 namespace VL.Devices.Kinect2
 {
     // Keep all implementing classes internal and just expose them publicly through interface
     public static class FrameExtensions
     {
-        public static IImage ToColorImage(this ColorFrame frame) => new ColorImage(frame);
+        public static ColorImage ToColorImage(this ColorFrame frame) => new ColorImage(frame);
 
-        public static IImage ToConvertedColorImage(this ColorFrame frame, ColorImageFormat colorImageFormat) => new ConvertedColorImage(frame, colorImageFormat);
+        public static ConvertedColorImage ToConvertedColorImage(this ColorFrame frame, ColorImageFormat colorImageFormat) => new ConvertedColorImage(frame, colorImageFormat);
 
-        public static IImage ToDepthImage(this DepthFrame frame) => new DepthImage(frame);
+        public static DepthImage ToDepthImage(this DepthFrame frame) => new DepthImage(frame);
 
-        public static IImage ToInfraredImage(this InfraredFrame frame) => new InfraredImage(frame);
+        public static InfraredImage ToInfraredImage(this InfraredFrame frame) => new InfraredImage(frame);
 
-        public static IImage ToPlayerImage(this BodyIndexFrame frame) => new PlayerImage(frame);
+        public static PlayerImage ToPlayerImage(this BodyIndexFrame frame) => new PlayerImage(frame);
 
-        public static IImage ToDepthColorImage(this DepthFrame frame) => new DepthColorImage(frame);
+        public static DepthColorImage ToDepthColorImage(this DepthFrame frame) => new DepthColorImage(frame);
 
-        public static IImage ToColorDepthImage(this DepthFrame frame, bool isRaw, bool relativeLookup) => new ColorDepthImage(frame, isRaw, relativeLookup);
+        public static ColorDepthImage ToColorDepthImage(this DepthFrame frame, bool isRaw, bool relativeLookup) => new ColorDepthImage(frame, isRaw, relativeLookup);
 
         public static ImageInfo ToImageInfo(this FrameDescription frameDescription, ColorImageFormat colorImageFormat)
         {
