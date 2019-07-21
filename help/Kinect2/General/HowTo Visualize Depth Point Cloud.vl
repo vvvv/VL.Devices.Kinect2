@@ -661,7 +661,5 @@
   </Patch>
   <NugetDependency Id="UNOp1Uu8RDFPXvAXfKqZ47" Location="VL.Skia" Version="0.75.66-gfc487d01eb" />
   <NugetDependency Id="GHpVFfqOwayPopzs29fMqy" Location="VL.CoreLib" Version="0.75.66-gfc487d01eb" />
-  <NugetDependency Id="AlXI0ecMBPFN0KpiUc11x9" Location="VL.EditingFramework" Version="0.78.8-g28407b35c6" />
   <NugetDependency Id="BtAOF0leFx8PvxEWryz9b2" Location="VL.Devices.Kinect2" Version="0.0.0.0" />
-  <NugetDependency Id="F9GDxLO5UzoP5k8hmgR2yL" Location="VL.OpenCV" Version="0.0.0.0" />
 </Document>
