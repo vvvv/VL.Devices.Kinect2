@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="LIEtYdrRy3kPqelydP6a1l" LanguageVersion="2019.1.0-0425-gef454d89b2" Version="0.128">
+<Document xmlns:p="property" Id="LIEtYdrRy3kPqelydP6a1l" LanguageVersion="2019.1.0-0430-g543b5d5cc7" Version="0.128">
   <NugetDependency Id="EEYSk9rCs8TLQ1HUJFqHly" Location="VL.CoreLib" Version="2019.1.0-249" />
   <Patch Id="OF6M52TF0g1MIvRz41ucGu">
     <Canvas Id="Ue7xuqlBZHlLeRL5dLjZsS" DefaultCategory="Devices.Kinect2" CanvasType="FullCategory">
@@ -3945,12 +3945,24 @@
           </Canvas>
           <Patch Id="GcOMiLAoIFSLv2LDsJbeVL" Name="Create" ParticipatingElements="OvjOyvAEZODLgu7E1H2yl3" />
           <Patch Id="R4uDqMnCSZSQYv6vGgcHH3" Name="Update" ManuallySortedPins="true">
-            <Pin Id="OkAkfv38tEwODsQ5AIuxTw" Name="RGB Enabled" Kind="InputPin" />
+            <Pin Id="OkAkfv38tEwODsQ5AIuxTw" Name="RGB Enabled" Kind="InputPin" DefaultValue="True">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+            </Pin>
             <Pin Id="LaN1m8ldO2RQdMKBEzYEok" Name="Infrared Enabled" Kind="InputPin" />
-            <Pin Id="QsAi4KvsgWkMA6ZjXwzLBH" Name="Depth Enabled" Kind="InputPin" />
+            <Pin Id="QsAi4KvsgWkMA6ZjXwzLBH" Name="Depth Enabled" Kind="InputPin" DefaultValue="True">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+            </Pin>
             <Pin Id="L4RbVi773txPKxsFEx8nmU" Name="BodyIndex Enabled" Kind="InputPin" />
             <Pin Id="HSmXlivrbkLMFd6XHNvJwi" Name="Skeleton Enabled" Kind="InputPin" />
-            <Pin Id="Fn7CHhZGvCULjLxiCMVAIi" Name="Enabled" Kind="InputPin" Bounds="344,447" />
+            <Pin Id="Fn7CHhZGvCULjLxiCMVAIi" Name="Enabled" Kind="InputPin" Bounds="344,447" DefaultValue="True">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+            </Pin>
             <Pin Id="TMBWZrYd0ADPsE5HPFZJ5M" Name="Output" Kind="OutputPin" />
             <Pin Id="ODA9j9csMyAPxF157gD0P5" Name="Is Open" Kind="OutputPin" />
           </Patch>
