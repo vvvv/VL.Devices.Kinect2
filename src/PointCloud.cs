@@ -1,6 +1,7 @@
-﻿using Microsoft.Kinect;
-using VL.Lib.Collections;
+﻿using System;
+using Microsoft.Kinect;
 using Xenko.Core.Mathematics;
+using VL.Lib.Collections;
 
 namespace VL.Devices.Kinect2
 {
