@@ -261,7 +261,7 @@
             </Pin>
             <Pin Id="EhmH7NhGHjvLQjy8jy85yQ" Name="Mouse" Kind="InputPin" />
             <Pin Id="PWLkK7PqBrUNRlhhcjbEiI" Name="Keyboard" Kind="InputPin" />
-            <Pin Id="Kqgo9Wvytf4LLm1haP8oRr" Name="Near Plane" Kind="InputPin">
+            <Pin Id="Kqgo9Wvytf4LLm1haP8oRr" Name="Near Plane" Kind="InputPin" DefaultValue="0.01">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Float32" />
               </p:TypeAnnotation>
@@ -489,34 +489,16 @@
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="666,578" Id="RNgTUvPSTlLPhnLF76upGq">
-            <p:NodeReference LastCategoryFullName="3D.Transform" LastSymbolSource="CoreLibBasics.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="OperationCallFlag" Name="Perspective" />
-              <CategoryReference Kind="Category" Name="Transform" NeedsToBeDirectParent="true">
-                <p:OuterCategoryReference Kind="Category" Name="3D" NeedsToBeDirectParent="true" />
-              </CategoryReference>
-            </p:NodeReference>
-            <Pin Id="SUvDdrEbDOTPSpeHaLyrdZ" Name="Input" Kind="InputPin" />
-            <Pin Id="SN5yQGjZKORO6sitE665Me" Name="FOV" Kind="InputPin" DefaultValue="0.07">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                <Choice Kind="TypeFlag" Name="Float32" />
-              </p:TypeAnnotation>
-            </Pin>
-            <Pin Id="P6jRGBxTuZkOS2A1vfpuuJ" Name="Aspect" Kind="InputPin" />
-            <Pin Id="ItEDqeNLKvCOT8Au8jNmE9" Name="Near Plane" Kind="InputPin" />
-            <Pin Id="H9qfw8EqvnpM14KyVUPr80" Name="Far Plane" Kind="InputPin" />
-            <Pin Id="ENH89JdYxWCNnSXa3aKaht" Name="Output" Kind="OutputPin" />
-          </Node>
-          <Node Bounds="386,628" Id="A7A1zh0eLXaOZ8Xkt0GEW1">
-            <p:NodeReference LastCategoryFullName="Math" LastSymbolSource="CoreLibBasics.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="OperationCallFlag" Name="*" />
-            </p:NodeReference>
-            <Pin Id="EOiAzk1UZk9L2dayawyMYt" Name="Input" Kind="InputPin" />
-            <Pin Id="L5c6mtVGC2zLwnYM3LJWen" Name="Input 2" Kind="InputPin" />
-            <Pin Id="VPnvKEv70L0PbIbtzj2lAJ" Name="Output" Kind="OutputPin" />
-          </Node>
+          <Pad Id="RKyB6gyDSlANS3CZHikaw8" Comment="Far Plane" Bounds="554,498,67,15" ShowValueBox="true" isIOBox="true" Value="100">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="KWchnje4JhsPNL2VSDt0Fh" Comment="Near Plane" Bounds="554,471,35,15" ShowValueBox="true" isIOBox="true" Value="0.01">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+          </Pad>
         </Canvas>
         <Patch Id="OBf4uhw6944MCYyTxqhgHw" Name="Create" />
         <Patch Id="NxXLTAkwOx1ORJkHfOqfie" Name="Update" />
@@ -552,9 +534,9 @@
         <Link Id="GiCQxbiUOfsLgGQIqczRnB" Ids="MAUrWEWOqdpNsvdl4fb5vo,O99RjLK74HNMdGQL2zOeh9" />
         <Link Id="OsgfBmImTwROxJvFarQgfu" Ids="VsHG3xpcqJbQSTaUjmKf7A,LMPWBlQCdVyNJNjLzb9f7k" />
         <Link Id="Hogq0CsjCLsPePTMrR9inq" Ids="GREr3W2ALZuMOhjFEKJkKo,I8QGQBXAiSUMRXVDN3YGcJ" />
-        <Link Id="I9J8p2yth8BLg6eS8RMIlY" Ids="FLqvpIkp7XNPaX4uyjDJuq,EOiAzk1UZk9L2dayawyMYt" />
-        <Link Id="U95PTr4FM1IPCZJFwVNeIq" Ids="VPnvKEv70L0PbIbtzj2lAJ,J96KJRah0LUNxpYHuAUyTm" />
-        <Link Id="PRPViRJ5ndEOqAA1EVNAAk" Ids="ENH89JdYxWCNnSXa3aKaht,L5c6mtVGC2zLwnYM3LJWen" />
+        <Link Id="HkoB0dCoCOYNv0JCjrpj6Q" Ids="RKyB6gyDSlANS3CZHikaw8,DaoK7F8Z8FLPvRgQYNBejf" />
+        <Link Id="I0bRpOyphD5N8HdGeb26rJ" Ids="Ez2Ed7yR053Otg3gyOOpFg,J96KJRah0LUNxpYHuAUyTm" />
+        <Link Id="Il66o0firA0N16dsE8MbKd" Ids="KWchnje4JhsPNL2VSDt0Fh,Kqgo9Wvytf4LLm1haP8oRr" />
       </Patch>
     </Node>
   </Patch>
