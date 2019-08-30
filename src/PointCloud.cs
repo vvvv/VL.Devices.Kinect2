@@ -1,7 +1,6 @@
 ﻿using Microsoft.Kinect;
-using SharpDX;
-using System;
 using VL.Lib.Collections;
+using Xenko.Core.Mathematics;
 
 namespace VL.Devices.Kinect2
 {
