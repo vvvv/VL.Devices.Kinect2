@@ -7,25 +7,30 @@ namespace VL.Devices.Kinect2
 {
     public static class PointCloud
     {
-        public static unsafe Spread<Vector3>GetPoints(DepthImage image, float scale, float zScale, int minZ, int maxZ)
+        public static unsafe Spread<Vector3>GetPoints(DepthImage image, int minZ, int maxZ, int decimation)
         {
             DepthFrame frame = image.frame;
-            var width = image.Info.Width;
-            var height = image.Info.Height;
-            SpreadBuilder<Vector3> sb = new SpreadBuilder<Vector3>((int) (width * height * scale));
+            var step = Math.Max(1, decimation+1);
+            var width = image.Info.Width / step;
+            var wRemainder = image.Info.Width % step;
+            var height = image.Info.Height / step;
+            var count = width * height;
+            SpreadBuilder<Vector3> sb = new SpreadBuilder<Vector3>(count);
             using (var buffer = frame.LockImageBuffer())
             {
                 ushort* ptr = (ushort*)buffer.UnderlyingBuffer.ToPointer();
-                int step = (int)(1 / scale);
-                for (int row = 0; row < image.Info.Height; row += step)
+                for (int row = 0; row < height; row++)
                 {
-                    for (int col = 0; col < image.Info.Width; col += step)
+                    var rowStart = ptr;
+                    for (int col = 0; col < width; col++)
                     {
                         ushort z = *ptr;
                         if(z > minZ && z< maxZ)
-                            sb.Add(new Vector3(col * scale, row * scale, z * zScale));
+                            sb.Add(new Vector3(col * step, row * step, z));
                         ptr += step;
                     }
+                    ptr += wRemainder;
+                    ptr += image.Info.Width * (step-1);
                 }
                 return sb.ToSpread();
             }

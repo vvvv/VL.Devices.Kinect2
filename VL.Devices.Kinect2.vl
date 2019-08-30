@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="LIEtYdrRy3kPqelydP6a1l" LanguageVersion="2019.1.0-0430-g543b5d5cc7" Version="0.128">
+<Document xmlns:p="property" Id="LIEtYdrRy3kPqelydP6a1l" LanguageVersion="2019.1.0-0618-g6e4914d739" Version="0.128">
   <NugetDependency Id="EEYSk9rCs8TLQ1HUJFqHly" Location="VL.CoreLib" Version="2019.1.0-249" />
   <Patch Id="OF6M52TF0g1MIvRz41ucGu">
     <Canvas Id="Ue7xuqlBZHlLeRL5dLjZsS" DefaultCategory="Devices.Kinect2" CanvasType="FullCategory">
@@ -4008,8 +4008,6 @@
           <Canvas Id="PCJv9s0FAQUQDCbyrm1nom" CanvasType="Group">
             <ControlPoint Id="ThomRRjMZtTLBzOTMoc355" Bounds="360,292" />
             <ControlPoint Id="S26Kvx8QEFeQJJOVDRK01S" Bounds="360,539" />
-            <ControlPoint Id="VyHdyP549OEMINlUFH13Of" Bounds="449,316" />
-            <ControlPoint Id="JWzTHz1yhAmNIifOKfJs7t" Bounds="525,316" />
             <Node Bounds="358,335,44,19" Id="Ua7J3ulUL5hM9dv94Y9YVg">
               <p:NodeReference LastCategoryFullName="Devices.Kinect2" LastSymbolSource="VL.Devices.Kinect2.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -4042,24 +4040,23 @@
                     <Choice Kind="OperationCallFlag" Name="ToPointCloud" />
                   </p:NodeReference>
                   <Pin Id="CLtmXFOfsvyPMcQfOIFcC3" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="JU1CTkC7phcLCc7u81MQKS" Name="Scale" Kind="InputPin" />
-                  <Pin Id="PetVPkxPwNRNWPmyOVU8jt" Name="Z Scale" Kind="InputPin" />
                   <Pin Id="J9K2vpr65LzOIwlEeztVJG" Name="Min Z" Kind="InputPin" />
                   <Pin Id="OMxS2AYmtkHO5zU7Dp8fxw" Name="Max Z" Kind="InputPin" />
+                  <Pin Id="A2wUrcDEFs3L0jMbMBtZm8" Name="Decimation" Kind="InputPin" />
                   <Pin Id="IrwARsHsvToMz4DeKFf7V0" Name="Result" Kind="OutputPin" />
                 </Node>
               </Patch>
             </Node>
-            <ControlPoint Id="Cn1TWCu3jgPLoBLFK7uNJA" Bounds="601,316" />
-            <ControlPoint Id="OpezCYqUNMyNsZreKBc8jJ" Bounds="670,316" />
+            <ControlPoint Id="Cn1TWCu3jgPLoBLFK7uNJA" Bounds="463,326" />
+            <ControlPoint Id="OpezCYqUNMyNsZreKBc8jJ" Bounds="532,326" />
+            <ControlPoint Id="GIOURMWC9FUNAjcxyPBwZt" Bounds="590,328" />
           </Canvas>
           <Patch Id="CFb3bMDseiKPokkK3hVv3M" Name="Create" />
           <Patch Id="Bsjz6Z1ip75OhAc0wEjCAn" Name="Update">
             <Pin Id="SKXvDnvQI7TLNlOOuJIOkX" Name="Input" Kind="InputPin" Bounds="282,402" />
-            <Pin Id="M51T334Ma3INObqIFYygIx" Name="Scale" Kind="InputPin" Bounds="484,312" />
-            <Pin Id="HnvShlSF6wvL5zO2XBPVIw" Name="Z Scale" Kind="InputPin" Bounds="550,309" />
             <Pin Id="TluWXDjSKZPPUtHkYWwrD7" Name="Min Z" Kind="InputPin" Bounds="601,316" />
             <Pin Id="UfOC4jiZtGkOBH3n0d3594" Name="Max Z" Kind="InputPin" Bounds="670,317" />
+            <Pin Id="Q4GwInXPEZQNKCnT22ppup" Name="Decimation" Kind="InputPin" Bounds="728,318" />
             <Pin Id="LNDcdTGvpkoPQ1mNtszNiV" Name="Output" Kind="OutputPin" Bounds="333,525" />
           </Patch>
           <ProcessDefinition Id="KAr5WCJybEiOzUrbXIysL5">
@@ -4068,8 +4065,6 @@
           </ProcessDefinition>
           <Link Id="HwSoCJkesDqOZUKALHYDzE" Ids="SKXvDnvQI7TLNlOOuJIOkX,ThomRRjMZtTLBzOTMoc355" IsHidden="true" />
           <Link Id="CZkNvkTF5njM3FNHxhFasn" Ids="S26Kvx8QEFeQJJOVDRK01S,LNDcdTGvpkoPQ1mNtszNiV" IsHidden="true" />
-          <Link Id="UaIe8tuH3aXLoOoAAwpqL2" Ids="M51T334Ma3INObqIFYygIx,VyHdyP549OEMINlUFH13Of" IsHidden="true" />
-          <Link Id="QVKqiNaL322OD3RzNVeUC8" Ids="HnvShlSF6wvL5zO2XBPVIw,JWzTHz1yhAmNIifOKfJs7t" IsHidden="true" />
           <Patch Id="PeEXxS9v1bQQA4547zhusu" Name="Dispose" />
           <Link Id="KEr5o2BpCwaLXoThB7FP1r" Ids="ThomRRjMZtTLBzOTMoc355,F86UJLTJt0uQaWIleRngvD" />
           <Link Id="Usv7TRbUuqyLpmFcQU5srM" Ids="Epadr07AyhKPbfHQUWYSii,M55bx1Hay4oMddeD3QDS7I" IsHidden="true" />
@@ -4077,13 +4072,13 @@
           <Link Id="KblxQAVmo56O2kGri3isSR" Ids="Uc8p07PP4gWOaI13SSzL8L,JJr5Ibo1bs5McRUzbcNx6y" />
           <Link Id="Ay19araq4arP0zhInqKxr7" Ids="M55bx1Hay4oMddeD3QDS7I,CLtmXFOfsvyPMcQfOIFcC3" />
           <Link Id="I55PKmooTCFMJ32vWywDkQ" Ids="IrwARsHsvToMz4DeKFf7V0,JRH26iEFenGOXzF8SGYdTf" />
-          <Link Id="PmFtPiUGrjQLMPYIMobCEn" Ids="VyHdyP549OEMINlUFH13Of,JU1CTkC7phcLCc7u81MQKS" />
-          <Link Id="ExdGLuXX94ON9dAfPgXSIF" Ids="JWzTHz1yhAmNIifOKfJs7t,PetVPkxPwNRNWPmyOVU8jt" />
           <Link Id="IzXuMbxlxEAPTLJhiTkSMf" Ids="L238qWwljZVNti1039j3zF,S26Kvx8QEFeQJJOVDRK01S" />
           <Link Id="Uq9c9C7gYuPNnVm1ETFg7q" Ids="Cn1TWCu3jgPLoBLFK7uNJA,J9K2vpr65LzOIwlEeztVJG" />
           <Link Id="MW0WRLKc3HXMggeL6J6w4q" Ids="TluWXDjSKZPPUtHkYWwrD7,Cn1TWCu3jgPLoBLFK7uNJA" IsHidden="true" />
           <Link Id="FnNYdY7b8JOPYrFcTaOWkf" Ids="OpezCYqUNMyNsZreKBc8jJ,OMxS2AYmtkHO5zU7Dp8fxw" />
           <Link Id="OI5nBWZEAogMGBDRKw7OWL" Ids="UfOC4jiZtGkOBH3n0d3594,OpezCYqUNMyNsZreKBc8jJ" IsHidden="true" />
+          <Link Id="AEk4x2ZKxobMkUWlAQEYJn" Ids="GIOURMWC9FUNAjcxyPBwZt,A2wUrcDEFs3L0jMbMBtZm8" />
+          <Link Id="AaeGNqQtJGQPZg4mFjDlLV" Ids="Q4GwInXPEZQNKCnT22ppup,GIOURMWC9FUNAjcxyPBwZt" IsHidden="true" />
         </Patch>
       </Node>
       <!--
@@ -4115,24 +4110,21 @@
                 <Choice Kind="ProcessAppFlag" Name="PointCloud (Reactive)" />
               </p:NodeReference>
               <Pin Id="Hw6tDRw1wdOLkJQVQO90xr" Name="Input" Kind="InputPin" />
-              <Pin Id="SYmUJgB35HTNNF8LM8BEZH" Name="Scale" Kind="InputPin" />
-              <Pin Id="Lp12D5sQf1VM3pXj2gkA0K" Name="Z Scale" Kind="InputPin" />
               <Pin Id="Qz0AudtqeBzOQClRNWWcAA" Name="Min Z" Kind="InputPin" />
               <Pin Id="KKZSc68SzKaM5a2ZDmlBI2" Name="Max Z" Kind="InputPin" />
+              <Pin Id="VLnQDSwKb0UMLu2DXXGDg1" Name="Decimation" Kind="InputPin" />
               <Pin Id="OYF1iPv0MfeObtBsMmbYwd" Name="Output" Kind="OutputPin" />
             </Node>
-            <ControlPoint Id="VA8VcGLYkpZM2C4RrOaAAV" Bounds="492,280" />
-            <ControlPoint Id="HTpB5CQGr20NOBah3RtO6F" Bounds="557,280" />
-            <ControlPoint Id="QFjyjFVuQdHOvYakpoNcZS" Bounds="622,280" />
-            <ControlPoint Id="TlDhNUySG7aOOFlb36dcdf" Bounds="688,282" />
+            <ControlPoint Id="QFjyjFVuQdHOvYakpoNcZS" Bounds="494,281" />
+            <ControlPoint Id="TlDhNUySG7aOOFlb36dcdf" Bounds="539,281" />
+            <ControlPoint Id="GAw6aluvviBP8LjNZO47Bx" Bounds="615,281" />
           </Canvas>
           <Patch Id="VMHuakIdWzCOa4f99s5swo" Name="Create" />
           <Patch Id="KdGbYiwf7MxN1WS9a0tk1J" Name="Update">
             <Pin Id="Cd0p7TPaTISMP3qEvhHD2M" Name="Input" Kind="InputPin" Bounds="282,402" />
-            <Pin Id="SZ6bSR6p36hNcjkaWYSe2a" Name="Scale" Kind="InputPin" Bounds="492,284" />
-            <Pin Id="IjMhmbVEArTO7K6aYqrUkQ" Name="Z Scale" Kind="InputPin" Bounds="556,288" />
             <Pin Id="CgDUw3kn3iHPnFqA64PV3C" Name="Min Z" Kind="InputPin" Bounds="622,280" />
             <Pin Id="LV6tRCXgi5HMTx6tKw0vOP" Name="Max Z" Kind="InputPin" Bounds="688,282" />
+            <Pin Id="UsrKxqXdTapLJNacfplqDE" Name="Decimation" Kind="InputPin" Bounds="615,280" />
             <Pin Id="IaxwWAUGG8SOX1bfo2HvlG" Name="Output" Kind="OutputPin" Bounds="333,525" />
           </Patch>
           <ProcessDefinition Id="EG0QimdZYhpQYMqsSxjKBb">
@@ -4144,14 +4136,12 @@
           <Link Id="Es0HQAdxgtfPvkCoITheXt" Ids="DuIBWhTEnLNMa6BLvSZWm3,Hw6tDRw1wdOLkJQVQO90xr" />
           <Link Id="KKCh1ZMnIEFOQ75zBx1qEA" Ids="OYF1iPv0MfeObtBsMmbYwd,TWVhYvUOxpgOdHnXEfpDmD" />
           <Link Id="LQql6ad9dEsNqSwtZN2eeT" Ids="C2gB28U0IlWQKX9Qf42yId,Gak7SZJ8zUQLRH9mRLEFYe" />
-          <Link Id="E7S9mFvCG1fNYtEH5Sw8pK" Ids="VA8VcGLYkpZM2C4RrOaAAV,SYmUJgB35HTNNF8LM8BEZH" />
-          <Link Id="NTiNWC1krnzMWGhBRizD3l" Ids="SZ6bSR6p36hNcjkaWYSe2a,VA8VcGLYkpZM2C4RrOaAAV" IsHidden="true" />
-          <Link Id="P61iltpOxPaMEx68hPxJSv" Ids="HTpB5CQGr20NOBah3RtO6F,Lp12D5sQf1VM3pXj2gkA0K" />
-          <Link Id="Q8Bq4SGPNWeLMAWTnJCi0F" Ids="IjMhmbVEArTO7K6aYqrUkQ,HTpB5CQGr20NOBah3RtO6F" IsHidden="true" />
           <Link Id="P8Zp0m4AX0RO5Mvytfw8gn" Ids="QFjyjFVuQdHOvYakpoNcZS,Qz0AudtqeBzOQClRNWWcAA" />
           <Link Id="QlkShya5TIzLt3MrPSxPty" Ids="CgDUw3kn3iHPnFqA64PV3C,QFjyjFVuQdHOvYakpoNcZS" IsHidden="true" />
           <Link Id="UHM8rb3ZX5QLOtYM3xsrq8" Ids="TlDhNUySG7aOOFlb36dcdf,KKZSc68SzKaM5a2ZDmlBI2" />
           <Link Id="SlFHgW3NsgJQJFvXzI2hmo" Ids="LV6tRCXgi5HMTx6tKw0vOP,TlDhNUySG7aOOFlb36dcdf" IsHidden="true" />
+          <Link Id="JVHzVlLbYpHPgGKRsPRsYx" Ids="GAw6aluvviBP8LjNZO47Bx,VLnQDSwKb0UMLu2DXXGDg1" />
+          <Link Id="DSosKrfoOBAOpdIaJRV9xF" Ids="UsrKxqXdTapLJNacfplqDE,GAw6aluvviBP8LjNZO47Bx" IsHidden="true" />
         </Patch>
       </Node>
     </Canvas>

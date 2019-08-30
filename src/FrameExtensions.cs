@@ -23,7 +23,7 @@ namespace VL.Devices.Kinect2
 
         public static ColorDepthImage ToColorDepthImage(this DepthFrame frame, bool isRaw, bool relativeLookup) => new ColorDepthImage(frame, isRaw, relativeLookup);
 
-        public static Spread<Vector3> ToPointCloud(this DepthImage image, float scale, float zScale, int minZ, int maxZ) => PointCloud.GetPoints(image, scale, zScale, minZ, maxZ);
+        public static Spread<Vector3> ToPointCloud(this DepthImage image, int minZ, int maxZ, int decimation) => PointCloud.GetPoints(image, minZ, maxZ, decimation);
 
         public static ImageInfo ToImageInfo(this FrameDescription frameDescription, ColorImageFormat colorImageFormat)
         {
