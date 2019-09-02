@@ -307,7 +307,7 @@
             <Pin Id="Bj8J5McLfIuP1gGM7XOr3k" Name="Renderer Hovered" Kind="OutputPin" />
             <Pin Id="FGpcFSqIOG6LYuFXxZv54b" Name="Idle" Kind="OutputPin" />
           </Node>
-          <Pad Id="Kszq8wt0umkMyvxQqjuveG" Comment="Initial Distance" Bounds="346,435,68,15" ShowValueBox="true" isIOBox="true" Value="500">
+          <Pad Id="Kszq8wt0umkMyvxQqjuveG" Comment="Initial Distance" Bounds="346,435,68,15" ShowValueBox="true" isIOBox="true" Value="150">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
@@ -340,7 +340,7 @@
             <Pin Id="LHhVDC2ZFPANMhHkF4kdEC" Name="Output Maximum" Kind="InputPin" />
             <Pin Id="Rr2vfvlXqTOMJcUJUjTD9Z" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="KSnjLPhPNEfOa2QXqcuGDp" Comment="Pan Range" Bounds="388,337,35,15" ShowValueBox="true" isIOBox="true" Value="0.09999999">
+          <Pad Id="KSnjLPhPNEfOa2QXqcuGDp" Comment="Pan Range" Bounds="388,337,35,15" ShowValueBox="true" isIOBox="true" Value="0.05">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
@@ -420,7 +420,7 @@
             <Pin Id="BiXMuHV9pTHMp7MDWSY7x3" Name="ClientBounds" Kind="OutputPin" />
             <Pin Id="Kj8kKicnQd4NN7yUzba7KC" Name="Render Time" Kind="OutputPin" />
           </Node>
-          <Pad Id="EzLjjMTDsXvMO0o5MiIWmy" Comment="" Bounds="270,459,46,43" ShowValueBox="true" isIOBox="true" Value="128, 106, -26">
+          <Pad Id="EzLjjMTDsXvMO0o5MiIWmy" Comment="" Bounds="270,459,46,43" ShowValueBox="true" isIOBox="true" Value="128, 212, 250">
             <p:TypeAnnotation LastCategoryFullName="3D" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Vector3" />
             </p:TypeAnnotation>
