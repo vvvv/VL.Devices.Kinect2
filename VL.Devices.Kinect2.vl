@@ -5373,20 +5373,20 @@
                 </Node>
               </Patch>
             </Node>
-            <ControlPoint Id="Cn1TWCu3jgPLoBLFK7uNJA" Bounds="463,326" />
-            <ControlPoint Id="OpezCYqUNMyNsZreKBc8jJ" Bounds="532,326" />
-            <ControlPoint Id="GIOURMWC9FUNAjcxyPBwZt" Bounds="590,328" />
+            <ControlPoint Id="Cn1TWCu3jgPLoBLFK7uNJA" Bounds="463,292" />
+            <ControlPoint Id="OpezCYqUNMyNsZreKBc8jJ" Bounds="546,292" />
+            <ControlPoint Id="GIOURMWC9FUNAjcxyPBwZt" Bounds="639,292" />
           </Canvas>
           <Patch Id="CFb3bMDseiKPokkK3hVv3M" Name="Create" />
           <Patch Id="Bsjz6Z1ip75OhAc0wEjCAn" Name="Update">
             <Pin Id="SKXvDnvQI7TLNlOOuJIOkX" Name="Input" Kind="InputPin" Bounds="282,402" />
-            <Pin Id="TluWXDjSKZPPUtHkYWwrD7" Name="Min Z" Kind="InputPin" Bounds="601,316" />
-            <Pin Id="UfOC4jiZtGkOBH3n0d3594" Name="Max Z" Kind="InputPin" Bounds="670,317" DefaultValue="8000">
+            <Pin Id="TluWXDjSKZPPUtHkYWwrD7" Name="Minimum Z" Kind="InputPin" Bounds="601,316" />
+            <Pin Id="UfOC4jiZtGkOBH3n0d3594" Name="Maximum Z" Kind="InputPin" Bounds="670,317" DefaultValue="8">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                <Choice Kind="TypeFlag" Name="Integer32" />
+                <Choice Kind="TypeFlag" Name="Float32" />
               </p:TypeAnnotation>
             </Pin>
-            <Pin Id="Q4GwInXPEZQNKCnT22ppup" Name="Decimation" Kind="InputPin" Bounds="728,318" DefaultValue="1" Summary="0 means no decimation (ie. original point count), 1 leaves out every second point, 2 leaves out every second and third points..">
+            <Pin Id="Q4GwInXPEZQNKCnT22ppup" Name="Decimation" Kind="InputPin" Bounds="728,318" DefaultValue="2" Summary="0 means no decimation (ie. original point count), 1 leaves out every second point, 2 leaves out every second and third points, and so on">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Integer32" />
               </p:TypeAnnotation>
@@ -5426,7 +5426,7 @@
         </p:NodeReference>
         <Patch Id="HzGyeaZ0KMJPRpJXjE3rTX">
           <Canvas Id="U6xg91D0hGnP9U6PvWxlnz" CanvasType="Group">
-            <ControlPoint Id="DuIBWhTEnLNMa6BLvSZWm3" Bounds="433,274" />
+            <ControlPoint Id="DuIBWhTEnLNMa6BLvSZWm3" Bounds="433,272" />
             <ControlPoint Id="Gak7SZJ8zUQLRH9mRLEFYe" Bounds="433,428" />
             <Node Bounds="431,366,-7,19" Id="QB4TOYieiGfNYLHdaFLptg">
               <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
@@ -5444,29 +5444,21 @@
                 <Choice Kind="ProcessAppFlag" Name="PointCloud (Reactive)" />
               </p:NodeReference>
               <Pin Id="Hw6tDRw1wdOLkJQVQO90xr" Name="Input" Kind="InputPin" />
-              <Pin Id="Qz0AudtqeBzOQClRNWWcAA" Name="Min Z" Kind="InputPin" />
-              <Pin Id="KKZSc68SzKaM5a2ZDmlBI2" Name="Max Z" Kind="InputPin" />
+              <Pin Id="Qz0AudtqeBzOQClRNWWcAA" Name="Minimum Z" Kind="InputPin" />
+              <Pin Id="KKZSc68SzKaM5a2ZDmlBI2" Name="Maximum Z" Kind="InputPin" />
               <Pin Id="VLnQDSwKb0UMLu2DXXGDg1" Name="Decimation" Kind="InputPin" />
               <Pin Id="OYF1iPv0MfeObtBsMmbYwd" Name="Output" Kind="OutputPin" />
             </Node>
-            <ControlPoint Id="QFjyjFVuQdHOvYakpoNcZS" Bounds="494,274" />
-            <ControlPoint Id="TlDhNUySG7aOOFlb36dcdf" Bounds="548,274" />
-            <ControlPoint Id="GAw6aluvviBP8LjNZO47Bx" Bounds="607,274" />
+            <ControlPoint Id="QFjyjFVuQdHOvYakpoNcZS" Bounds="494,272" />
+            <ControlPoint Id="TlDhNUySG7aOOFlb36dcdf" Bounds="570,272" />
+            <ControlPoint Id="GAw6aluvviBP8LjNZO47Bx" Bounds="648,272" />
           </Canvas>
           <Patch Id="VMHuakIdWzCOa4f99s5swo" Name="Create" />
           <Patch Id="KdGbYiwf7MxN1WS9a0tk1J" Name="Update">
             <Pin Id="Cd0p7TPaTISMP3qEvhHD2M" Name="Input" Kind="InputPin" Bounds="282,402" />
-            <Pin Id="CgDUw3kn3iHPnFqA64PV3C" Name="Min Z" Kind="InputPin" Bounds="622,280" />
-            <Pin Id="LV6tRCXgi5HMTx6tKw0vOP" Name="Max Z" Kind="InputPin" Bounds="688,282" DefaultValue="8000">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                <Choice Kind="TypeFlag" Name="Integer32" />
-              </p:TypeAnnotation>
-            </Pin>
-            <Pin Id="UsrKxqXdTapLJNacfplqDE" Name="Decimation" Kind="InputPin" Bounds="615,280" DefaultValue="1" Summary="0 means no decimation (ie. original point count), 1 leaves out every second point, 2 leaves out every second and third points..">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                <Choice Kind="TypeFlag" Name="Integer32" />
-              </p:TypeAnnotation>
-            </Pin>
+            <Pin Id="CgDUw3kn3iHPnFqA64PV3C" Name="Minimum Z" Kind="InputPin" Bounds="622,280" />
+            <Pin Id="LV6tRCXgi5HMTx6tKw0vOP" Name="Maximum Z" Kind="InputPin" Bounds="688,282" DefaultValue="3" />
+            <Pin Id="UsrKxqXdTapLJNacfplqDE" Name="Decimation" Kind="InputPin" Bounds="615,280" DefaultValue="1" Summary="0 means no decimation (ie. original point count), 1 leaves out every second point, 2 leaves out every second and third points, and so on." />
             <Pin Id="IaxwWAUGG8SOX1bfo2HvlG" Name="Output" Kind="OutputPin" Bounds="333,525" />
           </Patch>
           <ProcessDefinition Id="EG0QimdZYhpQYMqsSxjKBb">
