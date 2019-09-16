@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="LIEtYdrRy3kPqelydP6a1l" LanguageVersion="2019.1.0-0696-g6db0561319" Version="0.128">
+<Document xmlns:p="property" Id="LIEtYdrRy3kPqelydP6a1l" LanguageVersion="2019.1.0-0701-g2f74b497b0" Version="0.128">
   <NugetDependency Id="EEYSk9rCs8TLQ1HUJFqHly" Location="VL.CoreLib" Version="2019.1.0-249" />
   <Patch Id="OF6M52TF0g1MIvRz41ucGu">
     <Canvas Id="Ue7xuqlBZHlLeRL5dLjZsS" DefaultCategory="Devices.Kinect2" CanvasType="FullCategory">
@@ -5326,7 +5326,7 @@
     ************************ PointCloud (Reactive) ************************
 
 -->
-      <Node Name="PointCloud (Reactive)" Bounds="639,977" Id="KOikpMHA3h2OGO9OYWqycl" Summary="Returns an Observable of Kinect2 Depth image frames." Remarks="Returned image is single channel 16-bit Unsigned Integer.">
+      <Node Name="PointCloud (Reactive)" Bounds="639,977" Id="KOikpMHA3h2OGO9OYWqycl" Summary="Returns an Observable of spread of points representing the viewed scene" Remarks="For better drawing performance use Decimation to reduce the number of points returned">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -5381,8 +5381,16 @@
           <Patch Id="Bsjz6Z1ip75OhAc0wEjCAn" Name="Update">
             <Pin Id="SKXvDnvQI7TLNlOOuJIOkX" Name="Input" Kind="InputPin" Bounds="282,402" />
             <Pin Id="TluWXDjSKZPPUtHkYWwrD7" Name="Min Z" Kind="InputPin" Bounds="601,316" />
-            <Pin Id="UfOC4jiZtGkOBH3n0d3594" Name="Max Z" Kind="InputPin" Bounds="670,317" />
-            <Pin Id="Q4GwInXPEZQNKCnT22ppup" Name="Decimation" Kind="InputPin" Bounds="728,318" />
+            <Pin Id="UfOC4jiZtGkOBH3n0d3594" Name="Max Z" Kind="InputPin" Bounds="670,317" DefaultValue="8000">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Integer32" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="Q4GwInXPEZQNKCnT22ppup" Name="Decimation" Kind="InputPin" Bounds="728,318" DefaultValue="1" Summary="0 means no decimation (ie. original point count), 1 leaves out every second point, 2 leaves out every second and third points..">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Integer32" />
+              </p:TypeAnnotation>
+            </Pin>
             <Pin Id="LNDcdTGvpkoPQ1mNtszNiV" Name="Output" Kind="OutputPin" Bounds="333,525" />
           </Patch>
           <ProcessDefinition Id="KAr5WCJybEiOzUrbXIysL5">
@@ -5412,13 +5420,13 @@
     ************************ PointCloud ************************
 
 -->
-      <Node Name="PointCloud" Bounds="486,977" Id="CYtTo3Y2qdtMgreMhuE2fL" Summary="Returns skeleton data for each tracked user.">
+      <Node Name="PointCloud" Bounds="486,977" Id="CYtTo3Y2qdtMgreMhuE2fL" Summary="Returns a spread of points representing the viewed scene" Remarks="For better drawing performance use Decimation to reduce the number of points returned">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
         <Patch Id="HzGyeaZ0KMJPRpJXjE3rTX">
           <Canvas Id="U6xg91D0hGnP9U6PvWxlnz" CanvasType="Group">
-            <ControlPoint Id="DuIBWhTEnLNMa6BLvSZWm3" Bounds="433,280" />
+            <ControlPoint Id="DuIBWhTEnLNMa6BLvSZWm3" Bounds="433,274" />
             <ControlPoint Id="Gak7SZJ8zUQLRH9mRLEFYe" Bounds="433,428" />
             <Node Bounds="431,366,-7,19" Id="QB4TOYieiGfNYLHdaFLptg">
               <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
@@ -5441,16 +5449,24 @@
               <Pin Id="VLnQDSwKb0UMLu2DXXGDg1" Name="Decimation" Kind="InputPin" />
               <Pin Id="OYF1iPv0MfeObtBsMmbYwd" Name="Output" Kind="OutputPin" />
             </Node>
-            <ControlPoint Id="QFjyjFVuQdHOvYakpoNcZS" Bounds="494,281" />
-            <ControlPoint Id="TlDhNUySG7aOOFlb36dcdf" Bounds="539,281" />
-            <ControlPoint Id="GAw6aluvviBP8LjNZO47Bx" Bounds="615,281" />
+            <ControlPoint Id="QFjyjFVuQdHOvYakpoNcZS" Bounds="494,274" />
+            <ControlPoint Id="TlDhNUySG7aOOFlb36dcdf" Bounds="548,274" />
+            <ControlPoint Id="GAw6aluvviBP8LjNZO47Bx" Bounds="607,274" />
           </Canvas>
           <Patch Id="VMHuakIdWzCOa4f99s5swo" Name="Create" />
           <Patch Id="KdGbYiwf7MxN1WS9a0tk1J" Name="Update">
             <Pin Id="Cd0p7TPaTISMP3qEvhHD2M" Name="Input" Kind="InputPin" Bounds="282,402" />
             <Pin Id="CgDUw3kn3iHPnFqA64PV3C" Name="Min Z" Kind="InputPin" Bounds="622,280" />
-            <Pin Id="LV6tRCXgi5HMTx6tKw0vOP" Name="Max Z" Kind="InputPin" Bounds="688,282" />
-            <Pin Id="UsrKxqXdTapLJNacfplqDE" Name="Decimation" Kind="InputPin" Bounds="615,280" />
+            <Pin Id="LV6tRCXgi5HMTx6tKw0vOP" Name="Max Z" Kind="InputPin" Bounds="688,282" DefaultValue="8000">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Integer32" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="UsrKxqXdTapLJNacfplqDE" Name="Decimation" Kind="InputPin" Bounds="615,280" DefaultValue="1" Summary="0 means no decimation (ie. original point count), 1 leaves out every second point, 2 leaves out every second and third points..">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Integer32" />
+              </p:TypeAnnotation>
+            </Pin>
             <Pin Id="IaxwWAUGG8SOX1bfo2HvlG" Name="Output" Kind="OutputPin" Bounds="333,525" />
           </Patch>
           <ProcessDefinition Id="EG0QimdZYhpQYMqsSxjKBb">
@@ -5483,7 +5499,7 @@
         <Patch Id="VmXCiHk39VYLx3of1daBum">
           <Canvas Id="H3AoSOzmHzXPFML0MknQTe" CanvasType="Group">
             <ControlPoint Id="EwhwyYUG70tOL7hVp1jeTL" Bounds="431,316" />
-            <Pad Id="FZEE759i210NB2nEmnYqBO" Comment="" Bounds="811,372,37,387" ShowValueBox="true" isIOBox="true" Value="0, 1, 20, 2, 20, 4, 5, 6, 7, 7, 20, 8, 9, 10, 11, 11, 0, 12, 13, 14, 0, 16, 17, 18">
+            <Pad Id="FZEE759i210NB2nEmnYqBO" Comment="" Bounds="812,275,37,387" ShowValueBox="true" isIOBox="true" Value="0, 1, 20, 2, 20, 4, 5, 6, 7, 7, 20, 8, 9, 10, 11, 11, 0, 12, 13, 14, 0, 16, 17, 18">
               <p:TypeAnnotation LastCategoryFullName="Collections" LastSymbolSource="VL.Collections.vl">
                 <Choice Kind="TypeFlag" Name="Spread" />
                 <p:TypeArguments>
@@ -5497,7 +5513,7 @@
                 <p:showentryindex p:Type="Boolean">true</p:showentryindex>
               </p:ValueBoxSettings>
             </Pad>
-            <Pad Id="Pc0aDvxGpDoLLv41r3LdTO" Comment="" Bounds="880,372,37,387" ShowValueBox="true" isIOBox="true" Value="1, 20, 2, 3, 4, 5, 6, 7, 21, 22, 8, 9, 10, 11, 23, 24, 12, 13, 14, 15, 16, 17, 18, 19">
+            <Pad Id="Pc0aDvxGpDoLLv41r3LdTO" Comment="" Bounds="881,275,37,387" ShowValueBox="true" isIOBox="true" Value="1, 20, 2, 3, 4, 5, 6, 7, 21, 22, 8, 9, 10, 11, 23, 24, 12, 13, 14, 15, 16, 17, 18, 19">
               <p:TypeAnnotation LastCategoryFullName="Collections" LastSymbolSource="VL.Collections.vl">
                 <Choice Kind="TypeFlag" Name="Spread" />
                 <p:TypeArguments>
@@ -5511,7 +5527,7 @@
               </p:ValueBoxSettings>
             </Pad>
             <ControlPoint Id="HZ6fr5f72JEMzPW2H7r7A8" Bounds="522,617" />
-            <Node Bounds="678,419,105,19" Id="VcLxfZqtZrfQGEoXbvC4jI">
+            <Node Bounds="691,450,105,19" Id="VcLxfZqtZrfQGEoXbvC4jI">
               <p:NodeReference LastCategoryFullName="Graphics.Skia.Paint" LastSymbolSource="VL.Skia.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Stroke" />
@@ -5612,10 +5628,20 @@
               <Pin Id="B3e4RjvCRd5LqXW3Lr0Z6I" Name="Enabled" Kind="InputPin" />
               <Pin Id="KudRp5K2IfcNR3Mxi8sUd1" Name="Output" Kind="OutputPin" />
             </Node>
+            <ControlPoint Id="QRwCAzFwU3zNK2FXqbFlwZ" Bounds="757,550" />
+            <ControlPoint Id="LmHXh3aWkksMiOtaClZMC1" Bounds="712,406" />
+            <ControlPoint Id="FXEVpIhA4nsMaV54xCxr4z" Bounds="731,428" />
           </Canvas>
           <Patch Id="SIUvUOmjewnOFzMSDQQKBu" Name="Create" />
           <Patch Id="K96BIJtC1aMLHLZKrOOgUY" Name="Update">
             <Pin Id="A6ScC9GmHx7Nia1vYwFzPX" Name="Input" Kind="InputPin" Bounds="429,246" />
+            <Pin Id="AAjlSU6rDzXLpOZARzTJuh" Name="Enabled" Kind="InputPin" Bounds="762,554" />
+            <Pin Id="KZq6Qk4SRvvNp31O7B01TR" Name="Color" Kind="InputPin" Bounds="698,359" />
+            <Pin Id="SPIh9vBIfptM5KbSiBmLAi" Name="Stroke Width" Kind="InputPin" Bounds="717,382" DefaultValue="15">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Float32" />
+              </p:TypeAnnotation>
+            </Pin>
             <Pin Id="UOjMpP6UQLFPjTl9q2pnCh" Name="Output" Kind="OutputPin" Bounds="523,678" />
           </Patch>
           <ProcessDefinition Id="MnJWaMp4AzePCQLE2DpdYv">
@@ -5637,6 +5663,12 @@
           <Link Id="T8h8qzfsACUMMo9k9nCUVE" Ids="B97RrgNcAIhLpr9QAY7WKu,Upx0mjSHA2wM5HgTxjmgOQ" />
           <Link Id="PqbmUX4S7V7LuoyWEDux66" Ids="KudRp5K2IfcNR3Mxi8sUd1,HZ6fr5f72JEMzPW2H7r7A8" />
           <Link Id="DtGV4B6LZFBN3XUMbZBIJA" Ids="EwhwyYUG70tOL7hVp1jeTL,ELv3McbpxloNXKZQQTZ8ni" />
+          <Link Id="NyIo9j6a1PnMtLf7tTtKdH" Ids="QRwCAzFwU3zNK2FXqbFlwZ,B3e4RjvCRd5LqXW3Lr0Z6I" />
+          <Link Id="Sfeubhx9powNFhqyUruszo" Ids="AAjlSU6rDzXLpOZARzTJuh,QRwCAzFwU3zNK2FXqbFlwZ" IsHidden="true" />
+          <Link Id="EHfhK1Tl3xoQRTXjSyKh0Y" Ids="LmHXh3aWkksMiOtaClZMC1,Tjw5ETZXHVeOBg1Y4wllw9" />
+          <Link Id="CCJumLbOqVvNkdSY6Bnp1u" Ids="KZq6Qk4SRvvNp31O7B01TR,LmHXh3aWkksMiOtaClZMC1" IsHidden="true" />
+          <Link Id="LYBi1LI0rw6PWkcqUMIuYC" Ids="FXEVpIhA4nsMaV54xCxr4z,I7Ub4tbY2wBLiSzO8rpVsj" />
+          <Link Id="AC4fcriaSOpLATGFetZBbI" Ids="SPIh9vBIfptM5KbSiBmLAi,FXEVpIhA4nsMaV54xCxr4z" IsHidden="true" />
         </Patch>
       </Node>
       <!--
