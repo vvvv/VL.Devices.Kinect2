@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="UOWYOygckqsODlkddXkKiP" LanguageVersion="2019.1.0-0678-ge91618d0fd" Version="0.128">
+<Document xmlns:p="property" Id="UOWYOygckqsODlkddXkKiP" LanguageVersion="2019.1.0-0654-gaf14329ad1" Version="0.128">
   <NugetDependency Id="NkxBtTr8hOoNigSpbcTFdR" Location="VL.CoreLib" Version="2019.1.0-281" />
   <Patch Id="APFBYc3ryadNMXCUycaQDK">
     <Canvas Id="VZxxHWhqYjuLlXlvDdCXIG" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
@@ -215,7 +215,6 @@
               </CategoryReference>
             </p:NodeReference>
             <Pin Id="SR2W0EgVGFjOX319XPX1jW" Name="Input" Kind="InputPin" />
-            <Pin Id="FHUBhYsaVRfOdTsvemWWVh" Name="Discard Higher Bits" Kind="InputPin" />
             <Pin Id="LLc8mJRA1MXN0P6QgS2cFZ" Name="Result" Kind="OutputPin" />
           </Node>
           <Node Bounds="159,848,105,19" Id="SlNziPtwVOYPohlhKxRb5h">
@@ -224,7 +223,7 @@
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
               <CategoryReference Kind="Category" Name="Skia" NeedsToBeDirectParent="true" />
             </p:NodeReference>
-            <Pin Id="OmaqGOTqnxyL5KmyUxvhyO" Name="Bounds" Kind="InputPin" DefaultValue="-32000, -32000, 160, 28">
+            <Pin Id="OmaqGOTqnxyL5KmyUxvhyO" Name="Bounds" Kind="InputPin" DefaultValue="880, 511, 160, 39">
               <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>
@@ -417,8 +416,6 @@
         <Link Id="QS0x6J2iODmOXze6lsEuft" Ids="P4jsA30KtKXO6Fdwi1tER6,G6ISUZUgXcALcXO8YpOd3b" />
         <Link Id="BdVwqaW1MAdLHFug7lVKJh" Ids="AsIkywuA1ATMzZK1W1S6Mg,GAKIuv4XsVYMOCjRw7pqlK" />
         <Link Id="KsKsfKQtjXYLp2bRf6rVn7" Ids="C1ei0PSsWQtMLBSMuD67fk,A6KWQbev5R8QNoyuJhBNfE" />
-        <Link Id="JMM8yPGbtipLT3ZmPmwUCm" Ids="UmdkXaF3EVLN3qEsQnC83I,C1ei0PSsWQtMLBSMuD67fk" />
-        <Link Id="VCAWCZSPXL1QVmCusuXDF5" Ids="UmdkXaF3EVLN3qEsQnC83I,UqYdiDpwHjIMEa3KmhVANh" />
         <Link Id="LFIFHPecM4rLdx8Z4NlFRP" Ids="IHsZUErhamENmg2JoHGgkn,DlkH6yfY6rAQGDhkKUMptK" />
       </Patch>
     </Node>
