@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="UOWYOygckqsODlkddXkKiP" LanguageVersion="2019.1.0-0425-gef454d89b2" Version="0.128">
+<Document xmlns:p="property" Id="UOWYOygckqsODlkddXkKiP" LanguageVersion="2019.1.0-0654-gaf14329ad1" Version="0.128">
   <NugetDependency Id="NkxBtTr8hOoNigSpbcTFdR" Location="VL.CoreLib" Version="2019.1.0-281" />
   <Patch Id="APFBYc3ryadNMXCUycaQDK">
     <Canvas Id="VZxxHWhqYjuLlXlvDdCXIG" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
@@ -166,16 +166,11 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="178,166,325,19" Id="GGwrluhEy4HLWCup9lTtAJ">
+          <Node Bounds="178,166,-62,19" Id="GGwrluhEy4HLWCup9lTtAJ">
             <p:NodeReference LastCategoryFullName="Devices.Kinect2" LastSymbolSource="VL.Devices.Kinect2.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Kinect2" />
             </p:NodeReference>
-            <Pin Id="Vgol8SnpoBCNvOOh2E4vB6" Name="RGB Enabled" Kind="InputPin" />
-            <Pin Id="UqV4mv3gxnHNf4PVvjEUKa" Name="Infrared Enabled" Kind="InputPin" />
-            <Pin Id="K9zUiWI0OSZLwqDbdeeILW" Name="Depth Enabled" Kind="InputPin" />
-            <Pin Id="DlkH6yfY6rAQGDhkKUMptK" Name="BodyIndex Enabled" Kind="InputPin" />
-            <Pin Id="JfBUqWzV6MzLICVTuwWSej" Name="Skeleton Enabled" Kind="InputPin" />
             <Pin Id="NJRSZmIwx1zOjgYeDqq8eI" Name="Enabled" Kind="InputPin" />
             <Pin Id="BnGMOdHqWH8M20FnmyD1EJ" Name="Output" Kind="StateOutputPin" />
             <Pin Id="SYbpd8Hn6gpNUzZaFBezQx" Name="Is Open" Kind="OutputPin" />
@@ -197,21 +192,6 @@
             <Pin Id="UmdkXaF3EVLN3qEsQnC83I" Name="Output" Kind="OutputPin" />
           </Node>
           <ControlPoint Id="AjzZ1cBvUEgP3ntEbEyyCd" Bounds="343,388" />
-          <Pad Id="FeZXBuwFlgdMLddm6a77zo" Comment="RGB Enabled" Bounds="181,75,35,35" ShowValueBox="true" isIOBox="true" Value="True">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-              <Choice Kind="TypeFlag" Name="Boolean" />
-            </p:TypeAnnotation>
-          </Pad>
-          <Pad Id="Gim5gKQEpjGLCJ6uN0CS82" Comment="Skeleton Enabled" Bounds="436,75,35,35" ShowValueBox="true" isIOBox="true" Value="True">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-              <Choice Kind="TypeFlag" Name="Boolean" />
-            </p:TypeAnnotation>
-          </Pad>
-          <Pad Id="MfFOHfsxpKYOF10FNizfbt" Comment="Enabled" Bounds="500,125,35,35" ShowValueBox="true" isIOBox="true" Value="True">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-              <Choice Kind="TypeFlag" Name="Boolean" />
-            </p:TypeAnnotation>
-          </Pad>
           <Node Bounds="179,356,125,19" Id="VaRIHNJkI8PQVNF7qVDy7n">
             <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers" LastSymbolSource="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -383,9 +363,6 @@
         <Link Id="VKmhfhVsyWcOOCM6rdGsrk" Ids="BnGMOdHqWH8M20FnmyD1EJ,N4CYZvcYuJJNfneEkrmfCe" />
         <Link Id="SjLjL4m71r7MbCdXtdMPQW" Ids="UmdkXaF3EVLN3qEsQnC83I,UqYdiDpwHjIMEa3KmhVANh" />
         <Link Id="ATWlL6Wwnb6MueVCpEACk8" Ids="UmdkXaF3EVLN3qEsQnC83I,AjzZ1cBvUEgP3ntEbEyyCd,C1ei0PSsWQtMLBSMuD67fk" />
-        <Link Id="FemtvNE3pfAOzIbe05RuPM" Ids="FeZXBuwFlgdMLddm6a77zo,Vgol8SnpoBCNvOOh2E4vB6" />
-        <Link Id="PoVcabNw5tMO9hRhaf7PgC" Ids="Gim5gKQEpjGLCJ6uN0CS82,JfBUqWzV6MzLICVTuwWSej" />
-        <Link Id="SvQEIb38OkpLvK9ZpBdXa5" Ids="MfFOHfsxpKYOF10FNizfbt,NJRSZmIwx1zOjgYeDqq8eI" />
         <Link Id="Q6LzL4rTpJjLXIuR3y0eOF" Ids="E6OIMrUFo1XPZWeU1fwj8m,SR2W0EgVGFjOX319XPX1jW" />
         <Link Id="GSrQ06pGFllQEZJZbwcUDx" Ids="LLc8mJRA1MXN0P6QgS2cFZ,GXQA8wPrtYpQdTMXvt1OTy" />
         <Link Id="Aj9O9imBcObNO2hLs455Q9" Ids="DENkouVblctLndqN4y3fvn,EP9UwFZqbJHN4b7VWzii60" />
