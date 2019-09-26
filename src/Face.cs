@@ -1,36 +1,20 @@
-﻿//------------------------------------------------------------------------------
-// <copyright file="MainWindow.xaml.cs" company="Microsoft">
-//     Copyright (c) Microsoft Corporation.  All rights reserved.
-// </copyright>
-//------------------------------------------------------------------------------
-using Microsoft.Kinect;
+﻿using Microsoft.Kinect;
 using Microsoft.Kinect.Face;
 using System;
-using System.ComponentModel;
+using System.Collections.Generic;
 using System.Reactive.Subjects;
-using System.Windows;
 
 namespace VL.Devices.Kinect2
 {
     /// <summary>
-    /// Interaction logic for MainWindow
+    /// Based off of the FaceBasics-WPF example that ships with Kinect SDK
     /// </summary>
     public class Face : IDisposable
     {
         /// <summary>
-        /// Face rotation display angle increment in degrees
-        /// </summary>
-        private const double FaceRotationIncrementInDegrees = 5.0;
-
-        /// <summary>
         /// Active Kinect sensor
         /// </summary>
         private KinectSensor kinectSensor = null;
-
-        /// <summary>
-        /// Coordinate mapper to map one type of point to another
-        /// </summary>
-        private CoordinateMapper coordinateMapper = null;
 
         /// <summary>
         /// Reader for body frames
@@ -72,9 +56,11 @@ namespace VL.Devices.Kinect2
         /// </summary>
         private int displayHeight;
 
-        public IObservable<FaceFrameResult[]> Faces { get { return faces; } }
+        public IObservable<List<FaceFrameResult>> Faces { get { return faces; } }
 
-        private Subject<FaceFrameResult[]> faces;
+        private Subject<List<FaceFrameResult>> faces;
+
+        private List<FaceFrameResult> _faces;
 
         /// <summary>
         /// Initializes a new instance of the MainWindow class.
@@ -83,9 +69,8 @@ namespace VL.Devices.Kinect2
         {
             // one sensor is currently supported
             this.kinectSensor = sensor;
-
-            // get the coordinate mapper
-            this.coordinateMapper = this.kinectSensor.CoordinateMapper;
+            _faces = new List<FaceFrameResult>();
+            faces = new Subject<List<FaceFrameResult>>();
 
             // get the color frame details
             FrameDescription frameDescription = this.kinectSensor.ColorFrameSource.FrameDescription;
@@ -97,8 +82,6 @@ namespace VL.Devices.Kinect2
             // open the reader for the body frames
             this.bodyFrameReader = this.kinectSensor.BodyFrameSource.OpenReader();
 
-            
-
             // set the maximum number of bodies that would be tracked by Kinect
             this.bodyCount = this.kinectSensor.BodyFrameSource.BodyCount;
 
@@ -109,6 +92,8 @@ namespace VL.Devices.Kinect2
             FaceFrameFeatures faceFrameFeatures =
                 FaceFrameFeatures.BoundingBoxInColorSpace
                 | FaceFrameFeatures.PointsInColorSpace
+                | FaceFrameFeatures.BoundingBoxInInfraredSpace
+                | FaceFrameFeatures.PointsInInfraredSpace
                 | FaceFrameFeatures.RotationOrientation
                 | FaceFrameFeatures.FaceEngagement
                 | FaceFrameFeatures.Glasses
@@ -134,28 +119,19 @@ namespace VL.Devices.Kinect2
             // allocate storage to store face frame results for each face in the FOV
             this.faceFrameResults = new FaceFrameResult[this.bodyCount];
 
-            // open the sensor
-            //this.kinectSensor.Open();
-
-
-            ////// USED TO BE IN WINDOW LOAD HANDLER
             for (int i = 0; i < this.bodyCount; i++)
             {
                 if (this.faceFrameReaders[i] != null)
                 {
-                    // wire handler for face frame arrival
                     this.faceFrameReaders[i].FrameArrived += this.Reader_FaceFrameArrived;
                 }
             }
 
             if (this.bodyFrameReader != null)
             {
-                // wire handler for body frame arrival
                 this.bodyFrameReader.FrameArrived += this.Reader_BodyFrameArrived;
             }
-            ////// END OF: USED TO BE IN WINDOW LOAD HANDLER
 
-            // wire handler for body frame arrival
             this.bodyFrameReader.FrameArrived += this.Reader_BodyFrameArrived;
         }
 
@@ -176,7 +152,6 @@ namespace VL.Devices.Kinect2
                     // check if this face frame has valid face frame results
                     if (this.ValidateFaceBoxAndPoints(faceFrame.FaceFrameResult))
                     {
-                        // store this face frame result to draw later
                         this.faceFrameResults[index] = faceFrame.FaceFrameResult;
                     }
                     else
@@ -216,6 +191,7 @@ namespace VL.Devices.Kinect2
         /// <param name="e">event arguments</param>
         private void Reader_BodyFrameArrived(object sender, BodyFrameArrivedEventArgs e)
         {
+            _faces.Clear();
             using (var bodyFrame = e.FrameReference.AcquireFrame())
             {
                 if (bodyFrame != null)
@@ -227,20 +203,19 @@ namespace VL.Devices.Kinect2
                     // iterate through each face source
                     for (int i = 0; i < this.bodyCount; i++)
                     {
-                        /* will end up in VL patch
                         // check if a valid face is tracked in this face source
                         if (this.faceFrameSources[i].IsTrackingIdValid)
                         {
-                            
+
                             // check if we have valid face frame results
                             if (this.faceFrameResults[i] != null)
                             {
-                                faces.OnNext(this.faceFrameResults);
+                                _faces.Add(faceFrameResults[i]);
+                                //faces.OnNext(this.faceFrameResults);
                             }
-                            
-                    }
-                    */
-                    if (!this.faceFrameSources[i].IsTrackingIdValid)
+                        }
+
+                        else
                         {
                             // check if the corresponding body is tracked 
                             if (this.bodies[i].IsTracked)
@@ -250,7 +225,8 @@ namespace VL.Devices.Kinect2
                             }
                         }
                     }
-                    //faces.OnNext(this.faceFrameResults);
+
+                    faces.OnNext(_faces);
                 }
             }
         }
@@ -308,14 +284,12 @@ namespace VL.Devices.Kinect2
             {
                 if (this.faceFrameReaders[i] != null)
                 {
-                    // FaceFrameReader is IDisposable
                     this.faceFrameReaders[i].Dispose();
                     this.faceFrameReaders[i] = null;
                 }
 
                 if (this.faceFrameSources[i] != null)
                 {
-                    // FaceFrameSource is IDisposable
                     this.faceFrameSources[i].Dispose();
                     this.faceFrameSources[i] = null;
                 }
@@ -323,7 +297,6 @@ namespace VL.Devices.Kinect2
 
             if (this.bodyFrameReader != null)
             {
-                // BodyFrameReader is IDisposable
                 this.bodyFrameReader.Dispose();
                 this.bodyFrameReader = null;
             }
