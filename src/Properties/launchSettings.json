@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "VL.Devices.Kinect2": {
+      "commandName": "Executable",
+      "executablePath": "C:\\vvvv\\vvvv_gamma_2019.1.0-0654-gaf14329ad1\\vvvv.exe"
+    }
+  }
+}
