@@ -267,7 +267,7 @@
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
               <CategoryReference Kind="Category" Name="Skia" NeedsToBeDirectParent="true" />
             </p:NodeReference>
-            <Pin Id="OmaqGOTqnxyL5KmyUxvhyO" Name="Bounds" Kind="InputPin" DefaultValue="1012, 53, 536, 331">
+            <Pin Id="OmaqGOTqnxyL5KmyUxvhyO" Name="Bounds" Kind="InputPin" DefaultValue="958, 2, 968, 575">
               <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>
@@ -396,7 +396,7 @@
             <Pin Id="RQUkcZGwHWaQd1k0nnAVBC" Name="MouthMoved" Kind="OutputPin" />
             <Pin Id="P4jsA30KtKXO6Fdwi1tER6" Name="LookingAway" Kind="OutputPin" />
           </Node>
-          <Pad Id="Kf7yKMdA1jkOtg2Z1Uzrgn" Comment="User Index" Bounds="680,900,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Kf7yKMdA1jkOtg2Z1Uzrgn" Comment="User Index" Bounds="680,900,51,7" ShowValueBox="true" isIOBox="true" />
           <Pad Id="JVBg4CqTvweOVEOz3vaSpO" Comment="Points RGB" Bounds="776,612,86,96" ShowValueBox="true" isIOBox="true" />
           <Pad Id="ERAvfOe78LlMiIU6jBv77C" Comment="Points IR" Bounds="729,757,85,95" ShowValueBox="true" isIOBox="true" />
           <Pad Id="MhOfF0uahB5QMcpP4RN9YW" Comment="Orientation" Bounds="799,535,71,58" ShowValueBox="true" isIOBox="true" />
