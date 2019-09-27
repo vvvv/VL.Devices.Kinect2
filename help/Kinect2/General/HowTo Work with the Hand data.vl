@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="UOWYOygckqsODlkddXkKiP" LanguageVersion="2019.1.0-0654-gaf14329ad1" Version="0.128">
+  <NugetDependency Id="NkxBtTr8hOoNigSpbcTFdR" Location="VL.CoreLib" Version="2019.1.0-281" />
+  <Patch Id="APFBYc3ryadNMXCUycaQDK">
+    <Canvas Id="VZxxHWhqYjuLlXlvDdCXIG" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="PNbg63iTMIGMWpKhKkhEUl">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="PFfDaLRccY9PbWwk3Oc9Yz">
+        <Canvas Id="NrbeJxw6AQVLIXfi6tseMO" CanvasType="Group">
+          <Node Bounds="238,166,50,19" Id="GGwrluhEy4HLWCup9lTtAJ">
+            <p:NodeReference LastCategoryFullName="Devices.Kinect2" LastSymbolSource="VL.Devices.Kinect2.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Kinect2" />
+            </p:NodeReference>
+            <Pin Id="NJRSZmIwx1zOjgYeDqq8eI" Name="Enabled" Kind="InputPin" />
+            <Pin Id="BnGMOdHqWH8M20FnmyD1EJ" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="SYbpd8Hn6gpNUzZaFBezQx" Name="Is Open" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="238,207,55,19" Id="Jcvf43sJxq5PRrjxeNDkZQ">
+            <p:NodeReference LastCategoryFullName="Devices.Kinect2" LastSymbolSource="VL.Devices.Kinect2.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Hand" />
+              <CategoryReference Kind="Category" Name="Kinect2" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <Pin Id="N4CYZvcYuJJNfneEkrmfCe" Name="Input" Kind="InputPin" />
+            <Pin Id="UmdkXaF3EVLN3qEsQnC83I" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="226,248,151,86" Id="Ki8Ggvd4UX7OmJ6UUYruXF">
+            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+              <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:NodeReference>
+            <Pin Id="GOtgM37R8ZJLdbO4NHm4wD" Name="Break" Kind="OutputPin" />
+            <Patch Id="Cf3MQGMHFFvQTcuMJTiNU2" ManuallySortedPins="true">
+              <Patch Id="BqZzkMq9zLTPZdRwUkjCED" Name="Create" ManuallySortedPins="true" />
+              <Patch Id="A7ccE7bVISpQHjF967AMeC" Name="Update" ManuallySortedPins="true" />
+              <Patch Id="KvTTUPykGrsLBbQhSPwNtc" Name="Dispose" ManuallySortedPins="true" />
+              <Node Bounds="238,278,109,26" Id="HzJ4xsB6qKwLJemJ8SFOcQ">
+                <p:NodeReference LastCategoryFullName="Devices.Kinect2.Hand" LastSymbolSource="VL.Devices.Kinect2.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="RecordType" Name="Hand" />
+                  <Choice Kind="OperationCallFlag" Name="Split" />
+                </p:NodeReference>
+                <Pin Id="CHBAb5p9MLhQKzMC9CTZUD" Name="Input" Kind="StateInputPin" />
+                <Pin Id="UTh5TbB3lSZLPvS4YF63vx" Name="Output" Kind="OutputPin" />
+                <Pin Id="BEu5e5BimogPu1l7E77OAx" Name="Tracking ID" Kind="OutputPin" />
+                <Pin Id="Qpx8czZM4OvL9BicweoY95" Name="User Index" Kind="OutputPin" />
+                <Pin Id="H6k6hdC2KdJMjmuM6AaiJo" Name="Left Hand Confidence" Kind="OutputPin" />
+                <Pin Id="IRc2hQxUntQPjTRc2Z7CFX" Name="Left Hand State" Kind="OutputPin" />
+                <Pin Id="D65AFht2KUDO7NB1PvJdpG" Name="Right Hand Confidence" Kind="OutputPin" />
+                <Pin Id="HLtr9pk83ejNv937g0H0Hr" Name="Right Hand State" Kind="OutputPin" />
+              </Node>
+            </Patch>
+            <ControlPoint Id="T1IlXs4YZzPQY1rlvFOyil" Bounds="240,254" Alignment="Top" />
+            <ControlPoint Id="Hzaz29QY5sZPMGelBJH2sa" Bounds="260,328" Alignment="Bottom" />
+            <ControlPoint Id="FQpTwFVqkgdPm2Y1h2Kg7E" Bounds="280,328" Alignment="Bottom" />
+            <ControlPoint Id="MuL9u95Jy1AMxXJelnl4Xe" Bounds="300,328" Alignment="Bottom" />
+            <ControlPoint Id="T4kZVaQfDXnOIuziCpzBMb" Bounds="320,328" Alignment="Bottom" />
+            <ControlPoint Id="M6ODVMN61ViLcRIkzV2Sn0" Bounds="340,328" Alignment="Bottom" />
+            <ControlPoint Id="GYvl9Qgsa7vNVGKUuzlxnk" Bounds="360,328" Alignment="Bottom" />
+          </Node>
+          <Pad Id="JkldnIKRWGeLTEXbURxvlu" Comment="Tracking ID" Bounds="260,631,131,34" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="L1y8ByfTXKqLJAkYTIi7td" Comment="User Index" Bounds="281,578,35,34" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="LvuKIELv9wBOdTFnoRvn1Y" Comment="Left Hand Confidence" Bounds="300,527,50,34" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="JtRsXjDgF0OM0IL9IObqQj" Comment="Left Hand State" Bounds="321,477,81,34" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="SR68odU2aYnLNoQ0n3L2Vp" Comment="Right Hand Confidence" Bounds="340,428,50,34" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="GwHSmbOtfZqLefHfxYPJeX" Comment="Right Hand State" Bounds="360,378,81,34" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Bqn60oroRvxLmnHTPFOsKn" Bounds="292,216,259,19" ShowValueBox="true" isIOBox="true" Value="Returns one Hand object per tracked user">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="PVbVbOGAsC1OMyqjNp9dbd" Name="Create" />
+        <Patch Id="H2XlLgF6scLOXsDx75hd3r" Name="Update" />
+        <ProcessDefinition Id="Q75xfigtNzgOvh7zlq5gns">
+          <Fragment Id="GbhzaHLL7cgP9Aqb7MKI3C" Patch="PVbVbOGAsC1OMyqjNp9dbd" Enabled="true" />
+          <Fragment Id="R56Abdr1Rw3OEfJsdkIY8m" Patch="H2XlLgF6scLOXsDx75hd3r" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="VKmhfhVsyWcOOCM6rdGsrk" Ids="BnGMOdHqWH8M20FnmyD1EJ,N4CYZvcYuJJNfneEkrmfCe" />
+        <Link Id="B7IxXUYbxEnP2BoQ20r275" Ids="UmdkXaF3EVLN3qEsQnC83I,T1IlXs4YZzPQY1rlvFOyil" />
+        <Link Id="KuHvEFj53lwProXOfpJgEc" Ids="T1IlXs4YZzPQY1rlvFOyil,CHBAb5p9MLhQKzMC9CTZUD" />
+        <Link Id="AEgui2WXcKBN5nW9l75ZUJ" Ids="BEu5e5BimogPu1l7E77OAx,Hzaz29QY5sZPMGelBJH2sa" />
+        <Link Id="VgoqZN3RHCnPTFI0CGMno0" Ids="Hzaz29QY5sZPMGelBJH2sa,JkldnIKRWGeLTEXbURxvlu" />
+        <Link Id="UcIsDLnOPr8N3fRsLBC6FZ" Ids="Qpx8czZM4OvL9BicweoY95,FQpTwFVqkgdPm2Y1h2Kg7E" />
+        <Link Id="Pu1dErCbVW8Nl7l1j22IEp" Ids="FQpTwFVqkgdPm2Y1h2Kg7E,L1y8ByfTXKqLJAkYTIi7td" />
+        <Link Id="FdKe6qqxyVVPaVWltwab5o" Ids="H6k6hdC2KdJMjmuM6AaiJo,MuL9u95Jy1AMxXJelnl4Xe" />
+        <Link Id="N2CWZ1w3AmsNmHeDrV3AUN" Ids="MuL9u95Jy1AMxXJelnl4Xe,LvuKIELv9wBOdTFnoRvn1Y" />
+        <Link Id="UQ1kgisVukBMM8szEin6a8" Ids="IRc2hQxUntQPjTRc2Z7CFX,T4kZVaQfDXnOIuziCpzBMb" />
+        <Link Id="E3tU4shkOTFLbkvDP6fWTK" Ids="T4kZVaQfDXnOIuziCpzBMb,JtRsXjDgF0OM0IL9IObqQj" />
+        <Link Id="FAr3a43v5eiO7Fldzmzf0u" Ids="D65AFht2KUDO7NB1PvJdpG,M6ODVMN61ViLcRIkzV2Sn0" />
+        <Link Id="UQ40spCeHpwMrgn8uSRktt" Ids="M6ODVMN61ViLcRIkzV2Sn0,SR68odU2aYnLNoQ0n3L2Vp" />
+        <Link Id="JXx7e6R1dG1OJr1xdFIkXk" Ids="HLtr9pk83ejNv937g0H0Hr,GYvl9Qgsa7vNVGKUuzlxnk" />
+        <Link Id="LK6CzDBDezdOcm54K59Z05" Ids="GYvl9Qgsa7vNVGKUuzlxnk,GwHSmbOtfZqLefHfxYPJeX" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="LqN860VbNwDMgtD9a8XgD9" Location="VL.Skia" Version="2019.1.0-0281-g7c3c58e688" />
+  <NugetDependency Id="NayWUX2hDkTPEYoT87HUxi" Location="VL.Devices.Kinect2" Version="0.0.0.0" />
+</Document>
