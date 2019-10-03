@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="LIEtYdrRy3kPqelydP6a1l" LanguageVersion="2019.1.0-0654-gaf14329ad1" Version="0.128">
+<Document xmlns:p="property" Id="LIEtYdrRy3kPqelydP6a1l" LanguageVersion="2019.1.0-0720-g8541c33236" Version="0.128">
   <NugetDependency Id="EEYSk9rCs8TLQ1HUJFqHly" Location="VL.CoreLib" Version="2019.1.0-249" />
   <Patch Id="OF6M52TF0g1MIvRz41ucGu">
     <Canvas Id="Ue7xuqlBZHlLeRL5dLjZsS" DefaultCategory="Devices.Kinect2" CanvasType="FullCategory">
@@ -5041,7 +5041,7 @@
     ************************ BodyIndex (Reactive) ************************
 
 -->
-      <Node Name="BodyIndex (Reactive)" Bounds="639,743" Id="Qg1jUqDsXHsOjv6cJ1PFHP" Summary="Returns an Observabke of an R8 formatted image with masks for each detected player." Remarks="The pixel values in this frame are 8-bit unsigned integers, where 0-5 correspond to tracked players. Values greater than the value obtained from the amount of tracked players indicate the pixel is part of the background, not associated with a tracked body.">
+      <Node Name="BodyIndex (Reactive)" Bounds="639,743" Id="Qg1jUqDsXHsOjv6cJ1PFHP" Summary="Returns an Observable of an R8 formatted image with masks for each detected player." Remarks="The pixel values in this frame are 8-bit unsigned integers, where 0-5 correspond to tracked players. Values greater than the value obtained from the amount of tracked players indicate the pixel is part of the background, not associated with a tracked body.">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -5305,7 +5305,7 @@
     ************************ Infrared (Reactive) ************************
 
 -->
-      <Node Name="Infrared (Reactive)" Bounds="639,633" Id="B3HO10gAg1wPKvmhNLBlV2" Summary="Returns and Observable of Kinect2 Infrared image frames." Remarks="Returned image is single channel 16-bit Unsigned Integer.">
+      <Node Name="Infrared (Reactive)" Bounds="639,633" Id="B3HO10gAg1wPKvmhNLBlV2" Summary="Returns an Observable of Kinect2 Infrared image frames." Remarks="Returned image is single channel 16-bit Unsigned Integer.">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -5393,7 +5393,7 @@
     ************************ Skeleton (Reactive) ************************
 
 -->
-      <Node Name="Skeleton (Reactive)" Bounds="639,908" Id="KLB8AuV2ooSMwmyZBitYka" Summary="Returnsan Observavble of skeleton data for each tracked user.">
+      <Node Name="Skeleton (Reactive)" Bounds="639,908" Id="KLB8AuV2ooSMwmyZBitYka" Summary="Returns an Observable of skeleton data for each tracked user.">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -5482,7 +5482,7 @@
     ************************ Kinect2 ************************
 
 -->
-      <Node Name="Kinect2" Bounds="486,428" Id="SPHp1mQAOZFNSUwBHPifBu" Summary="Represents the Kinect2 sensor. Used to configure the different sensor options.">
+      <Node Name="Kinect2" Bounds="486,428" Id="SPHp1mQAOZFNSUwBHPifBu" Summary="Represents the Kinect2 sensor.">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -5564,7 +5564,7 @@
     ************************ PointCloud (Reactive) ************************
 
 -->
-      <Node Name="PointCloud (Reactive)" Bounds="639,1073" Id="KOikpMHA3h2OGO9OYWqycl" Summary="Returns an Observable of Kinect2 Depth image frames." Remarks="Returned image is single channel 16-bit Unsigned Integer.">
+      <Node Name="PointCloud (Reactive)" Bounds="639,1073" Id="KOikpMHA3h2OGO9OYWqycl" Summary="Returnsan Observable of a spread of Vector3 values representing the depth PointCloud detected by the Kinect2." Remarks="Returned image is single channel 16-bit Unsigned Integer.">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -5658,7 +5658,7 @@
     ************************ PointCloud ************************
 
 -->
-      <Node Name="PointCloud" Bounds="486,1073" Id="CYtTo3Y2qdtMgreMhuE2fL" Summary="Returns skeleton data for each tracked user.">
+      <Node Name="PointCloud" Bounds="486,1073" Id="CYtTo3Y2qdtMgreMhuE2fL" Summary="Returns a spread of Vector3 values representing the depth PointCloud detected by the Kinect2.">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -6201,7 +6201,7 @@
     ************************ Face (Reactive) ************************
 
 -->
-      <Node Name="Face (Reactive)" Bounds="639,1018" Id="PBWOi3B05NzLa0SznQp0hD" Summary="Returnsan Observavble of skeleton data for each tracked user.">
+      <Node Name="Face (Reactive)" Bounds="639,1018" Id="PBWOi3B05NzLa0SznQp0hD" Summary="Returns an Observable of face data for each tracked user.">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -6242,7 +6242,7 @@
     ************************ Face ************************
 
 -->
-      <Node Name="Face" Bounds="486,1018" Id="S4rieL3c2kGLBEgnxwRcIB" Summary="Returns skeleton data for each tracked user.">
+      <Node Name="Face" Bounds="486,1018" Id="S4rieL3c2kGLBEgnxwRcIB" Summary="Returns face data for each tracked user.">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -6290,7 +6290,7 @@
     ************************ Hand (Reactive) ************************
 
 -->
-      <Node Name="Hand (Reactive)" Bounds="639,963" Id="CW1RgmC5p4AOY36ZsJdnDM" Summary="Returnsan Observavble of skeleton data for each tracked user.">
+      <Node Name="Hand (Reactive)" Bounds="639,963" Id="CW1RgmC5p4AOY36ZsJdnDM" Summary="Returns an Observable of hand data for each tracked user.">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -6331,7 +6331,7 @@
     ************************ Hand ************************
 
 -->
-      <Node Name="Hand" Bounds="486,963" Id="QT3TGyoli4UO9QJ3OURuXi" Summary="Returns skeleton data for each tracked user.">
+      <Node Name="Hand" Bounds="486,963" Id="QT3TGyoli4UO9QJ3OURuXi" Summary="Returns hand data for each tracked user.">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
