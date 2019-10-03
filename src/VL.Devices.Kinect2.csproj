@@ -25,8 +25,12 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.Kinect" Version="2.0.1410.19000" />
-    <PackageReference Include="Microsoft.Kinect.Face" Version="2.0.1410.19000" />
     <PackageReference Include="VL.Core" Version="2019.1.0-0623-gf7d576a202" />
     <PackageReference Include="Xenko.Core.Mathematics" Version="3.1.0.1-beta02-0674" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Kinect.Face">
+      <HintPath>..\lib\net472\Microsoft.Kinect.Face.dll</HintPath>
+    </Reference>
   </ItemGroup>
 </Project>
