@@ -6404,5 +6404,5 @@
   <PlatformDependency Id="BUpgGtLZTuWOOQIIwQPuZE" Location="System.Runtime.InteropServices" />
   <NugetDependency Id="K4aTqsYyX3qOyQBCvM0PDS" Location="VL.Skia" Version="2019.1.0-0648-g9f6b92f2ac" />
   <NugetDependency Id="R4VFKgpnMLVNLeeooXue2t" Location="VL.EditingFramework" Version="2019.1.0-0667-gac4859edde" />
-  <NugetDependency Id="A93tM0eiixQOujlBr1hMY6" Location="Microsoft.Kinect.Face.x64" Version="2.0.1410.19000" />
+  <PlatformDependency Id="MdTDzLxFTE9LvxOyk7EWeV" Location="./lib/net472/Microsoft.Kinect.Face.dll" />
 </Document>
