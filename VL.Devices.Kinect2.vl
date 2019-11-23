@@ -5553,7 +5553,7 @@
     ************************ PointCloud (Reactive) ************************
 
 -->
-      <Node Name="PointCloud (Reactive)" Bounds="714,1073" Id="KOikpMHA3h2OGO9OYWqycl" Summary="Returnsan Observable of a spread of Vector3 values representing the depth PointCloud detected by the Kinect2." Remarks="Returned image is single channel 16-bit Unsigned Integer.">
+      <Node Name="PointCloud (Reactive)" Bounds="714,1073" Id="KOikpMHA3h2OGO9OYWqycl" Summary="Returns an Observable of a spread of Vector3 values representing the depth PointCloud detected by the Kinect2." Remarks="Returned image is single channel 16-bit Unsigned Integer.">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -6368,7 +6368,7 @@
     ************************ DepthPipet ************************
 
 -->
-      <Node Name="DepthPipet" Bounds="486,1134" Id="PkfFL9t3ps8PKLT0drUy2v" Summary="Returns a spread of Vector3 values representing the depth PointCloud detected by the Kinect2.">
+      <Node Name="DepthPipet" Bounds="486,1134" Id="PkfFL9t3ps8PKLT0drUy2v" Summary="Returns a Float64 (double) value representing the distance in mm from the Kinect sensor to the specified pixel in the Depth image.">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -6475,7 +6475,7 @@
     ************************ DepthPipet (Spread Reactive) ************************
 
 -->
-      <Node Name="DepthPipet (Spread Reactive)" Bounds="714,1190" Id="JxCWcISYHcHLjPZf5oSzGj" Summary="Returnsan Observable of a spread of Vector3 values representing the depth PointCloud detected by the Kinect2." Remarks="Returned image is single channel 16-bit Unsigned Integer.">
+      <Node Name="DepthPipet (Spread Reactive)" Bounds="714,1190" Id="JxCWcISYHcHLjPZf5oSzGj" Summary="Returns an Observavble of Spread of Float64 (double) values representing the distance in mm from the Kinect sensor to the specified pixels in the Depth image.">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -6550,7 +6550,7 @@
     ************************ DepthPipet (Spread) ************************
 
 -->
-      <Node Name="DepthPipet (Spread)" Bounds="486,1190" Id="UZtfja0JSlQOQuO5TNJYOQ" Summary="Returns a spread of Vector3 values representing the depth PointCloud detected by the Kinect2.">
+      <Node Name="DepthPipet (Spread)" Bounds="486,1190" Id="UZtfja0JSlQOQuO5TNJYOQ" Summary="Returns a Spread of Float64 (double) values representing the distance in mm from the Kinect sensor to the specified pixels in the Depth image.">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -6603,7 +6603,7 @@
     ************************ InfraredPipet ************************
 
 -->
-      <Node Name="InfraredPipet" Bounds="488,1256" Id="L6YllycjkCRNUDCaFMREaM" Summary="Returns a spread of Vector3 values representing the depth PointCloud detected by the Kinect2.">
+      <Node Name="InfraredPipet" Bounds="488,1256" Id="L6YllycjkCRNUDCaFMREaM" Summary="Returns a Float64 (double) value representing the brightness of the specified pixel in the Infrared image.">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -6710,7 +6710,7 @@
     ************************ InfraredPipet (Spread Reactive) ************************
 
 -->
-      <Node Name="InfraredPipet (Spread Reactive)" Bounds="716,1312" Id="KSjY7wkV0EqNH7f0nLN0A8" Summary="Returnsan Observable of a spread of Vector3 values representing the depth PointCloud detected by the Kinect2." Remarks="Returned image is single channel 16-bit Unsigned Integer.">
+      <Node Name="InfraredPipet (Spread Reactive)" Bounds="716,1312" Id="KSjY7wkV0EqNH7f0nLN0A8" Summary="Returns an Observable of Spread of Float64 (double) values representing the brightness of the specified pixels in the Infrared image.">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -6785,7 +6785,7 @@
     ************************ InfraredPipet (Spread) ************************
 
 -->
-      <Node Name="InfraredPipet (Spread)" Bounds="488,1312" Id="UNNZOitI5ZMNKv3p3LzQut" Summary="Returns a spread of Vector3 values representing the depth PointCloud detected by the Kinect2.">
+      <Node Name="InfraredPipet (Spread)" Bounds="488,1312" Id="UNNZOitI5ZMNKv3p3LzQut" Summary="Returns a Spread of Float64 (double) values representing the brightness of the specified pixels in the Infrared image.">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
