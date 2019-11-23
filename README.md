@@ -26,6 +26,12 @@ Open
     
 in VisualStudio and build it. This is necessary for a few things that cannot yet be expressed in vl directly, like inheritance.
 
+#### Troubleshooting
+
+If you are facing an error regarding VL.Core package you must add a nuget package source to Visual Studio which points to this repo: 
+
+* http://teamcity.vvvv.org/guestAuth/app/nuget/v1/FeedService.svc/
+
 ### Reference VL.Devices.Kinect2.vl
 
 In the vl document where you want to have access to the Kinect2 nodeset, add a dependency to:
