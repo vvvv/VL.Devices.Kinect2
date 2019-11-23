@@ -25,6 +25,10 @@ namespace VL.Devices.Kinect2
 
         public static Spread<Vector3> ToPointCloud(this DepthImage image, float minZ, float maxZ, int decimation) => PointCloud.GetPoints(image, minZ, maxZ, decimation);
 
+        public static Spread<double> ToDepthPipetValues(this DepthImage image, Spread<Vector2> pixels) => DepthPipet.GetValues(image, pixels);
+
+        public static Spread<double> ToInfraredPipetValues(this InfraredImage image, Spread<Vector2> pixels) => InfraredPipet.GetValues(image, pixels);
+
         public static ImageInfo ToImageInfo(this FrameDescription frameDescription, ColorImageFormat colorImageFormat)
         {
             return new ImageInfo(
