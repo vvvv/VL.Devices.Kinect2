@@ -7,7 +7,7 @@ namespace VL.Devices.Kinect2
 {
     internal static class PipetUtils
     {
-        public static unsafe SpreadBuilder<double> GetValues(KinectBuffer buffer, SpreadBuilder<double> builder, int width, int height, Spread<Vector2> pixels)
+        public static unsafe SpreadBuilder<int> GetValues(KinectBuffer buffer, SpreadBuilder<int> builder, int width, int height, Spread<Vector2> pixels)
         {
             builder.Clear();
             short* data = (short*)buffer.UnderlyingBuffer;
@@ -26,7 +26,7 @@ namespace VL.Devices.Kinect2
                 pixelX = pixelX > width - 1 ? width - 1 : pixelX;
                 pixelY = pixelY > height - 1 ? height - 1 : pixelY;
 
-                double pixel = data[pixelY * width + pixelX];
+                int pixel = data[pixelY * width + pixelX];
                 builder.Add(pixel);
             }
             return builder;
@@ -51,7 +51,7 @@ namespace VL.Devices.Kinect2
                 pixelX = pixelX > width - 1 ? width - 1 : pixelX;
                 pixelY = pixelY > height - 1 ? height - 1 : pixelY;
 
-                double pixel = data[pixelY * width + pixelX];
+                int pixel = data[pixelY * width + pixelX];
                 builder.Add(pixel);
             }
             return builder;
@@ -60,8 +60,8 @@ namespace VL.Devices.Kinect2
 
     public static class DepthPipet
     {
-        private static readonly SpreadBuilder<double> builder = new SpreadBuilder<double>();
-        public static unsafe Spread<double> GetValues(DepthImage image, Spread<Vector2> pixels)
+        private static readonly SpreadBuilder<int> builder = new SpreadBuilder<int>();
+        public static unsafe Spread<int> GetValues(DepthImage image, Spread<Vector2> pixels)
         {
 
             using (var buffer = image.frame.LockImageBuffer())
@@ -73,8 +73,8 @@ namespace VL.Devices.Kinect2
 
     public static class InfraredPipet
     {
-        private static readonly SpreadBuilder<double> builder = new SpreadBuilder<double>();
-        public static unsafe Spread<double> GetValues(InfraredImage image, Spread<Vector2> pixels)
+        private static readonly SpreadBuilder<int> builder = new SpreadBuilder<int>();
+        public static unsafe Spread<int> GetValues(InfraredImage image, Spread<Vector2> pixels)
         {
             using (var buffer = image.frame.LockImageBuffer())
             {
