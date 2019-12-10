@@ -33,7 +33,7 @@
             <Pin Id="LsgLvjlhzJiOE5Vffk6s2F" Name="Pixel" Kind="InputPin" />
             <Pin Id="JIEa4hAC4jlNwRbwDemVz7" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="LbzQqkrznz5OyvqoWDrTUH" Comment="Pixel value as Float64 (double)" Bounds="285,513,62,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="LbzQqkrznz5OyvqoWDrTUH" Comment="Pixel value as Int32 " Bounds="285,513,62,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="IWi25QmqIL0Nlo28JsTWBS" Comment="Pixel" Bounds="346,321,35,28" ShowValueBox="true" isIOBox="true" Value="237, 213">
             <p:TypeAnnotation LastCategoryFullName="2D" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Vector2" />
@@ -335,7 +335,7 @@
               </p:TypeAnnotation>
             </Pin>
           </Node>
-          <Pad Id="Giq2R7gMGn4QXkDTZM8jRW" Bounds="514,509,170,19" ShowValueBox="true" isIOBox="true" Value="Represents distance in mm">
+          <Pad Id="Giq2R7gMGn4QXkDTZM8jRW" Bounds="454,509,170,19" ShowValueBox="true" isIOBox="true" Value="Represents distance in mm">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -392,7 +392,7 @@
               <Item>320, 320</Item>
             </p:Value>
           </Pad>
-          <Pad Id="N0tXMvz2ZHQP5w2BBZ93Ul" Comment="" Bounds="795,498,68,80" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="N0tXMvz2ZHQP5w2BBZ93Ul" Comment="" Bounds="795,498,54,80" ShowValueBox="true" isIOBox="true" />
           <Pad Id="RkDlDse79vvLQKIvZywtdY" Bounds="844,272,122,19" ShowValueBox="true" isIOBox="true" Value="Spreadable version">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
@@ -452,7 +452,7 @@
             <Pin Id="OBakty68N24P2W78A9ucCm" Name="Input" Kind="InputPin" />
             <Pin Id="Rf7UMN1RyeYQHDJFkCF8Eq" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="SQcOBny8bmKQINNBs5zu2s" Comment="Pixel value as Float64 (double)" Bounds="269,908,59,3" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="SQcOBny8bmKQINNBs5zu2s" Comment="Pixel value as Int32" Bounds="269,908,59,3" ShowValueBox="true" isIOBox="true" />
           <Node Bounds="793,813,75,19" Id="DMACDS89riCONYXyggIXmZ">
             <p:NodeReference LastCategoryFullName="Devices.Kinect2" LastSymbolSource="VL.Devices.Kinect2.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -483,7 +483,7 @@
               <Item>320, 320</Item>
             </p:Value>
           </Pad>
-          <Pad Id="BbmKQdv0lERMTYMSa7ETw3" Comment="" Bounds="795,900,68,80" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="BbmKQdv0lERMTYMSa7ETw3" Comment="" Bounds="795,900,54,80" ShowValueBox="true" isIOBox="true" />
           <Pad Id="DVdL1QVQGCoMwQQ9RHo0I5" Bounds="853,674,132,19" ShowValueBox="true" isIOBox="true" Value="Spreadable version">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
@@ -508,17 +508,17 @@
           <Overlay Id="GFMm9yq6ms0MqA7OR9xqua" Name="Depth" Bounds="165,215,937,380">
             <p:ColorIndex p:Type="Int32">1</p:ColorIndex>
           </Overlay>
-          <Pad Id="GJw32CMzVQnMnN068Jusad" Comment="" Bounds="416,790,101,15" ShowValueBox="true" isIOBox="true" Value="1270, 472, 320, 285">
+          <Pad Id="GJw32CMzVQnMnN068Jusad" Comment="Window bounds" Bounds="416,790,101,15" ShowValueBox="true" isIOBox="true" Value="1270, 472, 320, 285">
             <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
               <Choice Kind="TypeFlag" Name="Rectangle" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="MVmQT6VbJEvPD8FKyYSjMt" Comment="" Bounds="408,392,101,15" ShowValueBox="true" isIOBox="true" Value="1270, 190, 320, 285">
+          <Pad Id="MVmQT6VbJEvPD8FKyYSjMt" Comment="Window bounds" Bounds="408,392,101,15" ShowValueBox="true" isIOBox="true" Value="1270, 190, 320, 285">
             <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
               <Choice Kind="TypeFlag" Name="Rectangle" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="CS1wBmv6JCFLMQpOUBmjfE" Bounds="497,906,165,19" ShowValueBox="true" isIOBox="true" Value="Represents brightness">
+          <Pad Id="CS1wBmv6JCFLMQpOUBmjfE" Bounds="442,906,165,19" ShowValueBox="true" isIOBox="true" Value="Represents brightness">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
