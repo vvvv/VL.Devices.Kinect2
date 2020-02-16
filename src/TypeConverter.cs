@@ -40,7 +40,7 @@ namespace VL.Devices.Kinect2
         public static Spread<Vector2> ToVector2(ColorSpacePoint[] colorSpacePoints)
         {
             colorPointsBuilder.Clear();
-            for (int i = 0; i < colorSpacePoints.Count(); i++)
+            for (int i = 0; i < colorSpacePoints.Length; i++)
             {
                 colorPointsBuilder.Add(ToVector2(colorSpacePoints[i]));
             }
@@ -51,7 +51,7 @@ namespace VL.Devices.Kinect2
         public static Spread<Vector2> ToVector2(DepthSpacePoint[] depthSpacePoints)
         {
             depthPointsBuilder.Clear();
-            for (int i = 0; i < depthSpacePoints.Count(); i++)
+            for (int i = 0; i < depthSpacePoints.Length; i++)
             {
                 depthPointsBuilder.Add(ToVector2(depthSpacePoints[i]));
             }
@@ -62,7 +62,7 @@ namespace VL.Devices.Kinect2
         public static Spread<Vector3> ToVector3(CameraSpacePoint[] cameraSpacePoints)
         {
             cameraPointsBuilder.Clear();
-            for (int i = 0; i < cameraSpacePoints.Count(); i++)
+            for (int i = 0; i < cameraSpacePoints.Length; i++)
             {
                 cameraPointsBuilder.Add(ToVector3(cameraSpacePoints[i]));
             }
