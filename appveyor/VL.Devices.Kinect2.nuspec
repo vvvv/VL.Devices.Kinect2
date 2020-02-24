@@ -6,12 +6,13 @@
     <title>VL.Devices.Kinect2</title>
     <authors>Randall Vázquez, vvvv</authors>
     <owners>vvvv</owners>
-    <projectUrl>http://vvvv.org</projectUrl>
+    <projectUrl>https://github.com/vvvv/VL.Devices.Kinect2</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>A VL wrapper for Microsoft Kinect2</summary>
     <description>Kinect2 for VL</description>
     <copyright>Copyright © 2019 by vvvv group. All rights reserved.</copyright>
-    <tags>VL, Kinect2, skeleton, camera, video, depth</tags>
+    <tags>VL, Kinect2, skeleton, camera, video, depth, body, face, tracking</tags>
+	<license type="expression">LGPL-3.0-only</license>
     <dependencies>
       <dependency id="Microsoft.Kinect" version="[2.0.1410.19000]" />
     </dependencies>
