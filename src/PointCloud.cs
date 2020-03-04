@@ -2,47 +2,58 @@
 using Microsoft.Kinect;
 using Xenko.Core.Mathematics;
 using VL.Lib.Collections;
+using System.Buffers;
 
 namespace VL.Devices.Kinect2
 {
     public static class PointCloud
     {
-        //static CoordinateMapper FCoordinateMapper = new CoordinateMapper();
-
-        public static unsafe Spread<Vector3>GetPoints(DepthImage image, float minZ, float maxZ, int decimation)
+        public static unsafe SpreadBuilder<Vector3> CollectPoints(
+            SpreadBuilder<Vector3> builder,
+            DepthImage image,
+            float minZ,
+            float maxZ,
+            int decimation = 2)
         {
-            DepthFrame frame = image.frame;
-            var depthSize = frame.FrameDescription.LengthInPixels;
-            var depthData = new ushort[depthSize];
-            var cameraSpacePoints = new CameraSpacePoint[depthSize];
-            frame.CopyFrameDataToArray(depthData);
-            frame.DepthFrameSource.KinectSensor.CoordinateMapper.MapDepthFrameToCameraSpace(depthData, cameraSpacePoints);
+            if (builder is null)
+                throw new ArgumentNullException(nameof(builder));
+            if (image is null)
+                throw new ArgumentNullException(nameof(image));
 
+            var frame = image.frame;
+            var pixelCount = frame.FrameDescription.LengthInPixels;
 
-            var step = Math.Max(1, decimation+1);
-            var width = image.Info.Width / step;
-            var wRemainder = image.Info.Width % step;
-            var height = image.Info.Height / step;
-            var count = width * height;
-            SpreadBuilder<Vector3> sb = new SpreadBuilder<Vector3>(count);
-            //using (var buffer = frame.LockImageBuffer())
+            using (var depthBuffer = frame.LockImageBuffer())
+            using (var cameraSpacePoints = MemoryPool<CameraSpacePoint>.Shared.Rent((int)pixelCount))
             {
-                //ushort* ptr = (ushort*)buffer.UnderlyingBuffer.ToPointer();
-                for (int row = 0; row < height; row++)
+                using (var cameraSpacePointsHandle = cameraSpacePoints.Memory.Pin())
                 {
-                    //var rowStart = ptr;
-                    var r = row * step * image.Info.Width;
-                    for (int col = 0; col < width; col++)
-                    {
-                        var csp = cameraSpacePoints[r + col*step];
-                        if(csp.Z > minZ && csp.Z < maxZ)
-                            sb.Add(new Vector3(csp.X, csp.Y, csp.Z));
-                        //ptr += step;
-                    }
-                    //ptr += wRemainder;
-                    //ptr += image.Info.Width * (step-1);
+                    var cameraSpacePointsPtr = new IntPtr(cameraSpacePointsHandle.Pointer);
+
+                    frame.DepthFrameSource.KinectSensor.CoordinateMapper.MapDepthFrameToCameraSpaceUsingIntPtr(
+                        depthBuffer.UnderlyingBuffer, depthBuffer.Size,
+                        cameraSpacePointsPtr, (uint)(pixelCount * sizeof(CameraSpacePoint)));
                 }
-                return sb.ToSpread();
+
+                var step = Math.Max(1, decimation);
+                var width = image.Info.Width;
+                var height = image.Info.Height;
+
+                builder.Clear();
+
+                // The memory we got from the pool might be bigger than what we need. So let's slice it down to our expected size so we get index out of bounds checks.
+                var csps = cameraSpacePoints.Memory.Span.Slice(0, (int)pixelCount);
+                for (int y = 0; y < height; y += step)
+                {
+                    var r = y * width;
+                    for (int x = 0; x < width; x += step)
+                    {
+                        var csp = csps[r + x];
+                        if (csp.Z > minZ && csp.Z < maxZ)
+                            builder.Add(new Vector3(csp.X, csp.Y, csp.Z));
+                    }
+                }
+                return builder;
             }
         }
     }
