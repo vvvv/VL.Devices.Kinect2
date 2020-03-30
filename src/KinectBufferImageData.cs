@@ -1,10 +1,11 @@
 ﻿using Microsoft.Kinect;
 using System;
+using System.Buffers;
 using VL.Lib.Basics.Imaging;
 
 namespace VL.Devices.Kinect2
 {
-    class KinectBufferImageData : IImageData
+    unsafe class KinectBufferImageData : MemoryManager<byte>, IImageData
     {
         readonly KinectBuffer buffer;
 
@@ -14,12 +15,28 @@ namespace VL.Devices.Kinect2
             ScanSize = (int)frameDescription.BytesPerPixel * frameDescription.Width;
         }
 
-        public IntPtr Pointer => buffer.UnderlyingBuffer;
-
-        public int Size => (int)buffer.Size;
+        public ReadOnlyMemory<byte> Bytes => Memory;
 
         public int ScanSize { get; }
 
-        public void Dispose() => buffer.Dispose();
+        public override Span<byte> GetSpan()
+        {
+            return new Span<byte>(buffer.UnderlyingBuffer.ToPointer(), (int)buffer.Size);
+        }
+
+        public override MemoryHandle Pin(int elementIndex = 0)
+        {
+            // Already pinned
+            return new MemoryHandle(buffer.UnderlyingBuffer.ToPointer(), pinnable: this);
+        }
+
+        public override void Unpin()
+        {
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            buffer.Dispose();
+        }
     }
 }
