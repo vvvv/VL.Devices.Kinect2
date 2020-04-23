@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="UOWYOygckqsODlkddXkKiP" LanguageVersion="2019.1.0-0654-gaf14329ad1" Version="0.128">
-  <NugetDependency Id="NkxBtTr8hOoNigSpbcTFdR" Location="VL.CoreLib" Version="2019.1.0-281" />
+<Document xmlns:p="property" Id="UOWYOygckqsODlkddXkKiP" LanguageVersion="2020.1.0.53" Version="0.128">
+  <NugetDependency Id="NkxBtTr8hOoNigSpbcTFdR" Location="VL.CoreLib" Version="2020.1.0" />
   <Patch Id="APFBYc3ryadNMXCUycaQDK">
     <Canvas Id="VZxxHWhqYjuLlXlvDdCXIG" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -42,7 +42,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="CameraIntrinsics" />
             </p:NodeReference>
-            <Pin Id="QIf6800nH0NLuQFg8lcfcg" Name="Input" Kind="InputPin" />
+            <Pin Id="QJttOcv3YNCMXQvw6U3DlK" Name="Device" Kind="InputPin" />
             <Pin Id="FhWHaz10rFVPV3DmUI9tOB" Name="Focal Length" Kind="OutputPin" />
             <Pin Id="IRnzGiOw5JUNOOi3lf7QVs" Name="Principal Point" Kind="OutputPin" />
             <Pin Id="ENceWF6TobxOc566DQtfz5" Name="Radial Distortion Fourth Order" Kind="OutputPin" />
@@ -74,9 +74,9 @@
           <Node Bounds="42,275,35,19" Id="BXZj28suNmNNzNSQj1yoZw">
             <p:NodeReference LastCategoryFullName="Devices.Kinect2" LastSymbolSource="VL.Devices.Kinect2.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="RGB" />
+              <Choice Kind="ProcessAppFlag" Name="ColorImage" />
             </p:NodeReference>
-            <Pin Id="PkKvAgNABpGOAfNyy2C17J" Name="Input" Kind="InputPin" />
+            <Pin Id="DD6yRPH6snmLrz3RUp3O2F" Name="Device" Kind="InputPin" />
             <Pin Id="Grydrv0UWUcLjj5yHyfjQy" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="535,275,44,19" Id="Cik2nfDP7gKMfQX08EloKl">
@@ -85,25 +85,25 @@
               <CategoryReference Kind="Category" Name="Kinect2" NeedsToBeDirectParent="true">
                 <p:OuterCategoryReference Kind="Category" Name="Devices" NeedsToBeDirectParent="true" />
               </CategoryReference>
-              <Choice Kind="ProcessNode" Name="Depth (Raw)" />
+              <Choice Kind="ProcessAppFlag" Name="DepthImage" />
             </p:NodeReference>
-            <Pin Id="FhBTyqHfRDYOHg9MpJ8D85" Name="Input" Kind="InputPin" />
+            <Pin Id="LMzFGTMqzajODnchk742NU" Name="Device" Kind="InputPin" />
             <Pin Id="CFH2CdodJLBOIXGlmUr7nQ" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="237,275,52,19" Id="HN51jgRV1wyOe5jVU1tPIr">
             <p:NodeReference LastCategoryFullName="Devices.Kinect2" LastSymbolSource="VL.Devices.Kinect2.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="Infrared" />
+              <Choice Kind="ProcessAppFlag" Name="InfraredImage" />
             </p:NodeReference>
-            <Pin Id="IWXJPLYGDEVL0b8hjEjVQp" Name="Input" Kind="InputPin" />
+            <Pin Id="CAZuxY8AY9mMIO81LBxQrL" Name="Device" Kind="InputPin" />
             <Pin Id="ETUvRYMKDZAPJde9zt798P" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="833,275,64,19" Id="A5xhWoZ2BzMOVAg8QBxk2D">
             <p:NodeReference LastCategoryFullName="Devices.Kinect2" LastSymbolSource="VL.Devices.Kinect2.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="BodyIndex" />
+              <Choice Kind="ProcessAppFlag" Name="BodyImage" />
             </p:NodeReference>
-            <Pin Id="FZnbLInL758NFPUqu2AU5K" Name="Input" Kind="InputPin" />
+            <Pin Id="CzhZPfNpR2IOjvyUbQl1UC" Name="Device" Kind="InputPin" />
             <Pin Id="MQSSbugrwLuOcj0zYkS63A" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="42,335,67,26" Id="FDgRNCdynchPlobUE266Wa">
@@ -113,6 +113,7 @@
               <CategoryReference Kind="Category" Name="Imaging" NeedsToBeDirectParent="true" />
             </p:NodeReference>
             <Pin Id="EI30DxbItjEPsg8yAJpn1e" Name="Input" Kind="InputPin" />
+            <Pin Id="Re3vMQ2qVOFMgL9YGUsOfP" Name="Discard Higher Bits" Kind="InputPin" />
             <Pin Id="DKmWXX3evI2LfxNdO2jFcd" Name="Result" Kind="OutputPin" />
           </Node>
           <Node Bounds="43,410,125,19" Id="PlIsHMDl86FNo7IQvtwZdo">
@@ -195,6 +196,7 @@
               <CategoryReference Kind="Category" Name="Imaging" NeedsToBeDirectParent="true" />
             </p:NodeReference>
             <Pin Id="S3Fpz6Aj4SmPriPIXBWhWN" Name="Input" Kind="InputPin" />
+            <Pin Id="N2FmRWTzra6PPHI0Y7u2Oi" Name="Discard Higher Bits" Kind="InputPin" />
             <Pin Id="U261lgndRDAQLn5TyOT7rp" Name="Result" Kind="OutputPin" />
           </Node>
           <Node Bounds="238,410,125,19" Id="P5QIu9TstosPSZAVrQbSDJ">
@@ -235,6 +237,8 @@
                 <Choice Kind="TypeFlag" Name="CommonSpace" />
               </p:TypeAnnotation>
             </Pin>
+            <Pin Id="DYE4aHvRPtaNlJRwWhAVlA" Name="Show Cursor" Kind="InputPin" />
+            <Pin Id="UNsMzqSF7s3NdKDqHp7CC8" Name="VSync" Kind="InputPin" />
             <Pin Id="CZsj1Vc6tWuLE90uBweqYl" Name="Enabled" Kind="InputPin" />
             <Pin Id="O043Hkq1m9tPQxRJPdCG0P" Name="Form" Kind="OutputPin" />
             <Pin Id="C2ReHKcEMD8N2BM1dwPbWO" Name="ClientBounds" Kind="OutputPin" />
@@ -311,6 +315,8 @@
                 <Choice Kind="TypeFlag" Name="CommonSpace" />
               </p:TypeAnnotation>
             </Pin>
+            <Pin Id="HgUpELo7BeyPkjTfACy9Qk" Name="Show Cursor" Kind="InputPin" />
+            <Pin Id="HDbzonevSc3Ous29x5GDAa" Name="VSync" Kind="InputPin" />
             <Pin Id="LY5MkeYUhGpOlQmhL20N07" Name="Enabled" Kind="InputPin" />
             <Pin Id="OLgIcKMDmiFMZ110WT85WH" Name="Form" Kind="OutputPin" />
             <Pin Id="IXvcbMOP25BNCtED6TmyLU" Name="ClientBounds" Kind="OutputPin" />
@@ -345,6 +351,7 @@
               <CategoryReference Kind="Category" Name="Imaging" NeedsToBeDirectParent="true" />
             </p:NodeReference>
             <Pin Id="IibalioEIkMNiYb2qSPLJV" Name="Input" Kind="InputPin" />
+            <Pin Id="PkRKuhXBTE9N7SXjO2rKUD" Name="Discard Higher Bits" Kind="InputPin" />
             <Pin Id="UNy6D3B482MOTIcaDhKKgz" Name="Result" Kind="OutputPin" />
           </Node>
           <Node Bounds="535,410,125,19" Id="Gk6OJh46lYaN6J6lBPYJ2d">
@@ -385,6 +392,8 @@
                 <Choice Kind="TypeFlag" Name="CommonSpace" />
               </p:TypeAnnotation>
             </Pin>
+            <Pin Id="RQKOdgVHC5SLKYr2746LB2" Name="Show Cursor" Kind="InputPin" />
+            <Pin Id="K6COrOUxQR2M921SQBttho" Name="VSync" Kind="InputPin" />
             <Pin Id="RZtlrvcdi33PmsYUiu7tem" Name="Enabled" Kind="InputPin" />
             <Pin Id="K4LX3IQa9tBMdQ9GmAmfyc" Name="Form" Kind="OutputPin" />
             <Pin Id="HBykEOhMqXdMOk35lI6LUL" Name="ClientBounds" Kind="OutputPin" />
@@ -480,6 +489,7 @@
               <CategoryReference Kind="Category" Name="Imaging" NeedsToBeDirectParent="true" />
             </p:NodeReference>
             <Pin Id="EiO7kYYkZIVOLQzUJsWeEy" Name="Input" Kind="InputPin" />
+            <Pin Id="HF578Vpp82eMSZYKjmhcy2" Name="Discard Higher Bits" Kind="InputPin" />
             <Pin Id="EwPVVQuW1nMMN97IjaFjDl" Name="Result" Kind="OutputPin" />
           </Node>
           <Node Bounds="834,411,125,19" Id="N8KXWuXDmVEQEkTeES0uYH">
@@ -520,6 +530,8 @@
                 <Choice Kind="TypeFlag" Name="CommonSpace" />
               </p:TypeAnnotation>
             </Pin>
+            <Pin Id="AwvW8N9csVvQLOyBUkP1vh" Name="Show Cursor" Kind="InputPin" />
+            <Pin Id="N1VQJLseedUO2YeuvvJuTU" Name="VSync" Kind="InputPin" />
             <Pin Id="Lqe3m65MkoYNEOnkiciqjW" Name="Enabled" Kind="InputPin" />
             <Pin Id="N9LQRBltlwJQMYq3JmxAzx" Name="Form" Kind="OutputPin" />
             <Pin Id="KfccUjKyJOMNlzdhUm7Fx0" Name="ClientBounds" Kind="OutputPin" />
@@ -619,11 +631,6 @@
         <Link Id="PBQ2PEuxNKLODwpo1w08a0" Ids="ENceWF6TobxOc566DQtfz5,Ldk04DGEs0aMswkt6aUlBQ" />
         <Link Id="S1vT63xqEusNup6VBJ1V6Z" Ids="IRnzGiOw5JUNOOi3lf7QVs,JxvNl2YffRoM9OfsyjXms6" />
         <Link Id="Iz49csT7gvJL3iYLkICz7u" Ids="FhWHaz10rFVPV3DmUI9tOB,Hb8pkNM2RdJMTxXEGa2z2g" />
-        <Link Id="CZXkToEQMz5LbFG6bxSikO" Ids="K1Grrr2CgCdOjKwDlkBW7x,IWXJPLYGDEVL0b8hjEjVQp" />
-        <Link Id="QJbLSYvNOGMMbaRDG5kMch" Ids="K1Grrr2CgCdOjKwDlkBW7x,FhBTyqHfRDYOHg9MpJ8D85" />
-        <Link Id="CKV6U0ezXloMUYy0kFuzTI" Ids="K1Grrr2CgCdOjKwDlkBW7x,FZnbLInL758NFPUqu2AU5K" />
-        <Link Id="I9jlIQYzmd9LeLq0u3uzaw" Ids="K1Grrr2CgCdOjKwDlkBW7x,QIf6800nH0NLuQFg8lcfcg" />
-        <Link Id="AFzadRUdUzeOQEYGtqVyic" Ids="K1Grrr2CgCdOjKwDlkBW7x,PkKvAgNABpGOAfNyy2C17J" />
         <Link Id="HEYZj8SAvXTMXQmV2aUew6" Ids="Grydrv0UWUcLjj5yHyfjQy,EI30DxbItjEPsg8yAJpn1e" />
         <Link Id="Or2Aw9c3uROPtB8szBeRTk" Ids="DKmWXX3evI2LfxNdO2jFcd,Qtxr5aIyTW4Ovkb6Y8k932" />
         <Link Id="KchjMvO4Zl1NkMiA6GdCXH" Ids="L6HCZEZtZpHQLhxML9ezpt,KGS07bpojMlNu7kWHKFonK" />
@@ -677,9 +684,14 @@
         <Link Id="NB0sRN6AKs6NBKCyMBw1Lc" Ids="C44F05jIXnwMBrQ0IB8Yhq,J6ykuAy3PI2MbpRA6ej2Js" />
         <Link Id="CLSAp5Q6lFrOBgMT1hAO54" Ids="OOQJQczuGGAOMPcOWL55Pm,N4t2IWW0i86QJfaVkp3p7b" />
         <Link Id="LjWDcyPxayZM1F3gR280z3" Ids="QhqZPN9Dv2aOpwyG3pVqSV,BN7aTb1j0s1P7dbo93zfw1" />
+        <Link Id="HCgsdlUy9Y0NpuOb6YTPO7" Ids="K1Grrr2CgCdOjKwDlkBW7x,DD6yRPH6snmLrz3RUp3O2F" />
+        <Link Id="SaVhjCEIubCQObb1ZP5urB" Ids="K1Grrr2CgCdOjKwDlkBW7x,CAZuxY8AY9mMIO81LBxQrL" />
+        <Link Id="VyUP1SS6KFSM1zbmOkc3ro" Ids="K1Grrr2CgCdOjKwDlkBW7x,LMzFGTMqzajODnchk742NU" />
+        <Link Id="AeC7kl2OYpxMCB0bOZe6SW" Ids="K1Grrr2CgCdOjKwDlkBW7x,CzhZPfNpR2IOjvyUbQl1UC" />
+        <Link Id="GEbpcoO5eE4QFayKM9ljIg" Ids="K1Grrr2CgCdOjKwDlkBW7x,QJttOcv3YNCMXQvw6U3DlK" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="LqN860VbNwDMgtD9a8XgD9" Location="VL.Skia" Version="2019.1.0-0281-g7c3c58e688" />
-  <DocumentDependency Id="SuCBmlB1FaeNIHpK6nVJaU" Location="../../../VL.Devices.Kinect2.vl" />
+  <NugetDependency Id="LqN860VbNwDMgtD9a8XgD9" Location="VL.Skia" Version="2020.1.0" />
+  <NugetDependency Id="Csvvv8GiEp2OI9sa48F3to" Location="VL.Devices.Kinect2" Version="0.0.0.0" />
 </Document>
