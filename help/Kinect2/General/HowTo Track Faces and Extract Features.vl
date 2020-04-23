@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="UOWYOygckqsODlkddXkKiP" LanguageVersion="2019.1.0-0654-gaf14329ad1" Version="0.128">
-  <NugetDependency Id="NkxBtTr8hOoNigSpbcTFdR" Location="VL.CoreLib" Version="2019.1.0-281" />
+<Document xmlns:p="property" Id="S4NlX2Bb4n3PC4FOKsc5WL" LanguageVersion="2020.1.0.53" Version="0.128">
+  <NugetDependency Id="NkxBtTr8hOoNigSpbcTFdR" Location="VL.CoreLib" Version="2020.1.0" />
   <Patch Id="APFBYc3ryadNMXCUycaQDK">
     <Canvas Id="VZxxHWhqYjuLlXlvDdCXIG" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -209,17 +209,17 @@
           <Node Bounds="179,125,35,19" Id="IQrbp5bEiKgMVYwddvqoPJ">
             <p:NodeReference LastCategoryFullName="Devices.Kinect2" LastSymbolSource="VL.Devices.Kinect2.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="RGB" />
+              <Choice Kind="ProcessAppFlag" Name="ColorImage" />
             </p:NodeReference>
-            <Pin Id="PPjx5Eft2wHMoaoWEZDFVu" Name="Input" Kind="InputPin" />
+            <Pin Id="OtTxMSjhNK4LOrTthJGm3h" Name="Device" Kind="InputPin" />
             <Pin Id="E6OIMrUFo1XPZWeU1fwj8m" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="681,155,55,19" Id="Jcvf43sJxq5PRrjxeNDkZQ">
             <p:NodeReference LastCategoryFullName="Devices.Kinect2" LastSymbolSource="VL.Devices.Kinect2.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="Face" />
+              <Choice Kind="ProcessAppFlag" Name="Faces" />
             </p:NodeReference>
-            <Pin Id="N4CYZvcYuJJNfneEkrmfCe" Name="Input" Kind="InputPin" />
+            <Pin Id="NFTDcf1jxwPN7ZggI25j7j" Name="Device" Kind="InputPin" />
             <Pin Id="UmdkXaF3EVLN3qEsQnC83I" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="179,236,125,19" Id="VaRIHNJkI8PQVNF7qVDy7n">
@@ -259,6 +259,7 @@
               </CategoryReference>
             </p:NodeReference>
             <Pin Id="SR2W0EgVGFjOX319XPX1jW" Name="Input" Kind="InputPin" />
+            <Pin Id="LVPZo7bCss0MWe5pKZ1EVI" Name="Discard Higher Bits" Kind="InputPin" />
             <Pin Id="LLc8mJRA1MXN0P6QgS2cFZ" Name="Result" Kind="OutputPin" />
           </Node>
           <Node Bounds="155,886,105,19" Id="SlNziPtwVOYPohlhKxRb5h">
@@ -267,7 +268,7 @@
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
               <CategoryReference Kind="Category" Name="Skia" NeedsToBeDirectParent="true" />
             </p:NodeReference>
-            <Pin Id="OmaqGOTqnxyL5KmyUxvhyO" Name="Bounds" Kind="InputPin" DefaultValue="958, 2, 968, 575">
+            <Pin Id="OmaqGOTqnxyL5KmyUxvhyO" Name="Bounds" Kind="InputPin" DefaultValue="393, 450, 968, 575">
               <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>
@@ -276,6 +277,8 @@
             <Pin Id="Q5vtulSDuqCLwkgHtIcDFa" Name="Color" Kind="InputPin" />
             <Pin Id="G7ApNFylgC1M6xs9rrZ8Ru" Name="Clear" Kind="InputPin" />
             <Pin Id="N7jfJevYewFP1MvqaBQ9mf" Name="Space" Kind="InputPin" />
+            <Pin Id="C6bSBx0SHSFPXidAqXLcul" Name="Show Cursor" Kind="InputPin" />
+            <Pin Id="K8uOB5Qc1qGPy8GVAuD0Wo" Name="VSync" Kind="InputPin" />
             <Pin Id="A3RqSFQRdKPPS05Og4NRSM" Name="Enabled" Kind="InputPin" />
             <Pin Id="EgN4wSkS1QgMdMpR32l0yK" Name="Form" Kind="OutputPin" />
             <Pin Id="Prg2jdWgBsfO3USGQZ1Gag" Name="ClientBounds" Kind="OutputPin" />
@@ -432,8 +435,6 @@
         </ProcessDefinition>
         <Link Id="AzKya7Nm3sLLzV0kd0qjUI" Ids="GroJherrJcBPTpZUP3bhvg,Bpudce9MgGnOb229OUCnRn" />
         <Link Id="HNffaHgNjUvK9z9EBFJ6nf" Ids="GAKIuv4XsVYMOCjRw7pqlK,FCtkHQlanBzMJHDT7WemHi" />
-        <Link Id="U67qswC5EQANyCpncxtFqB" Ids="BnGMOdHqWH8M20FnmyD1EJ,PPjx5Eft2wHMoaoWEZDFVu" />
-        <Link Id="VKmhfhVsyWcOOCM6rdGsrk" Ids="BnGMOdHqWH8M20FnmyD1EJ,N4CYZvcYuJJNfneEkrmfCe" />
         <Link Id="Q6LzL4rTpJjLXIuR3y0eOF" Ids="E6OIMrUFo1XPZWeU1fwj8m,SR2W0EgVGFjOX319XPX1jW" />
         <Link Id="GSrQ06pGFllQEZJZbwcUDx" Ids="LLc8mJRA1MXN0P6QgS2cFZ,GXQA8wPrtYpQdTMXvt1OTy" />
         <Link Id="Aj9O9imBcObNO2hLs455Q9" Ids="DENkouVblctLndqN4y3fvn,EP9UwFZqbJHN4b7VWzii60" />
@@ -475,9 +476,11 @@
         <Link Id="EUI4yAXz710PMVW5wj7e1S" Ids="BSkzWus7BlfOYmUcAK4fJA,Jw1xhLDn3EfPyv7QuruZxF" />
         <Link Id="NGSaoRp9WecLsDkqgoxVxz" Ids="M04YUl1yVcGP6CzQDcJ7cL,VMq50Ie1V6rLRkaNHEgRQl" />
         <Link Id="LY058uuDDHBQRl1M8zx4Un" Ids="AsIkywuA1ATMzZK1W1S6Mg,GAKIuv4XsVYMOCjRw7pqlK" />
+        <Link Id="T9eU5hEECIKOgDWFil6RP6" Ids="BnGMOdHqWH8M20FnmyD1EJ,NFTDcf1jxwPN7ZggI25j7j" />
+        <Link Id="Rn7lzCDTKOiL6jmh8uPd6h" Ids="BnGMOdHqWH8M20FnmyD1EJ,OtTxMSjhNK4LOrTthJGm3h" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="LqN860VbNwDMgtD9a8XgD9" Location="VL.Skia" Version="2019.1.0-0281-g7c3c58e688" />
+  <NugetDependency Id="LqN860VbNwDMgtD9a8XgD9" Location="VL.Skia" Version="2020.1.0" />
   <NugetDependency Id="NayWUX2hDkTPEYoT87HUxi" Location="VL.Devices.Kinect2" Version="0.0.0.0" />
 </Document>

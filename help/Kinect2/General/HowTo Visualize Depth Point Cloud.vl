@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="AUeZcyP0BPZMj1LWSAvY9H" LanguageVersion="2019.1.0-0654-gaf14329ad1" Version="0.128">
+<Document xmlns:p="property" Id="AUeZcyP0BPZMj1LWSAvY9H" LanguageVersion="2020.1.0.53" Version="0.128">
   <Patch Id="JBtPzl71qIKNFbTrwnyTGp">
     <Canvas Id="SFmkqv266JHLuOC9PkL2Tn" DefaultCategory="Main" CanvasType="FullCategory">
       <!--
@@ -256,6 +256,8 @@
             <Pin Id="QlxhG2iKwasNDu0q2VWk0W" Name="Color" Kind="InputPin" />
             <Pin Id="Itp5NWdK0YmMU9XlaO3Vgr" Name="Clear" Kind="InputPin" />
             <Pin Id="D0ueuA8eu60NVC5UbQUpzs" Name="Space" Kind="InputPin" />
+            <Pin Id="QCrqe3EJfmAOTJ2opiQPK0" Name="Show Cursor" Kind="InputPin" />
+            <Pin Id="R4EuIkirsJbNvmTep8qs4x" Name="VSync" Kind="InputPin" />
             <Pin Id="BleVKKPn3xdN4S2EkKMbYX" Name="Enabled" Kind="InputPin" />
             <Pin Id="KDaHkJuQqcWM482TxMa5dF" Name="Form" Kind="OutputPin" />
             <Pin Id="BiXMuHV9pTHMp7MDWSY7x3" Name="ClientBounds" Kind="OutputPin" />
@@ -266,7 +268,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="PointCloud" />
             </p:NodeReference>
-            <Pin Id="FnyyELZpHJQMW4sFeJKpjB" Name="Input" Kind="InputPin" />
+            <Pin Id="SFa3MgYI9nbNxNUPXuoWgz" Name="Device" Kind="InputPin" />
             <Pin Id="TKRfUC9ju4HNu48JAJSuZC" Name="Minimum Z" Kind="InputPin" />
             <Pin Id="CeMSewOf3ALM2pTfiSW0Vu" Name="Maximum Z" Kind="InputPin" />
             <Pin Id="RsezknGOl2NMCIjeNI8z1h" Name="Decimation" Kind="InputPin">
@@ -515,7 +517,6 @@
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
-            <p:ValueBoxSettings />
           </Pad>
           <Node Bounds="295,375,22,19" Id="LVUPYmJVcVSQYbTz0a1DBk">
             <p:NodeReference LastCategoryFullName="Math" LastSymbolSource="CoreLibBasics.vl">
@@ -553,7 +554,6 @@
         <Link Id="MzAoHkCeUOdPTg4bKgSl2h" Ids="NIHIqyQgT0ePundWHK2MDn,Jqz37k3cfvTNYHWm093MxS" />
         <Link Id="LZJVF7hNj4hOycZAGWkTNU" Ids="UMEgUHfQZ3EPzqyGekLyDj,EYkYvv3voLqO3qNXgLivTw" />
         <Link Id="UdVrFdyUfyJLcT1Bi1h0D5" Ids="ENvd49pflubMCDCzdMzpj8,GutJq5kKJiYQMdRMN7OXUj" />
-        <Link Id="RPyM8IHWdAXOfZ55mtAZ4g" Ids="IL1Doiq9pLFPiK8vpCkvk9,FnyyELZpHJQMW4sFeJKpjB" />
         <Link Id="Fm5SVHafV5gMHJDQ12xYiT" Ids="KNlL72OUVdnLvkmvDRSunz,FGM6cKgFPzSL0hVn8YH6Xo" />
         <Link Id="IbMPzf8u8sGPtdihjyE2WY" Ids="CSwVGJdYgP2NetoOnBvG4Q,Tfj40o12HviL25oCtZblbq" />
         <Link Id="DIloeqxrlj9OpkCLbm4Y8w" Ids="RTkWhanJbbnNnLpU5JFbB9,RsezknGOl2NMCIjeNI8z1h" />
@@ -576,11 +576,12 @@
         <Link Id="DZ5IyU9FSN0Lm6GPCP5PHC" Ids="Fxg4Y6kEJiNPDb4VNSf4K3,CVIyR7KXRRdNaHOBwSnZck" />
         <Link Id="GuOjMQMOtTsNOAdmqiLp8d" Ids="DiICjoXD72pOaOtV57yx4A,AEkLXkHg2yjQaJYGOwq9Zu" />
         <Link Id="VXHMyX612LyLik3S2SNkFO" Ids="JukPMPnD47oPYaBqdBLbvM,QvcVRYGSW3PNYKbLfjTvv7" />
+        <Link Id="DbVtlEfkFRHPW2fjps0zuP" Ids="IL1Doiq9pLFPiK8vpCkvk9,SFa3MgYI9nbNxNUPXuoWgz" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="UNOp1Uu8RDFPXvAXfKqZ47" Location="VL.Skia" Version="0.75.66-gfc487d01eb" />
-  <NugetDependency Id="GHpVFfqOwayPopzs29fMqy" Location="VL.CoreLib" Version="0.75.66-gfc487d01eb" />
+  <NugetDependency Id="UNOp1Uu8RDFPXvAXfKqZ47" Location="VL.Skia" Version="2020.1.0" />
+  <NugetDependency Id="GHpVFfqOwayPopzs29fMqy" Location="VL.CoreLib" Version="2020.1.0" />
   <NugetDependency Id="BtAOF0leFx8PvxEWryz9b2" Location="VL.Devices.Kinect2" Version="0.0.0.0" />
-  <NugetDependency Id="AUGBk901L8VOXzw5byTJr9" Location="VL.EditingFramework" Version="2019.1.0-0618-g6e4914d739" />
+  <NugetDependency Id="AUGBk901L8VOXzw5byTJr9" Location="VL.EditingFramework" Version="2020.1.0" />
 </Document>
