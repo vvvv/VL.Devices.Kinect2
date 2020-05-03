@@ -2531,7 +2531,7 @@
     ************************ Face ************************
 
 -->
-        <Node Name="Face" Bounds="56,404" Id="DRtgxpnBHPAOyVwCQKpMAx">
+        <Node Name="Face" Bounds="36,505" Id="DRtgxpnBHPAOyVwCQKpMAx">
           <p:NodeReference>
             <Choice Kind="RecordDefinition" Name="Record" />
             <FullNameCategoryReference ID="Primitive" />
@@ -3747,7 +3747,7 @@
     ************************ FaceHD ************************
 
 -->
-        <Node Name="FaceHD" Bounds="54,572" Id="QruHLK649nJN4q0JsO18MT">
+        <Node Name="FaceHD" Bounds="36,572" Id="QruHLK649nJN4q0JsO18MT">
           <p:NodeReference>
             <Choice Kind="RecordDefinition" Name="Record" />
             <FullNameCategoryReference ID="Primitive" />
@@ -4607,7 +4607,7 @@
     ************************ FOV (Reactive) ************************
 
 -->
-        <Node Name="FOV (Reactive)" Bounds="50,217" Id="RleSjOMXT9oNbpcBOl2ree">
+        <Node Name="FOV (Reactive)" Bounds="36,447" Id="RleSjOMXT9oNbpcBOl2ree">
           <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
             <Choice Kind="ContainerDefinition" Name="Process" />
           </p:NodeReference>
@@ -4672,7 +4672,7 @@
     ************************ Joint ************************
 
 -->
-        <Node Name="Joint" Bounds="52,324" Id="G2qs5XNoOtyLYi1cWadfVQ">
+        <Node Name="Joint" Bounds="36,314" Id="G2qs5XNoOtyLYi1cWadfVQ">
           <p:NodeReference>
             <Choice Kind="ForwardDefinition" Name="Forward" />
             <FullNameCategoryReference ID="Primitive" />
@@ -4821,7 +4821,7 @@
     ************************ JointOrientation ************************
 
 -->
-        <Node Name="JointOrientation" Bounds="37,15" Id="SSg8lUMTek2NwpGn0RDk6f">
+        <Node Name="JointOrientation" Bounds="36,253" Id="SSg8lUMTek2NwpGn0RDk6f">
           <p:NodeReference>
             <Choice Kind="ForwardDefinition" Name="Forward" />
             <FullNameCategoryReference ID="Primitive" />
@@ -4877,6 +4877,78 @@
             <ProcessDefinition Id="CUKDBNHVxKqNCn545BvQS0" IsHidden="true">
               <Fragment Id="ChqS2liIrokMwvsTJkXPm5" Patch="JwlNir7UBrwQUqUSoecvR7" />
             </ProcessDefinition>
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ JointType ************************
+
+-->
+        <Node Name="JointType" Bounds="36,70" Id="ROV6zbKOjNHMEmKHHZXruy">
+          <p:NodeReference>
+            <Choice Kind="ForwardRecordDefinition" Name="Immutable Forward" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:TypeAnnotation LastCategoryFullName="Microsoft.Kinect" LastSymbolSource="Microsoft.Kinect.dll">
+            <Choice Kind="TypeFlag" Name="JointType" />
+          </p:TypeAnnotation>
+          <Patch Id="D3izn3pe83LQUgwVTXXxuB">
+            <Canvas Id="HnNPcIYe96yPxiq0JIEwJN" BordersChecked="false" CanvasType="Group" />
+            <ProcessDefinition Id="AQlzRGqsU4vQMuh7d0VujJ" IsHidden="true" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ TrackingState ************************
+
+-->
+        <Node Name="TrackingState" Bounds="36,192" Id="NCpr5O4NUH1Ndovq3knysr">
+          <p:NodeReference>
+            <Choice Kind="ForwardRecordDefinition" Name="Immutable Forward" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:TypeAnnotation LastCategoryFullName="Microsoft.Kinect" LastSymbolSource="Microsoft.Kinect.dll">
+            <Choice Kind="TypeFlag" Name="TrackingState" />
+          </p:TypeAnnotation>
+          <Patch Id="DDj52OKYlCVM2o7BGSWEjj">
+            <Canvas Id="MuaWzNo7dEVNV3picDcAxh" BordersChecked="false" CanvasType="Group" />
+            <ProcessDefinition Id="OfQvpss1ce1OeKwRUzbj4J" IsHidden="true" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ TrackingConfidence ************************
+
+-->
+        <Node Name="TrackingConfidence" Bounds="36,131" Id="VHcmu63AFGOP40t2qi0EN2">
+          <p:NodeReference>
+            <Choice Kind="ForwardRecordDefinition" Name="Immutable Forward" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:TypeAnnotation LastCategoryFullName="Microsoft.Kinect" LastSymbolSource="Microsoft.Kinect.dll">
+            <Choice Kind="TypeFlag" Name="TrackingConfidence" />
+          </p:TypeAnnotation>
+          <Patch Id="QVaKc4YuL1zOpKpadEqbvF">
+            <Canvas Id="V1bquAuicnUOCxeET0YKUN" BordersChecked="false" CanvasType="Group" />
+            <ProcessDefinition Id="NgXMSe1kENeLEZeXrS8xf8" IsHidden="true" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ HandState ************************
+
+-->
+        <Node Name="HandState" Bounds="36,9" Id="L6kyiByMG15P1gBhkMCTgp">
+          <p:NodeReference>
+            <Choice Kind="ForwardRecordDefinition" Name="Immutable Forward" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:TypeAnnotation LastCategoryFullName="Microsoft.Kinect" LastSymbolSource="Microsoft.Kinect.dll">
+            <Choice Kind="TypeFlag" Name="HandState" />
+          </p:TypeAnnotation>
+          <Patch Id="LmO2Xim7rv2LiX5XSoKkf9">
+            <Canvas Id="BNJ9z5GBcBpQU6BV91a9Hj" BordersChecked="false" CanvasType="Group" />
+            <ProcessDefinition Id="QEVZUdB212YLYx1YljsBht" IsHidden="true" />
           </Patch>
         </Node>
       </Canvas>
