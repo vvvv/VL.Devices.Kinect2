@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="S3BYXYbBcOQLrAesdzH6KE" LanguageVersion="2019.1.0-0702-gfbe038585a" Version="0.128">
-  <NugetDependency Id="BfQ9BqV8poEPnZWKYQROv0" Location="VL.CoreLib" Version="2019.1.0-547" />
+<Document xmlns:p="property" Id="S3BYXYbBcOQLrAesdzH6KE" LanguageVersion="2020.1.0.53" Version="0.128">
+  <NugetDependency Id="BfQ9BqV8poEPnZWKYQROv0" Location="VL.CoreLib" Version="2020.1.0" />
   <Patch Id="DYRuwp4ufPyNyKtULooXvw">
     <Canvas Id="QYFOXjrMgATQTcpBMDj2hQ" DefaultCategory="Devices.Kinect2.HDE" CanvasType="FullCategory">
       <!--
@@ -34,6 +34,7 @@
               <Pin Id="MoxnnM74AjjPB1A6tp5uig" Name="Background Enabled" Kind="InputPin" />
               <Pin Id="PHRJub3zNXOLvvlrID0X2d" Name="Stroke Paint" Kind="InputPin" />
               <Pin Id="TdkltyD9FSXNgxPbvJXzqR" Name="Stroke Enabled" Kind="InputPin" />
+              <Pin Id="KCEAMxQBepDQGmnsnZiA96" Name="Clip Enabled" Kind="InputPin" />
               <Pin Id="FDDBXR2VsLOLyf1nVVilTk" Name="Output" Kind="StateOutputPin" />
             </Node>
             <Pad Id="OKGHdBbTM3SPEqXIBF7vZ7" Comment="Padding" Bounds="556,612,35,28" ShowValueBox="true" isIOBox="true" Value="0, 0.02">
@@ -169,12 +170,8 @@
         </p:Interfaces>
         <Patch Id="MlvcXIB5rnkP4mG7SbpeD5">
           <Canvas Id="MfVkR2QkP4VMRiZtvmR9VI" CanvasType="Group">
-            <Pad Id="HmjB43ItpMDLCEmqnppsG7" SlotId="QENcNmmzNcDMhkf1ibZSJH" Bounds="693,378">
-              <p:ValueBoxSettings />
-            </Pad>
-            <Pad Id="U63UiT5TTP6OKFEcAhy33p" SlotId="RuoMCZhg6MPNEgZi4nLdY4" Bounds="383,378">
-              <p:ValueBoxSettings />
-            </Pad>
+            <Pad Id="HmjB43ItpMDLCEmqnppsG7" SlotId="QENcNmmzNcDMhkf1ibZSJH" Bounds="693,378" />
+            <Pad Id="U63UiT5TTP6OKFEcAhy33p" SlotId="RuoMCZhg6MPNEgZi4nLdY4" Bounds="383,378" />
             <ControlPoint Id="DulcX6cPzj1OX4FfBDAy3l" Bounds="383,282" />
             <ControlPoint Id="FXCmMC0AgXxQIzJWkYnzKa" Bounds="693,282" />
             <ControlPoint Id="K1ZaD8lStCcQEVEWaCjxWk" Bounds="693,459" />
@@ -251,9 +248,7 @@
           <Canvas Id="PVfw7DIOhJjL6SG184LaAo" CanvasType="Group">
             <ControlPoint Id="JET8KiLXiKgL3KDbBsUIZ9" Bounds="438,244,20,20" />
             <ControlPoint Id="ApTyokL6gq0O3zLmrhauR9" Bounds="466,873" />
-            <Pad Id="CQZITwI6yQtN7SeGZNSbzo" SlotId="Owddg2rygUMLIGR24j6A8H" Bounds="439,307">
-              <p:ValueBoxSettings />
-            </Pad>
+            <Pad Id="CQZITwI6yQtN7SeGZNSbzo" SlotId="Owddg2rygUMLIGR24j6A8H" Bounds="439,307" />
             <ControlPoint Id="BK2Iha7OFpHNsl04cAxmLE" Bounds="241,757" />
             <ControlPoint Id="SKhPFtwF0jAMgzSRSxcMQK" Bounds="271,685" />
             <ControlPoint Id="MbzO5Tuw1uMNZXj48JdoQT" Bounds="345,684" />
@@ -276,6 +271,7 @@
               <Pin Id="VtXsJXRgr2RMyBulEZfaFF" Name="Input" Kind="InputPin" />
               <Pin Id="Vf71MfsciqVM0NZ4CpTp3N" Name="Color" Kind="InputPin" />
               <Pin Id="JW5OZQm8glVMcfjotEzOc0" Name="Stroke Width" Kind="InputPin" />
+              <Pin Id="RbFsME4xHLRM9xXbFDb2st" Name="Camera" Kind="InputPin" />
               <Pin Id="DtNo9O5rXFBLLAAqBkWWUd" Name="Enabled" Kind="InputPin" />
               <Pin Id="DKxeGMq6PqUOhMta5oHsWd" Name="Output" Kind="OutputPin" />
             </Node>
@@ -365,16 +361,16 @@
                 <Choice Kind="OperationCallFlag" Name="Split" />
               </p:NodeReference>
               <Pin Id="C9oXD7CZ8haLnOaLYu2PYf" Name="Input" Kind="StateInputPin" />
-              <Pin Id="OmzV5rA4yooNl6mCWFca9r" Name="Output" Kind="StateOutputPin" />
-              <Pin Id="FsoZDjgDe5yPEBlygungGh" Name="Tracking ID" Kind="OutputPin" />
+              <Pin Id="CAsNNjvoP9yQDBA35vMSGv" Name="Joint Positions" Kind="OutputPin" />
+              <Pin Id="LBzBlt8GS69LqEu1RaKl3u" Name="Joint Type" Kind="OutputPin" />
+              <Pin Id="SnJkBhzphPXL089hTBmVzJ" Name="Joint Tracking State" Kind="OutputPin" />
+              <Pin Id="KSx4lVPTvCTN3LPziyYwUw" Name="Joint Orientations" Kind="OutputPin" />
+              <Pin Id="TEVwewcB7hmNtHfen7RmTz" Name="Hand Left Confidence" Kind="OutputPin" />
+              <Pin Id="QAaAgRPXJQoPxko9ZhYT6o" Name="Hand Left State" Kind="OutputPin" />
+              <Pin Id="Vh1zLWgbtgvMoBjgJOWYTa" Name="Hand Right Confidence" Kind="OutputPin" />
+              <Pin Id="T68FVsUrf8hNScOs6V1CwF" Name="Hand Right State" Kind="OutputPin" />
+              <Pin Id="JL7um8bR72iPuyK1FYpFfK" Name="Tracking Id" Kind="OutputPin" />
               <Pin Id="T1bAM8XsrAPOMn1sDjQKlc" Name="User Index" Kind="OutputPin" />
-              <Pin Id="CAsNNjvoP9yQDBA35vMSGv" Name="Position" Kind="OutputPin" />
-              <Pin Id="UMyLVL7fgwJQD4pMXjjH0Q" Name="Clipping" Kind="OutputPin" />
-              <Pin Id="A4UXyf6QgrgPJKoitJsldk" Name="Joint ID" Kind="OutputPin" />
-              <Pin Id="Ek7JNlByllXP2qtApuKzS3" Name="Joint Position" Kind="OutputPin" />
-              <Pin Id="HVWB4jwnEJeLufjUUY8Xto" Name="Joint Position RGB" Kind="OutputPin" />
-              <Pin Id="A0TKhFklHKGOcOizk3gW5X" Name="Joint Orientation" Kind="OutputPin" />
-              <Pin Id="MYS8W1rV1GVMaZRJUVfAi0" Name="Joint State" Kind="OutputPin" />
             </Node>
             <Node Bounds="739,558,52,26" Id="JyIVNYg4ln7MRTO2uxmF3Z">
               <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
@@ -424,6 +420,7 @@
               <Pin Id="Fq5ciYcAZbSPSib2pNtOPY" Name="Paint" Kind="InputPin" />
               <Pin Id="Py70jMCardMMMXJE0jdsYm" Name="Enabled" Kind="InputPin" />
               <Pin Id="QcbiqYyABK6PS3W0L3m5TF" Name="Output" Kind="OutputPin" />
+              <Pin Id="I07Pmyh6w39M70Sz8ekqjk" Name="Baseline Position" Kind="OutputPin" />
             </Node>
             <Node Bounds="811,560,55,19" Id="PogHKEFlP7dLEGjshi4xBV">
               <p:NodeReference LastCategoryFullName="System.Conversion" LastSymbolSource="CoreLibBasics.vl">
@@ -612,7 +609,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="PplJ8M06DDYNWsWk2Slfxl" Location="VL.Skia" Version="2019.1.0-0546-g5d9fbebda5" />
-  <NugetDependency Id="Vx0IDKk0ZwjLq5dkCVhG5Z" Location="VL.HDE" Version="0.0.0.0" />
+  <NugetDependency Id="PplJ8M06DDYNWsWk2Slfxl" Location="VL.Skia" Version="2020.1.0" />
+  <NugetDependency Id="Vx0IDKk0ZwjLq5dkCVhG5Z" Location="VL.HDE" Version="2020.1.0" />
   <NugetDependency Id="TvjkKT0YJvdOY1DCMJ4K9z" Location="VL.Devices.Kinect2" Version="0.0.0.0" />
 </Document>
