@@ -9,7 +9,7 @@ namespace VL.Devices.Kinect2
     /// <summary>
     /// Based off of the FaceBasics-WPF example that ships with Kinect SDK
     /// </summary>
-    public class Face : IDisposable
+    public class FaceTracker : IDisposable
     {
         /// <summary>
         /// Active Kinect sensor
@@ -65,7 +65,7 @@ namespace VL.Devices.Kinect2
         /// <summary>
         /// Initializes a new instance of the MainWindow class.
         /// </summary>
-        public Face(KinectSensor sensor)
+        public FaceTracker(KinectSensor sensor)
         {
             // one sensor is currently supported
             this.kinectSensor = sensor;
