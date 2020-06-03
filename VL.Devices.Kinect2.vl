@@ -7031,7 +7031,7 @@
     ************************ Face ************************
 
 -->
-      <Node Name="Face" Bounds="724,380" Id="PmnT1z3wxZsPq8JWQAU72R">
+      <Node Name="Face" Bounds="723,380" Id="PmnT1z3wxZsPq8JWQAU72R">
         <p:NodeReference>
           <Choice Kind="ForwardDefinition" Name="Forward" />
           <FullNameCategoryReference ID="Primitive" />
@@ -7242,10 +7242,10 @@
             </Node>
             <!--
 
-    ************************ TrackingId (Advanced) ************************
+    ************************ ID (Advanced) ************************
 
 -->
-            <Node Name="TrackingId (Advanced)" Bounds="678,436,150,130" Id="Hk1v1e98RQ5LyfJrdYcMzj">
+            <Node Name="ID (Advanced)" Bounds="678,436,150,130" Id="Hk1v1e98RQ5LyfJrdYcMzj">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
@@ -7327,9 +7327,9 @@
                     <Patch Id="KNTuDBfhNGVLSN1tjugAoE" Name="Create" ManuallySortedPins="true" />
                     <Patch Id="HN4eat7VhYSMQQtqhk11Rb" Name="Then" ManuallySortedPins="true" />
                     <Node Bounds="1163,743,64,26" Id="HQ1eEHZAsD0NGlwYc8xtgS">
-                      <p:NodeReference LastCategoryFullName="Devices.Kinect2.Face" LastSymbolSource="VL.Devices.Kinect2.vl">
+                      <p:NodeReference>
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                        <Choice Kind="OperationCallFlag" Name="TrackingId" />
+                        <Choice Kind="OperationCallFlag" Name="ID" />
                         <CategoryReference Kind="ClassType" Name="Face" NeedsToBeDirectParent="true" />
                       </p:NodeReference>
                       <Pin Id="HVhl2YSOH3vNOPz0C32djP" Name="Input" Kind="StateInputPin" />
@@ -7591,7 +7591,7 @@
     ************************ FaceHD ************************
 
 -->
-      <Node Name="FaceHD" Bounds="749,609" Id="CAJUccojVhONHASqgHZMDR">
+      <Node Name="FaceHD" Bounds="723,609" Id="CAJUccojVhONHASqgHZMDR">
         <p:NodeReference>
           <Choice Kind="ForwardDefinition" Name="Forward" />
           <FullNameCategoryReference ID="Primitive" />
@@ -7603,17 +7603,17 @@
           <Canvas Id="SJs6MYmXutEL0biHvs57se" CanvasType="Group">
             <!--
 
-    ************************ CameraSpacePoints (Advanced) ************************
+    ************************ WorldSpacePoints (Advanced) ************************
 
 -->
-            <Node Name="CameraSpacePoints (Advanced)" Bounds="592,255,141,80" Id="OO4kM5ZFomkMB2oW7mW3KY">
+            <Node Name="WorldSpacePoints (Advanced)" Bounds="583,107,141,80" Id="OO4kM5ZFomkMB2oW7mW3KY">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
               <p:HideCategory p:Type="Boolean">false</p:HideCategory>
               <Patch Id="EKsubBjGVuzQQAdaMMHnPz">
-                <Node Bounds="604,284,105,26" AutoConnect="true" Id="OVNkIiwh28vMY6Sz2jRj0g">
+                <Node Bounds="595,136,105,26" AutoConnect="true" Id="OVNkIiwh28vMY6Sz2jRj0g">
                   <p:NodeReference LastCategoryFullName="VL.Devices.Kinect2.FaceHD" LastSymbolSource="VL.Devices.Kinect2.dll">
                     <Choice Kind="OperationNode" Name="CameraSpacePoints" />
                     <FullNameCategoryReference ID="VL.Devices.Kinect2.FaceHD" />
@@ -7753,7 +7753,7 @@
                 <Pin Id="M4oL1lBC96kOewabSdHd6w" Name="Face Alignment Quality" Kind="OutputPin" Bounds="537,787" />
                 <Link Id="BYov0h9EdwhOzH6wyt4kAG" Ids="Kz73kH6Q5r4OofEX3YIzhD,M4oL1lBC96kOewabSdHd6w" IsHidden="true" />
                 <ControlPoint Id="FL1pjfzhcmWMXDA35jWOpT" Bounds="1311,897" />
-                <Pin Id="OPb0ZLXPdg9NSRApeQDkW0" Name="Camera Space Points" Kind="OutputPin" Bounds="527,779" />
+                <Pin Id="OPb0ZLXPdg9NSRApeQDkW0" Name="World Space Points" Kind="OutputPin" Bounds="527,779" />
                 <Link Id="Ipv0z6W0DMSMNuINujeHsB" Ids="FL1pjfzhcmWMXDA35jWOpT,OPb0ZLXPdg9NSRApeQDkW0" IsHidden="true" />
                 <ControlPoint Id="RPqYU3fE4ScM0ZhQTPusoI" Bounds="1571,897" />
                 <Pin Id="QI5aNX0sZjsM0o9lr3NX5n" Name="Face Orientation" Kind="OutputPin" Bounds="786,787" />
@@ -7812,9 +7812,9 @@
                       <Pin Id="A5Ajbpr4XLrPtMX53YXV4X" Name="Head Pivot Point" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="1209,820,105,26" Id="TcJBktTocxmPqABZ2ycXLb">
-                      <p:NodeReference LastCategoryFullName="Devices.Kinect2.FaceHD" LastSymbolSource="VL.Devices.Kinect2.vl">
+                      <p:NodeReference>
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                        <Choice Kind="OperationCallFlag" Name="CameraSpacePoints" />
+                        <Choice Kind="OperationCallFlag" Name="WorldSpacePoints" />
                         <CategoryReference Kind="ClassType" Name="FaceHD" NeedsToBeDirectParent="true" />
                       </p:NodeReference>
                       <Pin Id="PRytG7CwUoKNm2AoAkuJJo" Name="Input" Kind="StateInputPin" />
@@ -7903,32 +7903,6 @@
                 <Pin Id="CWERij5V41HLrZPkwDYJU6" Name="Output" Kind="OutputPin" />
               </Patch>
             </Node>
-            <!--
-
-    ************************ IsActive ************************
-
--->
-            <Node Name="IsActive" Bounds="631,638,100,50" Id="ROvAia2yStGNsFz2qKzfr6">
-              <p:NodeReference>
-                <Choice Kind="OperationDefinition" Name="Operation" />
-                <FullNameCategoryReference ID="Primitive" />
-              </p:NodeReference>
-              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
-              <Patch Id="LORQaUDGC67PgvOsRSjvtw">
-                <Node Bounds="631,638,10,10" AutoConnect="true" Id="RzhFPied2vQL9Kl8vPJIwh">
-                  <p:NodeReference LastCategoryFullName="VL.Devices.Kinect2.FaceHD" LastSymbolSource="VL.Devices.Kinect2.dll">
-                    <Choice Kind="OperationNode" Name="IsActive" />
-                    <FullNameCategoryReference ID="VL.Devices.Kinect2.FaceHD" />
-                  </p:NodeReference>
-                  <Pin Id="LqTgEIWj0yVL6NJ6qczMnO" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="CUzBCOdFl06Ob7GIrqaDzN" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="DpnEYUgKuebNUuYkNeI6PJ" Name="Is Active" Kind="OutputPin" />
-                </Node>
-                <Pin Id="LqPt6WLIqtLPoaGKp0n60d" Name="Input" Kind="InputPin" />
-                <Pin Id="KT6A4Xzqe9MQH8lYPDYZzv" Name="Output" Kind="OutputPin" />
-                <Pin Id="GNevq2ITvFvNBKlFpPUIA2" Name="Is Active" Kind="OutputPin" />
-              </Patch>
-            </Node>
           </Canvas>
           <ProcessDefinition Id="HNqItYJ1ZgDPEj9aBlGGoq" IsHidden="true">
             <Fragment Id="Uu2UTUSWmc2PqVymFQREvd" Patch="OO4kM5ZFomkMB2oW7mW3KY" />
@@ -7938,7 +7912,6 @@
             <Fragment Id="Qu6Kz2EtkswLcl2acG1Tdb" Patch="KlM6EsUSt7fNDAt4QeXgKZ" />
             <Fragment Id="UMOft2jJj5NNp3NuluTQpE" Patch="RR8mArTvJ03L4UzmUj9pVq" />
             <Fragment Id="FYpBmdGVxWVQJBTPa1o5yG" Patch="TftRkebAztpQBkK6nJnyY1" />
-            <Fragment Id="Egi8NMO8UA1NdVDHu3oygO" Patch="ROvAia2yStGNsFz2qKzfr6" />
           </ProcessDefinition>
         </Patch>
       </Node>
