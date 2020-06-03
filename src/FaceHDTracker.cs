@@ -9,13 +9,9 @@ using Xenko.Core.Mathematics;
 
 namespace VL.Devices.Kinect2
 {
-    public class FaceHDData
+    public class FaceHD
     {
-        private ColorSpacePoint[] _colorSpacePoints;
-
-        private DepthSpacePoint[] _depthSpacePoints;
-
-        public int TrackingId { get; }
+        public ulong ID { get; }
 
         public Quaternion FaceOrientation { get; }
 
@@ -23,33 +19,7 @@ namespace VL.Devices.Kinect2
 
         public FaceAlignmentQuality FaceAlignmentQuality { get;  }
 
-        public IReadOnlyList<CameraSpacePoint> NativeCameraSpacePoints { get; }
-
-        public Spread<Vector2> RGBSpacePoints { 
-            get {
-                if (Sensor != null)
-                {
-                    if (_colorSpacePoints == null)
-                        _colorSpacePoints = new ColorSpacePoint[NativeCameraSpacePoints.Count];
-                    Sensor.CoordinateMapper.MapCameraPointsToColorSpace(NativeCameraSpacePoints.ToArray(), _colorSpacePoints);
-                }
-                return TypeConverter.ToVector2(_colorSpacePoints);
-            }  
-        }
-
-        public Spread<Vector2> DepthSpacePoints
-        {
-            get
-            {
-                if (Sensor != null)
-                {
-                    if (_depthSpacePoints == null)
-                        _depthSpacePoints = new DepthSpacePoint[NativeCameraSpacePoints.Count];
-                    Sensor.CoordinateMapper.MapCameraPointsToDepthSpace(NativeCameraSpacePoints.ToArray(), _depthSpacePoints);
-                }
-                return TypeConverter.ToVector2(_depthSpacePoints);
-            }
-        }
+        public CameraSpacePoint[] NativeCameraSpacePoints { get; }
 
         public Spread<Vector3> CameraSpacePoints
         {
@@ -59,19 +29,18 @@ namespace VL.Devices.Kinect2
             }
         }
 
-        public KinectSensor Sensor { get; }
-
-        public FaceHDData(IReadOnlyList<CameraSpacePoint> cameraSpacePoints, Microsoft.Kinect.Vector4 faceOrientation, CameraSpacePoint headPivotPoint, FaceAlignmentQuality quality, KinectSensor sensor)
+        internal FaceHD(IReadOnlyList<CameraSpacePoint> cameraSpacePoints, FaceAlignment faceAlignment, ulong ID)
         {
-            NativeCameraSpacePoints = cameraSpacePoints;
-            FaceOrientation = TypeConverter.ToQuaternion(faceOrientation);
-            HeadPivotPoint = TypeConverter.ToVector3(headPivotPoint);
-            FaceAlignmentQuality = quality;
-            Sensor = sensor;
+            NativeCameraSpacePoints = cameraSpacePoints.ToArray();
+            FaceOrientation = TypeConverter.ToQuaternion(faceAlignment.FaceOrientation);
+            HeadPivotPoint = TypeConverter.ToVector3(faceAlignment.HeadPivotPoint);
+            FaceAlignmentQuality = faceAlignment.Quality;
+            this.ID = ID;
         }
     }
-    public class FaceHD : IDisposable
+    public class FaceHDTracker : IDisposable
     {
+        private FaceHD defaultValue = new FaceHD(new CameraSpacePoint[0], new FaceAlignment(), 0);
         private KinectSensor _sensor = null;
 
         private BodyFrameSource _bodySource = null;
@@ -86,16 +55,16 @@ namespace VL.Devices.Kinect2
 
         private FaceModel _faceModel = null;
 
-        private Subject<FaceHDData> faceHDData;
+        private Subject<FaceHD> faceHDData;
 
-        private FaceHDData _faceHDData;
+        private FaceHD _faceHDData;
 
-        public IObservable<FaceHDData> FaceHDData { get { return faceHDData; } }
+        public IObservable<FaceHD> FaceHD { get { return faceHDData; } }
 
-        public FaceHD(KinectSensor sensor)
+        public FaceHDTracker(KinectSensor sensor)
         {
             _sensor = sensor;
-            faceHDData = new Subject<FaceHDData>();
+            faceHDData = new Subject<FaceHD>();
 
             if (_sensor != null)
             {
@@ -122,6 +91,7 @@ namespace VL.Devices.Kinect2
                     Body[] bodies = new Body[frame.BodyCount];
                     frame.GetAndRefreshBodyData(bodies);
 
+                    //TODO: Use a parametrized Body.TrackingID to choose/set the TrackingId
                     Body body = bodies.Where(b => b.IsTracked).FirstOrDefault();
 
                     if (!_faceSource.IsTrackingIdValid)
@@ -130,6 +100,11 @@ namespace VL.Devices.Kinect2
                         {
                             _faceSource.TrackingId = body.TrackingId;
                         }
+                        faceHDData.OnNext(defaultValue);
+                    }
+                    else
+                    {
+                        UpdateFaceData();
                     }
                 }
             }
@@ -142,21 +117,18 @@ namespace VL.Devices.Kinect2
                 if (frame != null && frame.IsFaceTracked)
                 {
                     frame.GetAndRefreshFaceAlignmentResult(_faceAlignment);
-                    UpdateFaceData();
+                    //UpdateFaceData();
                 }
             }
         }
 
         private void UpdateFaceData()
         {
-            if (_faceModel == null) return;
+            if (_faceModel == null || !_faceSource.IsOnline) return;
             
             var vertices = _faceModel.CalculateVerticesForAlignment(_faceAlignment);
-            if (vertices.Count > 0)
-            {
-                _faceHDData = new FaceHDData(vertices, _faceAlignment.FaceOrientation, _faceAlignment.HeadPivotPoint, _faceAlignment.Quality, _sensor);
-                faceHDData.OnNext(_faceHDData);
-            }
+            _faceHDData = new FaceHD(vertices, _faceAlignment, _faceSource.TrackingId);
+            faceHDData.OnNext(_faceHDData);
         }
 
         public void Dispose()
