@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="UFzZq9LOxo3MtJDvgRWI7A" LanguageVersion="2020.1.2.135" Version="0.128">
-  <NugetDependency Id="EEYSk9rCs8TLQ1HUJFqHly" Location="VL.CoreLib" Version="2020.1.2" />
+<Document xmlns:p="property" Id="UFzZq9LOxo3MtJDvgRWI7A" LanguageVersion="2020.1.3.147" Version="0.128">
+  <NugetDependency Id="EEYSk9rCs8TLQ1HUJFqHly" Location="VL.CoreLib" Version="2020.1.3" />
   <Patch Id="OF6M52TF0g1MIvRz41ucGu">
     <Canvas Id="Ue7xuqlBZHlLeRL5dLjZsS" DefaultCategory="Devices.Kinect2" CanvasType="FullCategory">
-      <Canvas Id="ALzepdUffo2N2GS1PvjrMC" Name="Internal" Position="486,349">
+      <Canvas Id="ALzepdUffo2N2GS1PvjrMC" Name="Internal" Position="272,213">
         <!--
 
     ************************ Kinect2 ************************
@@ -3071,7 +3071,7 @@
           </Patch>
         </Node>
       </Canvas>
-      <Canvas Id="F3IbRVupvgRQQrqvgIA6QU" Name="Advanced" Position="486,305">
+      <Canvas Id="F3IbRVupvgRQQrqvgIA6QU" Name="Advanced" Position="272,169">
         <!--
 
     ************************ DepthSpacePointToVector2 ************************
@@ -4687,10 +4687,10 @@
         </Node>
         <!--
 
-    ************************ WorldToColor (FaceHD) ************************
+    ************************ WorldToColorSpace (FaceHD) ************************
 
 -->
-        <Node Name="WorldToColor (FaceHD)" Bounds="1597,-258" Id="KeHCqbJuHgpPju88hPnVVd">
+        <Node Name="WorldToColorSpace (FaceHD)" Bounds="1597,-259" Id="KeHCqbJuHgpPju88hPnVVd">
           <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
             <Choice Kind="ContainerDefinition" Name="Process" />
           </p:NodeReference>
@@ -4790,10 +4790,10 @@
         </Node>
         <!--
 
-    ************************ WorldToDepth (FaceHD) ************************
+    ************************ WorldToDepthSpace (FaceHD) ************************
 
 -->
-        <Node Name="WorldToDepth (FaceHD)" Bounds="1595,-195" Id="AUZZSj68Mf9NqTc3PRaCoO">
+        <Node Name="WorldToDepthSpace (FaceHD)" Bounds="1595,-196" Id="AUZZSj68Mf9NqTc3PRaCoO">
           <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
             <Choice Kind="ContainerDefinition" Name="Process" />
           </p:NodeReference>
@@ -4893,10 +4893,10 @@
         </Node>
         <!--
 
-    ************************ WorldToColor ************************
+    ************************ WorldToColorSpace ************************
 
 -->
-        <Node Name="WorldToColor" Bounds="1341,-280" Id="QJYkLtKKst8MUU0FQUUGSZ">
+        <Node Name="WorldToColorSpace" Bounds="1347,-259" Id="QJYkLtKKst8MUU0FQUUGSZ">
           <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
             <Choice Kind="ContainerDefinition" Name="Process" />
           </p:NodeReference>
@@ -4982,10 +4982,10 @@
         </Node>
         <!--
 
-    ************************ WorldToDepth ************************
+    ************************ WorldToDepthSpace ************************
 
 -->
-        <Node Name="WorldToDepth" Bounds="1339,-217" Id="FHEimGBjnQTOqluWWRqjpo">
+        <Node Name="WorldToDepthSpace" Bounds="1345,-196" Id="FHEimGBjnQTOqluWWRqjpo">
           <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
             <Choice Kind="ContainerDefinition" Name="Process" />
           </p:NodeReference>
@@ -5075,7 +5075,7 @@
     ************************ ColorImage ************************
 
 -->
-      <Node Name="ColorImage" Bounds="486,546" Id="Ojpn73vdRXOLR9W5GzZkS9" Summary="Returns Kinect2 RGB image frames.">
+      <Node Name="ColorImage" Bounds="272,350" Id="Ojpn73vdRXOLR9W5GzZkS9" Summary="Returns Kinect2 RGB image frames.">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -5125,7 +5125,7 @@
     ************************ DepthImage ************************
 
 -->
-      <Node Name="DepthImage" Bounds="486,664" Id="Vt9oyl2B3AsO2PE5KHPPfT" Summary="Returns Kinect2 Depth image frames." Remarks="Returned image is single channel 16-bit Unsigned Integer.">
+      <Node Name="DepthImage" Bounds="272,468" Id="Vt9oyl2B3AsO2PE5KHPPfT" Summary="Returns Kinect2 Depth image frames." Remarks="Returned image is single channel 16-bit Unsigned Integer.">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -5175,7 +5175,7 @@
     ************************ BodyImage ************************
 
 -->
-      <Node Name="BodyImage" Bounds="486,723" Id="LymkjdSNZU4PBlvZ4iCupq" Summary="Returns an R8 formatted image with masks for each detected player." Remarks="The pixel values in this frame are 8-bit unsigned integers, where 0-5 correspond to tracked players. Values greater than the value obtained from the amount of tracked players indicate the pixel is part of the background, not associated with a tracked body.">
+      <Node Name="BodyImage" Bounds="272,527" Id="LymkjdSNZU4PBlvZ4iCupq" Summary="Returns an R8 formatted image with masks for each detected player." Remarks="The pixel values in this frame are 8-bit unsigned integers, where 0-5 correspond to tracked players. Values greater than the value obtained from the amount of tracked players indicate the pixel is part of the background, not associated with a tracked body.">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -5225,7 +5225,7 @@
     ************************ InfraredImage ************************
 
 -->
-      <Node Name="InfraredImage" Bounds="486,605" Id="LQSFehZw73YQYK0dVkEvvd" Summary="Returns Kinect2 Infrared image frames." Remarks="Returned image is single channel 16-bit Unsigned Integer.">
+      <Node Name="InfraredImage" Bounds="272,409" Id="LQSFehZw73YQYK0dVkEvvd" Summary="Returns Kinect2 Infrared image frames." Remarks="Returned image is single channel 16-bit Unsigned Integer.">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -5275,7 +5275,7 @@
     ************************ Skeletons ************************
 
 -->
-      <Node Name="Skeletons" Bounds="486,900" Id="LVzQR25q5XSMgPJCBmCtP4" Summary="Returns skeleton data for each tracked user.">
+      <Node Name="Skeletons" Bounds="272,584" Id="LVzQR25q5XSMgPJCBmCtP4" Summary="Returns skeleton data for each tracked user.">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -5323,7 +5323,7 @@
     ************************ Kinect2 ************************
 
 -->
-      <Node Name="Kinect2" Bounds="486,428" Id="SPHp1mQAOZFNSUwBHPifBu" Summary="Represents the Kinect2 sensor." Tags="tracking,skeleton,body,joint,face,hand,pointcloud,video,depth">
+      <Node Name="Kinect2" Bounds="272,292" Id="SPHp1mQAOZFNSUwBHPifBu" Summary="Represents the Kinect2 sensor." Tags="tracking,skeleton,body,joint,face,hand,pointcloud,video,depth">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -5403,7 +5403,7 @@
     ************************ PointCloud ************************
 
 -->
-      <Node Name="PointCloud" Bounds="486,1076" Id="CYtTo3Y2qdtMgreMhuE2fL" Summary="Returns a spread of Vector3 values representing the depth PointCloud detected by the Kinect2.">
+      <Node Name="PointCloud" Bounds="272,760" Id="CYtTo3Y2qdtMgreMhuE2fL" Summary="Returns a spread of Vector3 values representing the depth PointCloud detected by the Kinect2.">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -5469,7 +5469,7 @@
     ************************ Faces ************************
 
 -->
-      <Node Name="Faces" Bounds="486,958" Id="S4rieL3c2kGLBEgnxwRcIB" Summary="Returns face data for each tracked user.">
+      <Node Name="Faces" Bounds="272,642" Id="S4rieL3c2kGLBEgnxwRcIB" Summary="Returns face data for each tracked user.">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -5517,7 +5517,7 @@
     ************************ FaceHD ************************
 
 -->
-      <Node Name="FaceHD" Bounds="486,1017" Id="Be8uTwxSrFiLBeToEhyLiY" Summary="Returns a Spread of Vector2 corresponding to the FaceHD points in Color space.">
+      <Node Name="FaceHD" Bounds="272,701" Id="Be8uTwxSrFiLBeToEhyLiY" Summary="Returns a Spread of Vector2 corresponding to the FaceHD points in Color space.">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -5560,7 +5560,7 @@
           <Link Id="QliumYXyV8LLlxnauQC96G" Ids="QryuUy4dIX3QbQQsbeq2ev,UWSZb7g24RVNKqE72iUYEd" />
         </Patch>
       </Node>
-      <Canvas Id="UXlKEqwovQxMi84uKu0lpF" Name="Experimental" Position="487,258">
+      <Canvas Id="UXlKEqwovQxMi84uKu0lpF" Name="Experimental" Position="272,122">
         <!--
 
     ************************ DepthPipet ************************
@@ -6230,7 +6230,7 @@
     ************************ Skeleton ************************
 
 -->
-      <Node Name="Skeleton" Bounds="723,428" Id="O7Lk7ZOlhF5N3yvTSZkH7f">
+      <Node Name="Skeleton" Bounds="533,350" Id="O7Lk7ZOlhF5N3yvTSZkH7f">
         <p:NodeReference>
           <Choice Kind="ForwardDefinition" Name="Forward" />
           <FullNameCategoryReference ID="Primitive" />
@@ -7016,7 +7016,7 @@
     ************************ Face ************************
 
 -->
-      <Node Name="Face" Bounds="723,380" Id="PmnT1z3wxZsPq8JWQAU72R">
+      <Node Name="Face" Bounds="533,292" Id="PmnT1z3wxZsPq8JWQAU72R">
         <p:NodeReference>
           <Choice Kind="ForwardDefinition" Name="Forward" />
           <FullNameCategoryReference ID="Primitive" />
@@ -7273,7 +7273,7 @@
                 <Choice Kind="OperationDefinition" Name="Operation" />
               </p:NodeReference>
               <p:HideCategory p:Type="Boolean">false</p:HideCategory>
-              <Patch Id="AP3RwufjCn1MEQ7y0yONzf">
+              <Patch Id="AP3RwufjCn1MEQ7y0yONzf" ManuallySortedPins="true">
                 <ControlPoint Id="BF51EkZoBUYPgJrYtP8nsz" Bounds="351,661" />
                 <Link Id="C18BDbXwcxrQN3JspHunTg" Ids="GQkAbMZ4GAZQHa4KWKDLzj,BF51EkZoBUYPgJrYtP8nsz" IsHidden="true" />
                 <ControlPoint Id="K5662HAaUVXOKCoy209YNv" Bounds="1224,966" />
@@ -7576,7 +7576,7 @@
     ************************ FaceHD ************************
 
 -->
-      <Node Name="FaceHD" Bounds="721,478" Id="CAJUccojVhONHASqgHZMDR">
+      <Node Name="FaceHD" Bounds="533,409" Id="CAJUccojVhONHASqgHZMDR">
         <p:NodeReference>
           <Choice Kind="ForwardDefinition" Name="Forward" />
           <FullNameCategoryReference ID="Primitive" />
@@ -7600,16 +7600,17 @@
               <Patch Id="EKsubBjGVuzQQAdaMMHnPz">
                 <Node Bounds="595,136,105,26" AutoConnect="true" Id="OVNkIiwh28vMY6Sz2jRj0g">
                   <p:NodeReference LastCategoryFullName="VL.Devices.Kinect2.FaceHD" LastSymbolSource="VL.Devices.Kinect2.dll">
-                    <Choice Kind="OperationNode" Name="CameraSpacePoints" />
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <FullNameCategoryReference ID="VL.Devices.Kinect2.FaceHD" />
+                    <Choice Kind="OperationCallFlag" Name="WorldSpacePoints" />
                   </p:NodeReference>
                   <Pin Id="QufTCSMJZ4eOie3NJ8D0MK" Name="Input" Kind="StateInputPin" />
                   <Pin Id="VmKuDCDRF17QFqkCTH7ZhH" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="Dm6GsRKnAMbMxL0AmQjKHw" Name="Camera Space Points" Kind="OutputPin" />
+                  <Pin Id="JLmttcfciWVNHvvoKOYt50" Name="World Space Points" Kind="OutputPin" />
                 </Node>
                 <Pin Id="RPAklg4KrI2Oz1bT6huhKf" Name="Input" Kind="InputPin" />
                 <Pin Id="QLrKPv66kc9N1cQPlHQKfg" Name="Output" Kind="OutputPin" />
-                <Pin Id="UayIw0fOtGmLJihEWHjz2B" Name="Camera Space Points" Kind="OutputPin" />
+                <Pin Id="QRgYKsJjwxxNYPjXdv9Pw7" Name="World Space Points" Kind="OutputPin" />
               </Patch>
             </Node>
             <!--
@@ -7753,6 +7754,16 @@
                     <FullNameCategoryReference ID="Primitive" />
                   </p:NodeReference>
                   <Pin Id="PRkt3XesyPDOpkyIJZkBLC" Name="Condition" Kind="InputPin" />
+                  <ControlPoint Id="Er8EaQa2z57OAx8dgtHBlT" Bounds="1184,861" Alignment="Bottom" />
+                  <ControlPoint Id="CypBgjQYQwMNCfRpjIsp1a" Bounds="1185,803" Alignment="Top" />
+                  <ControlPoint Id="GTbshLeviaxOtJS2A34xip" Bounds="1311,861" Alignment="Bottom" />
+                  <ControlPoint Id="I4NHwKG38KJPZi2JslV7F5" Bounds="1312,803" Alignment="Top" />
+                  <ControlPoint Id="JCimMY6mXGDQCfGOOEKseR" Bounds="1448,861" Alignment="Bottom" />
+                  <ControlPoint Id="T2ynkVM3pPXPtVSvkSm6Vf" Bounds="1448,803" Alignment="Top" />
+                  <ControlPoint Id="Vpgc8IqUhX1M6R618Z3zOy" Bounds="1571,861" Alignment="Bottom" />
+                  <ControlPoint Id="AoZiEhNo5IJQYuX5S3UCc1" Bounds="1571,803" Alignment="Top" />
+                  <ControlPoint Id="TDL9Rof6LdyLM0Tw8SAaY9" Bounds="1686,861" Alignment="Bottom" />
+                  <ControlPoint Id="R1OBU9IIZPiLrTxbt7Dzd0" Bounds="1686,803" Alignment="Top" />
                   <Patch Id="Gbaen7PJFl2Mwgd4pO0O6Y" ManuallySortedPins="true">
                     <Patch Id="D7NlSmS5qpZNqFzuSvd7oF" Name="Create" ManuallySortedPins="true" />
                     <Patch Id="VVq3QOmLL3EQHRmDaA3zSJ" Name="Then" ManuallySortedPins="true" />
@@ -7797,26 +7808,16 @@
                       <Pin Id="A5Ajbpr4XLrPtMX53YXV4X" Name="Head Pivot Point" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="1209,820,105,26" Id="TcJBktTocxmPqABZ2ycXLb">
-                      <p:NodeReference>
+                      <p:NodeReference LastCategoryFullName="Devices.Kinect2.FaceHD" LastSymbolSource="VL.Devices.Kinect2.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                        <Choice Kind="OperationCallFlag" Name="WorldSpacePoints" />
                         <CategoryReference Kind="ClassType" Name="FaceHD" NeedsToBeDirectParent="true" />
+                        <Choice Kind="OperationCallFlag" Name="WorldSpacePoints" />
                       </p:NodeReference>
                       <Pin Id="PRytG7CwUoKNm2AoAkuJJo" Name="Input" Kind="StateInputPin" />
                       <Pin Id="BLbxOlxLurQLXYPNkikz0Y" Name="Output" Kind="StateOutputPin" />
-                      <Pin Id="Ku7vJ22QTZQOIUk0499Xgg" Name="Camera Space Points" Kind="OutputPin" />
+                      <Pin Id="MGtNrvvyJBsOkBXveQhwkd" Name="World Space Points" Kind="OutputPin" />
                     </Node>
                   </Patch>
-                  <ControlPoint Id="Er8EaQa2z57OAx8dgtHBlT" Bounds="1184,861" Alignment="Bottom" />
-                  <ControlPoint Id="CypBgjQYQwMNCfRpjIsp1a" Bounds="1185,803" Alignment="Top" />
-                  <ControlPoint Id="GTbshLeviaxOtJS2A34xip" Bounds="1311,861" Alignment="Bottom" />
-                  <ControlPoint Id="I4NHwKG38KJPZi2JslV7F5" Bounds="1312,803" Alignment="Top" />
-                  <ControlPoint Id="JCimMY6mXGDQCfGOOEKseR" Bounds="1448,861" Alignment="Bottom" />
-                  <ControlPoint Id="T2ynkVM3pPXPtVSvkSm6Vf" Bounds="1448,803" Alignment="Top" />
-                  <ControlPoint Id="Vpgc8IqUhX1M6R618Z3zOy" Bounds="1571,861" Alignment="Bottom" />
-                  <ControlPoint Id="AoZiEhNo5IJQYuX5S3UCc1" Bounds="1571,803" Alignment="Top" />
-                  <ControlPoint Id="TDL9Rof6LdyLM0Tw8SAaY9" Bounds="1686,861" Alignment="Bottom" />
-                  <ControlPoint Id="R1OBU9IIZPiLrTxbt7Dzd0" Bounds="1686,803" Alignment="Top" />
                 </Node>
                 <Link Id="H60XrKrXeT4MXoSqnVk9uD" Ids="QEghfvTLw3EOBUPIx2Julr,SPcbyvvJYAfMoPjxn7GfnL" />
                 <Link Id="KF3AigYjSheMuIZuMvLQAc" Ids="C8GMQVAC5VDPCXlndvNYg6,Q0aCjw9Y2CnQYEC6UK7CBv" />
@@ -7837,7 +7838,6 @@
                 <Link Id="IIWviXBBBpuPiz1UMGdteN" Ids="PZXxH0b6jQ2OnJXyfSkJUD,Er8EaQa2z57OAx8dgtHBlT" />
                 <Link Id="JEDSK2AvDUiQRQtlxzhvWU" Ids="Er8EaQa2z57OAx8dgtHBlT,FjUFZpz9XtjOS6Wf5TpeBZ" />
                 <Link Id="VfrZ80SyLjNPfvHdRCzn9K" Ids="I4NHwKG38KJPZi2JslV7F5,GTbshLeviaxOtJS2A34xip" IsFeedback="true" />
-                <Link Id="A6VUYlEpw2gNs8BjGRaIsF" Ids="Ku7vJ22QTZQOIUk0499Xgg,GTbshLeviaxOtJS2A34xip" />
                 <Link Id="UT1Ak0PQ9vFNvZc92zhaTJ" Ids="GTbshLeviaxOtJS2A34xip,FL1pjfzhcmWMXDA35jWOpT" />
                 <Link Id="RrhsHopdxt2LsEjFbc3tB8" Ids="T2ynkVM3pPXPtVSvkSm6Vf,JCimMY6mXGDQCfGOOEKseR" IsFeedback="true" />
                 <Link Id="IIuhIstXTs5O6M89Q1fbRD" Ids="Hbny5huQLXMPsWRuZNat9n,JCimMY6mXGDQCfGOOEKseR" />
@@ -7848,6 +7848,7 @@
                 <Link Id="A5CpVvIHYThOwcK0MU1YSu" Ids="R1OBU9IIZPiLrTxbt7Dzd0,TDL9Rof6LdyLM0Tw8SAaY9" IsFeedback="true" />
                 <Link Id="QpSTKWQrq0mMdvnFSiTUFD" Ids="A5Ajbpr4XLrPtMX53YXV4X,TDL9Rof6LdyLM0Tw8SAaY9" />
                 <Link Id="M5ds0XJbE3RMfexDJHHENx" Ids="TDL9Rof6LdyLM0Tw8SAaY9,CfxX0IA8kdQLAbBTjVUbzP" />
+                <Link Id="BvNaCsenTuqNSKbBJdVwjk" Ids="MGtNrvvyJBsOkBXveQhwkd,GTbshLeviaxOtJS2A34xip" />
               </Patch>
             </Node>
             <!--
@@ -7905,7 +7906,7 @@
     ************************ Stickman ************************
 
 -->
-      <Node Name="Stickman" Bounds="720,650" Id="VygMA6uxPpGObHZFJxavxG">
+      <Node Name="Stickman" Bounds="533,527" Id="VygMA6uxPpGObHZFJxavxG">
         <p:NodeReference>
           <Choice Kind="ContainerDefinition" Name="Process" />
           <FullNameCategoryReference ID="Primitive" />
@@ -8123,7 +8124,7 @@
     ************************ Boxman ************************
 
 -->
-      <Node Name="Boxman" Bounds="720,703" Id="UbA8ZiKO0ujLKJ1z5hvb4B">
+      <Node Name="Boxman" Bounds="533,584" Id="UbA8ZiKO0ujLKJ1z5hvb4B">
         <p:NodeReference>
           <Choice Kind="ContainerDefinition" Name="Process" />
           <FullNameCategoryReference ID="Primitive" />
@@ -8946,12 +8947,12 @@
   <PlatformDependency Id="CJ99AqcYIMALGuFTkYA7Is" Location="./lib/net472/VL.Devices.Kinect2.dll" />
   <PlatformDependency Id="S36JEFIXXVvMre7qt6H783" Location="System" />
   <PlatformDependency Id="JMvORQOQIzrPEj9eCKbrF5" Location="System.Runtime" />
-  <NugetDependency Id="K4ICfeTj9dxLVvHqmGPgT9" Location="VL.Core" Version="2020.1.2" />
+  <NugetDependency Id="K4ICfeTj9dxLVvHqmGPgT9" Location="VL.Core" Version="2020.1.3" />
   <PlatformDependency Id="BUpgGtLZTuWOOQIIwQPuZE" Location="System.Runtime.InteropServices" />
-  <NugetDependency Id="K4aTqsYyX3qOyQBCvM0PDS" Location="VL.Skia" Version="2020.1.2" />
-  <NugetDependency Id="R4VFKgpnMLVNLeeooXue2t" Location="VL.EditingFramework" Version="2020.1.2" />
+  <NugetDependency Id="K4aTqsYyX3qOyQBCvM0PDS" Location="VL.Skia" Version="2020.1.3" />
+  <NugetDependency Id="R4VFKgpnMLVNLeeooXue2t" Location="VL.EditingFramework" Version="2020.1.3" />
   <PlatformDependency Id="MdTDzLxFTE9LvxOyk7EWeV" Location="./lib/net472/Microsoft.Kinect.Face.dll" />
   <NugetDependency Id="Nmuyhfa7CZMLkSjnn1spH5" Location="System.Collections" Version="4.3.0" />
-  <NugetDependency Id="Te8jni1po0DNSBTooSrGft" Location="VL.Lang" Version="2020.1.2" />
+  <NugetDependency Id="Te8jni1po0DNSBTooSrGft" Location="VL.Lang" Version="2020.1.3" />
   <NugetDependency Id="IC3JlEyjkaiOs1iFPK4qXv" Location="VL.Skia3d" Version="1.0.36-alpha" />
 </Document>

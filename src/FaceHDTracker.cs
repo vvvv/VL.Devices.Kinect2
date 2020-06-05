@@ -21,7 +21,7 @@ namespace VL.Devices.Kinect2
 
         public CameraSpacePoint[] NativeCameraSpacePoints { get; }
 
-        public Spread<Vector3> CameraSpacePoints
+        public Spread<Vector3> WorldSpacePoints
         {
             get
             {
