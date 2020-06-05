@@ -34,7 +34,7 @@
             <Pin Id="NMv8rMmlAspPeXhW2bIiXr" Name="Device" Kind="InputPin" />
             <Pin Id="SNtBqedAiC1PCk0Zr2TzmE" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="307,371,478,146" Id="OHBYYe3MHLtOBGFocSM4cm">
+          <Node Bounds="307,370,478,147" Id="OHBYYe3MHLtOBGFocSM4cm">
             <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
@@ -109,13 +109,13 @@
                 <Pin Id="Sum04qP7nHiPLtdnCCb4yz" Name="Enabled" Kind="InputPin" />
                 <Pin Id="QaMPBNufYL7Ly5Zh0wlsFR" Name="Output" Kind="OutputPin" />
               </Node>
-              <Node Bounds="338,473" Id="EfHeFrjlX1pMn8NH93BcoB">
+              <Node Bounds="319,471,64,19" Id="EfHeFrjlX1pMn8NH93BcoB">
                 <p:NodeReference LastCategoryFullName="Devices.Kinect2" LastSymbolSource="VL.Devices.Kinect2.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="ProcessAppFlag" Name="WorldToColor" />
+                  <Choice Kind="ProcessAppFlag" Name="WorldToColorSpace" />
                 </p:NodeReference>
                 <Pin Id="IGiT9Dk2eceL54RnM0RoI5" Name="Device" Kind="InputPin" />
-                <Pin Id="PSr6v3xt5L2N1sIohnpibD" Name="Camera Points" Kind="InputPin" />
+                <Pin Id="OeWLNYU7GhROQdQlUja9wp" Name="World Points" Kind="InputPin" />
                 <Pin Id="PGRCXbF1xKUNv10O7ux5Hv" Name="Result" Kind="OutputPin" />
               </Node>
             </Patch>
@@ -298,7 +298,11 @@
             <Pin Id="Tss6rHZOI2WLm84lJNm908" Name="Initial Interest" Kind="InputPin" />
             <Pin Id="CMRzQBd42UoOIYhtHClfYE" Name="Initial Yaw" Kind="InputPin" />
             <Pin Id="BCrGdLjcI1lNtBLfJmv7GF" Name="Initial Pitch" Kind="InputPin" />
-            <Pin Id="J9U4I7w0EmAPkBTCwodx5x" Name="Initial Distance" Kind="InputPin" />
+            <Pin Id="J9U4I7w0EmAPkBTCwodx5x" Name="Initial Distance" Kind="InputPin" DefaultValue="5">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Float32" />
+              </p:TypeAnnotation>
+            </Pin>
             <Pin Id="LwjVgVcB3HgMbqD1BNrNHb" Name="Initial FOV" Kind="InputPin" />
             <Pin Id="Q5IrxqAEKDMNFunmSBD3ZE" Name="Output" Kind="OutputPin" />
             <Pin Id="QGjSnKICL6fMZlD0Dt3Bqo" Name="Idle" Kind="OutputPin" />
@@ -353,7 +357,7 @@
             <Pin Id="I6YzagxTWWrM6kvNvMieb1" Name="Input" Kind="StateInputPin" />
             <Pin Id="KkB15UkHdCJQWJUXOLGkdg" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Pad Id="FR7fOvJJ5g3Ov3K3w6I3N1" Comment="Size" Bounds="221,621,35,15" ShowValueBox="true" isIOBox="true" Value="10">
+          <Pad Id="FR7fOvJJ5g3Ov3K3w6I3N1" Comment="Size" Bounds="221,621,35,15" ShowValueBox="true" isIOBox="true" Value="20">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
@@ -419,10 +423,13 @@
         <Link Id="GlNTggXofIuOSFTCN2fMUM" Ids="KkB15UkHdCJQWJUXOLGkdg,AyOjhNoeRFhLMPw79w1OKi" />
         <Link Id="RQ5XxSLwRBaPYv9NvwBQkH" Ids="Tq9q6fjzKkvMcDX1ounxee,TKGceYAn5hWN2Wz9P9F12w" />
         <Link Id="LBaJgJE6SdnMqr4tJlXEsk" Ids="SFzczeaARiqNySDTGTYc4m,UEuj574EsP2L24hFtopFo9" />
+        <Link Id="LM6E5XGgsYPL5dkkBRSjc3" Ids="BcNkTNAZPsSOD7zheTR6C3,IGiT9Dk2eceL54RnM0RoI5" />
+        <Link Id="S02u6wvowR9OpYv9gZYUqa" Ids="K2nWDLx4uDpMimotSWqdVj,OeWLNYU7GhROQdQlUja9wp" />
+        <Link Id="EqZ4F8pS4THMNIr6bLft25" Ids="PGRCXbF1xKUNv10O7ux5Hv,F7htSN78uWFLUkriyhVgyv" />
       </Patch>
     </Node>
   </Patch>
   <NugetDependency Id="BRJnnZdh5eyMS3vQIp8RQ2" Location="VL.Skia" Version="2020.1.3" />
-  <NugetDependency Id="PzpGo5rWv4jQSJ9eRUYFcn" Location="VL.Skia3d" Version="0.0.0.0" />
+  <NugetDependency Id="PzpGo5rWv4jQSJ9eRUYFcn" Location="VL.Skia3d" Version="1.0.36-alpha" />
   <NugetDependency Id="EF9wzLdqQp1NwGYnClKT53" Location="VL.Devices.Kinect2" Version="0.0.0.0" />
 </Document>

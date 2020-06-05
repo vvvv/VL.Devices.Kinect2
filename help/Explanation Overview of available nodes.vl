@@ -207,13 +207,13 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="379,600,105,19" Id="H81QeWMmm3JNFRjT0Feh7T">
-            <p:NodeReference LastCategoryFullName="Devices.Kinect" LastSymbolSource="VL.Devices.Kinect.vl">
+            <p:NodeReference LastCategoryFullName="Devices.Kinect2" LastSymbolSource="VL.Devices.Kinect2.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="WorldToColorSpace (Spread)" />
+              <Choice Kind="ProcessAppFlag" Name="WorldToColorSpace" />
             </p:NodeReference>
             <Pin Id="C2H3tNJEN74PInzepWLxIf" Name="Device" Kind="InputPin" />
-            <Pin Id="M1mz441PV0DNnO6pCsPsZw" Name="Points" Kind="InputPin" />
-            <Pin Id="NnSrZmw2uNZMocTEiRtfoQ" Name="Output" Kind="OutputPin" />
+            <Pin Id="VskBs41U2JLLtaOvtsicvO" Name="World Points" Kind="InputPin" />
+            <Pin Id="FNMVU7pKA1OQLF0EJYZZpd" Name="Result" Kind="OutputPin" />
           </Node>
           <Pad Id="McsZhOhdWoSNc35AsUArwM" Bounds="485,607,153,57" ShowValueBox="true" isIOBox="true" Value="&lt; Converts points given in 3d world space to 2d color space">
             <p:TypeAnnotation>

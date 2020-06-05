@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="S4NlX2Bb4n3PC4FOKsc5WL" LanguageVersion="2020.1.2.135" Version="0.128">
-  <NugetDependency Id="NkxBtTr8hOoNigSpbcTFdR" Location="VL.CoreLib" Version="2020.1.2" />
+<Document xmlns:p="property" Id="S4NlX2Bb4n3PC4FOKsc5WL" LanguageVersion="2020.1.3.147" Version="0.128">
+  <NugetDependency Id="NkxBtTr8hOoNigSpbcTFdR" Location="VL.CoreLib" Version="2020.1.3" />
   <Patch Id="APFBYc3ryadNMXCUycaQDK">
     <Canvas Id="VZxxHWhqYjuLlXlvDdCXIG" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -40,7 +40,7 @@
               <p:minimum p:Type="Int32">0</p:minimum>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="106,356,329,235" Id="Dy3Lto0YyqOMLkFIk4cyqo">
+          <Node Bounds="106,356,313,237" Id="Dy3Lto0YyqOMLkFIk4cyqo">
             <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
@@ -48,26 +48,26 @@
             </p:NodeReference>
             <Pin Id="IqWOF7xkiYiMRtHsoA3nJX" Name="Break" Kind="OutputPin" />
             <ControlPoint Id="C1ei0PSsWQtMLBSMuD67fk" Bounds="120,363" Alignment="Top" />
-            <ControlPoint Id="GAKIuv4XsVYMOCjRw7pqlK" Bounds="168,585" Alignment="Bottom" />
-            <ControlPoint Id="LMAEnEQUHjMNVeHTpbKHls" Bounds="244,585" Alignment="Bottom" />
+            <ControlPoint Id="GAKIuv4XsVYMOCjRw7pqlK" Bounds="210,587" Alignment="Bottom" />
+            <ControlPoint Id="LMAEnEQUHjMNVeHTpbKHls" Bounds="244,587" Alignment="Bottom" />
             <Patch Id="NrJO6FET2kqNnM65phgp3J" ManuallySortedPins="true">
               <Patch Id="MwFK5fsaZOvN1uuQvxS82l" Name="Create" ManuallySortedPins="true" />
               <Patch Id="J9sLurEfujwObBS09EQMr3" Name="Update" ManuallySortedPins="true" />
               <Patch Id="AkzgUd2c9m9OqD132JWq2F" Name="Dispose" ManuallySortedPins="true" />
-              <Node Bounds="118,420,305,26" Id="LMdTVSz8Dm3OKFuT2SgnOW">
+              <Node Bounds="118,420,219,26" Id="LMdTVSz8Dm3OKFuT2SgnOW">
                 <p:NodeReference LastCategoryFullName="Devices.Kinect2.Face" LastSymbolSource="VL.Devices.Kinect2.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Split" />
                   <CategoryReference Kind="RecordType" Name="Face" NeedsToBeDirectParent="true" />
                 </p:NodeReference>
                 <Pin Id="A6KWQbev5R8QNoyuJhBNfE" Name="Input" Kind="StateInputPin" />
+                <Pin Id="KcP8u5mAFOOOMZjCPx7Jk6" Name="ID" Kind="OutputPin" />
+                <Pin Id="RJoQ5SrufbHOcM7BXx4Ry7" Name="Face Rotation" Kind="OutputPin" />
                 <Pin Id="KBpZOGVmtuIOFbrDA7gJdD" Name="Face Point Types" Kind="OutputPin" />
                 <Pin Id="C5GiJbayznZPC5GSMl82f8" Name="Points In Color Space" Kind="OutputPin" />
                 <Pin Id="O3lKRxNg470QG7pNZkS1SW" Name="Bounding Box In Color Space" Kind="OutputPin" />
                 <Pin Id="PWg5fapFOflLhDUNFM95FU" Name="Points In IR Space" Kind="OutputPin" />
                 <Pin Id="A4wKUj2FZU5Noq81UMOojl" Name="Bounding Box In IR Space" Kind="OutputPin" />
-                <Pin Id="RJoQ5SrufbHOcM7BXx4Ry7" Name="Face Rotation" Kind="OutputPin" />
-                <Pin Id="KcP8u5mAFOOOMZjCPx7Jk6" Name="ID" Kind="OutputPin" />
               </Node>
               <Node Bounds="242,541,85,19" Id="PqlsdUnlnbfNvkpUoc0GOc">
                 <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers" LastSymbolSource="VL.Skia.vl">
@@ -377,17 +377,13 @@
               <CategoryReference Kind="RecordType" Name="Face" NeedsToBeDirectParent="true" />
             </p:NodeReference>
             <Pin Id="DBjGGHrRmxHOgEjU6kz0pB" Name="Input" Kind="StateInputPin" />
+            <Pin Id="Jrkl43hy6RaOhGTVifYrXT" Name="ID" Kind="OutputPin" />
+            <Pin Id="I2gVmjMezMePWJHvjE8CsF" Name="Face Rotation" Kind="OutputPin" />
             <Pin Id="G4QDAKgczltNUURrxvpjCR" Name="Face Point Types" Kind="OutputPin" />
             <Pin Id="TYchoxF7hgtM5SQS0T8UvQ" Name="Points In Color Space" Kind="OutputPin" />
             <Pin Id="RHhRrJuduvRLMyEgF3kq3v" Name="Bounding Box In Color Space" Kind="OutputPin" />
             <Pin Id="UjtwbBwT5u6Pna72ECbWYD" Name="Points In IR Space" Kind="OutputPin" />
             <Pin Id="EaZjdsjEhvMPTF0Q41EVHm" Name="Bounding Box In IR Space" Kind="OutputPin" />
-            <Pin Id="I2gVmjMezMePWJHvjE8CsF" Name="Face Rotation" Kind="OutputPin" />
-            <Pin Id="Jrkl43hy6RaOhGTVifYrXT" Name="ID" Kind="OutputPin" />
-            <Pin Id="PhlyXN6vEtKPIiv8zqqYOx" Name="FacePointTypes" Kind="OutputPin" />
-            <Pin Id="AhIZLEmFkHLPTdPbxz8nRe" Name="PointsInColorSpace" Kind="OutputPin" />
-            <Pin Id="SpS45x9wz6AQLu6hHMUs6y" Name="PointsInIRSpace" Kind="OutputPin" />
-            <Pin Id="QXynoCJvEs7LnXuMDeQGqC" Name="Tracking Id" Kind="OutputPin" />
           </Node>
           <Node Bounds="242,727,44,19" Id="OmsFKGKPLHJNyZ1r7533aB">
             <p:NodeReference LastCategoryFullName="Graphics.Skia" LastSymbolSource="VL.Skia.vl">
@@ -398,23 +394,23 @@
             <Pin Id="C5bYYUbEdb1MLQ7KaYID7I" Name="Enabled" Kind="InputPin" />
             <Pin Id="NEWRhqEbjLvLbc9ma8owi4" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="IEGQx20SebPPqW0SamXy2i" Comment="FacePointTypes" Bounds="682,668,118,95" ShowValueBox="true" isIOBox="true">
+          <Pad Id="IEGQx20SebPPqW0SamXy2i" Comment="Face Point Types" Bounds="860,736,112,95" ShowValueBox="true" isIOBox="true">
             <p:Value>
               <Item>EyeLeft</Item>
             </p:Value>
           </Pad>
-          <Pad Id="LnPDhFWVsHHPwVhwmYeI0h" Comment="PointsInColorSpace" Bounds="904,668,96,82" ShowValueBox="true" isIOBox="true">
+          <Pad Id="LnPDhFWVsHHPwVhwmYeI0h" Comment="Points In Color Space" Bounds="946,615,98,88" ShowValueBox="true" isIOBox="true">
             <p:Value>
               <Item>0, 0</Item>
             </p:Value>
           </Pad>
-          <Pad Id="IbAh8IXlW6WPG1hFJR3gvy" Comment="PointsInIRSpace" Bounds="1133,668,90,95" ShowValueBox="true" isIOBox="true">
+          <Pad Id="IbAh8IXlW6WPG1hFJR3gvy" Comment="Points In IR Space" Bounds="1182,611,98,95" ShowValueBox="true" isIOBox="true">
             <p:Value>
               <Item>0, 0</Item>
             </p:Value>
           </Pad>
-          <Pad Id="TqSCQe1iICmPNKgJmoVv8k" Comment="Face Rotation" Bounds="1085,609,240,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="Pg92CC3UDp4M2rS38wPykj" Comment="Tracking Id" Bounds="1209,569,113,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="TqSCQe1iICmPNKgJmoVv8k" Comment="Face Rotation" Bounds="770,857,240,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Pg92CC3UDp4M2rS38wPykj" Comment="ID" Bounds="683,894,116,15" ShowValueBox="true" isIOBox="true" />
         </Canvas>
         <Patch Id="PVbVbOGAsC1OMyqjNp9dbd" Name="Create" />
         <Patch Id="H2XlLgF6scLOXsDx75hd3r" Name="Update" />
@@ -450,17 +446,17 @@
         <Link Id="NGSaoRp9WecLsDkqgoxVxz" Ids="M04YUl1yVcGP6CzQDcJ7cL,VMq50Ie1V6rLRkaNHEgRQl" />
         <Link Id="T9eU5hEECIKOgDWFil6RP6" Ids="BnGMOdHqWH8M20FnmyD1EJ,NFTDcf1jxwPN7ZggI25j7j" />
         <Link Id="Rn7lzCDTKOiL6jmh8uPd6h" Ids="BnGMOdHqWH8M20FnmyD1EJ,OtTxMSjhNK4LOrTthJGm3h" />
-        <Link Id="AcJevyFkCnaOhFiJUt2Iom" Ids="PhlyXN6vEtKPIiv8zqqYOx,IEGQx20SebPPqW0SamXy2i" />
-        <Link Id="TTV2BXEGgiXMZ0Gpmi5Nzo" Ids="AhIZLEmFkHLPTdPbxz8nRe,LnPDhFWVsHHPwVhwmYeI0h" />
-        <Link Id="CS0oGolkJKDPS3yjZu0rHI" Ids="SpS45x9wz6AQLu6hHMUs6y,IbAh8IXlW6WPG1hFJR3gvy" />
         <Link Id="FTF1PUPJxx6QazqtzxyFPq" Ids="I2gVmjMezMePWJHvjE8CsF,TqSCQe1iICmPNKgJmoVv8k" />
-        <Link Id="FFRnSSGPNalNH16vRTXVwQ" Ids="QXynoCJvEs7LnXuMDeQGqC,Pg92CC3UDp4M2rS38wPykj" />
         <Link Id="Mj5iYjhn71LNODpDMa3Z4u" Ids="O3lKRxNg470QG7pNZkS1SW,TMwtUeXrD7YLugPo9mP0KT" />
         <Link Id="Lzak6JfGGMtONX3gPHiU6v" Ids="O3lKRxNg470QG7pNZkS1SW,Q5k6nxe65G7PWk9tZIeH2H" />
         <Link Id="UW3KF1h8B3jQcqLm5b8h1i" Ids="C5GiJbayznZPC5GSMl82f8,GAKIuv4XsVYMOCjRw7pqlK" />
+        <Link Id="BO9dcNb35fQOWZJN4LX8xJ" Ids="G4QDAKgczltNUURrxvpjCR,IEGQx20SebPPqW0SamXy2i" />
+        <Link Id="Mt3g8FF9sT8OSSqOySanhF" Ids="TYchoxF7hgtM5SQS0T8UvQ,LnPDhFWVsHHPwVhwmYeI0h" />
+        <Link Id="MfE0bT3hAviPMmQEP5TgWl" Ids="UjtwbBwT5u6Pna72ECbWYD,IbAh8IXlW6WPG1hFJR3gvy" />
+        <Link Id="HStp6C3wfhgOrCjMC7Q3fJ" Ids="Jrkl43hy6RaOhGTVifYrXT,Pg92CC3UDp4M2rS38wPykj" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="LqN860VbNwDMgtD9a8XgD9" Location="VL.Skia" Version="2020.1.2" />
+  <NugetDependency Id="LqN860VbNwDMgtD9a8XgD9" Location="VL.Skia" Version="2020.1.3" />
   <NugetDependency Id="NayWUX2hDkTPEYoT87HUxi" Location="VL.Devices.Kinect2" Version="0.0.0.0" />
 </Document>
