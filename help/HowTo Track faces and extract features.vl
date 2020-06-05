@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="S4NlX2Bb4n3PC4FOKsc5WL" LanguageVersion="2020.1.0.53" Version="0.128">
-  <NugetDependency Id="NkxBtTr8hOoNigSpbcTFdR" Location="VL.CoreLib" Version="2020.1.0" />
+<Document xmlns:p="property" Id="S4NlX2Bb4n3PC4FOKsc5WL" LanguageVersion="2020.1.2.135" Version="0.128">
+  <NugetDependency Id="NkxBtTr8hOoNigSpbcTFdR" Location="VL.CoreLib" Version="2020.1.2" />
   <Patch Id="APFBYc3ryadNMXCUycaQDK">
     <Canvas Id="VZxxHWhqYjuLlXlvDdCXIG" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -61,13 +61,13 @@
                   <CategoryReference Kind="RecordType" Name="Face" NeedsToBeDirectParent="true" />
                 </p:NodeReference>
                 <Pin Id="A6KWQbev5R8QNoyuJhBNfE" Name="Input" Kind="StateInputPin" />
-                <Pin Id="EsQpHVIIn40MhjJONqcYlu" Name="FacePointTypes" Kind="OutputPin" />
-                <Pin Id="UlwU3iDFJGgME6bplEUCgk" Name="PointsInColorSpace" Kind="OutputPin" />
-                <Pin Id="GgDreFkWvnrP0LOe4DWD7L" Name="BoundingBoxInColorSpace" Kind="OutputPin" />
-                <Pin Id="Ew85bl79kV2PsBUD2mEqov" Name="PointsInIRSpace" Kind="OutputPin" />
-                <Pin Id="EwAejK69FEINGO158I0UrM" Name="BoundingBoxInIRSpace" Kind="OutputPin" />
+                <Pin Id="KBpZOGVmtuIOFbrDA7gJdD" Name="Face Point Types" Kind="OutputPin" />
+                <Pin Id="C5GiJbayznZPC5GSMl82f8" Name="Points In Color Space" Kind="OutputPin" />
+                <Pin Id="O3lKRxNg470QG7pNZkS1SW" Name="Bounding Box In Color Space" Kind="OutputPin" />
+                <Pin Id="PWg5fapFOflLhDUNFM95FU" Name="Points In IR Space" Kind="OutputPin" />
+                <Pin Id="A4wKUj2FZU5Noq81UMOojl" Name="Bounding Box In IR Space" Kind="OutputPin" />
                 <Pin Id="RJoQ5SrufbHOcM7BXx4Ry7" Name="Face Rotation" Kind="OutputPin" />
-                <Pin Id="LprdIZeV9sUN5v8xWv6xXb" Name="Tracking Id" Kind="OutputPin" />
+                <Pin Id="KcP8u5mAFOOOMZjCPx7Jk6" Name="ID" Kind="OutputPin" />
               </Node>
               <Node Bounds="242,541,85,19" Id="PqlsdUnlnbfNvkpUoc0GOc">
                 <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers" LastSymbolSource="VL.Skia.vl">
@@ -377,12 +377,16 @@
               <CategoryReference Kind="RecordType" Name="Face" NeedsToBeDirectParent="true" />
             </p:NodeReference>
             <Pin Id="DBjGGHrRmxHOgEjU6kz0pB" Name="Input" Kind="StateInputPin" />
+            <Pin Id="G4QDAKgczltNUURrxvpjCR" Name="Face Point Types" Kind="OutputPin" />
+            <Pin Id="TYchoxF7hgtM5SQS0T8UvQ" Name="Points In Color Space" Kind="OutputPin" />
+            <Pin Id="RHhRrJuduvRLMyEgF3kq3v" Name="Bounding Box In Color Space" Kind="OutputPin" />
+            <Pin Id="UjtwbBwT5u6Pna72ECbWYD" Name="Points In IR Space" Kind="OutputPin" />
+            <Pin Id="EaZjdsjEhvMPTF0Q41EVHm" Name="Bounding Box In IR Space" Kind="OutputPin" />
+            <Pin Id="I2gVmjMezMePWJHvjE8CsF" Name="Face Rotation" Kind="OutputPin" />
+            <Pin Id="Jrkl43hy6RaOhGTVifYrXT" Name="ID" Kind="OutputPin" />
             <Pin Id="PhlyXN6vEtKPIiv8zqqYOx" Name="FacePointTypes" Kind="OutputPin" />
             <Pin Id="AhIZLEmFkHLPTdPbxz8nRe" Name="PointsInColorSpace" Kind="OutputPin" />
-            <Pin Id="Pa2n2FaiUpeP9oygViJur8" Name="BoundingBoxInColorSpace" Kind="OutputPin" />
             <Pin Id="SpS45x9wz6AQLu6hHMUs6y" Name="PointsInIRSpace" Kind="OutputPin" />
-            <Pin Id="Gkk63qNYYJwM9XtoJ0Wd4t" Name="BoundingBoxInIRSpace" Kind="OutputPin" />
-            <Pin Id="I2gVmjMezMePWJHvjE8CsF" Name="Face Rotation" Kind="OutputPin" />
             <Pin Id="QXynoCJvEs7LnXuMDeQGqC" Name="Tracking Id" Kind="OutputPin" />
           </Node>
           <Node Bounds="242,727,44,19" Id="OmsFKGKPLHJNyZ1r7533aB">
@@ -451,12 +455,12 @@
         <Link Id="CS0oGolkJKDPS3yjZu0rHI" Ids="SpS45x9wz6AQLu6hHMUs6y,IbAh8IXlW6WPG1hFJR3gvy" />
         <Link Id="FTF1PUPJxx6QazqtzxyFPq" Ids="I2gVmjMezMePWJHvjE8CsF,TqSCQe1iICmPNKgJmoVv8k" />
         <Link Id="FFRnSSGPNalNH16vRTXVwQ" Ids="QXynoCJvEs7LnXuMDeQGqC,Pg92CC3UDp4M2rS38wPykj" />
-        <Link Id="I5MEp2R1u0ONKVfDCZCOQW" Ids="UlwU3iDFJGgME6bplEUCgk,GAKIuv4XsVYMOCjRw7pqlK" />
-        <Link Id="NcK4i8J12W6P3kHduOptps" Ids="GgDreFkWvnrP0LOe4DWD7L,TMwtUeXrD7YLugPo9mP0KT" />
-        <Link Id="SSxk8txbLa6PIr0bvw5sCg" Ids="GgDreFkWvnrP0LOe4DWD7L,Q5k6nxe65G7PWk9tZIeH2H" />
+        <Link Id="Mj5iYjhn71LNODpDMa3Z4u" Ids="O3lKRxNg470QG7pNZkS1SW,TMwtUeXrD7YLugPo9mP0KT" />
+        <Link Id="Lzak6JfGGMtONX3gPHiU6v" Ids="O3lKRxNg470QG7pNZkS1SW,Q5k6nxe65G7PWk9tZIeH2H" />
+        <Link Id="UW3KF1h8B3jQcqLm5b8h1i" Ids="C5GiJbayznZPC5GSMl82f8,GAKIuv4XsVYMOCjRw7pqlK" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="LqN860VbNwDMgtD9a8XgD9" Location="VL.Skia" Version="2020.1.0" />
+  <NugetDependency Id="LqN860VbNwDMgtD9a8XgD9" Location="VL.Skia" Version="2020.1.2" />
   <NugetDependency Id="NayWUX2hDkTPEYoT87HUxi" Location="VL.Devices.Kinect2" Version="0.0.0.0" />
 </Document>
