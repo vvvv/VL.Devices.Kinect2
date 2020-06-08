@@ -6245,14 +6245,14 @@
     ************************ JointCount (Advanced) ************************
 
 -->
-            <Node Name="JointCount (Advanced)" Bounds="757,383,88,80" Id="LBinpxgTIpvOYeacCyuV8X">
+            <Node Name="JointCount (Advanced)" Bounds="108,135,88,80" Id="LBinpxgTIpvOYeacCyuV8X">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
               <p:HideCategory p:Type="Boolean">false</p:HideCategory>
               <Patch Id="HB3rdETpnnMOxqYcdG2ZZe">
-                <Node Bounds="769,415,64,19" AutoConnect="true" Id="FDMdWev3kugMsTAte8tDp2">
+                <Node Bounds="120,167,64,19" AutoConnect="true" Id="FDMdWev3kugMsTAte8tDp2">
                   <p:NodeReference LastCategoryFullName="Microsoft.Kinect.Body" LastSymbolSource="Microsoft.Kinect.dll">
                     <Choice Kind="OperationNode" Name="JointCount" />
                     <FullNameCategoryReference ID="Microsoft.Kinect.Body" />
@@ -6267,14 +6267,14 @@
     ************************ Activities (Advanced) ************************
 
 -->
-            <Node Name="Activities (Advanced)" Bounds="757,548,82,80" Id="Q1zslhQzll9NjWDuCJhS0R">
+            <Node Name="Activities (Advanced)" Bounds="108,300,82,80" Id="Q1zslhQzll9NjWDuCJhS0R">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
               <p:HideCategory p:Type="Boolean">false</p:HideCategory>
               <Patch Id="QwDTs9csCQfLQYgBIPe0f1">
-                <Node Bounds="769,577,58,26" AutoConnect="true" Id="SSrpeI7HtMxLGkn6Al5sAL">
+                <Node Bounds="120,329,58,26" AutoConnect="true" Id="SSrpeI7HtMxLGkn6Al5sAL">
                   <p:NodeReference LastCategoryFullName="Microsoft.Kinect.Body" LastSymbolSource="Microsoft.Kinect.dll">
                     <Choice Kind="OperationNode" Name="Activities" />
                     <FullNameCategoryReference ID="Microsoft.Kinect.Body" />
@@ -6293,14 +6293,14 @@
     ************************ Appearance (Advanced) ************************
 
 -->
-            <Node Name="Appearance (Advanced)" Bounds="1035,548,94,80" Id="VFIk0n0xlszLM6tHlei1Qh">
+            <Node Name="Appearance (Advanced)" Bounds="386,300,94,80" Id="VFIk0n0xlszLM6tHlei1Qh">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
               <p:HideCategory p:Type="Boolean">false</p:HideCategory>
               <Patch Id="EHtUngVstYOQNNaKV3LIPl">
-                <Node Bounds="1047,577,70,26" AutoConnect="true" Id="DDD6CiC5B0PMEqChS0Yyhr">
+                <Node Bounds="398,329,70,26" AutoConnect="true" Id="DDD6CiC5B0PMEqChS0Yyhr">
                   <p:NodeReference LastCategoryFullName="Microsoft.Kinect.Body" LastSymbolSource="Microsoft.Kinect.dll">
                     <Choice Kind="OperationNode" Name="Appearance" />
                     <FullNameCategoryReference ID="Microsoft.Kinect.Body" />
@@ -6319,14 +6319,14 @@
     ************************ ClippedEdges (Advanced) ************************
 
 -->
-            <Node Name="ClippedEdges (Advanced)" Bounds="1324,550,102,80" Id="IEd9zfhQoHLOAX7qVoj4DC">
+            <Node Name="ClippedEdges (Advanced)" Bounds="675,302,102,80" Id="IEd9zfhQoHLOAX7qVoj4DC">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
               <p:HideCategory p:Type="Boolean">false</p:HideCategory>
               <Patch Id="ACmU7qB7EGTNrbi3rkY4m8">
-                <Node Bounds="1336,578,78,26" AutoConnect="true" Id="HjktUGUGORfPxZZoxLapPu">
+                <Node Bounds="687,330,78,26" AutoConnect="true" Id="HjktUGUGORfPxZZoxLapPu">
                   <p:NodeReference LastCategoryFullName="Microsoft.Kinect.Body" LastSymbolSource="Microsoft.Kinect.dll">
                     <Choice Kind="OperationNode" Name="ClippedEdges" />
                     <FullNameCategoryReference ID="Microsoft.Kinect.Body" />
@@ -6345,14 +6345,14 @@
     ************************ Engaged (Advanced) ************************
 
 -->
-            <Node Name="Engaged (Advanced)" Bounds="1604,548,80,80" Id="FT7GsTsoqGOMMpHaeRt4rX">
+            <Node Name="Engaged (Advanced)" Bounds="955,300,80,80" Id="FT7GsTsoqGOMMpHaeRt4rX">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
               <p:HideCategory p:Type="Boolean">false</p:HideCategory>
               <Patch Id="FN9t1YRLrpzLKwf0kRQy3a">
-                <Node Bounds="1616,577,55,26" AutoConnect="true" Id="KxacBB7rNrvK9u0SjMAmk0">
+                <Node Bounds="967,329,55,26" AutoConnect="true" Id="KxacBB7rNrvK9u0SjMAmk0">
                   <p:NodeReference LastCategoryFullName="Microsoft.Kinect.Body" LastSymbolSource="Microsoft.Kinect.dll">
                     <Choice Kind="OperationNode" Name="Engaged" />
                     <FullNameCategoryReference ID="Microsoft.Kinect.Body" />
@@ -6371,14 +6371,14 @@
     ************************ Expressions (Advanced) ************************
 
 -->
-            <Node Name="Expressions (Advanced)" Bounds="757,698,95,80" Id="A05HKVcSFjnMrq2y9FsX5P">
+            <Node Name="Expressions (Advanced)" Bounds="108,450,95,80" Id="A05HKVcSFjnMrq2y9FsX5P">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
               <p:HideCategory p:Type="Boolean">false</p:HideCategory>
               <Patch Id="S9XtBaOz18kQWnpU3jEWeo">
-                <Node Bounds="769,727,71,26" AutoConnect="true" Id="A8IdQIriawmOy5SflNhU3m">
+                <Node Bounds="120,479,71,26" AutoConnect="true" Id="A8IdQIriawmOy5SflNhU3m">
                   <p:NodeReference LastCategoryFullName="Microsoft.Kinect.Body" LastSymbolSource="Microsoft.Kinect.dll">
                     <Choice Kind="OperationNode" Name="Expressions" />
                     <FullNameCategoryReference ID="Microsoft.Kinect.Body" />
@@ -6397,14 +6397,14 @@
     ************************ HandLeftConfidence (Advanced) ************************
 
 -->
-            <Node Name="HandLeftConfidence (Advanced)" Bounds="1035,698,132,80" Id="JpKzafY6MV3NL9N6E14ihn">
+            <Node Name="HandLeftConfidence (Advanced)" Bounds="386,450,132,80" Id="JpKzafY6MV3NL9N6E14ihn">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
               <p:HideCategory p:Type="Boolean">false</p:HideCategory>
               <Patch Id="K2RwulGPxLUM2vsVRNWQY3">
-                <Node Bounds="1047,727,108,26" AutoConnect="true" Id="FPseqbrxNYCMb24VXGFkb0">
+                <Node Bounds="398,479,108,26" AutoConnect="true" Id="FPseqbrxNYCMb24VXGFkb0">
                   <p:NodeReference LastCategoryFullName="Microsoft.Kinect.Body" LastSymbolSource="Microsoft.Kinect.dll">
                     <Choice Kind="OperationNode" Name="HandLeftConfidence" />
                     <FullNameCategoryReference ID="Microsoft.Kinect.Body" />
@@ -6423,14 +6423,14 @@
     ************************ HandLeftState (Advanced) ************************
 
 -->
-            <Node Name="HandLeftState (Advanced)" Bounds="1324,698,104,80" Id="EYFrQihZa7QOh2rcz5UYsf">
+            <Node Name="HandLeftState (Advanced)" Bounds="675,450,104,80" Id="EYFrQihZa7QOh2rcz5UYsf">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
               <p:HideCategory p:Type="Boolean">false</p:HideCategory>
               <Patch Id="ETXZvKvDAvNOVzeMcFt6XV">
-                <Node Bounds="1336,726,80,26" AutoConnect="true" Id="TZrWWjmLg8XPok2SvHGaUO">
+                <Node Bounds="687,478,80,26" AutoConnect="true" Id="TZrWWjmLg8XPok2SvHGaUO">
                   <p:NodeReference LastCategoryFullName="Microsoft.Kinect.Body" LastSymbolSource="Microsoft.Kinect.dll">
                     <Choice Kind="OperationNode" Name="HandLeftState" />
                     <FullNameCategoryReference ID="Microsoft.Kinect.Body" />
@@ -6449,14 +6449,14 @@
     ************************ HandRightConfidence (Advanced) ************************
 
 -->
-            <Node Name="HandRightConfidence (Advanced)" Bounds="1604,698,139,80" Id="KbzjdN6em1ELdGTqnzgV1S">
+            <Node Name="HandRightConfidence (Advanced)" Bounds="955,450,139,80" Id="KbzjdN6em1ELdGTqnzgV1S">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
               <p:HideCategory p:Type="Boolean">false</p:HideCategory>
               <Patch Id="AyY70VQfPNBLqTWwfLAWKA">
-                <Node Bounds="1616,727,115,26" AutoConnect="true" Id="FFvrsSwEHlbMAkwGjRiHG3">
+                <Node Bounds="967,479,115,26" AutoConnect="true" Id="FFvrsSwEHlbMAkwGjRiHG3">
                   <p:NodeReference LastCategoryFullName="Microsoft.Kinect.Body" LastSymbolSource="Microsoft.Kinect.dll">
                     <Choice Kind="OperationNode" Name="HandRightConfidence" />
                     <FullNameCategoryReference ID="Microsoft.Kinect.Body" />
@@ -6475,14 +6475,14 @@
     ************************ HandRightState (Advanced) ************************
 
 -->
-            <Node Name="HandRightState (Advanced)" Bounds="757,848,110,80" Id="Ihlq1Stdc5bPTcXXM3rqFz">
+            <Node Name="HandRightState (Advanced)" Bounds="108,600,110,80" Id="Ihlq1Stdc5bPTcXXM3rqFz">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
               <p:HideCategory p:Type="Boolean">false</p:HideCategory>
               <Patch Id="BFHqDx1BBeVOblRu6etwqN">
-                <Node Bounds="769,877,86,26" AutoConnect="true" Id="GSlwFcK4vo1MtAt50tB62E">
+                <Node Bounds="120,629,86,26" AutoConnect="true" Id="GSlwFcK4vo1MtAt50tB62E">
                   <p:NodeReference LastCategoryFullName="Microsoft.Kinect.Body" LastSymbolSource="Microsoft.Kinect.dll">
                     <Choice Kind="OperationNode" Name="HandRightState" />
                     <FullNameCategoryReference ID="Microsoft.Kinect.Body" />
@@ -6501,14 +6501,14 @@
     ************************ IsRestricted (Advanced) ************************
 
 -->
-            <Node Name="IsRestricted (Advanced)" Bounds="1035,848,93,80" Id="Ei5s4vlS3bEM4yja8gUIiN">
+            <Node Name="IsRestricted (Advanced)" Bounds="386,600,93,80" Id="Ei5s4vlS3bEM4yja8gUIiN">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
               <p:HideCategory p:Type="Boolean">false</p:HideCategory>
               <Patch Id="FHeEVebfiSrNbrYAQgS4iG">
-                <Node Bounds="1047,877,69,26" AutoConnect="true" Id="CxGd66GlCFUPuDVd3QpBLL">
+                <Node Bounds="398,629,69,26" AutoConnect="true" Id="CxGd66GlCFUPuDVd3QpBLL">
                   <p:NodeReference LastCategoryFullName="Microsoft.Kinect.Body" LastSymbolSource="Microsoft.Kinect.dll">
                     <Choice Kind="OperationNode" Name="IsRestricted" />
                     <FullNameCategoryReference ID="Microsoft.Kinect.Body" />
@@ -6527,14 +6527,14 @@
     ************************ IsTracked (Advanced) ************************
 
 -->
-            <Node Name="IsTracked (Advanced)" Bounds="1324,848,84,80" Id="KX76SK7AKVSM4HWyj18qcs">
+            <Node Name="IsTracked (Advanced)" Bounds="675,600,84,80" Id="KX76SK7AKVSM4HWyj18qcs">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
               <p:HideCategory p:Type="Boolean">false</p:HideCategory>
               <Patch Id="OB5GYemQTxCLuZJCYE1gdp">
-                <Node Bounds="1336,877,60,26" AutoConnect="true" Id="Ok3LnjzzjRsQJGSKeyKKIz">
+                <Node Bounds="687,629,60,26" AutoConnect="true" Id="Ok3LnjzzjRsQJGSKeyKKIz">
                   <p:NodeReference LastCategoryFullName="Microsoft.Kinect.Body" LastSymbolSource="Microsoft.Kinect.dll">
                     <Choice Kind="OperationNode" Name="IsTracked" />
                     <FullNameCategoryReference ID="Microsoft.Kinect.Body" />
@@ -6553,14 +6553,14 @@
     ************************ JointOrientations (Advanced) ************************
 
 -->
-            <Node Name="JointOrientations (Advanced)" Bounds="1604,848,117,80" Id="Fe5zZ1N9GdnNp0alZ6VSQv">
+            <Node Name="JointOrientations (Advanced)" Bounds="955,600,117,80" Id="Fe5zZ1N9GdnNp0alZ6VSQv">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
               <p:HideCategory p:Type="Boolean">false</p:HideCategory>
               <Patch Id="UcffUlNZZg9LTRqwDTgy9o">
-                <Node Bounds="1616,877,93,26" AutoConnect="true" Id="C0hqaeavwXSNigSvGB0UQT">
+                <Node Bounds="967,629,93,26" AutoConnect="true" Id="C0hqaeavwXSNigSvGB0UQT">
                   <p:NodeReference LastCategoryFullName="Microsoft.Kinect.Body" LastSymbolSource="Microsoft.Kinect.dll">
                     <Choice Kind="OperationNode" Name="JointOrientations" />
                     <FullNameCategoryReference ID="Microsoft.Kinect.Body" />
@@ -6579,14 +6579,14 @@
     ************************ Joints (Advanced) ************************
 
 -->
-            <Node Name="Joints (Advanced)" Bounds="751,998,80,80" Id="MQiN9J1ClkcPqBSiJdLj70">
+            <Node Name="Joints (Advanced)" Bounds="102,750,80,80" Id="MQiN9J1ClkcPqBSiJdLj70">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
               <p:HideCategory p:Type="Boolean">false</p:HideCategory>
               <Patch Id="IFH7Ili02EdMxPczANmg62">
-                <Node Bounds="770,1027,42,26" AutoConnect="true" Id="VLXRiRuoMOwLK0apy66Esq">
+                <Node Bounds="121,779,42,26" AutoConnect="true" Id="VLXRiRuoMOwLK0apy66Esq">
                   <p:NodeReference LastCategoryFullName="Microsoft.Kinect.Body" LastSymbolSource="Microsoft.Kinect.dll">
                     <Choice Kind="OperationNode" Name="Joints" />
                     <FullNameCategoryReference ID="Microsoft.Kinect.Body" />
@@ -6605,14 +6605,14 @@
     ************************ Lean (Advanced) ************************
 
 -->
-            <Node Name="Lean (Advanced)" Bounds="1035,1004,120,132" Id="UIAJiCBaKVNP7yFDe6N6Tk">
+            <Node Name="Lean (Advanced)" Bounds="386,756,120,132" Id="UIAJiCBaKVNP7yFDe6N6Tk">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
               <p:HideCategory p:Type="Boolean">false</p:HideCategory>
               <Patch Id="RWH3lomIIJcO1k3IzbRx5Q">
-                <Node Bounds="1047,1027,38,26" AutoConnect="true" Id="LrHqsGXtNTyL264lXgJ03R">
+                <Node Bounds="398,779,38,26" AutoConnect="true" Id="LrHqsGXtNTyL264lXgJ03R">
                   <p:NodeReference LastCategoryFullName="Microsoft.Kinect.Body" LastSymbolSource="Microsoft.Kinect.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationNode" Name="Lean" />
@@ -6622,7 +6622,7 @@
                   <Pin Id="OBO8vdmLuisL2HYOJ11F7D" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="IAE7ICWyBAxNxT0fA26D2h" Name="Lean" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="1080,1069,63,19" Id="V5JFPmbzZqjLs31zfuFkOJ">
+                <Node Bounds="431,821,63,19" Id="V5JFPmbzZqjLs31zfuFkOJ">
                   <p:NodeReference LastCategoryFullName="Devices.Kinect2" LastSymbolSource="VL.Devices.Kinect2.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="ToVector2" />
@@ -6634,7 +6634,7 @@
                   <Pin Id="CL2zkz2SuS8NqbbNVAIiwP" Name="Output" Kind="OutputPin" />
                 </Node>
                 <Link Id="NvwtKPLR02WPmDrL0U1mUL" Ids="IAE7ICWyBAxNxT0fA26D2h,BQLynx2tstWNx5yi6R1IRr" />
-                <ControlPoint Id="Hin5logdbhGM18AAIy42d0" Bounds="1082,1119" />
+                <ControlPoint Id="Hin5logdbhGM18AAIy42d0" Bounds="433,871" />
                 <Link Id="T8whzFiUEMxNxS4D1hJfLA" Ids="CL2zkz2SuS8NqbbNVAIiwP,Hin5logdbhGM18AAIy42d0" />
                 <Link Id="JzGN9BPj3DyPwMo3uwroZi" Ids="Hin5logdbhGM18AAIy42d0,CQYni4d8X50OVWkbkm4GFN" IsHidden="true" />
                 <Pin Id="N1Km5XeiJpBL9Le56pVmLU" Name="Input" Kind="InputPin" />
@@ -6647,14 +6647,14 @@
     ************************ LeanTrackingState (Advanced) ************************
 
 -->
-            <Node Name="LeanTrackingState (Advanced)" Bounds="1324,998,123,80" Id="B3dme0sNmRzOegbyeNOQi9">
+            <Node Name="LeanTrackingState (Advanced)" Bounds="675,750,123,80" Id="B3dme0sNmRzOegbyeNOQi9">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
               <p:HideCategory p:Type="Boolean">false</p:HideCategory>
               <Patch Id="J8ylj7ensxyLYaxhOddYao">
-                <Node Bounds="1336,1027,99,26" AutoConnect="true" Id="LqqWyfj0inXPIryrOUNHS3">
+                <Node Bounds="687,779,99,26" AutoConnect="true" Id="LqqWyfj0inXPIryrOUNHS3">
                   <p:NodeReference LastCategoryFullName="Microsoft.Kinect.Body" LastSymbolSource="Microsoft.Kinect.dll">
                     <Choice Kind="OperationNode" Name="LeanTrackingState" />
                     <FullNameCategoryReference ID="Microsoft.Kinect.Body" />
@@ -6673,14 +6673,14 @@
     ************************ TrackingId (Advanced) ************************
 
 -->
-            <Node Name="TrackingId (Advanced)" Bounds="1604,1004,138,120" Id="Ab1qTsCdy59PJNAI3aT0Em">
+            <Node Name="TrackingId (Advanced)" Bounds="955,756,138,120" Id="Ab1qTsCdy59PJNAI3aT0Em">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
               <p:HideCategory p:Type="Boolean">false</p:HideCategory>
               <Patch Id="SDvvVj9FioCO4yjYCe1pTZ">
-                <Node Bounds="1616,1027,64,26" AutoConnect="true" Id="JkLjZBiDmc8PC9eqqUKdkd">
+                <Node Bounds="967,779,64,26" AutoConnect="true" Id="JkLjZBiDmc8PC9eqqUKdkd">
                   <p:NodeReference LastCategoryFullName="Microsoft.Kinect.Body" LastSymbolSource="Microsoft.Kinect.dll">
                     <Choice Kind="OperationNode" Name="TrackingId" />
                     <FullNameCategoryReference ID="Microsoft.Kinect.Body" />
@@ -6689,7 +6689,7 @@
                   <Pin Id="BrbBer5X8tAPSJ5AxNUND6" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="FZC7uXjgyhwNqbaP7Wq13l" Name="Tracking Id" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="1675,1065,55,19" Id="RtGa9Fzg44MMNQ6NuD3dne">
+                <Node Bounds="1026,817,55,19" Id="RtGa9Fzg44MMNQ6NuD3dne">
                   <p:NodeReference LastCategoryFullName="System.Conversion" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="ToString" />
@@ -6698,7 +6698,7 @@
                   <Pin Id="PSHHFq3TLgEOxra0cE11Tx" Name="Result" Kind="OutputPin" />
                 </Node>
                 <Link Id="Hr9AvbmOBpIP1qF5IFzZf9" Ids="FZC7uXjgyhwNqbaP7Wq13l,QK7BDSCJHNmNWuY8j83UlP" />
-                <ControlPoint Id="Db2lzXiUAvMMoqy2silCHD" Bounds="1677,1107" />
+                <ControlPoint Id="Db2lzXiUAvMMoqy2silCHD" Bounds="1028,859" />
                 <Link Id="IxzCnUeYly9MOBdmtiftim" Ids="PSHHFq3TLgEOxra0cE11Tx,Db2lzXiUAvMMoqy2silCHD" />
                 <Link Id="SyTwcI88XxqPNA7FohQFBO" Ids="Db2lzXiUAvMMoqy2silCHD,Q2FhrIWyXYLLzIg13RrnYL" IsHidden="true" />
                 <Pin Id="O3AJ3PwdFkJOxOw3eebco8" Name="Input" Kind="InputPin" />
@@ -6711,34 +6711,34 @@
     ************************ Split ************************
 
 -->
-            <Node Name="Split" Bounds="754,1189,1237,425" Id="CkwrLAkJfjUN6k7e01Zpza">
+            <Node Name="Split" Bounds="105,941,1237,425" Id="CkwrLAkJfjUN6k7e01Zpza">
               <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
                 <Choice Kind="OperationDefinition" Name="Operation" />
               </p:NodeReference>
               <p:HideCategory p:Type="Boolean">false</p:HideCategory>
               <Patch Id="TYRZZw6gdnIPaeqQcAUhM9" ManuallySortedPins="true">
-                <ControlPoint Id="AmccFR7Bps3MAPNb4i3soA" Bounds="792,1207" />
+                <ControlPoint Id="AmccFR7Bps3MAPNb4i3soA" Bounds="143,959" />
                 <Link Id="GUPWY0UFA8lNY8yCO4MxUD" Ids="VamwnmmBleSPoYmj1KR9P1,AmccFR7Bps3MAPNb4i3soA" IsHidden="true" />
                 <Link Id="DZimPGHDrykM3J5GofUzYU" Ids="AmccFR7Bps3MAPNb4i3soA,IHjMOZ4JHnpLTgwJvnxw8Q" />
-                <ControlPoint Id="ElvODcGDrMkMOdYl6qBTbl" Bounds="1262,1595" />
+                <ControlPoint Id="ElvODcGDrMkMOdYl6qBTbl" Bounds="613,1347" />
                 <Link Id="GsRhfPgYq1oO0zfedFd6l4" Ids="ElvODcGDrMkMOdYl6qBTbl,NDYblwKSYyBQZYTYqXL4sY" IsHidden="true" />
-                <ControlPoint Id="AVIVlIKx9e7NhhztXC6lHF" Bounds="1917,1597" />
+                <ControlPoint Id="AVIVlIKx9e7NhhztXC6lHF" Bounds="1268,1349" />
                 <Link Id="GE5HzK4KfXQQa5OzfeZu2P" Ids="AVIVlIKx9e7NhhztXC6lHF,V43oZvnLnJHLclZciWDTCd" IsHidden="true" />
-                <ControlPoint Id="EFfe0CUGfpGOl35rIuL5ce" Bounds="926,1595" />
+                <ControlPoint Id="EFfe0CUGfpGOl35rIuL5ce" Bounds="277,1347" />
                 <Link Id="BpScIjtifBqPMhwLqDNueR" Ids="EFfe0CUGfpGOl35rIuL5ce,IarcT5Mw9WaOkraShHn009" IsHidden="true" />
-                <ControlPoint Id="DYF3IjLJNSsQHrWYRVjSS1" Bounds="1014,1595" />
+                <ControlPoint Id="DYF3IjLJNSsQHrWYRVjSS1" Bounds="365,1347" />
                 <Link Id="K672aMg61V0N1lsQTYSmER" Ids="DYF3IjLJNSsQHrWYRVjSS1,VTyOpRgaRkCQQ9TkZvSQB1" IsHidden="true" />
-                <ControlPoint Id="SMJ56FIWTPpLvmVPeIYq17" Bounds="1101,1595" />
+                <ControlPoint Id="SMJ56FIWTPpLvmVPeIYq17" Bounds="452,1347" />
                 <Link Id="DvM2TiNmAdjPYtrjoOvEk3" Ids="SMJ56FIWTPpLvmVPeIYq17,BIaY9WU5kbvO8zBoipxPCs" IsHidden="true" />
-                <ControlPoint Id="PcIynVizQaRNcOoXVlvBiS" Bounds="1423,1597" />
+                <ControlPoint Id="PcIynVizQaRNcOoXVlvBiS" Bounds="774,1349" />
                 <Link Id="JrO4wwWa41JQM1sutWe557" Ids="PcIynVizQaRNcOoXVlvBiS,LdmDezLd9QJPR2e12zqybJ" IsHidden="true" />
-                <ControlPoint Id="EAOcZCQniMQM25hCdnCmGB" Bounds="1549,1597" />
+                <ControlPoint Id="EAOcZCQniMQM25hCdnCmGB" Bounds="900,1349" />
                 <Link Id="L1KtJUxpye3PptrD8HLZh6" Ids="EAOcZCQniMQM25hCdnCmGB,TX089GcTkZDQa6SOr2TV9o" IsHidden="true" />
-                <ControlPoint Id="Pn4dE8wrEKrMYS0saFM2bS" Bounds="1680,1597" />
+                <ControlPoint Id="Pn4dE8wrEKrMYS0saFM2bS" Bounds="1031,1349" />
                 <Link Id="HtwcGZYdPEiQHKk1NsDc6U" Ids="Pn4dE8wrEKrMYS0saFM2bS,Lgb1cocC6yTLfdXMyovkbR" IsHidden="true" />
-                <ControlPoint Id="OQG64GUn3t6MfKZR7L81b8" Bounds="1814,1597" />
+                <ControlPoint Id="OQG64GUn3t6MfKZR7L81b8" Bounds="1165,1349" />
                 <Link Id="Dc7jZJ3tEfNM0smPUgXZTq" Ids="OQG64GUn3t6MfKZR7L81b8,OfDTk76ergSNSizdF0GGES" IsHidden="true" />
-                <Node Bounds="777,1262,1168,297" Id="SSxz0RXcqK9O9fXwJg7qrU">
+                <Node Bounds="128,1014,1168,297" Id="SSxz0RXcqK9O9fXwJg7qrU">
                   <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                     <Choice Kind="ApplicationStatefulRegion" Name="If" />
@@ -6748,7 +6748,7 @@
                   <Patch Id="UOv3Zo5N4WxLYbJv2npcBb" ManuallySortedPins="true">
                     <Patch Id="IjOpT89hylEP4WhO2jSylB" Name="Create" ManuallySortedPins="true" />
                     <Patch Id="DbeCfjzRuKdMQO8zroowRk" Name="Then" ManuallySortedPins="true" />
-                    <Node Bounds="789,1286,47,26" Id="RWmcBvvAydnPQrYrP4VeP0">
+                    <Node Bounds="140,1038,47,26" Id="RWmcBvvAydnPQrYrP4VeP0">
                       <p:NodeReference LastCategoryFullName="Devices.Kinect2.Skeleton" LastSymbolSource="VL.Devices.Kinect2.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="Joints" />
@@ -6758,7 +6758,7 @@
                       <Pin Id="B33N23Cv4XVNVA4ZWHU4xj" Name="Output" Kind="StateOutputPin" />
                       <Pin Id="SYoII2JYbshOCVqrxBq28u" Name="Joints" Kind="OutputPin" />
                     </Node>
-                    <Node Bounds="1089,1286,93,26" Id="G56tmHp9eIfLoqV1kmd4z3">
+                    <Node Bounds="440,1038,93,26" Id="G56tmHp9eIfLoqV1kmd4z3">
                       <p:NodeReference LastCategoryFullName="Devices.Kinect2.Skeleton" LastSymbolSource="VL.Devices.Kinect2.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="JointOrientations" />
@@ -6768,20 +6768,20 @@
                       <Pin Id="HBTtJ5qUw9mL8nsiZTV0ca" Name="Output" Kind="StateOutputPin" />
                       <Pin Id="C3qmxxyjf8bOOgVBV2bDPq" Name="Joint Orientations" Kind="OutputPin" />
                     </Node>
-                    <Node Bounds="1165,1384,175,155" Id="IXZRSpSkVtxNXC7POa0Ojk">
+                    <Node Bounds="516,1136,175,155" Id="IXZRSpSkVtxNXC7POa0Ojk">
                       <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                         <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                         <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
                         <CategoryReference Kind="Category" Name="Primitive" />
                       </p:NodeReference>
                       <Pin Id="ICjHj51g0xkPOL7av4b1PC" Name="Break" Kind="OutputPin" />
-                      <ControlPoint Id="CaM39MhA5MmNzCmeIGrOkr" Bounds="1262,1391" Alignment="Top" />
-                      <ControlPoint Id="IhTkE6RFGOjNbWlgcy4JxZ" Bounds="1262,1533" Alignment="Bottom" />
+                      <ControlPoint Id="CaM39MhA5MmNzCmeIGrOkr" Bounds="613,1142" Alignment="Top" />
+                      <ControlPoint Id="IhTkE6RFGOjNbWlgcy4JxZ" Bounds="613,1286" Alignment="Bottom" />
                       <Patch Id="SpPwJIYoSe1Lnx23cD7s27" ManuallySortedPins="true">
                         <Patch Id="VfvpQqdEJNUNh36z5HK5xF" Name="Create" ManuallySortedPins="true" />
                         <Patch Id="RgRzbD0DzaoMu220wWRzqz" Name="Update" ManuallySortedPins="true" />
                         <Patch Id="OE4GqrikRQFLc8p8pYOu4a" Name="Dispose" ManuallySortedPins="true" />
-                        <Node Bounds="1177,1450,88,26" Id="G10jktrkTCOMLesdPLjf2B">
+                        <Node Bounds="528,1202,88,26" Id="G10jktrkTCOMLesdPLjf2B">
                           <p:NodeReference LastCategoryFullName="Collections.Interfaces.IReadOnlyDictionary" LastSymbolSource="VL.Collections.vl">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <CategoryReference Kind="MutableInterfaceType" Name="IReadOnlyDictionary" />
@@ -6792,7 +6792,7 @@
                           <Pin Id="LxSIbsU8VJoPrY4tM08fnY" Name="Output" Kind="StateOutputPin" />
                           <Pin Id="T0h3uUQeJXEN4cM1oygxnO" Name="Item" Kind="OutputPin" />
                         </Node>
-                        <Node Bounds="1260,1411,62,26" Id="JGqtOsPgvQ2PSciy7emOd6">
+                        <Node Bounds="611,1163,62,26" Id="JGqtOsPgvQ2PSciy7emOd6">
                           <p:NodeReference LastCategoryFullName="Collections.Common.KeyValuePair" LastSymbolSource="VL.Collections.vl">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <CategoryReference Kind="RecordType" Name="KeyValuePair" />
@@ -6801,7 +6801,7 @@
                           <Pin Id="KpludcwibAtO6GmT8j16Hp" Name="Input" Kind="StateInputPin" />
                           <Pin Id="GsSyoTST8yMPFwSAACC0NE" Name="Key" Kind="OutputPin" />
                         </Node>
-                        <Node Bounds="1260,1492,68,19" Id="NyY9QIyyrviOb84Q4NFijN">
+                        <Node Bounds="611,1244,68,19" Id="NyY9QIyyrviOb84Q4NFijN">
                           <p:NodeReference>
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <CategoryReference Kind="ClassType" Name="JointOrientation" />
@@ -6812,7 +6812,7 @@
                         </Node>
                       </Patch>
                     </Node>
-                    <Node Bounds="831,1343,98,26" Id="Qxvi0bKtNmOMzCU5lmncYr">
+                    <Node Bounds="182,1095,98,26" Id="Qxvi0bKtNmOMzCU5lmncYr">
                       <p:NodeReference LastCategoryFullName="System.Collections.Generic.IReadOnlyDictionary`2" LastSymbolSource="System.Runtime.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="AssemblyCategory" Name="IReadOnlyDictionary`2" />
@@ -6822,19 +6822,19 @@
                       <Pin Id="LmpYAMMqJNJPg8O6uB81E7" Name="Output" Kind="StateOutputPin" />
                       <Pin Id="Blv4o2ZJGTMNYa3tEVHStO" Name="Values" Kind="OutputPin" />
                     </Node>
-                    <Node Bounds="912,1396,206,81" Id="HkUOu1NYhgPPr1wy3cA6KD">
+                    <Node Bounds="263,1148,206,81" Id="HkUOu1NYhgPPr1wy3cA6KD">
                       <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                         <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                         <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
                         <CategoryReference Kind="Category" Name="Primitive" />
                       </p:NodeReference>
                       <Pin Id="Azo7RSCMDg8LABBahtze5K" Name="Break" Kind="OutputPin" />
-                      <ControlPoint Id="PVeH08uJYNkOcqNtEGHS3u" Bounds="926,1403" Alignment="Top" />
+                      <ControlPoint Id="PVeH08uJYNkOcqNtEGHS3u" Bounds="277,1154" Alignment="Top" />
                       <Patch Id="Byr6sYkFsKWLC1eECz1sH9" ManuallySortedPins="true">
                         <Patch Id="UiiTOWBWGGcLLj9pdTWYAI" Name="Create" ManuallySortedPins="true" />
                         <Patch Id="QHnoILapB7EMESmk31uhms" Name="Update" ManuallySortedPins="true" />
                         <Patch Id="POUOtJT45snOVjntt2ZXnO" Name="Dispose" ManuallySortedPins="true" />
-                        <Node Bounds="924,1430,180,26" Id="D1ketVtwGVoPf5yKcfHntf">
+                        <Node Bounds="275,1182,180,26" Id="D1ketVtwGVoPf5yKcfHntf">
                           <p:NodeReference LastCategoryFullName="Devices.Kinect2.Joint" LastSymbolSource="VL.Devices.Kinect2.vl">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <Choice Kind="OperationCallFlag" Name="Split" />
@@ -6846,11 +6846,11 @@
                           <Pin Id="VTELs4aNN3GNfHJ9bndyYY" Name="Tracking State" Kind="OutputPin" />
                         </Node>
                       </Patch>
-                      <ControlPoint Id="Rqkk4g2aIKlMHUCBDe6qyp" Bounds="926,1471" Alignment="Bottom" />
-                      <ControlPoint Id="V2HdHC73B69L88EpmYRtLQ" Bounds="1014,1471" Alignment="Bottom" />
-                      <ControlPoint Id="SnWAvNeJMWFOnVkITRM3Jn" Bounds="1101,1471" Alignment="Bottom" />
+                      <ControlPoint Id="Rqkk4g2aIKlMHUCBDe6qyp" Bounds="277,1224" Alignment="Bottom" />
+                      <ControlPoint Id="V2HdHC73B69L88EpmYRtLQ" Bounds="365,1224" Alignment="Bottom" />
+                      <ControlPoint Id="SnWAvNeJMWFOnVkITRM3Jn" Bounds="452,1224" Alignment="Bottom" />
                     </Node>
-                    <Node Bounds="1318,1286,108,26" Id="BfYWBbRq4saPwbtTcM2kYB">
+                    <Node Bounds="669,1038,108,26" Id="BfYWBbRq4saPwbtTcM2kYB">
                       <p:NodeReference LastCategoryFullName="Devices.Kinect2.Skeleton" LastSymbolSource="VL.Devices.Kinect2.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="HandLeftConfidence" />
@@ -6860,7 +6860,7 @@
                       <Pin Id="QUgOxfIQgBuMiS8UnUTHzA" Name="Output" Kind="StateOutputPin" />
                       <Pin Id="Q7yKenPMGYrMOQ8JopFomO" Name="Hand Left Confidence" Kind="OutputPin" />
                     </Node>
-                    <Node Bounds="1472,1286,80,26" Id="P7EnQPgoneBQYI4zzJtD9Q">
+                    <Node Bounds="823,1038,80,26" Id="P7EnQPgoneBQYI4zzJtD9Q">
                       <p:NodeReference LastCategoryFullName="Devices.Kinect2.Skeleton" LastSymbolSource="VL.Devices.Kinect2.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="HandLeftState" />
@@ -6870,7 +6870,7 @@
                       <Pin Id="R7zOdsm5o22PEjAq4qr47A" Name="Output" Kind="StateOutputPin" />
                       <Pin Id="RlQz2bMCAg8Load54xVWqz" Name="Hand Left State" Kind="OutputPin" />
                     </Node>
-                    <Node Bounds="1568,1286,115,26" Id="C2mMvuvxPwCLwXa9gxj2fN">
+                    <Node Bounds="919,1038,115,26" Id="C2mMvuvxPwCLwXa9gxj2fN">
                       <p:NodeReference LastCategoryFullName="Devices.Kinect2.Skeleton" LastSymbolSource="VL.Devices.Kinect2.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="HandRightConfidence" />
@@ -6880,7 +6880,7 @@
                       <Pin Id="DmKylzHHzaRP0Y9F7nLx8F" Name="Output" Kind="StateOutputPin" />
                       <Pin Id="EAxnxTjhn6VMBF5oZaSv6w" Name="Hand Right Confidence" Kind="OutputPin" />
                     </Node>
-                    <Node Bounds="1731,1285,86,26" Id="PToNkchvhuBP0796I4zatL">
+                    <Node Bounds="1082,1037,86,26" Id="PToNkchvhuBP0796I4zatL">
                       <p:NodeReference LastCategoryFullName="Devices.Kinect2.Skeleton" LastSymbolSource="VL.Devices.Kinect2.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="HandRightState" />
@@ -6890,7 +6890,7 @@
                       <Pin Id="Gvurogt2345LIHCm04Y9Lq" Name="Output" Kind="StateOutputPin" />
                       <Pin Id="QLKna9kCy5bNd9KqYFWGkc" Name="Hand Right State" Kind="OutputPin" />
                     </Node>
-                    <Node Bounds="1856,1285,64,26" Id="NHDmVhA461iMPdhqQirxot">
+                    <Node Bounds="1207,1037,64,26" Id="NHDmVhA461iMPdhqQirxot">
                       <p:NodeReference LastCategoryFullName="Devices.Kinect2.Skeleton" LastSymbolSource="VL.Devices.Kinect2.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="TrackingId" />
@@ -6901,24 +6901,24 @@
                       <Pin Id="MRVCXKI5jjKNNRtZTdLhAZ" Name="Result" Kind="OutputPin" />
                     </Node>
                   </Patch>
-                  <ControlPoint Id="H5U4oxrSGlyPbPmRo0wGMc" Bounds="926,1553" Alignment="Bottom" />
-                  <ControlPoint Id="AKRPxTPnN1tPrK6ecnEbJ5" Bounds="924,1269" Alignment="Top" />
-                  <ControlPoint Id="NxoZSE37QYgPf2X9KNOU19" Bounds="1014,1553" Alignment="Bottom" />
-                  <ControlPoint Id="KA62Rsavo4uNDlZzYMzTCV" Bounds="997,1269" Alignment="Top" />
-                  <ControlPoint Id="Ljr5WvmdrMfMizKsPOTTzu" Bounds="1101,1553" Alignment="Bottom" />
-                  <ControlPoint Id="ThQbwAe4uH8OPkxxXXbyKJ" Bounds="1065,1269" Alignment="Top" />
-                  <ControlPoint Id="ERClwbLgg1cOG3ZAdS2F70" Bounds="1262,1553" Alignment="Bottom" />
-                  <ControlPoint Id="Jipn2GfuMeWORf9zl0vLw2" Bounds="1262,1269" Alignment="Top" />
-                  <ControlPoint Id="SUT3EtPFn94LPiGWoBiXKz" Bounds="1423,1553" Alignment="Bottom" />
-                  <ControlPoint Id="DYTvGqCoeE9OomMO9F0Zvw" Bounds="1416,1269" Alignment="Top" />
-                  <ControlPoint Id="DQy1SFADQDLOsa5Eob9QjA" Bounds="1549,1553" Alignment="Bottom" />
-                  <ControlPoint Id="HqFlC8eOANqN8iW8H5YqFo" Bounds="1542,1269" Alignment="Top" />
-                  <ControlPoint Id="HZItwI1xmJ2NjKkS3EWBQT" Bounds="1680,1553" Alignment="Bottom" />
-                  <ControlPoint Id="Or9uZ7sCJKkNuhtpkC72Ce" Bounds="1676,1269" Alignment="Top" />
-                  <ControlPoint Id="URdgYUfCzQ2Oyg72TzDBI7" Bounds="1814,1553" Alignment="Bottom" />
-                  <ControlPoint Id="CbNbPs3VwQkO7rlcrgrJkz" Bounds="1808,1269" Alignment="Top" />
-                  <ControlPoint Id="JyaCNPebCHgPqYIcZzdx5v" Bounds="1917,1553" Alignment="Bottom" />
-                  <ControlPoint Id="VoIcptaFRH6Peoct1cTlRx" Bounds="1917,1269" Alignment="Top" />
+                  <ControlPoint Id="H5U4oxrSGlyPbPmRo0wGMc" Bounds="277,1306" Alignment="Bottom" />
+                  <ControlPoint Id="AKRPxTPnN1tPrK6ecnEbJ5" Bounds="275,1020" Alignment="Top" />
+                  <ControlPoint Id="NxoZSE37QYgPf2X9KNOU19" Bounds="365,1306" Alignment="Bottom" />
+                  <ControlPoint Id="KA62Rsavo4uNDlZzYMzTCV" Bounds="348,1020" Alignment="Top" />
+                  <ControlPoint Id="Ljr5WvmdrMfMizKsPOTTzu" Bounds="452,1306" Alignment="Bottom" />
+                  <ControlPoint Id="ThQbwAe4uH8OPkxxXXbyKJ" Bounds="416,1020" Alignment="Top" />
+                  <ControlPoint Id="ERClwbLgg1cOG3ZAdS2F70" Bounds="613,1306" Alignment="Bottom" />
+                  <ControlPoint Id="Jipn2GfuMeWORf9zl0vLw2" Bounds="613,1020" Alignment="Top" />
+                  <ControlPoint Id="SUT3EtPFn94LPiGWoBiXKz" Bounds="774,1306" Alignment="Bottom" />
+                  <ControlPoint Id="DYTvGqCoeE9OomMO9F0Zvw" Bounds="767,1020" Alignment="Top" />
+                  <ControlPoint Id="DQy1SFADQDLOsa5Eob9QjA" Bounds="900,1306" Alignment="Bottom" />
+                  <ControlPoint Id="HqFlC8eOANqN8iW8H5YqFo" Bounds="893,1020" Alignment="Top" />
+                  <ControlPoint Id="HZItwI1xmJ2NjKkS3EWBQT" Bounds="1031,1306" Alignment="Bottom" />
+                  <ControlPoint Id="Or9uZ7sCJKkNuhtpkC72Ce" Bounds="1027,1020" Alignment="Top" />
+                  <ControlPoint Id="URdgYUfCzQ2Oyg72TzDBI7" Bounds="1165,1306" Alignment="Bottom" />
+                  <ControlPoint Id="CbNbPs3VwQkO7rlcrgrJkz" Bounds="1159,1020" Alignment="Top" />
+                  <ControlPoint Id="JyaCNPebCHgPqYIcZzdx5v" Bounds="1268,1306" Alignment="Bottom" />
+                  <ControlPoint Id="VoIcptaFRH6Peoct1cTlRx" Bounds="1268,1020" Alignment="Top" />
                 </Node>
                 <Link Id="Q80PL0LLXYGQOC665umWBd" Ids="B33N23Cv4XVNVA4ZWHU4xj,KJWdothI80JMXR3fiqpd4k" />
                 <Link Id="QJ9ssKlXdGIQKvENZ7xcQR" Ids="CaM39MhA5MmNzCmeIGrOkr,KpludcwibAtO6GmT8j16Hp" />
@@ -6937,7 +6937,7 @@
                 <Link Id="BOda6idBZLvN6OWTSWCvmy" Ids="T0h3uUQeJXEN4cM1oygxnO,IMmnxmiD6iVQbVN7bSI5rS" />
                 <Link Id="JX8u30ocm49MJTtz93QYzA" Ids="CYfLMiLkossQOR138ApIH4,IhTkE6RFGOjNbWlgcy4JxZ" />
                 <Link Id="VSKwH5TIu99MKEoO04ceEs" Ids="Gvurogt2345LIHCm04Y9Lq,NtlaiOjGDnOOGaBtE0AYVC" />
-                <Node Bounds="777,1231,65,19" Id="Ay8mb6EY7ihMxpIyUoPHsM">
+                <Node Bounds="128,983,65,19" Id="Ay8mb6EY7ihMxpIyUoPHsM">
                   <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="IsAssigned" />
@@ -7031,14 +7031,14 @@
     ************************ FaceBoundingBoxInColorSpace (Advanced) ************************
 
 -->
-            <Node Name="FaceBoundingBoxInColorSpace (Advanced)" Bounds="336,80,246,119" Id="GRDqCOE7djuMsAmReZaF88">
+            <Node Name="FaceBoundingBoxInColorSpace (Advanced)" Bounds="160,178,341,119" Id="GRDqCOE7djuMsAmReZaF88">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
               <p:HideCategory p:Type="Boolean">false</p:HideCategory>
               <Patch Id="FrxwGwXbqnUPEnp8FuDdwH">
-                <Node Bounds="348,103,155,26" AutoConnect="true" Id="LZeEhUOpqyyOfRxipRfuVO">
+                <Node Bounds="172,201,155,26" AutoConnect="true" Id="LZeEhUOpqyyOfRxipRfuVO">
                   <p:NodeReference LastCategoryFullName="Microsoft.Kinect.Face.FaceFrameResult" LastSymbolSource="Microsoft.Kinect.Face.dll">
                     <Choice Kind="OperationNode" Name="FaceBoundingBoxInColorSpace" />
                     <FullNameCategoryReference ID="Microsoft.Kinect.Face.FaceFrameResult" />
@@ -7047,12 +7047,12 @@
                   <Pin Id="PzTp6UXmS2nMIznqqOShSp" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="JlglAdkipz7LpkvAhDDh3A" Name="Face Bounding Box In Color Space" Kind="OutputPin" />
                 </Node>
-                <ControlPoint Id="DdU4WPn3QwNP2ri40AlpHh" Bounds="500,182" />
+                <ControlPoint Id="DdU4WPn3QwNP2ri40AlpHh" Bounds="324,280" />
                 <Link Id="PaoWZC2DTboMVUyVpbYBQw" Ids="DdU4WPn3QwNP2ri40AlpHh,C0gx3jUVam7NforSCkyqLt" IsHidden="true" />
                 <Pin Id="NGdFDGdtpwXLmPaipGlAav" Name="Input" Kind="InputPin" />
                 <Pin Id="C0gx3jUVam7NforSCkyqLt" Name="Face Bounding Box In Color Space" Kind="OutputPin" Bounds="321,127" />
                 <Pin Id="C9axS1hgm6wQdmiwSi6081" Name="Output" Kind="OutputPin" />
-                <Node Bounds="498,144,72,19" Id="M45eGpBLDhpOcFIwBIWWnu">
+                <Node Bounds="322,242,72,19" Id="M45eGpBLDhpOcFIwBIWWnu">
                   <p:NodeReference LastCategoryFullName="Devices.Kinect2" LastSymbolSource="VL.Devices.Kinect2.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="ToRectangle" />
@@ -7072,14 +7072,14 @@
     ************************ FaceBoundingBoxInInfraredSpace (Advanced) ************************
 
 -->
-            <Node Name="FaceBoundingBoxInInfraredSpace (Advanced)" Bounds="675,79,258,127" Id="DfNwmqQ9r23OxAeSIpn9HN">
+            <Node Name="FaceBoundingBoxInInfraredSpace (Advanced)" Bounds="499,177,364,127" Id="DfNwmqQ9r23OxAeSIpn9HN">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
               <p:HideCategory p:Type="Boolean">false</p:HideCategory>
               <Patch Id="EjilScMS6LIPzskhW1KQCl">
-                <Node Bounds="687,102,167,26" AutoConnect="true" Id="TAk6vmAs0w0OttyDhp7yuS">
+                <Node Bounds="511,200,167,26" AutoConnect="true" Id="TAk6vmAs0w0OttyDhp7yuS">
                   <p:NodeReference LastCategoryFullName="Microsoft.Kinect.Face.FaceFrameResult" LastSymbolSource="Microsoft.Kinect.Face.dll">
                     <Choice Kind="OperationNode" Name="FaceBoundingBoxInInfraredSpace" />
                     <FullNameCategoryReference ID="Microsoft.Kinect.Face.FaceFrameResult" />
@@ -7088,7 +7088,7 @@
                   <Pin Id="M7502n0wRKzM25VmLC4Qy9" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="BjWcXAMcVy4O4uGITxGrs5" Name="Face Bounding Box In Infrared Space" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="849,146,72,19" Id="Ev4JGgjAdsCMkLEI81SLKv">
+                <Node Bounds="673,244,72,19" Id="Ev4JGgjAdsCMkLEI81SLKv">
                   <p:NodeReference LastCategoryFullName="Devices.Kinect2" LastSymbolSource="VL.Devices.Kinect2.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="ToRectangle" />
@@ -7100,7 +7100,7 @@
                   <Pin Id="E4rQWaU1DzKLrk1dtRLyxd" Name="Output" Kind="OutputPin" />
                 </Node>
                 <Link Id="PtwWXVmMZXrLPGnSdNQ6Sk" Ids="BjWcXAMcVy4O4uGITxGrs5,QuzXmj1JVVyNLCraHgPZsF" />
-                <ControlPoint Id="L0Elt9QguvTOSelEwnOErg" Bounds="851,189" />
+                <ControlPoint Id="L0Elt9QguvTOSelEwnOErg" Bounds="675,287" />
                 <Link Id="B0DGiqCqkwEMhE2yOiElsE" Ids="L0Elt9QguvTOSelEwnOErg,UXwnDLbZhIMQXBdCkoSBsQ" IsHidden="true" />
                 <Pin Id="EIIhK9d4VbAO3I0wjaQtjB" Name="Input" Kind="InputPin" />
                 <Pin Id="UXwnDLbZhIMQXBdCkoSBsQ" Name="Face Bounding Box In Infrared Space" Kind="OutputPin" Bounds="846,248" />
@@ -7113,14 +7113,14 @@
     ************************ FacePointsInColorSpace (Advanced) ************************
 
 -->
-            <Node Name="FacePointsInColorSpace (Advanced)" Bounds="337,257,251,124" Id="RrkyF6F6yQaQL9geYZ1Bxl">
+            <Node Name="FacePointsInColorSpace (Advanced)" Bounds="161,355,274,124" Id="RrkyF6F6yQaQL9geYZ1Bxl">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
               <p:HideCategory p:Type="Boolean">false</p:HideCategory>
               <Patch Id="OnPhYD6Gz9qNFKd7n08eSj">
-                <Node Bounds="349,280,123,26" AutoConnect="true" Id="MvdnGiMqCAIOtK6cGqXuw5">
+                <Node Bounds="173,378,123,26" AutoConnect="true" Id="MvdnGiMqCAIOtK6cGqXuw5">
                   <p:NodeReference LastCategoryFullName="Microsoft.Kinect.Face.FaceFrameResult" LastSymbolSource="Microsoft.Kinect.Face.dll">
                     <Choice Kind="OperationNode" Name="FacePointsInColorSpace" />
                     <FullNameCategoryReference ID="Microsoft.Kinect.Face.FaceFrameResult" />
@@ -7129,7 +7129,7 @@
                   <Pin Id="R1iRm4n79kCLzvmXRTS6iY" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="TyluhJ3sjW5OPCldWp5k2S" Name="Face Points In Color Space" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="467,323,109,19" Id="CYJojS9T3sGPlc8N20ckWa">
+                <Node Bounds="291,421,109,19" Id="CYJojS9T3sGPlc8N20ckWa">
                   <p:NodeReference LastCategoryFullName="Devices.Kinect2" LastSymbolSource="VL.Devices.Kinect2.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="ToVector2Dictionary" />
@@ -7138,7 +7138,7 @@
                   <Pin Id="D8wwdvhH7ZQPscpL9jAz1b" Name="Output" Kind="StateOutputPin" />
                 </Node>
                 <Link Id="MoEzDAzR5nKQEmNObIDWZn" Ids="TyluhJ3sjW5OPCldWp5k2S,Ojic8k0LILXO7LwDjeG6em" />
-                <ControlPoint Id="IZcmXOA8w7YOmUI7Lyo8E7" Bounds="469,364" />
+                <ControlPoint Id="IZcmXOA8w7YOmUI7Lyo8E7" Bounds="293,462" />
                 <Link Id="DoOEIQgfxKPO40EZ00dnNv" Ids="D8wwdvhH7ZQPscpL9jAz1b,IZcmXOA8w7YOmUI7Lyo8E7" />
                 <Link Id="HYZOuNSRaODOQc0fdc8yVB" Ids="IZcmXOA8w7YOmUI7Lyo8E7,JeR77DWQIekN3HLjkvId5S" IsHidden="true" />
                 <Pin Id="CUaJ5LyL1RxP9KiKbbsaI0" Name="Input" Kind="InputPin" />
@@ -7151,14 +7151,14 @@
     ************************ FacePointsInInfraredSpace (Advanced) ************************
 
 -->
-            <Node Name="FacePointsInInfraredSpace (Advanced)" Bounds="676,258,263,123" Id="NpwZ7yPimcELs8U6jN8dIP">
+            <Node Name="FacePointsInInfraredSpace (Advanced)" Bounds="500,355,297,124" Id="NpwZ7yPimcELs8U6jN8dIP">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
               <p:HideCategory p:Type="Boolean">false</p:HideCategory>
               <Patch Id="H4lYXnU92d0LswjXknPnGF">
-                <Node Bounds="688,280,135,26" AutoConnect="true" Id="TFNAlYQVVNuOParBBsTtke">
+                <Node Bounds="512,378,135,26" AutoConnect="true" Id="TFNAlYQVVNuOParBBsTtke">
                   <p:NodeReference LastCategoryFullName="Microsoft.Kinect.Face.FaceFrameResult" LastSymbolSource="Microsoft.Kinect.Face.dll">
                     <Choice Kind="OperationNode" Name="FacePointsInInfraredSpace" />
                     <FullNameCategoryReference ID="Microsoft.Kinect.Face.FaceFrameResult" />
@@ -7167,7 +7167,7 @@
                   <Pin Id="PWlSp8fqpJZLIdLH4VY3cd" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="PY8x0uPMqV7MTpQL40Bmqk" Name="Face Points In Infrared Space" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="818,323,109,19" Id="VnQrr1OpjrUL38d2eXn7v0">
+                <Node Bounds="642,421,109,19" Id="VnQrr1OpjrUL38d2eXn7v0">
                   <p:NodeReference LastCategoryFullName="Devices.Kinect2" LastSymbolSource="VL.Devices.Kinect2.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="ToVector2Dictionary" />
@@ -7176,7 +7176,7 @@
                   <Pin Id="VouuQNhsLIdQVshh1Uf5T4" Name="Output" Kind="StateOutputPin" />
                 </Node>
                 <Link Id="F2qSedy5bbhMs35knHPPHx" Ids="PY8x0uPMqV7MTpQL40Bmqk,U4YtVwO770BNmx51JVbTtF" />
-                <ControlPoint Id="GCPYDMSQcIOQScRmyHPXnE" Bounds="820,364" />
+                <ControlPoint Id="GCPYDMSQcIOQScRmyHPXnE" Bounds="644,462" />
                 <Link Id="VXSkvKK4I47MaKRy9cbXSU" Ids="VouuQNhsLIdQVshh1Uf5T4,GCPYDMSQcIOQScRmyHPXnE" />
                 <Link Id="Q43O25JUDYZMJjNg7jiS15" Ids="GCPYDMSQcIOQScRmyHPXnE,PRlEn3NefIZOEEaPkVuAzF" IsHidden="true" />
                 <Pin Id="NvEx0cwdhsAOGREKbtttDa" Name="Input" Kind="InputPin" />
@@ -7189,14 +7189,14 @@
     ************************ FaceRotationQuaternion (Advanced) ************************
 
 -->
-            <Node Name="FaceRotationQuaternion (Advanced)" Bounds="337,442,223,125" Id="AqqVKynrQ2ZNE2zzahWD8b">
+            <Node Name="FaceRotationQuaternion (Advanced)" Bounds="161,540,272,125" Id="AqqVKynrQ2ZNE2zzahWD8b">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
               <p:HideCategory p:Type="Boolean">false</p:HideCategory>
               <Patch Id="PtPU6KEsZ4yPizAEPxkO9M">
-                <Node Bounds="349,465,125,26" AutoConnect="true" Id="CjGRozP5l7gOaYyqE8qCAt">
+                <Node Bounds="173,563,125,26" AutoConnect="true" Id="CjGRozP5l7gOaYyqE8qCAt">
                   <p:NodeReference LastCategoryFullName="Microsoft.Kinect.Face.FaceFrameResult" LastSymbolSource="Microsoft.Kinect.Face.dll">
                     <Choice Kind="OperationNode" Name="FaceRotationQuaternion" />
                     <FullNameCategoryReference ID="Microsoft.Kinect.Face.FaceFrameResult" />
@@ -7205,7 +7205,7 @@
                   <Pin Id="Dw9d5dEEmi2Mc9LyzxnOG9" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="GdKbYpnPoiOPsbt6GOc2h2" Name="Face Rotation Quaternion" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="469,509,79,19" Id="OF2ST87oFOjM5z02ap9oSl">
+                <Node Bounds="293,607,79,19" Id="OF2ST87oFOjM5z02ap9oSl">
                   <p:NodeReference LastCategoryFullName="Devices.Kinect2" LastSymbolSource="VL.Devices.Kinect2.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="ToQuaternion" />
@@ -7217,7 +7217,7 @@
                   <Pin Id="D18d3vmlKfLPulpqe00COg" Name="Output" Kind="OutputPin" />
                 </Node>
                 <Link Id="CT1N5HurdF6QMhzphIe3q1" Ids="GdKbYpnPoiOPsbt6GOc2h2,NdBhzkIgDMRO6TfaYqAAds" />
-                <ControlPoint Id="J1RAZlni9WFLY6B8eP7la4" Bounds="471,550" />
+                <ControlPoint Id="J1RAZlni9WFLY6B8eP7la4" Bounds="295,648" />
                 <Link Id="EgfQ52vVzf3OB8l3VgWQG4" Ids="D18d3vmlKfLPulpqe00COg,J1RAZlni9WFLY6B8eP7la4" />
                 <Link Id="K3du1Fxjyo8NuiuQ1V7Lx8" Ids="J1RAZlni9WFLY6B8eP7la4,PJJoWMWtzfDOrVMJWJFq82" IsHidden="true" />
                 <Pin Id="LLQduwuyNPnNSKuE38rAZQ" Name="Input" Kind="InputPin" />
@@ -7227,91 +7227,53 @@
             </Node>
             <!--
 
-    ************************ ID (Advanced) ************************
-
--->
-            <Node Name="ID (Advanced)" Bounds="678,436,150,130" Id="Hk1v1e98RQ5LyfJrdYcMzj">
-              <p:NodeReference>
-                <Choice Kind="OperationDefinition" Name="Operation" />
-                <FullNameCategoryReference ID="Primitive" />
-              </p:NodeReference>
-              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
-              <Patch Id="GK2cPDkUBumPuyMcNOUYEp">
-                <Node Bounds="690,459,76,26" AutoConnect="true" Id="Pqk3Xvg40ogNOrGxAbxIDS">
-                  <p:NodeReference LastCategoryFullName="Microsoft.Kinect.Face.FaceFrameResult" LastSymbolSource="Microsoft.Kinect.Face.dll">
-                    <Choice Kind="OperationNode" Name="TrackingId" />
-                    <FullNameCategoryReference ID="Microsoft.Kinect.Face.FaceFrameResult" />
-                  </p:NodeReference>
-                  <Pin Id="M78EaLxrrLXPkLbj9uUlFF" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="EWoUpFxNG9jLaa42jkE868" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="T9Ysy7DDUHRLtecdW2LiTR" Name="Tracking Id" Kind="OutputPin" />
-                </Node>
-                <Node Bounds="761,504,55,19" Id="MkGrY4BERXGM8PWviqGwxq">
-                  <p:NodeReference LastCategoryFullName="System.Conversion" LastSymbolSource="CoreLibBasics.vl">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="OperationCallFlag" Name="ToString" />
-                  </p:NodeReference>
-                  <Pin Id="NB0UNuHuSB6MHgldqay5tK" Name="Input" Kind="InputPin" />
-                  <Pin Id="BjY7fxTSIN6Mf6K3bJjrCE" Name="Result" Kind="OutputPin" />
-                </Node>
-                <Link Id="VCNbKHPjRQnPzKMeH8w2YV" Ids="T9Ysy7DDUHRLtecdW2LiTR,NB0UNuHuSB6MHgldqay5tK" />
-                <ControlPoint Id="FmN1bzc8jpVMAV0KWZhDRW" Bounds="763,549" />
-                <Link Id="O6iDYV0r4n1L8PN4kT1031" Ids="BjY7fxTSIN6Mf6K3bJjrCE,FmN1bzc8jpVMAV0KWZhDRW" />
-                <Link Id="MIADVcAMFaGNwRj6Cb9Qof" Ids="FmN1bzc8jpVMAV0KWZhDRW,PDm4mDowK5tQQJH5idJ5oF" IsHidden="true" />
-                <Pin Id="GJXd1qzPJ5ZPkp5RvMN2rt" Name="Input" Kind="InputPin" />
-                <Pin Id="PDm4mDowK5tQQJH5idJ5oF" Name="ID" Kind="OutputPin" Bounds="773,592" />
-                <Pin Id="PHi1c0YCAkmO5EerYOzOdQ" Name="Output" Kind="OutputPin" />
-              </Patch>
-            </Node>
-            <!--
-
     ************************ Split ************************
 
 -->
-            <Node Name="Split" Bounds="314,643,944,346" Id="B6r66s7NpSAMqUpNuFkbfg">
+            <Node Name="Split" Bounds="138,741,944,346" Id="B6r66s7NpSAMqUpNuFkbfg">
               <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
                 <Choice Kind="OperationDefinition" Name="Operation" />
               </p:NodeReference>
               <p:HideCategory p:Type="Boolean">false</p:HideCategory>
               <Patch Id="AP3RwufjCn1MEQ7y0yONzf" ManuallySortedPins="true">
-                <ControlPoint Id="BF51EkZoBUYPgJrYtP8nsz" Bounds="351,661" />
+                <ControlPoint Id="BF51EkZoBUYPgJrYtP8nsz" Bounds="175,759" />
                 <Link Id="C18BDbXwcxrQN3JspHunTg" Ids="GQkAbMZ4GAZQHa4KWKDLzj,BF51EkZoBUYPgJrYtP8nsz" IsHidden="true" />
-                <ControlPoint Id="K5662HAaUVXOKCoy209YNv" Bounds="1224,966" />
+                <ControlPoint Id="K5662HAaUVXOKCoy209YNv" Bounds="1048,1064" />
                 <Link Id="U2cTSnFlGchOor8HM7V88D" Ids="K5662HAaUVXOKCoy209YNv,EKtTgdtPHxcM1Eh1pK1vsE" IsHidden="true" />
-                <ControlPoint Id="O6LT7360gFyNqNuWmVmkly" Bounds="1136,966" />
+                <ControlPoint Id="O6LT7360gFyNqNuWmVmkly" Bounds="960,1064" />
                 <Link Id="OxJfLEDIiU4M2bh5ok1D6a" Ids="O6LT7360gFyNqNuWmVmkly,Sm4bpSNGElgNdK1MvC24Jd" IsHidden="true" />
                 <Link Id="LOaE866JlXKPCkJltHRX8r" Ids="BF51EkZoBUYPgJrYtP8nsz,IW15yjl1nemONJlmK0IMqD" />
-                <ControlPoint Id="KTPC1qJdugqL4z4SJwBkv8" Bounds="508,966" />
+                <ControlPoint Id="KTPC1qJdugqL4z4SJwBkv8" Bounds="332,1064" />
                 <Link Id="It2cYeZF5wVMlso9tQwptb" Ids="KTPC1qJdugqL4z4SJwBkv8,QaX29R3LvN1LY3Z5QhL2aH" IsHidden="true" />
-                <ControlPoint Id="HCgXnZ5Za5lOOIPO4CPkF3" Bounds="417,966" />
+                <ControlPoint Id="HCgXnZ5Za5lOOIPO4CPkF3" Bounds="241,1064" />
                 <Link Id="PLH89quxRoBNmYTAqVgRlt" Ids="HCgXnZ5Za5lOOIPO4CPkF3,LyR7NRx8i1VPQHcn9Qrpz0" IsHidden="true" />
-                <ControlPoint Id="Cvov6KeuZkBMk4GgOSyXce" Bounds="856,966" />
+                <ControlPoint Id="Cvov6KeuZkBMk4GgOSyXce" Bounds="680,1064" />
                 <Link Id="SVxumIwgv18OtdnjSG174p" Ids="Cvov6KeuZkBMk4GgOSyXce,M7XMNrC9tCDL7ZZmgKkzi1" IsHidden="true" />
-                <Node Bounds="337,718,909,226" Id="QcihNyq1ldxLJnROtSAQSh">
+                <Node Bounds="161,816,909,226" Id="QcihNyq1ldxLJnROtSAQSh">
                   <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                     <Choice Kind="ApplicationStatefulRegion" Name="If" />
                     <FullNameCategoryReference ID="Primitive" />
                   </p:NodeReference>
                   <Pin Id="Gh96PTOvrw1Lvf4DH029b5" Name="Condition" Kind="InputPin" />
-                  <ControlPoint Id="Ko9BoqQ6gzBOSAg89gPzMZ" Bounds="417,938" Alignment="Bottom" />
-                  <ControlPoint Id="VwBwIJT4zNDPwIWssofaKg" Bounds="416,726" Alignment="Top" />
-                  <ControlPoint Id="Rcu0SptfnScNv95Ar7nn3t" Bounds="508,938" Alignment="Bottom" />
-                  <ControlPoint Id="QkvbYExaFtQN60PYQ1yEeB" Bounds="763,726" Alignment="Top" />
-                  <ControlPoint Id="GqVbUpwenmPNe8MxkULhcA" Bounds="856,938" Alignment="Bottom" />
-                  <ControlPoint Id="EvC54EPnvHaMaztH1LEkD2" Bounds="911,726" Alignment="Top" />
-                  <ControlPoint Id="LKzwrFGSQljOCL9lIXNw2j" Bounds="1136,938" Alignment="Bottom" />
-                  <ControlPoint Id="Uhi74NIQN2ZNrWopjmdsEz" Bounds="1065,726" Alignment="Top" />
-                  <ControlPoint Id="GK7HweP4QZEOR6hRRlE1Uy" Bounds="1224,938" Alignment="Bottom" />
-                  <ControlPoint Id="Do73hJHfrvoNjDICSlSE2y" Bounds="1144,726" Alignment="Top" />
-                  <ControlPoint Id="MG2nlikM7xgPenaoOyC4cR" Bounds="647,938" Alignment="Bottom" />
-                  <ControlPoint Id="NLhZe0yaWZPLQjzp3aovat" Bounds="647,724" Alignment="Top" />
-                  <ControlPoint Id="VtqDHCC4WXEQRd94PsLvuP" Bounds="989,938" Alignment="Bottom" />
-                  <ControlPoint Id="LSgjzkvBlEONo6qB6XsnNB" Bounds="979,724" Alignment="Top" />
+                  <ControlPoint Id="Ko9BoqQ6gzBOSAg89gPzMZ" Bounds="241,1036" Alignment="Bottom" />
+                  <ControlPoint Id="VwBwIJT4zNDPwIWssofaKg" Bounds="240,822" Alignment="Top" />
+                  <ControlPoint Id="Rcu0SptfnScNv95Ar7nn3t" Bounds="332,1036" Alignment="Bottom" />
+                  <ControlPoint Id="QkvbYExaFtQN60PYQ1yEeB" Bounds="587,822" Alignment="Top" />
+                  <ControlPoint Id="GqVbUpwenmPNe8MxkULhcA" Bounds="680,1036" Alignment="Bottom" />
+                  <ControlPoint Id="EvC54EPnvHaMaztH1LEkD2" Bounds="735,822" Alignment="Top" />
+                  <ControlPoint Id="LKzwrFGSQljOCL9lIXNw2j" Bounds="960,1036" Alignment="Bottom" />
+                  <ControlPoint Id="Uhi74NIQN2ZNrWopjmdsEz" Bounds="889,822" Alignment="Top" />
+                  <ControlPoint Id="GK7HweP4QZEOR6hRRlE1Uy" Bounds="1048,1036" Alignment="Bottom" />
+                  <ControlPoint Id="Do73hJHfrvoNjDICSlSE2y" Bounds="968,822" Alignment="Top" />
+                  <ControlPoint Id="MG2nlikM7xgPenaoOyC4cR" Bounds="471,1036" Alignment="Bottom" />
+                  <ControlPoint Id="NLhZe0yaWZPLQjzp3aovat" Bounds="471,822" Alignment="Top" />
+                  <ControlPoint Id="VtqDHCC4WXEQRd94PsLvuP" Bounds="813,1036" Alignment="Bottom" />
+                  <ControlPoint Id="LSgjzkvBlEONo6qB6XsnNB" Bounds="803,822" Alignment="Top" />
                   <Patch Id="DXxJv7Xya6aQMOrddNhjaf" ManuallySortedPins="true">
                     <Patch Id="KNTuDBfhNGVLSN1tjugAoE" Name="Create" ManuallySortedPins="true" />
                     <Patch Id="HN4eat7VhYSMQQtqhk11Rb" Name="Then" ManuallySortedPins="true" />
-                    <Node Bounds="1163,743,64,26" Id="HQ1eEHZAsD0NGlwYc8xtgS">
+                    <Node Bounds="987,841,64,26" Id="HQ1eEHZAsD0NGlwYc8xtgS">
                       <p:NodeReference>
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="ID" />
@@ -7319,9 +7281,9 @@
                       </p:NodeReference>
                       <Pin Id="HVhl2YSOH3vNOPz0C32djP" Name="Input" Kind="StateInputPin" />
                       <Pin Id="Bqo8yEqPIIRL7LEFY2qQC1" Name="Output" Kind="OutputPin" />
-                      <Pin Id="TlUfuW9ld9fPH9SDHeZuhe" Name="ID" Kind="OutputPin" />
+                      <Pin Id="KdD73ZN5GACOR0spiYQPCw" Name="ID" Kind="OutputPin" />
                     </Node>
-                    <Node Bounds="1014,743,125,26" Id="NaoiNPgemBDLiXhQkRx4Fc">
+                    <Node Bounds="838,841,125,26" Id="NaoiNPgemBDLiXhQkRx4Fc">
                       <p:NodeReference LastCategoryFullName="Devices.Kinect2.Face" LastSymbolSource="VL.Devices.Kinect2.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="ClassType" Name="Face" NeedsToBeDirectParent="true" />
@@ -7331,7 +7293,7 @@
                       <Pin Id="D3XMwTnFWIXNIH2cjeBXku" Name="Output" Kind="OutputPin" />
                       <Pin Id="FQ6Cwwh71RiNJA1ZrCixGs" Name="Face Rotation Quaternion" Kind="OutputPin" />
                     </Node>
-                    <Node Bounds="658,743,135,26" Id="ToBmbqhiey2Njt5TYhXBgj">
+                    <Node Bounds="482,841,135,26" Id="ToBmbqhiey2Njt5TYhXBgj">
                       <p:NodeReference LastCategoryFullName="Devices.Kinect2.Face" LastSymbolSource="VL.Devices.Kinect2.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="ClassType" Name="Face" NeedsToBeDirectParent="true" />
@@ -7341,7 +7303,7 @@
                       <Pin Id="Pe5O1gTAtlzMi3PT2GJHhG" Name="Output" Kind="OutputPin" />
                       <Pin Id="BoLuPHJoNxDM485ELwGS5t" Name="Face Points In Infrared Space" Kind="OutputPin" />
                     </Node>
-                    <Node Bounds="349,743,135,26" Id="AHegnlz1bdsLTHUF7TsKXO">
+                    <Node Bounds="173,841,135,26" Id="AHegnlz1bdsLTHUF7TsKXO">
                       <p:NodeReference LastCategoryFullName="Devices.Kinect2.Face" LastSymbolSource="VL.Devices.Kinect2.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="ClassType" Name="Face" NeedsToBeDirectParent="true" />
@@ -7351,19 +7313,19 @@
                       <Pin Id="Hg3plQmQQBtLCfAzOLdFnQ" Name="Output" Kind="OutputPin" />
                       <Pin Id="HesOBgC9EgAQEpnWVZOA8T" Name="Face Points In Color Space" Kind="OutputPin" />
                     </Node>
-                    <Node Bounds="403,808,470,114" Id="Bx0wWDJUPYrQZlzpxj6xbb">
+                    <Node Bounds="227,906,470,114" Id="Bx0wWDJUPYrQZlzpxj6xbb">
                       <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                         <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                         <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
                         <CategoryReference Kind="Category" Name="Primitive" />
                       </p:NodeReference>
                       <Pin Id="SoAauzQXw2LOVErWWwPSJv" Name="Break" Kind="OutputPin" />
-                      <ControlPoint Id="RP9hbuKVgaBOEsNsK6b6Ts" Bounds="417,820" Alignment="Top" />
+                      <ControlPoint Id="RP9hbuKVgaBOEsNsK6b6Ts" Bounds="241,912" Alignment="Top" />
                       <Patch Id="ETaFxn92offNuLnhL2gd0b" ManuallySortedPins="true">
                         <Patch Id="BU7auyDCiJzPdtmOgM90sx" Name="Create" ManuallySortedPins="true" />
                         <Patch Id="B5vi78AXIbbPUmyeYc0ZFS" Name="Update" ManuallySortedPins="true" />
                         <Patch Id="EWSUBFVb3JsOcYWeo0FLA4" Name="Dispose" ManuallySortedPins="true" />
-                        <Node Bounds="415,865,62,26" Id="AxJnAJUX9WTMyiBtZuoMXz">
+                        <Node Bounds="239,963,62,26" Id="AxJnAJUX9WTMyiBtZuoMXz">
                           <p:NodeReference LastCategoryFullName="Collections.Common.KeyValuePair" LastSymbolSource="VL.Collections.vl">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <CategoryReference Kind="RecordType" Name="KeyValuePair" />
@@ -7372,7 +7334,7 @@
                           <Pin Id="BaBXtLMRvxYN7wWX31d9o5" Name="Input" Kind="StateInputPin" />
                           <Pin Id="Ogj9tLXfDWNLpXXnJ2n4tJ" Name="Key" Kind="OutputPin" />
                         </Node>
-                        <Node Bounds="506,865,62,26" Id="NwfNQ9WkGphN2qgVbxyOZf">
+                        <Node Bounds="330,963,62,26" Id="NwfNQ9WkGphN2qgVbxyOZf">
                           <p:NodeReference LastCategoryFullName="Collections.Common.KeyValuePair" LastSymbolSource="VL.Collections.vl">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <CategoryReference Kind="RecordType" Name="KeyValuePair" />
@@ -7381,7 +7343,7 @@
                           <Pin Id="URoqNs2sbM6PyOMr11YTTk" Name="Input" Kind="StateInputPin" />
                           <Pin Id="SjjOY8L4SOqMAJZvvc46oC" Name="Value" Kind="OutputPin" />
                         </Node>
-                        <Node Bounds="788,865,71,26" Id="Dpu8QP5Tjv6MyAfeIBAQAg">
+                        <Node Bounds="612,963,71,26" Id="Dpu8QP5Tjv6MyAfeIBAQAg">
                           <p:NodeReference LastCategoryFullName="Collections.Dictionary" LastSymbolSource="VL.Collections.vl">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <Choice Kind="OperationCallFlag" Name="TryGetValue" />
@@ -7393,11 +7355,11 @@
                           <Pin Id="NoxDHTPfiYaOnvQwmlMKj5" Name="Value" Kind="OutputPin" />
                         </Node>
                       </Patch>
-                      <ControlPoint Id="VOT69ZgT1o1Px3ayiZh7xt" Bounds="508,916" Alignment="Bottom" />
-                      <ControlPoint Id="NQcQx9pG828PasiXbjHgK4" Bounds="417,916" Alignment="Bottom" />
-                      <ControlPoint Id="APRoRVRtfKdNRWm8H1bsAT" Bounds="856,916" Alignment="Bottom" />
+                      <ControlPoint Id="VOT69ZgT1o1Px3ayiZh7xt" Bounds="332,1014" Alignment="Bottom" />
+                      <ControlPoint Id="NQcQx9pG828PasiXbjHgK4" Bounds="241,1014" Alignment="Bottom" />
+                      <ControlPoint Id="APRoRVRtfKdNRWm8H1bsAT" Bounds="680,1014" Alignment="Bottom" />
                     </Node>
-                    <Node Bounds="493,743,155,26" Id="TO7I7AuPbHAOeb5Z20jxtz">
+                    <Node Bounds="317,841,155,26" Id="TO7I7AuPbHAOeb5Z20jxtz">
                       <p:NodeReference LastCategoryFullName="Devices.Kinect2.Face" LastSymbolSource="VL.Devices.Kinect2.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="ClassType" Name="Face" NeedsToBeDirectParent="true" />
@@ -7407,7 +7369,7 @@
                       <Pin Id="QxUTXtAUQISOMvWvd93e9B" Name="Output" Kind="OutputPin" />
                       <Pin Id="EgjoJkwGuQeNDYO7pAihmY" Name="Face Bounding Box In Color Space" Kind="OutputPin" />
                     </Node>
-                    <Node Bounds="826,744,155,26" Id="JcMaSUOwp2uNKjVvpQ4mlK">
+                    <Node Bounds="650,842,155,26" Id="JcMaSUOwp2uNKjVvpQ4mlK">
                       <p:NodeReference LastCategoryFullName="Devices.Kinect2.Face" LastSymbolSource="VL.Devices.Kinect2.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="ClassType" Name="Face" NeedsToBeDirectParent="true" />
@@ -7425,7 +7387,7 @@
                 <Link Id="MbYuuxchckOL5GmT4q2Ooc" Ids="SjjOY8L4SOqMAJZvvc46oC,VOT69ZgT1o1Px3ayiZh7xt" />
                 <Link Id="EcoJwu27FQGO1wFakXZtGA" Ids="Ogj9tLXfDWNLpXXnJ2n4tJ,NQcQx9pG828PasiXbjHgK4" />
                 <Link Id="VXNLFbCBj2oPmWiFd9nyVf" Ids="HesOBgC9EgAQEpnWVZOA8T,RP9hbuKVgaBOEsNsK6b6Ts" />
-                <Node Bounds="337,685,65,19" Id="Ls7Hqjjj1ThPWeQlAnqZA8">
+                <Node Bounds="161,783,65,19" Id="Ls7Hqjjj1ThPWeQlAnqZA8">
                   <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="IsAssigned" />
@@ -7449,20 +7411,19 @@
                 <Link Id="TGLZaGcAtneP0we8h28Mnc" Ids="FQ6Cwwh71RiNJA1ZrCixGs,LKzwrFGSQljOCL9lIXNw2j" />
                 <Link Id="QK9wIdNpfH1PnYgbxbLjnD" Ids="LKzwrFGSQljOCL9lIXNw2j,O6LT7360gFyNqNuWmVmkly" />
                 <Link Id="NKTGGicgc1FOMiZpHBxKPL" Ids="Do73hJHfrvoNjDICSlSE2y,GK7HweP4QZEOR6hRRlE1Uy" IsFeedback="true" />
-                <Link Id="VSq37QCDqu3N36GAsXUEeA" Ids="TlUfuW9ld9fPH9SDHeZuhe,GK7HweP4QZEOR6hRRlE1Uy" />
                 <Link Id="TE8Q89WDAXQLLgZQzmqEhB" Ids="GK7HweP4QZEOR6hRRlE1Uy,K5662HAaUVXOKCoy209YNv" />
                 <Link Id="Ba7DXkWLX6WLgivmRyzUrp" Ids="Hg3plQmQQBtLCfAzOLdFnQ,GgbLE5OO3bQL8F1tICXgBu" />
                 <Link Id="M0FKjprYWBmPcXrzH8VvgO" Ids="QxUTXtAUQISOMvWvd93e9B,M0u6DuBDJE3PjrKG5N1gP3" />
                 <Link Id="AQLTXfN3cWNPPMju2DmD8u" Ids="NLhZe0yaWZPLQjzp3aovat,MG2nlikM7xgPenaoOyC4cR" IsFeedback="true" />
                 <Link Id="NSGa9AIhw5FL0VKedbFvQN" Ids="EgjoJkwGuQeNDYO7pAihmY,MG2nlikM7xgPenaoOyC4cR" />
                 <Link Id="DGMZjmYYUHCL1fOcjvaVJ9" Ids="MG2nlikM7xgPenaoOyC4cR,GTVzQZLD43kLUfaOj9JVSC" />
-                <ControlPoint Id="GTVzQZLD43kLUfaOj9JVSC" Bounds="647,966" />
+                <ControlPoint Id="GTVzQZLD43kLUfaOj9JVSC" Bounds="471,1064" />
                 <Link Id="Vvm8TCWK9TsN0XV7BIJcLp" Ids="GTVzQZLD43kLUfaOj9JVSC,LZ1dORDkFyvNUnOvCVCOxp" IsHidden="true" />
                 <Link Id="HEg13x8jXlyOIvyRMa46ug" Ids="Pe5O1gTAtlzMi3PT2GJHhG,MIDJjZSXq6MMKgMQZsAtQp" />
                 <Link Id="OahE1kJ439PNIbOQqEDyVN" Ids="FYLa8ddkqnbMbPE5PdXX2t,VGloSz7IZ3IO1QGbiKV7zz" />
                 <Link Id="G1tvRx52wMfNQ4jM3teAhq" Ids="LSgjzkvBlEONo6qB6XsnNB,VtqDHCC4WXEQRd94PsLvuP" IsFeedback="true" />
                 <Link Id="SKHD6R1YpdvMVjfWKUMun4" Ids="VtqDHCC4WXEQRd94PsLvuP,T2DXx5JmD6rLwLt5wBmgrl" />
-                <ControlPoint Id="T2DXx5JmD6rLwLt5wBmgrl" Bounds="989,966" />
+                <ControlPoint Id="T2DXx5JmD6rLwLt5wBmgrl" Bounds="813,1064" />
                 <Link Id="TI3NB0N6I9hLW1ZwFO3yQq" Ids="T2DXx5JmD6rLwLt5wBmgrl,BMywniIFqTmMDJbfe66w29" IsHidden="true" />
                 <Link Id="FleCoEzxueiO3ddY2RT0x2" Ids="IbTQ9C17CTqN50rKb79us5,VtqDHCC4WXEQRd94PsLvuP" />
                 <Link Id="Nhb8QY3xoXpN1pfgMT9UsW" Ids="BoLuPHJoNxDM485ELwGS5t,E8o8QCzuqhnLzrNgYjyQOi" />
@@ -7476,6 +7437,7 @@
                 <Pin Id="M7XMNrC9tCDL7ZZmgKkzi1" Name="Points In IR Space" Kind="OutputPin" Bounds="646,926" />
                 <Pin Id="BMywniIFqTmMDJbfe66w29" Name="Bounding Box In IR Space" Kind="OutputPin" Bounds="980,968" />
                 <Pin Id="GQkAbMZ4GAZQHa4KWKDLzj" Name="Input" Kind="InputPin" Bounds="966,471" />
+                <Link Id="E3Ok8sH3bGpNBV469WifqO" Ids="KdD73ZN5GACOR0spiYQPCw,GK7HweP4QZEOR6hRRlE1Uy" />
               </Patch>
             </Node>
             <!--
@@ -7483,14 +7445,14 @@
     ************************ RelativeTime (Advanced) ************************
 
 -->
-            <Node Name="RelativeTime (Advanced)" Bounds="1059,76,112,80" Id="ToxC5RQH6F9LzQRUP8sKGh">
+            <Node Name="RelativeTime (Advanced)" Bounds="883,174,112,80" Id="ToxC5RQH6F9LzQRUP8sKGh">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
               <p:HideCategory p:Type="Boolean">false</p:HideCategory>
               <Patch Id="H8Nj579M9vcNE3L8Et5CJc">
-                <Node Bounds="1071,104,76,26" AutoConnect="true" Id="BpDU5c9xrXGMgHCOTd9CRD">
+                <Node Bounds="895,202,76,26" AutoConnect="true" Id="BpDU5c9xrXGMgHCOTd9CRD">
                   <p:NodeReference LastCategoryFullName="Microsoft.Kinect.Face.FaceFrameResult" LastSymbolSource="Microsoft.Kinect.Face.dll">
                     <Choice Kind="OperationNode" Name="RelativeTime" />
                     <FullNameCategoryReference ID="Microsoft.Kinect.Face.FaceFrameResult" />
@@ -7509,14 +7471,14 @@
     ************************ FaceFrameFeatures (Advanced) ************************
 
 -->
-            <Node Name="FaceFrameFeatures (Advanced)" Bounds="1065,223,127,80" Id="Sqdv8bkfwEjLsF7zWgca9U">
+            <Node Name="FaceFrameFeatures (Advanced)" Bounds="889,320,127,80" Id="Sqdv8bkfwEjLsF7zWgca9U">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
               <p:HideCategory p:Type="Boolean">false</p:HideCategory>
               <Patch Id="SticHLCnnFrQa8noyInyV0">
-                <Node Bounds="1077,251,103,26" AutoConnect="true" Id="EfzX89GyFrVNJjnUN1Rr2y">
+                <Node Bounds="901,349,103,26" AutoConnect="true" Id="EfzX89GyFrVNJjnUN1Rr2y">
                   <p:NodeReference LastCategoryFullName="Microsoft.Kinect.Face.FaceFrameResult" LastSymbolSource="Microsoft.Kinect.Face.dll">
                     <Choice Kind="OperationNode" Name="FaceFrameFeatures" />
                     <FullNameCategoryReference ID="Microsoft.Kinect.Face.FaceFrameResult" />
@@ -7535,14 +7497,14 @@
     ************************ FaceProperties (Advanced) ************************
 
 -->
-            <Node Name="FaceProperties (Advanced)" Bounds="1069,379,112,80" Id="ALS19umYiAYMjneganOpSU">
+            <Node Name="FaceProperties (Advanced)" Bounds="893,476,112,80" Id="ALS19umYiAYMjneganOpSU">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
               <p:HideCategory p:Type="Boolean">false</p:HideCategory>
               <Patch Id="IYZ8pjbKdjhO7WIj2jkDQ8">
-                <Node Bounds="1081,407,82,26" AutoConnect="true" Id="OjZYyKKBu8uNQfyF28Bska">
+                <Node Bounds="905,505,82,26" AutoConnect="true" Id="OjZYyKKBu8uNQfyF28Bska">
                   <p:NodeReference LastCategoryFullName="Microsoft.Kinect.Face.FaceFrameResult" LastSymbolSource="Microsoft.Kinect.Face.dll">
                     <Choice Kind="OperationNode" Name="FaceProperties" />
                     <FullNameCategoryReference ID="Microsoft.Kinect.Face.FaceFrameResult" />
@@ -7556,6 +7518,70 @@
                 <Pin Id="GGtl2PLuH9NNDu8x12Ncog" Name="Face Properties" Kind="OutputPin" />
               </Patch>
             </Node>
+            <!--
+
+    ************************ ID (Advanced) ************************
+
+-->
+            <Node Name="ID (Advanced)" Bounds="506,544,150,126" Id="LtqO1ouoJRtLJU9hwzEPqR">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="IalgsA7U2eZP0EJiCkeMvE">
+                <Node Bounds="518,567,76,26" AutoConnect="true" Id="P5fcyWYLPRAMoSRvkTRycX">
+                  <p:NodeReference LastCategoryFullName="Microsoft.Kinect.Face.FaceFrameResult" LastSymbolSource="Microsoft.Kinect.Face.dll">
+                    <Choice Kind="OperationNode" Name="TrackingId" />
+                    <FullNameCategoryReference ID="Microsoft.Kinect.Face.FaceFrameResult" />
+                  </p:NodeReference>
+                  <Pin Id="EQcHZ64BujjLSbLdSLMFD9" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="FgPaei0sEtyLpb8zvzllcK" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="BN1EETIwch5O5eo46mPYjs" Name="Tracking Id" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="589,612,55,19" Id="AadLxR7u7GAP0UCR1ZusMc">
+                  <p:NodeReference LastCategoryFullName="System.Conversion" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="ToString" />
+                  </p:NodeReference>
+                  <Pin Id="DOvZ9DngnHnOOUh9Lb59lx" Name="Input" Kind="InputPin" />
+                  <Pin Id="H7VkBiIpyiLLzwtlZCjfpB" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Link Id="HHZQhwagWMoNOkZiIAuHYt" Ids="BN1EETIwch5O5eo46mPYjs,DOvZ9DngnHnOOUh9Lb59lx" />
+                <ControlPoint Id="OMqWDPt7eg2Pkhh66smgoI" Bounds="591,653" />
+                <Link Id="AqM6aorheGtMRy1MpM7Efu" Ids="H7VkBiIpyiLLzwtlZCjfpB,OMqWDPt7eg2Pkhh66smgoI" />
+                <Link Id="Fn6frPorCXoQFCoJ4HxHwd" Ids="OMqWDPt7eg2Pkhh66smgoI,EIRkXwwQLcWLzn0icyH22h" IsHidden="true" />
+                <Pin Id="LFFHhYWkn0YOrlFZ7FRnqC" Name="Input" Kind="InputPin" />
+                <Pin Id="EIRkXwwQLcWLzn0icyH22h" Name="ID" Kind="OutputPin" Bounds="604,671" />
+                <Pin Id="NM7vUY7OPBNPVXR60A15Nz" Name="Output" Kind="OutputPin" />
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ TrackingId (Hidden) ************************
+
+-->
+            <Node Name="TrackingId (Hidden)" Bounds="686,577,112,80" Id="U1ilSpoupj5LHmlN1O1YlH">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="JD7Q8CX9aGhQbvfaBCJ4d5">
+                <Node Bounds="698,606,76,26" AutoConnect="true" Id="DJHYy9gty1rOWKCfOkkuSj">
+                  <p:NodeReference LastCategoryFullName="Microsoft.Kinect.Face.FaceFrameResult" LastSymbolSource="Microsoft.Kinect.Face.dll">
+                    <Choice Kind="OperationNode" Name="TrackingId" />
+                    <FullNameCategoryReference ID="Microsoft.Kinect.Face.FaceFrameResult" />
+                  </p:NodeReference>
+                  <Pin Id="MTVcw6H97Q0Nhur6hNCw4Q" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="IvrIbs6OaJ8OdiW41rVPDX" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="NX1B551Q7D2MtiRRhMYR9z" Name="Tracking Id" Kind="OutputPin" />
+                </Node>
+                <Pin Id="IDio6XXXjinM9bODpc91nU" Name="Input" Kind="InputPin" />
+                <Pin Id="UAobBy8yRuoPhyEtPNJwKU" Name="Output" Kind="OutputPin" />
+                <Pin Id="HdJDtBfUyKdNxnka2HtySN" Name="Tracking Id" Kind="OutputPin" />
+              </Patch>
+            </Node>
           </Canvas>
           <ProcessDefinition Id="PwhF2d9JkgJP1FwCQxK3PB" IsHidden="true">
             <Fragment Id="NTVhG7k6S5oLotsH143isg" Patch="GRDqCOE7djuMsAmReZaF88" />
@@ -7563,11 +7589,12 @@
             <Fragment Id="VMz6Ltt41mJPQg97JYBfrI" Patch="RrkyF6F6yQaQL9geYZ1Bxl" />
             <Fragment Id="NNkJByG8MpjMp1ZD77K1Vf" Patch="NpwZ7yPimcELs8U6jN8dIP" />
             <Fragment Id="EoTJxNBIYD8N6miTfSXLOi" Patch="AqqVKynrQ2ZNE2zzahWD8b" />
-            <Fragment Id="DEhesOshznTLZcb9pVwWFo" Patch="Hk1v1e98RQ5LyfJrdYcMzj" />
             <Fragment Id="N5WxyrBJ1MiLhm8f6A9yAl" Patch="B6r66s7NpSAMqUpNuFkbfg" />
             <Fragment Id="BUdAeLeOphYMQXdyp9frNE" Patch="ToxC5RQH6F9LzQRUP8sKGh" />
             <Fragment Id="RAsCQIEUH3zNQQMYTS1U6t" Patch="Sqdv8bkfwEjLsF7zWgca9U" />
             <Fragment Id="KfLSiQeW2XvOwufYxLtB5e" Patch="ALS19umYiAYMjneganOpSU" />
+            <Fragment Id="Q721gr2SrPKPzYwhLysmQd" Patch="LtqO1ouoJRtLJU9hwzEPqR" />
+            <Fragment Id="OGjQl90MYzSP8nc4ZuoNGo" Patch="U1ilSpoupj5LHmlN1O1YlH" />
           </ProcessDefinition>
         </Patch>
       </Node>
@@ -7591,14 +7618,14 @@
     ************************ WorldSpacePoints (Advanced) ************************
 
 -->
-            <Node Name="WorldSpacePoints (Advanced)" Bounds="583,107,141,80" Id="OO4kM5ZFomkMB2oW7mW3KY">
+            <Node Name="WorldSpacePoints (Advanced)" Bounds="228,181,141,80" Id="OO4kM5ZFomkMB2oW7mW3KY">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
               <p:HideCategory p:Type="Boolean">false</p:HideCategory>
               <Patch Id="EKsubBjGVuzQQAdaMMHnPz">
-                <Node Bounds="595,136,105,26" AutoConnect="true" Id="OVNkIiwh28vMY6Sz2jRj0g">
+                <Node Bounds="240,210,105,26" AutoConnect="true" Id="OVNkIiwh28vMY6Sz2jRj0g">
                   <p:NodeReference LastCategoryFullName="VL.Devices.Kinect2.FaceHD" LastSymbolSource="VL.Devices.Kinect2.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <FullNameCategoryReference ID="VL.Devices.Kinect2.FaceHD" />
@@ -7618,14 +7645,14 @@
     ************************ FaceAlignmentQuality (Advanced) ************************
 
 -->
-            <Node Name="FaceAlignmentQuality (Advanced)" Bounds="1089,267,151,80" Id="HJwRzW1bF61PVDAkNznmBz">
+            <Node Name="FaceAlignmentQuality (Advanced)" Bounds="733,341,152,80" Id="HJwRzW1bF61PVDAkNznmBz">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
               <p:HideCategory p:Type="Boolean">false</p:HideCategory>
               <Patch Id="ViN9MkJX0KyONZDfySnP86">
-                <Node Bounds="1100,296,115,26" AutoConnect="true" Id="RJutAiOr0j2NSH0hK23SNv">
+                <Node Bounds="745,370,115,26" AutoConnect="true" Id="RJutAiOr0j2NSH0hK23SNv">
                   <p:NodeReference LastCategoryFullName="VL.Devices.Kinect2.FaceHD" LastSymbolSource="VL.Devices.Kinect2.dll">
                     <Choice Kind="OperationNode" Name="FaceAlignmentQuality" />
                     <FullNameCategoryReference ID="VL.Devices.Kinect2.FaceHD" />
@@ -7644,14 +7671,14 @@
     ************************ FaceOrientation (Advanced) ************************
 
 -->
-            <Node Name="FaceOrientation (Advanced)" Bounds="603,402,112,80" Id="BiWLeaSUZv6Nfh42AO3raq">
+            <Node Name="FaceOrientation (Advanced)" Bounds="236,468,124,88" Id="BiWLeaSUZv6Nfh42AO3raq">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
               <p:HideCategory p:Type="Boolean">false</p:HideCategory>
               <Patch Id="UFqhOm4HEG0NDs7YYnEi86">
-                <Node Bounds="603,423,88,26" AutoConnect="true" Id="PWtUYzuvmClN3CaN3JbkrE">
+                <Node Bounds="248,497,88,26" AutoConnect="true" Id="PWtUYzuvmClN3CaN3JbkrE">
                   <p:NodeReference LastCategoryFullName="VL.Devices.Kinect2.FaceHD" LastSymbolSource="VL.Devices.Kinect2.dll">
                     <Choice Kind="OperationNode" Name="FaceOrientation" />
                     <FullNameCategoryReference ID="VL.Devices.Kinect2.FaceHD" />
@@ -7670,14 +7697,14 @@
     ************************ HeadPivotPoint (Advanced) ************************
 
 -->
-            <Node Name="HeadPivotPoint (Advanced)" Bounds="855,412,136,80" Id="SkNtde5N3qcOAnGgMVGKe6">
+            <Node Name="HeadPivotPoint (Advanced)" Bounds="500,468,136,98" Id="SkNtde5N3qcOAnGgMVGKe6">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
               <p:HideCategory p:Type="Boolean">false</p:HideCategory>
               <Patch Id="HXBWfRZ4dmoQIDMvlSPHkQ">
-                <Node Bounds="867,423,84,26" AutoConnect="true" Id="GvDmo1pLXmhQWesZVrG1Y5">
+                <Node Bounds="512,497,84,26" AutoConnect="true" Id="GvDmo1pLXmhQWesZVrG1Y5">
                   <p:NodeReference LastCategoryFullName="VL.Devices.Kinect2.FaceHD" LastSymbolSource="VL.Devices.Kinect2.dll">
                     <Choice Kind="OperationNode" Name="HeadPivotPoint" />
                     <FullNameCategoryReference ID="VL.Devices.Kinect2.FaceHD" />
@@ -7696,14 +7723,14 @@
     ************************ NativeCameraSpacePoints (Advanced) ************************
 
 -->
-            <Node Name="NativeCameraSpacePoints (Advanced)" Bounds="1089,394,169,80" Id="KlM6EsUSt7fNDAt4QeXgKZ">
+            <Node Name="NativeCameraSpacePoints (Advanced)" Bounds="734,468,169,80" Id="KlM6EsUSt7fNDAt4QeXgKZ">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
               <p:HideCategory p:Type="Boolean">false</p:HideCategory>
               <Patch Id="RoMEnMkavcQOgdCKAXyHj0">
-                <Node Bounds="1101,423,133,26" AutoConnect="true" Id="EfBHkQ2wDLsModnWjY1liF">
+                <Node Bounds="746,497,133,26" AutoConnect="true" Id="EfBHkQ2wDLsModnWjY1liF">
                   <p:NodeReference LastCategoryFullName="VL.Devices.Kinect2.FaceHD" LastSymbolSource="VL.Devices.Kinect2.dll">
                     <Choice Kind="OperationNode" Name="NativeCameraSpacePoints" />
                     <FullNameCategoryReference ID="VL.Devices.Kinect2.FaceHD" />
@@ -7722,52 +7749,52 @@
     ************************ Split ************************
 
 -->
-            <Node Name="Split" Bounds="1109,711,674,203" Id="RR8mArTvJ03L4UzmUj9pVq">
+            <Node Name="Split" Bounds="754,785,674,203" Id="RR8mArTvJ03L4UzmUj9pVq">
               <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
                 <Choice Kind="OperationDefinition" Name="Operation" />
               </p:NodeReference>
               <p:HideCategory p:Type="Boolean">false</p:HideCategory>
               <Patch Id="RqQ4HtBXkFDPRa95WLHZEt">
-                <ControlPoint Id="IL9iIHe4FUXPQ1yJpP7lfT" Bounds="1148,729" />
+                <ControlPoint Id="IL9iIHe4FUXPQ1yJpP7lfT" Bounds="793,803" />
                 <Link Id="RlIqYpL3RAuOW99Yfz0kkF" Ids="IL9iIHe4FUXPQ1yJpP7lfT,P6mNFZQikEyMua24BEjXsI" />
                 <Pin Id="LU1PHl03o30NbvP4g88Vip" Name="Input" Kind="InputPin" Bounds="357,703" />
                 <Link Id="Ur5YHkf9Yv8NBQNmdQiwUY" Ids="LU1PHl03o30NbvP4g88Vip,IL9iIHe4FUXPQ1yJpP7lfT" IsHidden="true" />
-                <ControlPoint Id="FjUFZpz9XtjOS6Wf5TpeBZ" Bounds="1184,897" />
+                <ControlPoint Id="FjUFZpz9XtjOS6Wf5TpeBZ" Bounds="829,971" />
                 <Pin Id="B8yT9YR5KprPugv1JPvuRY" Name="ID" Kind="OutputPin" Bounds="400,757" />
                 <Link Id="FdTlGtqiHVtL12fGnnziG5" Ids="FjUFZpz9XtjOS6Wf5TpeBZ,B8yT9YR5KprPugv1JPvuRY" IsHidden="true" />
-                <ControlPoint Id="Kz73kH6Q5r4OofEX3YIzhD" Bounds="1448,897" />
+                <ControlPoint Id="Kz73kH6Q5r4OofEX3YIzhD" Bounds="1093,971" />
                 <Pin Id="M4oL1lBC96kOewabSdHd6w" Name="Face Alignment Quality" Kind="OutputPin" Bounds="537,787" />
                 <Link Id="BYov0h9EdwhOzH6wyt4kAG" Ids="Kz73kH6Q5r4OofEX3YIzhD,M4oL1lBC96kOewabSdHd6w" IsHidden="true" />
-                <ControlPoint Id="FL1pjfzhcmWMXDA35jWOpT" Bounds="1311,897" />
+                <ControlPoint Id="FL1pjfzhcmWMXDA35jWOpT" Bounds="956,971" />
                 <Pin Id="OPb0ZLXPdg9NSRApeQDkW0" Name="World Space Points" Kind="OutputPin" Bounds="527,779" />
                 <Link Id="Ipv0z6W0DMSMNuINujeHsB" Ids="FL1pjfzhcmWMXDA35jWOpT,OPb0ZLXPdg9NSRApeQDkW0" IsHidden="true" />
-                <ControlPoint Id="RPqYU3fE4ScM0ZhQTPusoI" Bounds="1571,897" />
+                <ControlPoint Id="RPqYU3fE4ScM0ZhQTPusoI" Bounds="1216,971" />
                 <Pin Id="QI5aNX0sZjsM0o9lr3NX5n" Name="Face Orientation" Kind="OutputPin" Bounds="786,787" />
                 <Link Id="EmrIkKGw60gQBfk7ITpSHd" Ids="RPqYU3fE4ScM0ZhQTPusoI,QI5aNX0sZjsM0o9lr3NX5n" IsHidden="true" />
-                <ControlPoint Id="CfxX0IA8kdQLAbBTjVUbzP" Bounds="1686,897" />
+                <ControlPoint Id="CfxX0IA8kdQLAbBTjVUbzP" Bounds="1331,971" />
                 <Pin Id="VLLbpqpokoyOydFAvFoYgX" Name="Head Pivot Point" Kind="OutputPin" Bounds="888,781" />
                 <Link Id="EkhE9Ix3IndNMHqwRUZi37" Ids="CfxX0IA8kdQLAbBTjVUbzP,VLLbpqpokoyOydFAvFoYgX" IsHidden="true" />
-                <Node Bounds="1132,797,576,69" Id="DAGIN4jtAZxONlwDkxTAr2">
+                <Node Bounds="777,870,576,70" Id="DAGIN4jtAZxONlwDkxTAr2">
                   <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                     <Choice Kind="ApplicationStatefulRegion" Name="If" />
                     <FullNameCategoryReference ID="Primitive" />
                   </p:NodeReference>
                   <Pin Id="PRkt3XesyPDOpkyIJZkBLC" Name="Condition" Kind="InputPin" />
-                  <ControlPoint Id="Er8EaQa2z57OAx8dgtHBlT" Bounds="1184,861" Alignment="Bottom" />
-                  <ControlPoint Id="CypBgjQYQwMNCfRpjIsp1a" Bounds="1185,803" Alignment="Top" />
-                  <ControlPoint Id="GTbshLeviaxOtJS2A34xip" Bounds="1311,861" Alignment="Bottom" />
-                  <ControlPoint Id="I4NHwKG38KJPZi2JslV7F5" Bounds="1312,803" Alignment="Top" />
-                  <ControlPoint Id="JCimMY6mXGDQCfGOOEKseR" Bounds="1448,861" Alignment="Bottom" />
-                  <ControlPoint Id="T2ynkVM3pPXPtVSvkSm6Vf" Bounds="1448,803" Alignment="Top" />
-                  <ControlPoint Id="Vpgc8IqUhX1M6R618Z3zOy" Bounds="1571,861" Alignment="Bottom" />
-                  <ControlPoint Id="AoZiEhNo5IJQYuX5S3UCc1" Bounds="1571,803" Alignment="Top" />
-                  <ControlPoint Id="TDL9Rof6LdyLM0Tw8SAaY9" Bounds="1686,861" Alignment="Bottom" />
-                  <ControlPoint Id="R1OBU9IIZPiLrTxbt7Dzd0" Bounds="1686,803" Alignment="Top" />
+                  <ControlPoint Id="Er8EaQa2z57OAx8dgtHBlT" Bounds="829,935" Alignment="Bottom" />
+                  <ControlPoint Id="CypBgjQYQwMNCfRpjIsp1a" Bounds="830,877" Alignment="Top" />
+                  <ControlPoint Id="GTbshLeviaxOtJS2A34xip" Bounds="956,935" Alignment="Bottom" />
+                  <ControlPoint Id="I4NHwKG38KJPZi2JslV7F5" Bounds="957,877" Alignment="Top" />
+                  <ControlPoint Id="JCimMY6mXGDQCfGOOEKseR" Bounds="1093,935" Alignment="Bottom" />
+                  <ControlPoint Id="T2ynkVM3pPXPtVSvkSm6Vf" Bounds="1093,877" Alignment="Top" />
+                  <ControlPoint Id="Vpgc8IqUhX1M6R618Z3zOy" Bounds="1216,935" Alignment="Bottom" />
+                  <ControlPoint Id="AoZiEhNo5IJQYuX5S3UCc1" Bounds="1216,877" Alignment="Top" />
+                  <ControlPoint Id="TDL9Rof6LdyLM0Tw8SAaY9" Bounds="1331,935" Alignment="Bottom" />
+                  <ControlPoint Id="R1OBU9IIZPiLrTxbt7Dzd0" Bounds="1331,877" Alignment="Top" />
                   <Patch Id="Gbaen7PJFl2Mwgd4pO0O6Y" ManuallySortedPins="true">
                     <Patch Id="D7NlSmS5qpZNqFzuSvd7oF" Name="Create" ManuallySortedPins="true" />
                     <Patch Id="VVq3QOmLL3EQHRmDaA3zSJ" Name="Then" ManuallySortedPins="true" />
-                    <Node Bounds="1144,820,43,26" Id="DwXxGUQXEKGLWCJEKYV7K3">
+                    <Node Bounds="789,894,43,26" Id="DwXxGUQXEKGLWCJEKYV7K3">
                       <p:NodeReference LastCategoryFullName="Devices.Kinect2.FaceHD" LastSymbolSource="VL.Devices.Kinect2.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="ClassType" Name="FaceHD" />
@@ -7777,7 +7804,7 @@
                       <Pin Id="CIE9yL2QuAIM9e7Bzo3b4l" Name="Output" Kind="StateOutputPin" />
                       <Pin Id="PZXxH0b6jQ2OnJXyfSkJUD" Name="ID" Kind="OutputPin" />
                     </Node>
-                    <Node Bounds="1336,820,115,26" Id="GJbXMXk4rjEQBwdp5YoHFr">
+                    <Node Bounds="981,894,115,26" Id="GJbXMXk4rjEQBwdp5YoHFr">
                       <p:NodeReference LastCategoryFullName="Devices.Kinect2.FaceHD" LastSymbolSource="VL.Devices.Kinect2.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="ClassType" Name="FaceHD" />
@@ -7787,7 +7814,7 @@
                       <Pin Id="QEghfvTLw3EOBUPIx2Julr" Name="Output" Kind="StateOutputPin" />
                       <Pin Id="Hbny5huQLXMPsWRuZNat9n" Name="Face Alignment Quality" Kind="OutputPin" />
                     </Node>
-                    <Node Bounds="1486,820,88,26" Id="Con5e5MUpO7MZL4vKOueXq">
+                    <Node Bounds="1131,894,88,26" Id="Con5e5MUpO7MZL4vKOueXq">
                       <p:NodeReference LastCategoryFullName="Devices.Kinect2.FaceHD" LastSymbolSource="VL.Devices.Kinect2.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="ClassType" Name="FaceHD" />
@@ -7797,7 +7824,7 @@
                       <Pin Id="C8GMQVAC5VDPCXlndvNYg6" Name="Output" Kind="StateOutputPin" />
                       <Pin Id="K2db0Rd3aizQO2il4BwRQd" Name="Face Orientation" Kind="OutputPin" />
                     </Node>
-                    <Node Bounds="1605,820,84,26" Id="VXjcKYHCngGNnsMZZf6VSK">
+                    <Node Bounds="1250,894,84,26" Id="VXjcKYHCngGNnsMZZf6VSK">
                       <p:NodeReference LastCategoryFullName="Devices.Kinect2.FaceHD" LastSymbolSource="VL.Devices.Kinect2.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="ClassType" Name="FaceHD" />
@@ -7807,7 +7834,7 @@
                       <Pin Id="CjHyDkNvDK0LhKPyoFOABr" Name="Output" Kind="StateOutputPin" />
                       <Pin Id="A5Ajbpr4XLrPtMX53YXV4X" Name="Head Pivot Point" Kind="OutputPin" />
                     </Node>
-                    <Node Bounds="1209,820,105,26" Id="TcJBktTocxmPqABZ2ycXLb">
+                    <Node Bounds="854,894,105,26" Id="TcJBktTocxmPqABZ2ycXLb">
                       <p:NodeReference LastCategoryFullName="Devices.Kinect2.FaceHD" LastSymbolSource="VL.Devices.Kinect2.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="ClassType" Name="FaceHD" NeedsToBeDirectParent="true" />
@@ -7823,7 +7850,7 @@
                 <Link Id="KF3AigYjSheMuIZuMvLQAc" Ids="C8GMQVAC5VDPCXlndvNYg6,Q0aCjw9Y2CnQYEC6UK7CBv" />
                 <Link Id="AoPxAEW1lg6LBVp6evscy6" Ids="CIE9yL2QuAIM9e7Bzo3b4l,PRytG7CwUoKNm2AoAkuJJo" />
                 <Link Id="STHCHSXLSvBOS4kbNmhzgS" Ids="BLbxOlxLurQLXYPNkikz0Y,GXUx49b9D8MLlK6pfJ8DYX" />
-                <Node Bounds="1132,756,65,19" Id="NQSUrSy9vooNP48ZqELahR">
+                <Node Bounds="777,830,65,19" Id="NQSUrSy9vooNP48ZqELahR">
                   <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="IsAssigned" />
@@ -7853,17 +7880,17 @@
             </Node>
             <!--
 
-    ************************ ID ************************
+    ************************ ID (Advanced) ************************
 
 -->
-            <Node Name="ID" Bounds="1112,537,117,116" Id="TftRkebAztpQBkK6nJnyY1">
+            <Node Name="ID (Advanced)" Bounds="757,611,117,116" Id="TftRkebAztpQBkK6nJnyY1">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
               <p:HideCategory p:Type="Boolean">false</p:HideCategory>
               <Patch Id="FZI9G7FKBK9NIbxTNRSyNG">
-                <Node Bounds="1124,560,43,26" AutoConnect="true" Id="BF7OyJMXzdNO10YQ5htFWP">
+                <Node Bounds="769,634,43,26" AutoConnect="true" Id="BF7OyJMXzdNO10YQ5htFWP">
                   <p:NodeReference LastCategoryFullName="VL.Devices.Kinect2.FaceHD" LastSymbolSource="VL.Devices.Kinect2.dll">
                     <Choice Kind="OperationNode" Name="ID" />
                     <FullNameCategoryReference ID="VL.Devices.Kinect2.FaceHD" />
@@ -7872,7 +7899,7 @@
                   <Pin Id="LbwaZVsISkjLybySwb30b3" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="OfygCAWpqALLGY2W8wOPnF" Name="ID" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="1162,596,55,19" Id="EJsKn3YUjMbL7GTT4arufy">
+                <Node Bounds="807,670,55,19" Id="EJsKn3YUjMbL7GTT4arufy">
                   <p:NodeReference LastCategoryFullName="System.Conversion" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="ToString" />
@@ -7881,7 +7908,7 @@
                   <Pin Id="CT6VqrTiscMPqJA3vuDNuT" Name="Result" Kind="OutputPin" />
                 </Node>
                 <Link Id="LPUbps7fnfyOd0eR0znXI7" Ids="OfygCAWpqALLGY2W8wOPnF,UrgI5wju0rGNd9aMMNr5mv" />
-                <ControlPoint Id="JReTXALL8PkNHqsAUT2zKi" Bounds="1164,636" />
+                <ControlPoint Id="JReTXALL8PkNHqsAUT2zKi" Bounds="809,710" />
                 <Link Id="DJWwHopNgksQdCd8RRC03d" Ids="CT6VqrTiscMPqJA3vuDNuT,JReTXALL8PkNHqsAUT2zKi" />
                 <Link Id="CBSjF243JzEPIvYZMVqob2" Ids="JReTXALL8PkNHqsAUT2zKi,Hj0MJSyR5sfPPP56HUyMuw" IsHidden="true" />
                 <Pin Id="LyJRZdyyq9xNxjOA8fzqtN" Name="Input" Kind="InputPin" />
@@ -8952,7 +8979,6 @@
   <NugetDependency Id="K4aTqsYyX3qOyQBCvM0PDS" Location="VL.Skia" Version="2020.1.3" />
   <NugetDependency Id="R4VFKgpnMLVNLeeooXue2t" Location="VL.EditingFramework" Version="2020.1.3" />
   <PlatformDependency Id="MdTDzLxFTE9LvxOyk7EWeV" Location="./lib/net472/Microsoft.Kinect.Face.dll" />
-  <NugetDependency Id="Nmuyhfa7CZMLkSjnn1spH5" Location="System.Collections" Version="4.3.0" />
   <NugetDependency Id="Te8jni1po0DNSBTooSrGft" Location="VL.Lang" Version="2020.1.3" />
   <NugetDependency Id="IC3JlEyjkaiOs1iFPK4qXv" Location="VL.Skia3d" Version="1.0.36-alpha" />
 </Document>
