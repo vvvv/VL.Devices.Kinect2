@@ -114,7 +114,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="J6ykuAy3PI2MbpRA6ej2Js" Name="Bounds" Kind="InputPin" DefaultValue="1024, 210, 600, 400">
+            <Pin Id="J6ykuAy3PI2MbpRA6ej2Js" Name="Bounds" Kind="InputPin" DefaultValue="1131, 312, 391, 268">
               <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>
@@ -139,7 +139,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="DJQVx55IA7KQH4STGwsyPm" Name="Bounds" Kind="InputPin" DefaultValue="1023, 0, 600, 400">
+            <Pin Id="DJQVx55IA7KQH4STGwsyPm" Name="Bounds" Kind="InputPin" DefaultValue="1130, 59, 392, 257">
               <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>
@@ -196,7 +196,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="N4t2IWW0i86QJfaVkp3p7b" Name="Bounds" Kind="InputPin" DefaultValue="1047, 629, 600, 400">
+            <Pin Id="N4t2IWW0i86QJfaVkp3p7b" Name="Bounds" Kind="InputPin" DefaultValue="1132, 575, 391, 273">
               <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>
@@ -261,7 +261,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="BN7aTb1j0s1P7dbo93zfw1" Name="Bounds" Kind="InputPin" DefaultValue="1453, 327, 600, 400">
+            <Pin Id="BN7aTb1j0s1P7dbo93zfw1" Name="Bounds" Kind="InputPin" DefaultValue="1132, 844, 390, 284">
               <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>
@@ -290,26 +290,6 @@
             <Pin Id="CTjyk9BQRpjObieIpMrRbH" Name="Filter" Kind="InputPin" />
             <Pin Id="Cld6vjrjgT0NvJarO4g6CX" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="ISsvAaWb40GMwfUIy6PT6z" Comment="" Bounds="23,467,90,15" ShowValueBox="true" isIOBox="true" Value="1024, 0, 320, 200">
-            <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
-              <Choice Kind="TypeFlag" Name="Rectangle" />
-            </p:TypeAnnotation>
-          </Pad>
-          <Pad Id="C44F05jIXnwMBrQ0IB8Yhq" Comment="" Bounds="259,467,100,15" ShowValueBox="true" isIOBox="true" Value="1024, 194, 320, 285">
-            <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
-              <Choice Kind="TypeFlag" Name="Rectangle" />
-            </p:TypeAnnotation>
-          </Pad>
-          <Pad Id="OOQJQczuGGAOMPcOWL55Pm" Comment="" Bounds="495,467,101,15" ShowValueBox="true" isIOBox="true" Value="1024, 472, 320, 285">
-            <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
-              <Choice Kind="TypeFlag" Name="Rectangle" />
-            </p:TypeAnnotation>
-          </Pad>
-          <Pad Id="QhqZPN9Dv2aOpwyG3pVqSV" Comment="" Bounds="731,467,100,15" ShowValueBox="true" isIOBox="true" Value="1024, 750, 320, 285">
-            <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
-              <Choice Kind="TypeFlag" Name="Rectangle" />
-            </p:TypeAnnotation>
-          </Pad>
           <!--
 
     ************************ Draw ************************
@@ -404,11 +384,6 @@
                 <Pin Id="KceBB4jypqVPkKqy5uvvxz" Name="Output" Kind="OutputPin" Bounds="469,629" />
                 <Pin Id="OvvjUbLTNP4OKX4rWUmnfm" Name="Paint" Kind="InputPin" Bounds="569,366" />
               </Patch>
-              <!--
-
-    ************************  ************************
-
--->
               <ProcessDefinition Id="LqnHwguFnzfQWf4R1YijMR">
                 <Fragment Id="IwBVtGNeusCMl2ShbPs6JX" Patch="EJdnAKgC0iFMpEtHg4nwoi" Enabled="true" />
                 <Fragment Id="QiLfTEbdm6hM0onQZAjESt" Patch="OCDe7csQAkWNC49jPEvow7" Enabled="true" />
@@ -490,10 +465,6 @@
         <Link Id="PHTDI0ASp6kMvpAmU24gNm" Ids="AmOZvKMHdugMmrpxIkEiMt,AOgAZxcD40CMjcj5CoTVUw" />
         <Link Id="E893CLNmi7zLzbk2RRwrpF" Ids="MQSSbugrwLuOcj0zYkS63A,EiO7kYYkZIVOLQzUJsWeEy" />
         <Link Id="E5tGRcbYttDMI8v2neoeAS" Ids="UBRzK9mdTZXN4NzbFVZ2zy,CTjyk9BQRpjObieIpMrRbH" />
-        <Link Id="Kd3yisqHc7mO48jwYv6xQy" Ids="ISsvAaWb40GMwfUIy6PT6z,DJQVx55IA7KQH4STGwsyPm" />
-        <Link Id="NB0sRN6AKs6NBKCyMBw1Lc" Ids="C44F05jIXnwMBrQ0IB8Yhq,J6ykuAy3PI2MbpRA6ej2Js" />
-        <Link Id="CLSAp5Q6lFrOBgMT1hAO54" Ids="OOQJQczuGGAOMPcOWL55Pm,N4t2IWW0i86QJfaVkp3p7b" />
-        <Link Id="LjWDcyPxayZM1F3gR280z3" Ids="QhqZPN9Dv2aOpwyG3pVqSV,BN7aTb1j0s1P7dbo93zfw1" />
         <Link Id="HCgsdlUy9Y0NpuOb6YTPO7" Ids="K1Grrr2CgCdOjKwDlkBW7x,DD6yRPH6snmLrz3RUp3O2F" />
         <Link Id="SaVhjCEIubCQObb1ZP5urB" Ids="K1Grrr2CgCdOjKwDlkBW7x,CAZuxY8AY9mMIO81LBxQrL" />
         <Link Id="VyUP1SS6KFSM1zbmOkc3ro" Ids="K1Grrr2CgCdOjKwDlkBW7x,LMzFGTMqzajODnchk742NU" />

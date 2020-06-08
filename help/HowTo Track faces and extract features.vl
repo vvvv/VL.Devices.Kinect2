@@ -207,11 +207,12 @@
             <Pin Id="OtTxMSjhNK4LOrTthJGm3h" Name="Device" Kind="InputPin" />
             <Pin Id="E6OIMrUFo1XPZWeU1fwj8m" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="681,155,55,19" Id="Jcvf43sJxq5PRrjxeNDkZQ">
+          <Node Bounds="681,155,20,19" Id="Jcvf43sJxq5PRrjxeNDkZQ">
             <p:NodeReference LastCategoryFullName="Devices.Kinect2" LastSymbolSource="VL.Devices.Kinect2.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Faces" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="NFTDcf1jxwPN7ZggI25j7j" Name="Device" Kind="InputPin" />
             <Pin Id="UmdkXaF3EVLN3qEsQnC83I" Name="Output" Kind="OutputPin" />
           </Node>
@@ -376,6 +377,7 @@
               <Choice Kind="OperationCallFlag" Name="Split" />
               <CategoryReference Kind="RecordType" Name="Face" NeedsToBeDirectParent="true" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="DBjGGHrRmxHOgEjU6kz0pB" Name="Input" Kind="StateInputPin" />
             <Pin Id="Jrkl43hy6RaOhGTVifYrXT" Name="ID" Kind="OutputPin" />
             <Pin Id="I2gVmjMezMePWJHvjE8CsF" Name="Face Rotation" Kind="OutputPin" />

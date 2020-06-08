@@ -194,6 +194,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="FaceHD" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="SATxjO0JhqlPbcXPznkcmV" Name="Device" Kind="InputPin" />
             <Pin Id="Jsp5f41eK3rLc7S00TviF4" Name="Output" Kind="OutputPin" />
           </Node>
@@ -208,6 +209,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="WorldToColorSpace (FaceHD)" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="BvmrbOZUEX9Lj6UEIZqQSK" Name="Device" Kind="InputPin" />
             <Pin Id="TpcIa6NkzCMPujgKNxjHJp" Name="Input" Kind="InputPin" />
             <Pin Id="FPeaaOgfZdQPQjVbCRyM91" Name="Result" Kind="OutputPin" />

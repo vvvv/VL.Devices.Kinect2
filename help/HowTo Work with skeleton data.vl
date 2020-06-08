@@ -21,6 +21,7 @@
               <CategoryReference Kind="ClassType" Name="Skeleton" />
               <Choice Kind="OperationCallFlag" Name="Split" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="BqNznV3yKjqOOeDmK5U8xr" Name="Input" Kind="StateInputPin" />
             <Pin Id="RG4JdFnx6uxPZuVhXsdH3Y" Name="ID" Kind="OutputPin" />
             <Pin Id="IJamCk4lbnUQBsALQ58cxL" Name="Joint Positions" Kind="OutputPin" />
@@ -92,6 +93,7 @@
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="WorldToColorSpace" />
                 </p:NodeReference>
+                <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
                 <Pin Id="MNsjmt9hd0XN1nkm2IySAc" Name="Device" Kind="InputPin" />
                 <Pin Id="UKTEYHJjWmiQSjJolY4Hyw" Name="World Points" Kind="InputPin" />
                 <Pin Id="Hl6TsIpmFywK9juOLqNfAe" Name="Result" Kind="OutputPin" />
@@ -213,7 +215,7 @@
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
               <CategoryReference Kind="Category" Name="Skia" NeedsToBeDirectParent="true" />
             </p:NodeReference>
-            <Pin Id="OmaqGOTqnxyL5KmyUxvhyO" Name="Bounds" Kind="InputPin" DefaultValue="1476, 281, 667, 408">
+            <Pin Id="OmaqGOTqnxyL5KmyUxvhyO" Name="Bounds" Kind="InputPin" DefaultValue="1162, 65, 667, 408">
               <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>

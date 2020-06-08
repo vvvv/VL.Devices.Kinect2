@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="VSpVnEwAmtEOgD8lFj0I76" LanguageVersion="2020.1.0.53" Version="0.128">
-  <NugetDependency Id="NkxBtTr8hOoNigSpbcTFdR" Location="VL.CoreLib" Version="2020.1.0" />
+<Document xmlns:p="property" Id="VSpVnEwAmtEOgD8lFj0I76" LanguageVersion="2020.1.3.147" Version="0.128">
+  <NugetDependency Id="NkxBtTr8hOoNigSpbcTFdR" Location="VL.CoreLib" Version="2020.1.3" />
   <Patch Id="APFBYc3ryadNMXCUycaQDK">
     <Canvas Id="VZxxHWhqYjuLlXlvDdCXIG" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -91,7 +91,7 @@
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="Renderer" />
                   </p:NodeReference>
-                  <Pin Id="AOyoSoZZHcbLZViGd34q3c" Name="Bounds" Kind="InputPin" DefaultValue="1047, 629, 600, 400">
+                  <Pin Id="AOyoSoZZHcbLZViGd34q3c" Name="Bounds" Kind="InputPin" DefaultValue="1159, 351, 320, 285">
                     <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                       <Choice Kind="TypeFlag" Name="Rectangle" />
                     </p:TypeAnnotation>
@@ -278,11 +278,8 @@
                 <ControlPoint Id="PG6k0zpwZyUOd595m0hebC" Bounds="664,517" />
                 <ControlPoint Id="CmBsxmMFt3kOyJRsePbYXI" Bounds="527,361" />
                 <ControlPoint Id="SDY0jf1qa1oONMF2nKwH5V" Bounds="700,375" />
-                <ControlPoint Id="DcYVCLmUkeUNT0Hk95s8u0" Bounds="508,320" />
               </Canvas>
-              <Patch Id="MCkd5PuT0FWOFfJLHgvvTZ" Name="Create">
-                <Pin Id="I81rAKOLYp5P392rmNbUP4" Name="Bounds" Kind="InputPin" />
-              </Patch>
+              <Patch Id="MCkd5PuT0FWOFfJLHgvvTZ" Name="Create" />
               <Patch Id="D0n0lecwJJxN7StzbRRUsw" Name="Update">
                 <Pin Id="Tja3EltmmNNLyEiwCkkKcz" Name="Coords" Kind="InputPin" Bounds="663,307" />
                 <Pin Id="Ak2MSjbdXxgOh5Yn6mjUFB" Name="Input" Kind="InputPin" Bounds="416,336" />
@@ -318,16 +315,13 @@
               <Link Id="LFRmgGht4jCLXCVkP8Nmfx" Ids="Ak2MSjbdXxgOh5Yn6mjUFB,CmBsxmMFt3kOyJRsePbYXI" IsHidden="true" />
               <Link Id="AGLXDC8ZXpHN2aFoVqOyWs" Ids="SDY0jf1qa1oONMF2nKwH5V,SJlDRVLt61kOoWLF0igfBC" />
               <Link Id="LJgFALl0hlCNGZZzxXwhWM" Ids="AxOZGdeqxbIN9TgdKj4anP,SDY0jf1qa1oONMF2nKwH5V" IsHidden="true" />
-              <Link Id="DPV7xoHXL8eLCotzK4Cqto" Ids="DcYVCLmUkeUNT0Hk95s8u0,AOyoSoZZHcbLZViGd34q3c" />
-              <Link Id="TTnqfMCbj6hPhTQ9M09di0" Ids="I81rAKOLYp5P392rmNbUP4,DcYVCLmUkeUNT0Hk95s8u0" IsHidden="true" />
             </Patch>
           </Node>
           <Node Bounds="406,441,111,19" Id="VAqUz1fQq6FNjFwFSuAWwp">
-            <p:NodeReference LastCategoryFullName="Main.HowTo Get Specific Pixel ValuesApplication" LastSymbolSource="HowTo Get Specific Pixel Values.vl">
+            <p:NodeReference LastCategoryFullName="Main.HowTo Get specific pixel valuesApplication" LastSymbolSource="HowTo Get specific pixel values.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="DrawImageAndCircle" />
             </p:NodeReference>
-            <Pin Id="ULdDPJZWtjSOlzjrr0fRdf" Name="Bounds" Kind="InputPin" />
             <Pin Id="A9QqQtbmvwILQFrdfPxrnZ" Name="Input" Kind="InputPin" />
             <Pin Id="QS9pKcDDU7PLsWcQ9mFyx9" Name="Coords" Kind="InputPin" />
             <Pin Id="HJUpY6TyXpXLaq8OcYk9HT" Name="Brightness" Kind="InputPin" DefaultValue="18">
@@ -432,11 +426,10 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="415,842,111,19" Id="BQurN3gzlvHNjwLkJJJOza">
-            <p:NodeReference LastCategoryFullName="Main.HowTo Get Specific Pixel ValuesApplication" LastSymbolSource="HowTo Get Specific Pixel Values.vl">
+            <p:NodeReference LastCategoryFullName="Main.HowTo Get specific pixel valuesApplication" LastSymbolSource="HowTo Get specific pixel values.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="DrawImageAndCircle" />
             </p:NodeReference>
-            <Pin Id="RwJBn7f8EeFM0lp8uZHrZp" Name="Bounds" Kind="InputPin" />
             <Pin Id="CP9GcK4WIGiNEAPEc9svjy" Name="Input" Kind="InputPin" />
             <Pin Id="OoSItcd5hQdMBnI5d6QLPN" Name="Coords" Kind="InputPin" />
             <Pin Id="NBcpLLmCExiQDpmvViPub6" Name="Brightness" Kind="InputPin" DefaultValue="8">
@@ -509,16 +502,6 @@
           <Overlay Id="GFMm9yq6ms0MqA7OR9xqua" Name="Depth" Bounds="165,215,937,380">
             <p:ColorIndex p:Type="Int32">1</p:ColorIndex>
           </Overlay>
-          <Pad Id="GJw32CMzVQnMnN068Jusad" Comment="Window bounds" Bounds="416,790,101,15" ShowValueBox="true" isIOBox="true" Value="1270, 472, 320, 285">
-            <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
-              <Choice Kind="TypeFlag" Name="Rectangle" />
-            </p:TypeAnnotation>
-          </Pad>
-          <Pad Id="MVmQT6VbJEvPD8FKyYSjMt" Comment="Window bounds" Bounds="408,392,101,15" ShowValueBox="true" isIOBox="true" Value="1270, 190, 320, 285">
-            <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
-              <Choice Kind="TypeFlag" Name="Rectangle" />
-            </p:TypeAnnotation>
-          </Pad>
           <Pad Id="CS1wBmv6JCFLMQpOUBmjfE" Bounds="442,906,165,19" ShowValueBox="true" isIOBox="true" Value="Represents brightness">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
@@ -551,13 +534,11 @@
         <Link Id="DwvBlHTiUxVOGj7iUsSLjt" Ids="QauJD0DIBfZOaWRxtWE8Sj,SF94iZwos3mOcdYhMq4qrb" />
         <Link Id="ABESrh5mHp4L676crf0Phe" Ids="KvHy7QxXn8NOtDOyjoGbM9,BbmKQdv0lERMTYMSa7ETw3" />
         <Link Id="PlBJcqkUo48NQccuifR6VG" Ids="BnGMOdHqWH8M20FnmyD1EJ,NCHmZ4LywJBLicCsLfR3Ez" />
-        <Link Id="B2UwGb3YyC4NIKZ7R3gmmn" Ids="GJw32CMzVQnMnN068Jusad,RwJBn7f8EeFM0lp8uZHrZp" />
-        <Link Id="HcvK8DRIa3dPokyZwgR10r" Ids="MVmQT6VbJEvPD8FKyYSjMt,ULdDPJZWtjSOlzjrr0fRdf" />
         <Link Id="TAeNxamrqhXNFMDhq01o97" Ids="BnGMOdHqWH8M20FnmyD1EJ,IrtuQZwdvS0Nljehg8xFTg" />
         <Link Id="P4VZZbIZoS6MW876ztXJSg" Ids="BnGMOdHqWH8M20FnmyD1EJ,UXmu3ekv30FNscAEK1toUv" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="LqN860VbNwDMgtD9a8XgD9" Location="VL.Skia" Version="2020.1.0" />
+  <NugetDependency Id="LqN860VbNwDMgtD9a8XgD9" Location="VL.Skia" Version="2020.1.3" />
   <NugetDependency Id="NayWUX2hDkTPEYoT87HUxi" Location="VL.Devices.Kinect2" Version="0.0.0.0" />
 </Document>
