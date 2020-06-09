@@ -1,7 +1,12 @@
 # VL.Devices.Kinect2
 Set of nodes to use Kinect2 in vl.
 
-Be sure to have [Kinect for Windows Runtime 2.0](https://www.microsoft.com/en-us/download/details.aspx?id=44559) installed.
+
+Try it with vvvv, the visual live-programming environment for .NET  
+Download: http://visualprogramming.net
+
+## Requirements:
+- [Kinect for Windows Runtime 2.0](https://www.microsoft.com/en-us/download/details.aspx?id=44559)
 
 ## Using the library
 In order to use this library with vl you have to install the nuget that is available via nuget.org. For information on how to use nugets with vl, see [Managing Nugets](https://vvvv.gitbooks.io/the-gray-book/content/en/reference/libraries/dependencies.html#_manage_nugets) in the vl documentation. As described there you go to the commandline and then type:
