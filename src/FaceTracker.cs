@@ -131,8 +131,6 @@ namespace VL.Devices.Kinect2
             {
                 this.bodyFrameReader.FrameArrived += this.Reader_BodyFrameArrived;
             }
-
-            this.bodyFrameReader.FrameArrived += this.Reader_BodyFrameArrived;
         }
 
         /// <summary>
@@ -284,6 +282,7 @@ namespace VL.Devices.Kinect2
             {
                 if (this.faceFrameReaders[i] != null)
                 {
+                    this.faceFrameReaders[i].FrameArrived -= this.Reader_FaceFrameArrived;
                     this.faceFrameReaders[i].Dispose();
                     this.faceFrameReaders[i] = null;
                 }
@@ -297,6 +296,7 @@ namespace VL.Devices.Kinect2
 
             if (this.bodyFrameReader != null)
             {
+                this.bodyFrameReader.FrameArrived -= this.Reader_BodyFrameArrived;
                 this.bodyFrameReader.Dispose();
                 this.bodyFrameReader = null;
             }
