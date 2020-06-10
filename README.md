@@ -9,15 +9,13 @@ Download: http://visualprogramming.net
 - [Kinect for Windows Runtime 2.0](https://www.microsoft.com/en-us/download/details.aspx?id=44559)
 
 ## Using the library
-In order to use this library with vl you have to install the nuget that is available via nuget.org. For information on how to use nugets with vl, see [Managing Nugets](https://vvvv.gitbooks.io/the-gray-book/content/en/reference/libraries/dependencies.html#_manage_nugets) in the vl documentation. As described there you go to the commandline and then type:
+In order to use this library with VL you have to install the nuget that is available via nuget.org. For information on how to use nugets with VL, see [Managing Nugets](https://thegraybook.vvvv.org/reference/libraries/dependencies.html#manage-nugets) in the VL documentation. As described there you go to the commandline and then type:
 
-    nuget install VL.Devices.Kinect2 -prerelease
+    nuget install VL.Devices.Kinect2 -pre
 
-Once the VL.Devices.Kinect2 nuget is installed and referenced in your vl document you'll see the category "Kinect2" under "Devices" in the nodebrowser.
+Once the VL.Devices.Kinect2 nuget is installed and referenced in your VL document you'll see the category "Kinect2" under "Devices" in the nodebrowser. 
 
-VL help patches can be found here:
-
-    "VL.Devices.Kinect2\help\"
+Demos are available via the Help Browser!
 
 ## Contributing to the development
 If you want to contribute to this repository, clone it into a directory like:
