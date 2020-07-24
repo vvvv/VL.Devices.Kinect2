@@ -1,6 +1,5 @@
 # VL.Devices.Kinect2
-Set of nodes to use Kinect2 in vl.
-
+Set of nodes to use Kinect2 in VL.
 
 Try it with vvvv, the visual live-programming environment for .NET  
 Download: http://visualprogramming.net
