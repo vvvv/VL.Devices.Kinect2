@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.Devices.Kinect2</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <title>VL.Devices.Kinect2</title>
     <authors>Randall Vázquez, vvvv</authors>
     <owners>vvvv</owners>
@@ -14,7 +14,7 @@
 	<license type="expression">LGPL-3.0-only</license>
     <dependencies>
       <dependency id="Microsoft.Kinect" version="[2.0.1410.19000]" />
-	  <dependency id="VL.Skia3d" version="1.0.36-alpha" />
+	  <dependency id="VL.Skia3d" version="1.1.1" />
     </dependencies>
 	<icon>icon\nugeticon.png</icon>
   </metadata>
