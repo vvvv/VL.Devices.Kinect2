@@ -1,5 +1,5 @@
 ﻿
-using Xenko.Core.Mathematics;
+using Stride.Core.Mathematics;
 using VL.Lib.Collections;
 using Microsoft.Kinect;
 

@@ -2,7 +2,7 @@
 using System;
 using VL.Lib.Basics.Imaging;
 using VL.Lib.Collections;
-using Xenko.Core.Mathematics;
+using Stride.Core.Mathematics;
 
 namespace VL.Devices.Kinect2
 {

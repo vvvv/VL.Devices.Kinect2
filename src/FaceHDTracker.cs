@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reactive.Subjects;
 using VL.Lib.Collections;
-using Xenko.Core.Mathematics;
+using Stride.Core.Mathematics;
 
 namespace VL.Devices.Kinect2
 {

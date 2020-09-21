@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.Kinect;
-using Xenko.Core.Mathematics;
+using Stride.Core.Mathematics;
 using VL.Lib.Collections;
 using System.Buffers;
 

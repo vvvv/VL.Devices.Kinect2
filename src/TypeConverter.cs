@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Runtime.CompilerServices;
 using VL.Lib.Collections;
-using Xenko.Core.Mathematics;
+using Stride.Core.Mathematics;
 
 namespace VL.Devices.Kinect2
 {
@@ -24,9 +24,9 @@ namespace VL.Devices.Kinect2
             output = Unsafe.As<CameraSpacePoint, Vector3>(ref input);
         }
 
-        private static void ToVector4(ref Microsoft.Kinect.Vector4 input, out Xenko.Core.Mathematics.Vector4 output)
+        private static void ToVector4(ref Microsoft.Kinect.Vector4 input, out Stride.Core.Mathematics.Vector4 output)
         {
-            output = Unsafe.As<Microsoft.Kinect.Vector4, Xenko.Core.Mathematics.Vector4>(ref input);
+            output = Unsafe.As<Microsoft.Kinect.Vector4, Stride.Core.Mathematics.Vector4>(ref input);
         }
 
         private static void ToQuaternion(ref Microsoft.Kinect.Vector4 input, out Quaternion output)
@@ -110,9 +110,9 @@ namespace VL.Devices.Kinect2
         /// </summary>
         /// <param name="vector4">Kinect Vector4</param>
         /// <returns>Xenko Vector4</returns>
-        public static Xenko.Core.Mathematics.Vector4 ToVector4(Microsoft.Kinect.Vector4 vector4)
+        public static Stride.Core.Mathematics.Vector4 ToVector4(Microsoft.Kinect.Vector4 vector4)
         {
-            Xenko.Core.Mathematics.Vector4 v4 = new Xenko.Core.Mathematics.Vector4();
+            Stride.Core.Mathematics.Vector4 v4 = new Stride.Core.Mathematics.Vector4();
             TypeConverter.ToVector4(ref vector4, out v4);
             return v4;
         }
