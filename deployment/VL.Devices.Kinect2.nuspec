@@ -2,9 +2,9 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.Devices.Kinect2</id>
-    <version>1.0.1</version>
+    <version>1.2.0</version>
     <title>VL.Devices.Kinect2</title>
-    <authors>Randall Vázquez, vvvv</authors>
+    <authors>Randall Vásquez, vvvv</authors>
     <owners>vvvv</owners>
     <projectUrl>https://github.com/vvvv/VL.Devices.Kinect2</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
