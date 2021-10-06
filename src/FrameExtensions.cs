@@ -3,6 +3,7 @@ using System;
 using VL.Lib.Basics.Imaging;
 using VL.Lib.Collections;
 using Stride.Core.Mathematics;
+using System.Runtime.InteropServices;
 
 namespace VL.Devices.Kinect2
 {
@@ -20,6 +21,25 @@ namespace VL.Devices.Kinect2
         public static PlayerImage ToPlayerImage(this BodyIndexFrame frame) => new PlayerImage(frame);
 
         public static DepthColorImage ToDepthColorImage(this DepthFrame frame) => new DepthColorImage(frame);
+
+        static CameraSpacePoint[] cameraSpacePoints = new CameraSpacePoint[512 * 424];
+        static Stride.Core.Mathematics.Vector4[] worldWrite = new Stride.Core.Mathematics.Vector4[512 * 424];
+        public static ArrayImage<Stride.Core.Mathematics.Vector4> ToWorldImage(this DepthFrame frame)
+        {
+            //frame.CopyFrameDataToIntPtr(depthPointer, 512 * 424 * 2);
+            using var x = frame.LockImageBuffer();
+            frame.DepthFrameSource.KinectSensor.CoordinateMapper.MapDepthFrameToCameraSpaceUsingIntPtr(x.UnderlyingBuffer, x.Size, cameraSpacePoints);
+
+            for (int i = 0; i < cameraSpacePoints.Length; i++)
+            {
+                worldWrite[i].X = cameraSpacePoints[i].X;
+                worldWrite[i].Y = cameraSpacePoints[i].Y;
+                worldWrite[i].Z = cameraSpacePoints[i].Z;
+                worldWrite[i].W = 1;
+            }
+
+            return new ArrayImage<Stride.Core.Mathematics.Vector4>(worldWrite, new ImageInfo(512, 424, PixelFormat.R32G32B32A32F), true);
+         }
 
         public static ColorDepthImage ToColorDepthImage(this DepthFrame frame, bool isRaw, bool relativeLookup) => new ColorDepthImage(frame, isRaw, relativeLookup);
 
