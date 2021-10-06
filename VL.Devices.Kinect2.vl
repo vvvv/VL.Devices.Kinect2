@@ -2967,7 +2967,7 @@
     ************************ WorldImage (Reactive) ************************
 
 -->
-        <Node Name="WorldImage (Reactive)" Bounds="-289,548" Id="Qg47i16JywoLfbv0L9zBaj" Summary="Returns an Observable of Kinect2 Depth image frames." Remarks="Returned image is single channel 16-bit Unsigned Integer.">
+        <Node Name="WorldImage (Reactive)" Bounds="-289,548" Id="Qg47i16JywoLfbv0L9zBaj" Summary="Returns an Observable of Kinect2 World (Camera Space) image frames." Remarks="Uses the depth frame data to map the entire frame from depth space to camera space. &#xD;&#xA; &#xD;&#xA;Camera space refers to the 3D coordinate system used by Kinect. The coordinate system is defined as follows:&#xD;&#xA;&#xD;&#xA;    The origin (x=0, y=0, z=0) is located at the center of the IR sensor on Kinect&#xD;&#xA;    X grows to the sensor’s left&#xD;&#xA;    Y grows up (note that this direction is based on the sensor’s tilt)&#xD;&#xA;    Z grows out in the direction the sensor is facing&#xD;&#xA;    1 unit = 1 meter">
           <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
             <Choice Kind="ContainerDefinition" Name="Process" />
           </p:NodeReference>
@@ -9001,7 +9001,7 @@
     ************************ WorldImage ************************
 
 -->
-      <Node Name="WorldImage" Bounds="271,308" Id="CiiKKSqn05FNBWQQxjH8aV" Summary="Returns Kinect2 RGB image frames.">
+      <Node Name="WorldImage" Bounds="271,308" Id="CiiKKSqn05FNBWQQxjH8aV" Summary="Returns Kinect2 World (Camera Space) image frames." Remarks="Uses the depth frame data to map the entire frame from depth space to camera space. &#xD;&#xA; &#xD;&#xA;Camera space refers to the 3D coordinate system used by Kinect. The coordinate system is defined as follows:&#xD;&#xA;&#xD;&#xA;    The origin (x=0, y=0, z=0) is located at the center of the IR sensor on Kinect&#xD;&#xA;    X grows to the sensor’s left&#xD;&#xA;    Y grows up (note that this direction is based on the sensor’s tilt)&#xD;&#xA;    Z grows out in the direction the sensor is facing&#xD;&#xA;    1 unit = 1 meter">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
