@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.Devices.Kinect2</id>
-    <version>1.2.0</version>
+    <version>1.2.1</version>
     <title>VL.Devices.Kinect2</title>
     <authors>Randall Vásquez, vvvv</authors>
     <owners>vvvv</owners>
@@ -10,7 +10,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>Kinect2 for vvvv</summary>
     <description>Kinect2 for vvvv</description>
-    <tags>VL, Kinect2, camera, video, depth, skeleton, body, face, tracking</tags>
+    <tags>VL, Kinect2, camera, video, depth, world, skeleton, body, face, tracking</tags>
 	<license type="expression">LGPL-3.0-only</license>
     <dependencies>
       <dependency id="Microsoft.Kinect" version="[2.0.1410.19000]" />
