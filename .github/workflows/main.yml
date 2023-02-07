@@ -22,7 +22,7 @@ jobs:
       uses: nuget/setup-nuget@v1
       
     - name: Publish VL Nuget
-      uses: vvvv/PublishVLNuget@1.0.27-alpha
+      uses: vvvv/PublishVLNuget@1.0.40
       with:
         csproj: src\VL.Devices.Kinect2.csproj
         nuspec: deployment\VL.Devices.Kinect2.nuspec

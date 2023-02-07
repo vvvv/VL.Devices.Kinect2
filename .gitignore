@@ -1,6 +1,7 @@
-/lib/net472/*
-!/lib/net472/NuiDatabase/
-!/lib/net472/Microsoft.Kinect.Face.dll
+/lib/net6.0/*
+!/lib/net6.0/NuiDatabase/
+!/lib/net6.0/Microsoft.Kinect.dll
+!/lib/net6.0/Microsoft.Kinect.Face.dll
 /src/.vs/
 /src/obj/
 /src/packages/
