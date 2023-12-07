@@ -16,16 +16,16 @@ jobs:
       uses: actions/checkout@master
     
     - name: Setup MSBuild.exe
-      uses: microsoft/setup-msbuild@v1.0.2
+      uses: microsoft/setup-msbuild@v1.3.1
 
     - name: Setup Nuget.exe
       uses: nuget/setup-nuget@v1
       
     - name: Publish VL Nuget
-      uses: vvvv/PublishVLNuget@1.0.40
+      uses: vvvv/PublishVLNuget@1.0.42
       with:
         csproj: src\VL.Devices.Kinect2.csproj
         nuspec: deployment\VL.Devices.Kinect2.nuspec
         icon-src: https://raw.githubusercontent.com/vvvv/PublicContent/master/nugeticon.png
         icon-dst: ./deployment/nugeticon.png
-        nuget-key: ${{ secrets.NUGET_KEY }}
+        nuget-key: ${{ secrets.VVVV_ORG_NUGET_KEY }}
