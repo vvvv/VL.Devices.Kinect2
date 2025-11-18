@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="Fj4Dpa2AThlNKKVos9HhP3" LanguageVersion="2025.7.1-0076-g0d3a62e007" Version="0.128">
-  <NugetDependency Id="DegkhDSseNLPcaSxjglmpM" Location="VL.CoreLib" Version="2025.7.1-0076-g0d3a62e007" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="Fj4Dpa2AThlNKKVos9HhP3" LanguageVersion="2025.7.1-0103-gf49d596041" Version="0.128">
+  <NugetDependency Id="DegkhDSseNLPcaSxjglmpM" Location="VL.CoreLib" Version="2025.7.1-0103-gf49d596041" />
   <Patch Id="QuVytP7UvdcPf7xQotC0dx">
     <Canvas Id="Kd2tGc2SvqLOt5x4ZEOGKD" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -39,7 +39,7 @@
           <Node Bounds="294,410,60,19" Id="QsdeKfQtlSfNNTfS5cryR1">
             <p:NodeReference LastCategoryFullName="Devices.Kinect2" LastDependency="VL.Devices.Kinect2.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="Skeletons" />
+              <Choice Kind="ProcessAppFlag" Name="Bodies" />
             </p:NodeReference>
             <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">Low</p:HelpFocus>
             <Pin Id="ARUy37wyCWfO5f37vDVXAY" Name="Node Context" Kind="InputPin" IsHidden="true" />
@@ -307,6 +307,6 @@
     </Node>
   </Patch>
   <NugetDependency Id="CpztnBIn5c1ODF4pM6bQh4" Location="VL.Devices.Kinect2" Version="0.0.0" />
-  <NugetDependency Id="PT2duYyP144PvhA8BN65Ji" Location="VL.Stride" Version="2025.7.1-0076-g0d3a62e007" />
+  <NugetDependency Id="PT2duYyP144PvhA8BN65Ji" Location="VL.Stride" Version="2025.7.1-0103-gf49d596041" />
   <NugetDependency Id="QlbQOtEF8BhOqCdbUOBZ1o" Location="VL.Skeleton" Version="0.0.0" />
 </Document>
