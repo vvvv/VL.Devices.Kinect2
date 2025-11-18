@@ -241,9 +241,8 @@
             <Pin Id="EljYy5bNqYtMBpds6e10eP" Name="Kinect Skeleton" Kind="InputPin" />
             <Pin Id="K3YUiMJKFQUMSxjfcYctDr" Name="Output" Kind="OutputPin" />
             <Pin Id="ILKm8gA356PPcRJFsnNN7g" Name="Transforms" Kind="OutputPin" />
-            <Pin Id="J4f4yTtUfB3MPnX2UL1V7L" Name="Names" Kind="OutputPin" />
           </Node>
-          <Node Bounds="497,576,96,19" Id="UQHkHALAm61Lv1oZKnc349">
+          <Node Bounds="497,566,96,19" Id="UQHkHALAm61Lv1oZKnc349">
             <p:NodeReference LastCategoryFullName="Devices.Kinect2" LastDependency="VL.Devices.Kinect2.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Kinect2toMixamo" />
@@ -251,7 +250,7 @@
             <Pin Id="EfW7q06WNXTOfSNkzsRpiC" Name="Output" Kind="OutputPin" />
             <Pin Id="M86iVoQP0sNMGWErysGpq9" Name="Node Context" Kind="InputPin" IsHidden="true" />
           </Node>
-          <Pad Id="GB6mD4mbRPbMEwbjnCRVOb" Comment="Names" Bounds="346,627,89,264" ShowValueBox="true" isIOBox="true">
+          <Pad Id="GB6mD4mbRPbMEwbjnCRVOb" Comment="Names" Bounds="363,626,89,264" ShowValueBox="true" isIOBox="true">
             <p:ValueBoxSettings>
               <p:maxvisibleentries p:Type="Int32">16</p:maxvisibleentries>
             </p:ValueBoxSettings>
@@ -267,15 +266,14 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="KLHAaFTMjU4PBztl3DnwRX" Comment="" Bounds="374,200,320,210" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="KP4Tjti1FdYMAx9B7zQ6vd" Bounds="471,106,342,36" ShowValueBox="true" isIOBox="true" Value="idea: why not forwarding vl.skeleton with device nuget?">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
+          <Node Bounds="361,566,102,19" Id="Ng2g3NnaYEzORQwbh3jWrX">
+            <p:NodeReference LastCategoryFullName="Devices.Kinect2" LastDependency="VL.Devices.Kinect2.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Kinect2JointNames" />
+            </p:NodeReference>
+            <Pin Id="PT2YjPEgQggN1S8lKtfsUp" Name="Names" Kind="OutputPin" />
+            <Pin Id="R3mLxSWOxANO6NONXLRjSt" Name="Node Context" Kind="InputPin" IsHidden="true" />
+          </Node>
         </Canvas>
         <Patch Id="LWaFnzFrThnMfanHJ1XheB" Name="Create" />
         <Patch Id="BJPuJhuah8QP1h0e7MDU4K" Name="Update" />
@@ -296,13 +294,13 @@
         <Link Id="U4t5grf4NkHM6TpTyl9BSI" Ids="BhhWJ0YMXxzMPVLDzjT1ia,EljYy5bNqYtMBpds6e10eP" />
         <Link Id="LLKCEU4reErPEnbfLX1vWs" Ids="K3YUiMJKFQUMSxjfcYctDr,A8HDDXLqnglOWti9qjMx7b" />
         <Link Id="KRJgAv5yGU8Nz5Y2GH8pIC" Ids="EfW7q06WNXTOfSNkzsRpiC,UIFgLcEuoCZPh0VCvVFimD" />
-        <Link Id="NgyXvPpSrA2N0Cyr51nmzL" Ids="J4f4yTtUfB3MPnX2UL1V7L,GB6mD4mbRPbMEwbjnCRVOb" />
         <Link Id="M09vjEVWXnbNmQY5vCfrDs" Ids="EfW7q06WNXTOfSNkzsRpiC,HyNlNQhXPD0O5oqEuf8YAd" />
         <Link Id="Mx75ufmI2uTPYsbtonjW2r" Ids="OL3kcInOYYRMs6daWLfuuF,DEHpzl8JcgHMpxyeNJxd5l" />
         <Link Id="FBL6VgZTUgCOdtGkGjyG0T" Ids="EmwxznlQtmtOYGXnud9xrp,S9lfRiOvOpyNET1rIVledi" />
         <Link Id="BWHP4EFF2iEQcQZtlMaXCY" Ids="KhmMpj2dPwPLTLcchlFuGs,SruZBtjBVC2M63d8z5pEDM" />
         <Link Id="LrHnVjXt8D2PZZjktGf6C4" Ids="Dp6K5vj138DLhxRgImYzZ1,RxQbvzE99AdPkUa7liRKCl" />
         <Link Id="PgoXAkj261RM6hO6DhVbiz" Ids="JUkCyzPhaLvOe4TPUlw0D5,KLHAaFTMjU4PBztl3DnwRX" />
+        <Link Id="JjQ7opPxDKJNGPdZFK6omR" Ids="PT2YjPEgQggN1S8lKtfsUp,GB6mD4mbRPbMEwbjnCRVOb" />
       </Patch>
     </Node>
   </Patch>
