@@ -1,20 +1,22 @@
 # VL.Devices.Kinect2
 A package for using Kinect2 depth cameras by Microsoft in VL.
 
-Try it with vvvv, the visual live-programming environment for .NET  
-Download: http://visualprogramming.net
+For use with vvvv, the visual live-programming environment for .NET: http://vvvv.org
 
 ## Requirements:
 - [Kinect for Windows Runtime 2.0](https://www.microsoft.com/en-us/download/details.aspx?id=44559)
 
-## Using the library
-In order to use this library you'll have to install the nuget that is available via nuget.org. For information on how to use nugets with VL, see [Managing Nugets](https://thegraybook.vvvv.org/reference/hde/managing-nugets.html) in the documentation. As described there you go to the commandline and then type:
+## Getting started
+- Install as [described here](https://thegraybook.vvvv.org/reference/hde/managing-nugets.html) via commandline:
 
-    nuget install VL.Devices.Kinect2
+    `nuget install VL.Devices.Kinect2`
 
-Once the VL.Devices.Kinect2 nuget is installed and referenced in your VL document you'll see the category "Kinect2" under "Devices" in the nodebrowser. 
+- Usage examples and more information are included in the pack and can be found via the [Help Browser](https://thegraybook.vvvv.org/reference/hde/findinghelp.html)
 
-Demos are available via the Help Browser!
+## Contributing
+- Report issues on [the vvvv forum](https://forum.vvvv.org/c/vvvv-gamma/28)
+- For custom development requests, please [get in touch](mailto:devvvvs@vvvv.org)
+- When making a pull-request, please make sure to read the general [guidelines on contributing to vvvv libraries](https://thegraybook.vvvv.org/reference/extending/contributing.html)
 
 ## Building from source
 Beware there is an oddity required for building the included csproj:  
