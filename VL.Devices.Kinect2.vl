@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="UFzZq9LOxo3MtJDvgRWI7A" LanguageVersion="2025.7.1-0106-gc0edd1f65b" Version="0.128">
-  <NugetDependency Id="EEYSk9rCs8TLQ1HUJFqHly" Location="VL.CoreLib" Version="2025.7.1-0106-gc0edd1f65b" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="UFzZq9LOxo3MtJDvgRWI7A" LanguageVersion="2025.7.1-0114-g4ec32120e8" Version="0.128">
+  <NugetDependency Id="EEYSk9rCs8TLQ1HUJFqHly" Location="VL.CoreLib" Version="2025.7.1-0114-g4ec32120e8" />
   <Patch Id="OF6M52TF0g1MIvRz41ucGu">
     <Canvas Id="Ue7xuqlBZHlLeRL5dLjZsS" DefaultCategory="Devices.Kinect2" CanvasType="FullCategory">
       <Canvas Id="ALzepdUffo2N2GS1PvjrMC" Name="Internal" Position="272,213">
@@ -9181,10 +9181,10 @@
       </Node>
       <!--
 
-    ************************ Skeleton (VL Skeleton) ************************
+    ************************ Skeleton ************************
 
 -->
-      <Node Name="Skeleton (VL Skeleton)" Bounds="923,280" Id="Gx9TOWwMzr3P8jNiAhuWlY">
+      <Node Name="Skeleton" Bounds="923,280" Id="Gx9TOWwMzr3P8jNiAhuWlY">
         <p:NodeReference>
           <Choice Kind="ContainerDefinition" />
         </p:NodeReference>
@@ -10319,7 +10319,7 @@
               <Pin Id="OOSDnoC30wxQLe8GJlBppB" Name="Input" Kind="InputPin" />
               <Pin Id="Fck60XKBxgKOyBPfuetYYE" Name="Result" Kind="OutputPin" />
             </Node>
-            <Pad Id="Qidp4iSDIHqMJRBK797GDi" Bounds="570,470,88,15" ShowValueBox="true" isIOBox="true" Value="HandRight">
+            <Pad Id="Qidp4iSDIHqMJRBK797GDi" Bounds="570,470,95,15" ShowValueBox="true" isIOBox="true" Value="HandRight">
               <p:TypeAnnotation LastCategoryFullName="Devices.Kinect2" LastDependency="VL.Devices.Kinect2.vl">
                 <Choice Kind="TypeFlag" Name="JointType" />
               </p:TypeAnnotation>
@@ -10515,7 +10515,7 @@
               <Pin Id="PsfjpTbI4vyMDe0wpi6XXf" Name="Result" Kind="OutputPin" />
             </Node>
             <ControlPoint Id="RGq9rjlRfuFO3kbu3nP25E" Bounds="1119,1201" />
-            <Pad Id="FfR1cQs8G9KMR0o6CcaUi6" Bounds="725,297,224,70" ShowValueBox="true" isIOBox="true" Value="uses only the joints wich have senseful data from kinect">
+            <Pad Id="FfR1cQs8G9KMR0o6CcaUi6" Bounds="717,322,220,45" ShowValueBox="true" isIOBox="true" Value="uses only the joints wich have senseful data from kinect">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
@@ -10897,7 +10897,7 @@
     ************************ Kinect2toMixamo ************************
 
 -->
-      <Node Name="Kinect2toMixamo" Bounds="950,330" Id="GsZf8kUL1zqOAIelfpn6rW">
+      <Node Name="Kinect2toMixamo" Bounds="923,330" Id="GsZf8kUL1zqOAIelfpn6rW">
         <p:NodeReference>
           <Choice Kind="ContainerDefinition" Name="Process" />
           <CategoryReference Kind="Category" Name="Primitive" />
@@ -10937,7 +10937,7 @@
                 <Item>RightFoot</Item>
               </p:Value>
             </Pad>
-            <Pad Id="GjfHU5ApprbPLz4aBguaT2" Bounds="391,133,176,51" ShowValueBox="true" isIOBox="true" Value="needs a comment about shifting joints">
+            <Pad Id="GjfHU5ApprbPLz4aBguaT2" Bounds="580,288,176,51" ShowValueBox="true" isIOBox="true" Value="needs a comment about shifting joints">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
@@ -10964,7 +10964,7 @@
     ************************ Kinect2JointNames ************************
 
 -->
-      <Node Name="Kinect2JointNames" Bounds="933,410" Id="KlCkhwdxhNcO1sbp1fjmrN">
+      <Node Name="Kinect2JointNames" Bounds="923,380" Id="KlCkhwdxhNcO1sbp1fjmrN">
         <p:NodeReference>
           <Choice Kind="ContainerDefinition" />
         </p:NodeReference>
@@ -11079,11 +11079,11 @@
   <PlatformDependency Id="CJ99AqcYIMALGuFTkYA7Is" Location="./lib/net472/VL.Devices.Kinect2.dll" />
   <PlatformDependency Id="S36JEFIXXVvMre7qt6H783" Location="System" />
   <PlatformDependency Id="JMvORQOQIzrPEj9eCKbrF5" Location="System.Runtime" />
-  <NugetDependency Id="K4ICfeTj9dxLVvHqmGPgT9" Location="VL.Core" Version="2025.7.1-0106-gc0edd1f65b" />
+  <NugetDependency Id="K4ICfeTj9dxLVvHqmGPgT9" Location="VL.Core" Version="2025.7.1-0114-g4ec32120e8" />
   <PlatformDependency Id="BUpgGtLZTuWOOQIIwQPuZE" Location="System.Runtime.InteropServices" />
-  <NugetDependency Id="K4aTqsYyX3qOyQBCvM0PDS" Location="VL.Skia" Version="2025.7.1-0106-gc0edd1f65b" />
-  <NugetDependency Id="R4VFKgpnMLVNLeeooXue2t" Location="VL.EditingFramework" Version="2025.7.1-0106-gc0edd1f65b" />
-  <NugetDependency Id="IC3JlEyjkaiOs1iFPK4qXv" Location="VL.Skia3d" Version="1.1.2" />
+  <NugetDependency Id="K4aTqsYyX3qOyQBCvM0PDS" Location="VL.Skia" Version="2025.7.1-0114-g4ec32120e8" />
+  <NugetDependency Id="R4VFKgpnMLVNLeeooXue2t" Location="VL.EditingFramework" Version="2025.7.1-0114-g4ec32120e8" />
+  <NugetDependency Id="IC3JlEyjkaiOs1iFPK4qXv" Location="VL.Skia3d" Version="1.1.3" />
   <PlatformDependency Id="R1Df8fk5XcQLBf3Odk1RTt" Location="./lib/net6.0/Microsoft.Kinect.Face.dll" />
   <PlatformDependency Id="NYOrAbUxTRJQFPJgiRVbjf" Location="./lib/net6.0/Microsoft.Kinect.dll" />
   <NugetDependency Id="HoEaqFjs6G3N3JUXpUSYOF" Location="VL.Skeleton" Version="0.0.0" />
