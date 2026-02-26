@@ -3,7 +3,6 @@ using Microsoft.Kinect;
 using Stride.Core.Mathematics;
 using VL.Lib.Collections;
 using System.Buffers;
-using System.Runtime.InteropServices;
 
 namespace VL.Devices.Kinect2
 {
@@ -59,8 +58,8 @@ namespace VL.Devices.Kinect2
         }
 
         // Tuple builder version - compatible with Observable pattern and HoldLatestCopy
-        public static unsafe SpreadBuilder<(Vector3 position, Vector2 uv)> CollectPointsWithUV(
-            SpreadBuilder<(Vector3 position, Vector2 uv)> builder,
+        public static unsafe SpreadBuilder<(Vector3 position, Vector2 uvColor, Vector2 uvDepth)> CollectPointsWithUV(
+            SpreadBuilder<(Vector3 position, Vector2 uvColor, Vector2 uvDepth)> builder,
             DepthImage depth,
             float minZ,
             float maxZ,
@@ -79,6 +78,9 @@ namespace VL.Devices.Kinect2
             var colorFrameDesc = sensor.ColorFrameSource.FrameDescription;
             int colorW = colorFrameDesc.Width;
             int colorH = colorFrameDesc.Height;
+            var coordinateMapper = sensor.CoordinateMapper;
+            float invColorW = 1f / colorW;
+            float invColorH = 1f / colorH;
 
             using (var depthBuffer = frame.LockImageBuffer())
             using (var cameraSpacePoints = MemoryPool<CameraSpacePoint>.Shared.Rent((int)pixelCount))
@@ -89,7 +91,7 @@ namespace VL.Devices.Kinect2
                 {
                     var cameraSpacePointsPtr = new IntPtr(cameraSpacePointsHandle.Pointer);
 
-                    frame.DepthFrameSource.KinectSensor.CoordinateMapper.MapDepthFrameToCameraSpaceUsingIntPtr(
+                    coordinateMapper.MapDepthFrameToCameraSpaceUsingIntPtr(
                         depthBuffer.UnderlyingBuffer, depthBuffer.Size,
                         cameraSpacePointsPtr, (uint)(pixelCount * sizeof(CameraSpacePoint)));
                 }
@@ -99,7 +101,7 @@ namespace VL.Devices.Kinect2
                 {
                     var colorSpacePointsPtr = new IntPtr(colorSpacePointsHandle.Pointer);
 
-                    frame.DepthFrameSource.KinectSensor.CoordinateMapper.MapDepthFrameToColorSpaceUsingIntPtr(
+                    coordinateMapper.MapDepthFrameToColorSpaceUsingIntPtr(
                         depthBuffer.UnderlyingBuffer, depthBuffer.Size,
                         colorSpacePointsPtr, (uint)(pixelCount * sizeof(ColorSpacePoint)));
                 }
@@ -107,6 +109,8 @@ namespace VL.Devices.Kinect2
                 var step = Math.Max(1, decimation);
                 var width = depth.Info.Width;
                 var height = depth.Info.Height;
+                float invDepthW = 1f / width;
+                float invDepthH = 1f / height;
 
                 builder.Clear();
 
@@ -127,23 +131,21 @@ namespace VL.Devices.Kinect2
                             continue;
 
                         var col = colPoints[i];
+                        var colX = col.X;
+                        var colY = col.Y;
 
-                        // Validate ColorSpacePoint
-                        if (float.IsNaN(col.X) || float.IsInfinity(col.X) ||
-                            float.IsNaN(col.Y) || float.IsInfinity(col.Y) ||
-                            col.X < 0 || col.X >= colorW ||
-                            col.Y < 0 || col.Y >= colorH)
+                        // Validate ColorSpacePoint; this also rejects NaN/Infinity
+                        if (!(colX >= 0f && colX < colorW && colY >= 0f && colY < colorH))
                         {
                             // Drop point entirely if UV is invalid (maintain synchronization)
                             continue;
                         }
 
-                        // Add position and UV as tuple (normalized UV coordinates 0..1)
+                        // Add position and UVs as tuple (normalized UV coordinates 0..1)
                         var position = new Vector3(cam.X, cam.Y, cam.Z);
-                        var uv = new Vector2(
-                            Math.Max(0f, Math.Min(1f, col.X / colorW)),
-                            Math.Max(0f, Math.Min(1f, col.Y / colorH)));
-                        builder.Add((position, uv));
+                        var uvColor = new Vector2(colX * invColorW, colY * invColorH);
+                        var uvDepth = new Vector2(x * invDepthW, y * invDepthH);
+                        builder.Add((position, uvColor, uvDepth));
                     }
                 }
 
