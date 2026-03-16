@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.Devices.Kinect2</id>
-    <version>1.4.1</version>
+    <version>1.4.2</version>
     <title>VL.Devices.Kinect2</title>
     <authors>Randall Vásquez, vvvv</authors>
     <owners>vvvv</owners>
